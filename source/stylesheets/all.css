@@ -23,6 +23,31 @@ h5 { font-size: 29px; }
 
 small { font-size: 66.67%; }
 
+dl {
+  width: 100%;
+  overflow: hidden;
+  margin: 12px 0;
+  padding: 0;
+}
+dl dt, dl dd { margin: 0 0 12px; }
+dl dt {
+  float: left;
+  width: 60%;
+  clear: left;
+}
+dl dd {
+  float: left;
+  width: 40%;
+}
+
+h2 a, h2 a:link, h2 a:visited, h2 a:active, h2 a:hover {
+  color: #66666f;
+  text-decoration: none;
+}
+h2 a:hover {
+  text-decoration: underline;
+}
+
 .hero {
   background: rgba(100,0,0,0.8);
   color: white;
@@ -123,23 +148,6 @@ small { font-size: 66.67%; }
 .stats i {
   display: block;
   margin: 6px auto;
-}
-
-dl {
-  width: 100%;
-  overflow: hidden;
-  margin: 12px 0;
-  padding: 0;
-}
-dl dt, dl dd { margin: 0 0 12px; }
-dl dt {
-  float: left;
-  width: 60%;
-  clear: left;
-}
-dl dd {
-  float: left;
-  width: 40%;
 }
 
 .chart {
