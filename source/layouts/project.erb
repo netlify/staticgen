@@ -1,0 +1,32 @@
+<% wrap_layout :layout do %>
+  <div class="main">
+    <h2><%= current_page.title %></h2>
+
+    <%= yield %>
+
+    <div id="stars-chart" class="chart"></div>
+  </div>
+
+  <% content_for :scripts do %>
+  <script>
+    $(function() {
+      var chart = {
+        label: "Stars",
+        data: <%= JSON.generate(current_page.week_history.map {|day| [day.timestamp * 1000, day.stars] }) %>
+      };
+      var options = {
+        yaxis: {
+          tickDecimals: 0
+        },
+        xaxis: {
+          transform: function (v) { return v; },
+          mode: "time"
+        }
+      };
+
+      $.plot("#stars-chart", [chart] , options);
+    });
+
+  </script>
+  <% end %>
+<% end %>

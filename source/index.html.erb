@@ -1,0 +1,67 @@
+---
+title: Top Open-Source Static Site Generators
+---
+<div class="navbar">
+  <div class="filters-container">
+    <ul class="filters">
+      <li class="active"><a href="#" data-filter="">All</a></li>
+      <% languages.each do |language| %>
+        <li><a href="#" data-filter=".lang-<%= language.downcase.gsub(/\s/, '-') %>"><%= language %></a></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <ul class="projects">
+    <% projects.each do |project| %>
+      <li class="project lang-<%= project.language.downcase.gsub(/\s/, '-') %>"
+          data-stars="<%= project.stars %>"
+          data-forks="<%= project.forks %>"
+          data-issues="<%= project.issues %>"
+          data-title="<%= project.title %>"
+          data-language="<%= project.language.downcase.gsub(/\s/, '-') %>">
+        <div class="card">
+          <h4 class="title"><a href="<%= project.url %>"><%= project.title %></a></h4>
+          <div class="project-data">
+            <ul class="trends">
+              <li>
+                <span class="indicator">0</span>
+              </li>
+              <li>
+                <span class="indicator">0</span>
+              </li>
+              <li>
+                <span class="indicator">0</span>
+              </li>
+            </ul>
+            <ul class="stats">
+              <li title="Stars">
+                <i class="fa fa-star"></i>
+                <%= project.stars %>
+              </li>
+              <li title="Forks">
+                <i class="fa fa-code-fork"></i>
+                <%= project.forks %>
+              </li>
+              <li title="Open Issues">
+                <i class="fa fa-bug"></i>
+                <%= project.issues %>
+              </li>
+            </ul>
+            <dl>
+              <dt>Language:</dt>
+              <dd><%= project.language %></dd>
+
+              <dt>Mardown:</dt>
+              <dd><span class="<%= project.markdown ? "checked" : "unchecked" %>"><%= project.markdown %></span></dd>
+
+              <dt>Templates:</dt>
+              <dd><%= project.templates %></dd>
+            </dl>
+          </div>
+          <div class="description"><%= project.description %></div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
