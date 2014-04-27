@@ -1,7 +1,7 @@
 ---
 title: Octopress
 repo: imathis/octopress
-homepage: http://octopress.org/docs/
+homepage: http://octopress.org
 language: Ruby
 markdown: true
 templates: Liquid

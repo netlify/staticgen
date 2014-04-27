@@ -2,9 +2,20 @@
 //= require "jquery.flot"
 //= require "jquery.flot.time"
 //= require "jquery.isotope"
+//= require "share"
 //= require_self
 
 $(function() {
+  var share = new Share("#share-button-top", {
+    networks: {
+      facebook: {
+        app_id: "200661259956061",
+      }
+    }
+  });
+  
+  var sortAscending = {title: true};
+
   $(".projects").isotope({
     layoutMode: "fitRows",
     getSortData: {
@@ -16,11 +27,12 @@ $(function() {
     }
   });
 
-  $(".filters a").click(function(e) {
-    e.preventDefault();
+  $("select[name='filter']").change(function(e) {
+    $(".projects").isotope({filter: $(this).val()});
+  });
 
-    $(".filters li").removeClass("active");
-    $(this).closest("li").addClass("active");
-    $(".projects").isotope({filter: $(this).data("filter")});
-  })
+  $("select[name='sort']").change(function(e) {
+    var val = $(this).val();
+    $(".projects").isotope({sortBy: val, sortAscending: sortAscending[val] || false});
+  });
 });

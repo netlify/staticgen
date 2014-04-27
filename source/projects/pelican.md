@@ -1,7 +1,7 @@
 ---
 title: Pelican
 repo: getpelican/pelican
-homepage: http://docs.getpelican.com/en/3.2/
+homepage: http://blog.getpelican.com/
 language: Python
 markdown: true
 templates: Jinja2

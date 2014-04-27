@@ -1,16 +1,7 @@
 ---
 title: Top Open-Source Static Site Generators
 ---
-<div class="navbar">
-  <div class="filters-container">
-    <ul class="filters">
-      <li class="active"><a href="#" data-filter="">All</a></li>
-      <% languages.each do |language| %>
-        <li><a href="#" data-filter=".lang-<%= language.downcase.gsub(/\s/, '-') %>"><%= language %></a></li>
-      <% end %>
-    </ul>
-  </div>
-</div>
+<%= partial "includes/navbar", :locals => {:controls => true} %>
 <div class="main">
   <ul class="projects">
     <% projects.each do |project| %>
@@ -22,30 +13,29 @@ title: Top Open-Source Static Site Generators
           data-language="<%= project.language.downcase.gsub(/\s/, '-') %>">
         <div class="card">
           <h4 class="title"><a href="<%= project.url %>"><%= project.title %></a></h4>
+          <h6 class="url"><a href="<%= project.homepage %>"><%= project.homepage.sub(/^https?:\/\//, '') %></a></small></h6>
           <div class="project-data">
-            <ul class="trends">
-              <li>
-                <span class="indicator">0</span>
-              </li>
-              <li>
-                <span class="indicator">0</span>
-              </li>
-              <li>
-                <span class="indicator">0</span>
-              </li>
-            </ul>
             <ul class="stats">
               <li title="Stars">
                 <i class="fa fa-star"></i>
-                <%= project.stars %>
+                <span class="stat"><%= project.stars %></span>
+                <span class="trend <%= project.stars_trend %>" title="Difference since last week">
+                  <%= project.stars_diff %>
+                </span>
               </li>
               <li title="Forks">
                 <i class="fa fa-code-fork"></i>
-                <%= project.forks %>
+                <span class="stat"><%= project.forks %></span>
+                <span class="trend <%= project.forks_trend %>" title="Difference since last week">
+                  <%= project.forks_diff %>
+                </span>
               </li>
               <li title="Open Issues">
                 <i class="fa fa-bug"></i>
-                <%= project.issues %>
+                <span class="stat"><%= project.issues %></span>
+                <span class="trend <%= project.issues_trend %>" title="Difference since last week">
+                  <%= project.issues_diff %>
+                </span>
               </li>
             </ul>
             <dl>

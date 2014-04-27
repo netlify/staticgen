@@ -1,0 +1,29 @@
+<div class="navbar">
+  <div class="container">
+    <% if defined?(controls) && controls %>
+      <div class="dropdown dropdown-dark">
+        <select name="filter" class="dropdown-select">
+          <option value="" selected>All languages</option>
+          <% languages.each do |language| %>
+            <option value=".lang-<%= language.downcase.gsub(/\s/, '-') %>">Only <%= language %></option>
+          <% end %>
+        </select>
+      </div>
+      <div class="dropdown dropdown-dark">
+        <select name="sort" class="dropdown-select">
+          <option value="stars" selected>Sorted by stars</option>
+          <option value="forks">Sorted by forks</option>
+          <option value="issues">Sorted by issues</option>
+          <option value="title">sorted by title</option>
+        </select>
+      </div>
+    <% end %>
+
+    <div class="right-menu">
+      <ul>
+        <li><a href="/about.html">About StaticGen</a></li>
+        <li><a href="/rules.html">The Rules</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

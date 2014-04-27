@@ -147,6 +147,49 @@ module GithubProject
     repo_data[:open_issues]
   end
 
+  def stars_last_week
+    last_week.stars
+  end
+
+  def forks_last_week
+    last_week.forks
+  end
+
+  def issues_last_week
+    last_week.issues
+  end
+
+  def stars_diff
+    return 0 unless stars_last_week
+    stars - stars_last_week
+  end
+
+  def forks_diff
+    return 0 unless forks_last_week
+    forks - forks_last_week
+  end
+
+  def issues_diff
+    return 0 unless issues_last_week
+    issues - issues_last_week
+  end
+
+  def stars_trend
+    trend(stars_diff)
+  end
+
+  def forks_trend
+    trend(forks_diff)
+  end
+
+  def issues_trend
+    trend(issues_diff)
+  end
+
+  def trend(diff)
+    diff == 0 ? "" : (diff > 0 ? "up" : "down")
+  end
+
   def last_week
     days_ago(7)
   end

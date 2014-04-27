@@ -15,8 +15,8 @@ body {
   background: url(/images/background.png);
 }
 
-h1 { font-size: 76px; font-weight: 100; }
-h2 { font-size: 49px; }
+h1 { font-size: 76px; }
+h2 { font-size: 49px; font-weight: 100; }
 h3 { font-size: 47px; }
 h4 { font-size: 31px; }
 h5 { font-size: 29px; }
@@ -41,62 +41,98 @@ dl dd {
 }
 
 h2 a, h2 a:link, h2 a:visited, h2 a:active, h2 a:hover {
-  color: #66666f;
+/*  color: #66666f;*/
   text-decoration: none;
 }
 h2 a:hover {
   text-decoration: underline;
 }
 
+.logo {
+  font-family: 'Roboto Slab', 'serif';
+}
+
 .hero {
-  background: rgba(100,0,0,0.8);
-  color: white;
-  text-shadow: 0 0 15px rgba(255,255,255,0.2);
+/*  background: rgba(100,0,0,0.8);*/
+/*  color: white;*/
+/*  text-shadow: 0 0 15px rgba(255,255,255,0.2);*/
+  background: radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
   text-align: center;
   padding: 29px 0;
 }
 .hero h1 {
-  margin: 49px 0;
+  margin: 31px 0 0;
+}
+.hero h2 {
+  margin-top: 0;
+  color: #efefef;
+}
+.hero a.logo, .hero a.logo:link, .hero a.logo:active, .hero a.logo:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .navbar {
-  height: 80px;
+  height: 45px;
   margin-bottom: 18px;
-  background: rgba(100,0,0,0.5);
-  border-bottom: 1px solid rgba(100,0,0,0.2);
-  border-top: 1px solid rgba(100,0,0,0.5);
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+/*  background: rgba(100,0,0,0.5);*/
+/*  border-bottom: 1px solid rgba(100,0,0,0.2);*/
+/*  border-top: 1px solid rgba(100,0,0,0.5);*/
+  background: #A7A5A8;
 }
 
-.main, .filters-container {
+.right-menu {
+  float: right;
+}
+
+.right-menu > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right-menu > ul > li {
+  display: inline-block;
+  line-height: 45px;
+  height: 45px;
+}
+
+.right-menu > ul > li > a {
+  display: inline-block;
+  line-height: 45px;
+  height: 45px;
+  color: #222;
+  text-decoration: none;
+  font-weight: normal;
+  margin-left: 16px;
+}
+
+.right-menu > ul > li > a:hover {
+  color: #444;
+}
+
+.main, .container {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.filters {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.filters li {
-    display: inline-block;
-    line-height: 80px;
-}
-.filters a {
-    text-decoration: none;
-    color: rgb(75, 50, 50);
-    padding: 3px 12px;
-    font-size: 16px;
-}
-.filters .active a {
-    background: rgb(75,50,50);
-    color: rgb(240,240,240);
-    border-radius: 18px;
+.sheet {
+  background: #fff;
+  border: #eee;
+  border-radius: 3px;
+  padding: 12px 29px 47px;
+  margin-top: 47px
 }
 
 .projects, .stats, .trends {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.projects {
+  margin-right: -24px;
 }
 .project {
   float: left;
@@ -107,7 +143,8 @@ h2 a:hover {
 .project:nth-of-type(n) { clear: none; }
 .project:nth-of-type(4n+1) { clear: both; }
 .card {
-  background: rgba(255,255,255,0.8);
+/*  background: rgba(255,255,255,0.8);*/
+  background: #fff;
   border: 1px solid #eee;
   border-radius: 3px;
   padding: 18px;
@@ -116,38 +153,53 @@ h2 a:hover {
 }
 .card .title {
   margin: -18px -18px 0px;
-  padding: 12px 18px;
-  background: #0971B2;
-  font-weight: 100;
+  padding: 12px 18px 6px;
+/*  background: #0971B2;*/
+  font-weight: normal;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  text-align: center;
 }
 .card .title a, .card .title a:visited, .card .title a:active, .card .title a:hover {
-  color: white;
+  color: #444;
   text-decoration: none;
 }
+.card .url {
+  margin: 0;
+  text-align: center;
+}
+.card .url a, .card .url a:visited, .card .url a:active, .card .url a:hover {
+  text-decoration: none;
+  color: #666;
+  font-weight: normal;
+}
 
-.stats, .trends {
+.stats {
   overflow: hidden;
-  margin: 0 -18px;
+  margin: 16px -18px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.stat, .trend {
+  display: block;
 }
 .stats li, .trends li {
   float: left;
-  width: 33.3333%;
+  width: 33.33333333%;
   text-align: center;
   margin: 0;
-  padding: 12px;
-  line-height: 1.2;
+  padding: 6px;
+  line-height: 1.4;
 }
 .trends li {
 
 }
 .stats li {
-  background: -webkit-linear-gradient(left top,#fafafa,#ddd);
+/*  background: -webkit-linear-gradient(left top,#fafafa,#ddd);*/
 }
 .stats i {
   display: block;
-  margin: 6px auto;
+  margin: 6px auto 4px;
 }
 
 .chart {
@@ -180,3 +232,143 @@ h2 a:hover {
 .footer h3 a:hover {
   text-decoration: underline;
 }
+
+/* Awesome dropdown design from this Codepen: http://codepen.io/Thibaut/pen/Jasci */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 28px;
+  width: 150px;
+  background: #f2f2f2;
+  border: 1px solid;
+  border-color: white #f7f7f7 whitesmoke;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .dropdown {
+  margin-top: 6px;
+  margin-right: 12px;
+}
+
+.dropdown:before, .dropdown:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #888888 transparent;
+  pointer-events: none;
+}
+
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.dropdown-select {
+  position: relative;
+  width: 130%;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #62717a;
+  text-shadow: 0 1px white;
+  background: #f2f2f2; /* Fallback for IE 8 */
+  background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.dropdown-select:focus {
+  z-index: 3;
+  width: 100%;
+  color: #394349;
+  outline: none;
+}
+
+.dropdown-select > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Fix for IE 8 putting the arrows behind the select element. */
+
+.lt-ie9 .dropdown {
+  z-index: 1;
+}
+
+.lt-ie9 .dropdown-select {
+  z-index: -1;
+}
+
+.lt-ie9 .dropdown-select:focus {
+  z-index: 3;
+}
+
+/* Dirty fix for Firefox adding padding where it shouldn't. */
+
+@-moz-document url-prefix() {
+  .dropdown-select {
+    padding-left: 6px;
+  }
+}
+
+.dropdown-dark {
+  background: #444;
+  border-color: #111111 #0a0a0a black;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-dark:before {
+  border-bottom-color: #aaa;
+}
+
+.dropdown-dark:after {
+  border-top-color: #aaa;
+}
+
+.dropdown-dark .dropdown-select {
+  color: #aaa;
+  text-shadow: 0 1px black;
+  background: #444;  /* Fallback for IE 8 */
+}
+
+.dropdown-dark .dropdown-select:focus {
+  color: #ccc;
+}
+
+.dropdown-dark .dropdown-select > option {
+  background: #444;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.share-button { margin: auto; top: 0; left: 0; bottom: 0; right: 0; margin-bottom: 24px; }
