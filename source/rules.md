@@ -3,7 +3,7 @@ title: The Rules
 layout: page
 ---
 
-### The Rules
+# The Rules
 
 Everybody is welcome to contribute to StaticGen, just fork the [Github repo](https://github.com/bitballoon/staticgen) and send a pull request.
 Each static site generator is a markdown file in the `source/projects` directory.

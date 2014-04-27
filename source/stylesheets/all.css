@@ -9,7 +9,8 @@
 
 body {
   font-family: 'Roboto', 'sans-serif';
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.6;
   color: #444;
   margin: 0 0;
   background: url(/images/background.png);
@@ -22,6 +23,9 @@ h4 { font-size: 31px; }
 h5 { font-size: 29px; }
 
 small { font-size: 66.67%; }
+
+a { color: #2D2DC5; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 dl {
   width: 100%;
@@ -121,7 +125,55 @@ h2 a:hover {
   background: #fff;
   border: #eee;
   border-radius: 3px;
-  padding: 12px 29px 47px;
+  padding: 12px 47px 47px;
+}
+.sheet h1 {
+    margin: 0 0 20px;
+    border-bottom: 1px solid #444;
+}
+.links a {
+    text-decoration: none;
+    color: #666;
+}
+.links a:hover {
+    color: #222;
+}
+.sheet .links {
+    margin-bottom: 45px;
+}
+.sheet p {
+    margin: 0 0 16px;
+}
+.separator {
+    margin: 0 9px;
+    color: #999;
+    font-weight: 100;
+}
+.sheet .links .fa {
+    margin-right: 4px;
+}
+.sheet h3 {
+  margin: 18px 0 0;
+}
+.sheet h4 {
+  margin: 12px 0 0;
+  line-height: 1.2;
+}
+.sheet ol, .sheet ul {
+  padding: 0;
+}
+.sheet ol ol, .sheet ol ul, .sheet ul ol, .sheet ul ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+.sheet li {
+  margin-bottom: 12px;
+}
+.sheet img {
+  margin: 18px 0;
+  width: 100%;
+  border: none;
+  box-shadow: 0 0 7px rgba(0,0,0,.2);
 }
 
 .projects, .stats, .trends {
@@ -200,10 +252,26 @@ h2 a:hover {
   display: block;
   margin: 6px auto 4px;
 }
+.sheet:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text, .charts {
+    float: left;
+}
+.text {
+  width: 70%;
+  padding-right: 47px;
+}
+.charts {
+  width: 30%;
+}
 
 .chart {
   width: 100%;
-  height: 400px;
+  height: 200px;
 }
 
 .footer {

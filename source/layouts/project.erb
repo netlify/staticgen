@@ -1,12 +1,24 @@
 <% wrap_layout :layout do %>
   <%= partial "includes/navbar" %>
-  
+
   <div class="main">
-    <h2><%= current_page.title %> <small><a href="<%= current_page.homepage %>">Visit homepage</a></small></h2>
+    <div class="sheet">
+      <h1><%= current_page.title %></h1>
+      <div class="links">
+        <a href="<%= current_page.homepage %>"><i class="fa fa-home"></i> <%= current_page.homepage %></a>
+        <span class="separator">|</span>
+        <a href="https://github.com/<%= current_page.repo %>"><i class="fa fa-github"></i> https://github.com/<%= current_page.repo %></a>
+      </div>
 
-    <%= yield %>
 
-    <div id="stars-chart" class="chart"></div>
+      <div class="text">
+
+        <%= yield %>
+      </div>
+      <div class="charts">
+        <div id="stars-chart" class="chart"></div>
+      </div>
+    </div>
   </div>
 
   <% content_for :scripts do %>
