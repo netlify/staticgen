@@ -32,12 +32,12 @@ dl {
 dl dt, dl dd { margin: 0 0 12px; }
 dl dt {
   float: left;
-  width: 60%;
+  width: 50%;
   clear: left;
 }
 dl dd {
   float: left;
-  width: 40%;
+  width: 50%;
 }
 
 h2 a, h2 a:link, h2 a:visited, h2 a:active, h2 a:hover {
@@ -53,9 +53,6 @@ h2 a:hover {
 }
 
 .hero {
-/*  background: rgba(100,0,0,0.8);*/
-/*  color: white;*/
-/*  text-shadow: 0 0 15px rgba(255,255,255,0.2);*/
   background: radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
   text-align: center;
   padding: 29px 0;
@@ -77,10 +74,8 @@ h2 a:hover {
   margin-bottom: 18px;
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
-/*  background: rgba(100,0,0,0.5);*/
-/*  border-bottom: 1px solid rgba(100,0,0,0.2);*/
-/*  border-top: 1px solid rgba(100,0,0,0.5);*/
-  background: #A7A5A8;
+  background: #bbb;
+  z-index: 100;
 }
 
 .right-menu {
@@ -118,12 +113,15 @@ h2 a:hover {
   margin: 0 auto;
 }
 
+.main {
+  margin-top: 47px;
+}
+
 .sheet {
   background: #fff;
   border: #eee;
   border-radius: 3px;
   padding: 12px 29px 47px;
-  margin-top: 47px
 }
 
 .projects, .stats, .trends {
@@ -148,8 +146,8 @@ h2 a:hover {
   border: 1px solid #eee;
   border-radius: 3px;
   padding: 18px;
-  margin: 18px 0;
-  font-size: 16px;
+  margin: 0 0 18px;
+  font-size: 14px;
 }
 .card .title {
   margin: -18px -18px 0px;
@@ -167,6 +165,7 @@ h2 a:hover {
 .card .url {
   margin: 0;
   text-align: center;
+  font-size: 12px;
 }
 .card .url a, .card .url a:visited, .card .url a:active, .card .url a:hover {
   text-decoration: none;
