@@ -184,14 +184,6 @@ h2 a:hover {
 .projects {
   margin-right: -24px;
 }
-.project {
-  float: left;
-  width: 25%;
-  padding-right: 24px;
-  vertical-align: top;
-}
-.project:nth-of-type(n) { clear: none; }
-.project:nth-of-type(4n+1) { clear: both; }
 .card {
 /*  background: rgba(255,255,255,0.8);*/
   background: #fff;
@@ -439,3 +431,56 @@ h2 a:hover {
 }
 
 .share-button { margin: auto; top: 0; left: 0; bottom: 0; right: 0; margin-bottom: 24px; }
+
+@media all and (max-width: 499px) {
+  .project {
+    display: block;
+    width: 100%;
+  }
+  .projects {
+    margin-right: 0;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .project {
+    float: left;
+    width: 50%;
+    padding-right: 24px;
+  }
+  .project:nth-of-type(n) { clear: none; }
+  .project:nth-of-type(2n+1) { clear: both; }
+}
+
+@media all and (max-width: 800px) {
+  .navbar {
+    height: 90px;
+  }
+  .navbar .right-menu {
+    float: none;
+  }
+  .navbar .right-menu a { margin-left: 0; }
+  .navbar .container {
+    padding: 0 12px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .project {
+    float: left;
+    width: 33.333333333%;
+    padding-right: 24px;
+  }
+  .project:nth-of-type(n) { clear: none; }
+  .project:nth-of-type(3n+1) { clear: both; }
+}
+
+@media all and (min-width: 1000px) {
+  .project {
+    float: left;
+    width: 25%;
+    padding-right: 24px;
+  }
+  .project:nth-of-type(n) { clear: none; }
+  .project:nth-of-type(4n+1) { clear: both; }
+}
