@@ -17,6 +17,8 @@
       </div>
       <div class="charts">
         <div id="stars-chart" class="chart"></div>
+        <div id="forks-chart" class="chart"></div>
+        <div id="issues-chart" class="chart"></div>
       </div>
     </div>
   </div>
@@ -24,11 +26,12 @@
   <% content_for :scripts do %>
   <script>
     $(function() {
-      var chart = {
-        label: "Stars",
-        data: <%= JSON.generate(current_page.week_history.map {|day| [day.timestamp * 1000, day.stars] }) %>
+      <% ['stars', 'forks', 'issues'].each do |type| %>
+      var chart_<%= type %> = {
+        label: "<%= type.capitalize %>",
+        data: <%= JSON.generate(current_page.week_history.map {|day| [day.timestamp * 1000, day.send(type)] }) %>
       };
-      var options = {
+      var options_<%= type %> = {
         yaxis: {
           tickDecimals: 0
         },
@@ -37,8 +40,8 @@
           mode: "time"
         }
       };
-
-      $.plot("#stars-chart", [chart] , options);
+      $.plot("#<%= type %>-chart", [chart_<%= type %>] , options_<%= type %>);
+      <% end %>
     });
 
   </script>
