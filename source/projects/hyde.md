@@ -4,7 +4,7 @@ repo: hyde/hyde
 homepage: http://hyde.github.io/
 language: Python
 license: MIT
-templates: Django templates, Jinja2
+templates: Jinja2
 description: Jekyll's evil Python powered twin
 ---
 

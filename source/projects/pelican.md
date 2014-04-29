@@ -5,7 +5,7 @@ homepage: http://blog.getpelican.com/
 language: Python
 license: GPL
 templates: Jinja2
-description: A robust static site generator, imports from Wordpress or RSS Feeds, supports multi-lang publishing.
+description: A static site generator, imports from Wordpress, multi-lang publishing.
 ---
 
 Pelican is a static site generator, written in Python.

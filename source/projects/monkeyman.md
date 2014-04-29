@@ -4,7 +4,7 @@ repo: wspringer/monkeyman
 homepage: https://github.com/wspringer/monkeyman
 language: Scala
 license: GPL
-templates: Jade, Haml, Mustache, SSP
+templates: Haml
 description: "Simple static site generator for Scala and middleman lovers"
 ---
 

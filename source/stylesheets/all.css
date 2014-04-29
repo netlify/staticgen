@@ -24,24 +24,23 @@ h5 { font-size: 29px; }
 
 small { font-size: 66.67%; }
 
-a { color: #2D2DC5; text-decoration: none; }
+a, a:link, a:active, a:visited, a:hover { color: #7D49BD; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 dl {
-  width: 100%;
   overflow: hidden;
-  margin: 12px 0;
+  margin: 6px 0 0;
   padding: 0;
 }
-dl dt, dl dd { margin: 0 0 12px; }
+dl dt, dl dd { margin: 0; }
 dl dt {
   float: left;
-  width: 50%;
+  width: 42%;
   clear: left;
 }
 dl dd {
   float: left;
-  width: 50%;
+  width: 58%;
 }
 
 h2 a, h2 a:link, h2 a:visited, h2 a:active, h2 a:hover {
@@ -57,6 +56,10 @@ h2 a:hover {
 }
 
 .hero {
+  background: #4f3b5b;
+  background: -webkit-radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
+  background:    -moz-radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
+  background:     -ms-radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
   background: radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
   text-align: center;
   padding: 29px 0;
@@ -167,8 +170,9 @@ h2 a:hover {
   padding-left: 20px;
 }
 .sheet li {
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
+.sheet h3 + ul { margin-top: 0; }
 .sheet img {
   margin: 18px 0;
   width: 100%;
@@ -216,6 +220,9 @@ h2 a:hover {
   color: #666;
   font-weight: normal;
 }
+.card .description {
+  min-height: 5em;
+}
 
 .stats {
   overflow: hidden;
@@ -233,12 +240,6 @@ h2 a:hover {
   margin: 0;
   padding: 6px;
   line-height: 1.4;
-}
-.trends li {
-
-}
-.stats li {
-/*  background: -webkit-linear-gradient(left top,#fafafa,#ddd);*/
 }
 .stats i {
   display: block;

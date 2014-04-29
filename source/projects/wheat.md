@@ -4,7 +4,7 @@ repo: creationix/wheat
 homepage: https://github.com/creationix/howtonode.org
 language: JavaScript
 license: MIT
-templates: Renderers (custom)
+templates: Custom
 description: "A blog engine for coders written in node.JS"
 ---
 

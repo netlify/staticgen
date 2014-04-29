@@ -4,7 +4,7 @@ repo: redline6561/coleslaw
 homepage: https://github.com/redline6561/coleslaw
 language: Lisp
 license: BSD
-templates: Google Closure Templates, LaTex
+templates: Closure Templates
 description: Flexible Lisp Blogware.
 ---
 
