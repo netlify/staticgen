@@ -17,10 +17,10 @@ Make sure to follow the following rules:
 
 StaticGen is built with Middleman. To install and run locally:
 
-   git clone https://github.com/BitBalloon/staticgen.git
-   cd staticgen
-   bundle install
-   bundle exec middleman
+    git clone https://github.com/BitBalloon/staticgen.git
+    cd staticgen
+    bundle install
+    bundle exec middleman
 
 ## BitBalloon
 

@@ -104,7 +104,7 @@ class GithubAPI
 
     def api_request(url, options = {})
       uri = URI.parse(url)
-      req = METHODS[options[:method] || :get].new(uri)
+      req = METHODS[options[:method] || :get].new(uri.path)
       req['Authorization'] = "token #{ENV["GITHUB_TOKEN"]}" if ENV["GITHUB_TOKEN"]
 
       if options[:body]
