@@ -5,7 +5,7 @@ A leaderboard of top open-source static site generators.
 ## Contributing
 
 Missing a static site generator here? Just fork the repo and add your generator
-as a `<name>.yml` in the `source/projects` folder.
+as a `<name>.md` in the `source/projects` folder.
 
 Make sure to follow the following rules:
 
