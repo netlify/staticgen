@@ -129,7 +129,7 @@ class GithubAPI
 end
 
 module GithubProject
-  [:title, :repo, :homepage, :language, :markdown, :templates, :description].each do |attr|
+  [:title, :repo, :homepage, :language, :license, :templates, :description].each do |attr|
     define_method attr do
       data[attr]
     end

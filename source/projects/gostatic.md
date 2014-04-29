@@ -3,7 +3,7 @@ title: Gostatic
 repo: piranha/gostatic
 homepage: https://github.com/piranha/gostatic#speed
 language: Go
-markdown: true
+license: ISC
 templates: Go Templates
 description: A fast static site generator written in Go.
 ---

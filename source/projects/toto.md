@@ -3,7 +3,7 @@ title: Toto
 repo: cloudhead/toto
 homepage: http://cloudhead.io/toto
 language: Ruby
-markdown:
+license: MIT
 templates: ERB
 description: Git-powered, minimalist blog engine for hackers of Oz.
 ---

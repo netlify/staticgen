@@ -3,7 +3,7 @@ title: Jekyll
 repo: jekyll/jekyll
 homepage: http://jekyllrb.com
 language: Ruby
-markdown: true
+license: MIT
 templates: Liquid
 description: A simple, blog-aware, static site generator perfect for personal, project, or organization sites.
 ---

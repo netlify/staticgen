@@ -3,12 +3,12 @@ title: Ruhoh
 repo: ruhoh/ruhoh.rb
 homepage: http://ruhoh.com/
 language: Ruby
-markdown: true
+license: MIT
 templates: Mustache
 description: The Universal Static Blog API.
 ---
 
-Ruhoh is a static site generator made for publishing content on the Internet. It's similar to jekyll, nanoc, and others. 
+Ruhoh is a static site generator made for publishing content on the Internet. It's similar to jekyll, nanoc, and others.
 
 A static site is a website with no moving parts: no dependencies, no database, no code execution, no admin panel. This is different from a "web application" which requires many layers of software.
 

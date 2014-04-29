@@ -3,7 +3,7 @@ title: Cabin
 repo: CabinJS/Cabin
 homepage: http://www.cabinjs.com/
 language: JavaScript
-markdown: true
+license: MIT
 templates: Jade & EJS
 description: Simple and extensible static site generator powered by Grunt.
 ---

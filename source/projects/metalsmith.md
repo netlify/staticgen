@@ -3,7 +3,7 @@ title: Metalsmith
 repo: segmentio/metalsmith
 homepage: http://www.metalsmith.io/
 language: JavaScript
-markdown: true
+license: MIT
 templates: Handlebars
 description: An extremely simple, pluggable static site generator.
 ---

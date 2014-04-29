@@ -3,7 +3,7 @@ title: MkDocs
 repo: tomchristie/mkdocs
 homepage: http://www.mkdocs.org/
 language: Python
-markdown: true
+license: BSD
 templates: Jinja2
 description: Project documentation with Markdown.
 ---

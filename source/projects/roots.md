@@ -3,7 +3,7 @@ title: Roots
 repo: jenius/roots
 homepage: http://roots.cx/
 language: CoffeeScript
-markdown: true
+license: MIT
 templates: Jade
 description: roots is a toolbox for building simple, beautiful, and efficient products for the web.
 ---

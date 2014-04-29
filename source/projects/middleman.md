@@ -3,7 +3,7 @@ title: Middleman
 repo: middleman/middleman
 homepage: http://middlemanapp.com
 language: Ruby
-markdown: true
+license: MIT
 templates: ERB
 description: Hand-crafted, modern frontend development.
 ---

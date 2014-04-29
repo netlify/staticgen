@@ -3,7 +3,7 @@ title: Tags
 repo: braceio/tags
 homepage: http://tags.brace.io/
 language: Python
-markdown: false
+license: MIT
 templates: Tags
 description: The simplest static site generator
 ---

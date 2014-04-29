@@ -3,7 +3,7 @@ title: Nanoc
 repo: nanoc/nanoc
 homepage: http://nanoc.ws/
 language: Ruby
-markdown: true
+license: MIT
 templates: eRuby
 description: Simple but very flexible static site generator
 ---

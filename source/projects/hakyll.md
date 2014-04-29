@@ -3,9 +3,13 @@ title: Hakyll
 repo: jaspervdj/hakyll
 homepage: http://jaspervdj.be/hakyll/
 language: Haskell
-markdown: true
-templates: TeX
+license: BSD
+templates: Hakyll Templates
 description: A configurable Haskell library, for small-to-medium sites.
 ---
 
-A configurable Haskell library, for small-to-medium sites.
+Static sites are fast, secure, easy to deploy, and manageable using version control.
+
+Hakyll is a Haskell library for generating static sites, mostly aimed at small-to-medium sites and personal blogs. It is written in a very configurable way and uses an xmonad-like DSL for configuration.
+
+Integration with pandoc gives us markdown and TeX support, including syntax highlighting and other goodies.

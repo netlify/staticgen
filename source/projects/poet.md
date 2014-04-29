@@ -3,7 +3,7 @@ title: Poet
 repo: jsantell/poet
 homepage: http://jsantell.github.io/poet/
 language: JavaScript
-markdown: true
+license: MIT
 templates: Jade
 description: "A node.js blog engine."
 ---

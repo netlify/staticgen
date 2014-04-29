@@ -3,7 +3,7 @@ title: Coleslaw
 repo: redline6561/coleslaw
 homepage: https://github.com/redline6561/coleslaw
 language: Lisp
-markdown: true
+license: BSD
 templates: Google Closure Templates, LaTex
 description: Flexible Lisp Blogware.
 ---

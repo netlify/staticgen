@@ -3,7 +3,7 @@ title: Harp
 repo: sintaxi/harp
 homepage: http://harpjs.com/
 language: JavaScript
-markdown: true
+license: MIT
 templates: EJS
 description: Harp is a static web server that can also compile your project down to static assets.
 ---
