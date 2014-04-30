@@ -8,6 +8,7 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title ? current_page.data.title + " - StaticGen" : "StaticGen - Open Source Static Site Generators" %></title>
+
     <meta name="description" content="StaticGen is a leaderboard of the top open-source static site generators. Promoting a static approach to building websites." />
 
     <!-- Twitter Card data -->
@@ -50,6 +51,8 @@
     </div>
 
     <%= javascript_include_tag "all" %>
+
+    <!-- Page specific scripts -->
     <%= yield_content :scripts %>
   </body>
 </html>
