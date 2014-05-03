@@ -22,6 +22,17 @@ StaticGen is built with Middleman. To install and run locally:
     bundle install
     bundle exec middleman
 
+You'll run into GitHubs API limits very quickly if you just do this. To avoid this we recommend you create a Github API token with permissions to access public repositories and Gist.
+
+Then create a Gist with a single file `data.json` with an empty javascript object literal as content: {}
+
+Then set these environment variables before running middleman:
+
+    export GITHUB_TOKEN=YOUR_TOKEN
+    export GIST_ID=ID_OF_YOUR_GIST
+
+Then middleman will use the Gist you specified to archive stats (stars, forks and issues) for the repositories.
+
 ## BitBalloon
 
 StaticGen is built and maintained by [BitBalloon](https://www.bitballoon.com), a hosting service for static websites.
