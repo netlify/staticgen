@@ -22,7 +22,7 @@ StaticGen is built with Middleman. To install and run locally:
     bundle install
     bundle exec middleman
 
-You'll run into GitHubs API limits very quickly if you just do this. To avoid this we recommend you create a Github API token with permissions to access public repositories and Gist.
+You'll run into GitHub's API limits very quickly if you just do this. To avoid this we recommend you create a Github API token with permissions to access public repositories and Gist.
 
 Then create a Gist with a single file `data.json` with an empty javascript object literal as content: {}
 
