@@ -38,6 +38,8 @@ module Github
           }
         })
         cache["updated"] = false
+      rescue => e
+        puts "Error updating archived statistics"
       end
 
       def repo_data(repo)
