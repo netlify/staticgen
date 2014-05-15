@@ -68,7 +68,13 @@ module Github
     def week_history
       (0..7).map do |days|
         days_ago(days)
-      end.reverse
+      end.reverse.tap do |days|
+        days.each_with_index do |day,index|
+          if index > 0 && day.stars.nil?
+            days[index] = days[index - 1]
+          end
+        end
+      end
     end
 
     def days_ago(days)
