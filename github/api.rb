@@ -8,8 +8,6 @@ module Github
       :patch => Net::HTTP::Patch
     }
     GIST_ID = "3c9829b24df3aafef582"
-    # Temporary workaround
-    GIST_URL = "https://gist.githubusercontent.com/biilmann/3c9829b24df3aafef582/raw/c18ff43c17ccf70a6bfc14eb0db319fd5ae699c4/data.json"
 
     class << self
       attr_accessor :bulk_update
@@ -82,11 +80,7 @@ module Github
       def fetch_archive
         gist = JSON.parse(api_request(archive_uri)) rescue nil
         # Temporary workaround
-        if gist
-          data = JSON.parse(gist["files"]["data.json"]["content"])
-        else
-          data = JSON.parse(Net::HTTP.get(URI.parse(GIST_URL)))
-        end
+        data = JSON.parse(gist["files"]["data.json"]["content"])
         cache["archive"] = data
       rescue => e
         puts "Error fetching gist with archived data: #{e}"
