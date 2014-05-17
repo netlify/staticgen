@@ -233,6 +233,12 @@ h2 a:hover {
 .stat, .trend {
   display: block;
 }
+.trend.up {
+  color: #31BB47;
+}
+.trend.down {
+  color: #C91B1B;
+}
 .stats li, .trends li {
   float: left;
   width: 33.33333333%;
@@ -240,10 +246,6 @@ h2 a:hover {
   margin: 0;
   padding: 6px;
   line-height: 1.4;
-}
-.stats i {
-  display: block;
-  margin: 6px auto 4px;
 }
 .sheet:after {
   content: "";

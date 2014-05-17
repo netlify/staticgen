@@ -20,6 +20,7 @@ title: Top Open-Source Static Site Generators
               <span class="stat"><%= project.stars %></span>
               <span class="trend <%= project.stars_trend %>" title="Difference since last week">
                 <%= project.stars_diff %>
+                <%= caret_icon(project.stars_diff) %>
               </span>
             </li>
             <li title="Forks">
@@ -27,13 +28,15 @@ title: Top Open-Source Static Site Generators
               <span class="stat"><%= project.forks %></span>
               <span class="trend <%= project.forks_trend %>" title="Difference since last week">
                 <%= project.forks_diff %>
+                <%= caret_icon(project.forks_diff) %>
               </span>
             </li>
             <li title="Open Issues">
               <i class="fa fa-bug"></i>
               <span class="stat"><%= project.issues %></span>
-              <span class="trend <%= project.issues_trend %>" title="Difference since last week">
+              <span class="trend" title="Difference since last week">
                 <%= project.issues_diff %>
+                <%= caret_icon(project.issues_diff) %>
               </span>
             </li>
           </ul>
