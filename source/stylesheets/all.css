@@ -270,12 +270,28 @@ h2 a:hover {
 .footer {
   background: #B6B6B6;
   margin: 46px 0 0;
-  padding: 46px;
+  padding: 46px 46px 23px;
 }
 
 .footer-container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.postscript {
+  color: #eee;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 46px;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.postscript a, .postscript a:visited, .postscript a:link, .postscript a:active, .postscript a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+.postscript a:hover {
+  text-decoration: underline;
 }
 
 .footer h3 {

@@ -48,6 +48,10 @@
       <div class="footer-container">
         <h3>StaticGen is hosted and maintained by <a href="https://www.bitballoon.com">BitBalloon</a>, the perfect way to deploy your static sites.</h3>
       </div>
+      <div class="postscript">
+        StaticGen was last deployed by <a href="https://factor.io">Factor.io</a> on <strong><%= Time.now.utc.strftime("%B %-d, %Y") %></strong> at <strong><%= Time.now.utc.strftime("%k:%M") %> UTC</strong>.<br/>
+        &copy; BitBalloon <%= Time.now.year %>
+      </div>
     </div>
 
     <%= javascript_include_tag "all" %>
