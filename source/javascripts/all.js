@@ -10,7 +10,7 @@ $(function() {
   var share = new Share("#share-button-top", {
     networks: {
       facebook: {
-        app_id: "200661259956061",
+        app_id: "1604147083144211",
       }
     }
   });
