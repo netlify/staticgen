@@ -1,6 +1,6 @@
 ---
 title: Techy
-repo: jekyll/jekyll
+repo: krasimir/techy
 homepage: http://krasimir.github.io/techy/
 language: JavaScript
 license: MIT
@@ -14,6 +14,4 @@ I love Markdown and I can turn it to a beautifully looking HTML layouts. I'm bui
 
 In the content driven website (like a blog for example), the writing should be easy and fluent. Markdown language gives us the simplicity that we need. However, sometimes converting .md files to .html files is not enough. Techy is an instrument that uses Markdown as a base, but also makes your pages programmable.
 
-<!---
-description taken from homepage
--->
+Techy is not only generating HTML markup. It puts your writings into a nicely formatted layout.
