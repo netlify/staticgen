@@ -2,9 +2,9 @@
 title: Zodiac
 repo: nuex/zodiac
 homepage: http://github.com/nuex/zodiac
-language: awk, sh
+language: Awk
 license: MIT
-templates: mustache-like
+templates: Mustache-like
 description: A static site generator powered by awk and sh.
 ---
 
