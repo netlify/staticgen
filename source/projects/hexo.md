@@ -1,7 +1,7 @@
 ---
 title: Hexo
 repo: tommy351/hexo
-homepage: http://zespia.tw/hexo/
+homepage: http://hexo.io/
 language: JavaScript
 license: MIT
 templates: EJS
