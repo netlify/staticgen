@@ -37,3 +37,6 @@ Then middleman will use the Gist you specified to archive stats (stars, forks an
 ## BitBalloon
 
 StaticGen is built and maintained by [BitBalloon](https://www.bitballoon.com), a hosting service for static websites.
+
+## License
+This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
