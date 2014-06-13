@@ -1,7 +1,7 @@
 ---
 title: SuSi
 repo: AVGP/susi
-homepage: https://github.com/AVGP/susi/blob/master/README.md
+homepage: https://github.com/AVGP/susi
 language: JavaScript
 license: ISC
 templates: Markdown
