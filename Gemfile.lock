@@ -72,6 +72,9 @@ GEM
       sprockets (~> 2.2)
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.1.0)
+    middleman-syntax (2.0.0)
+      middleman-core (~> 3.2)
+      rouge (~> 1.0)
     minitest (4.7.5)
     multi_json (1.9.2)
     padrino-helpers (0.12.1)
@@ -90,6 +93,8 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
+    redcarpet (2.3.0)
+    rouge (1.4.0)
     sass (3.2.19)
     sprockets (2.12.1)
       hike (~> 1.2)
@@ -116,5 +121,7 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 3.3.2)
   middleman-livereload (~> 3.1.0)
+  middleman-syntax
+  redcarpet
   tzinfo-data
   wdm (~> 0.1.0)

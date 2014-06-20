@@ -51,6 +51,12 @@ h2 a:hover {
   text-decoration: underline;
 }
 
+pre {
+  background: #122b3b;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
 .logo {
   font-family: 'Roboto Slab', 'serif';
 }
@@ -455,6 +461,7 @@ h2 a:hover {
 }
 
 .share-button { margin: auto; top: 0; left: 0; bottom: 0; right: 0; margin-bottom: 24px; }
+
 
 @media all and (max-width: 499px) {
   .project {

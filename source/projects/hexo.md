@@ -1,6 +1,6 @@
 ---
 title: Hexo
-repo: tommy351/hexo
+repo: hexojs/hexo
 homepage: http://hexo.io/
 language: JavaScript
 license: MIT

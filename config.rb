@@ -5,6 +5,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :github
+activate :syntax
 
 helpers do
   def caret_icon(number)
@@ -15,6 +16,10 @@ helpers do
     end
   end
 end
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
 
 # Build-specific configuration
 configure :build do
