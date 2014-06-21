@@ -1,6 +1,6 @@
 ---
 title: About StaticGen
-layout: page
+layout: making-of
 ---
 
 # The Making of StaticGen
@@ -21,7 +21,7 @@ All the source for StaticGen is in [this repository](https://github.com/bitballo
 
 StaticGen combines data from the Github API with our own list of static site generators and some historical data on each of the static site generators we list.
 
-Building a site like StaticGen with a static site generators, means changing the way we think about our data sources.
+Building a site like StaticGen with a static site generator, means changing the way we think about our data sources.
 
 When building a dynamic site, we're always forced to focus on latency and query times. The #1 demand on our datasource will be that we can query and fetch data fast enough to get acceptable page load times.
 
@@ -31,7 +31,7 @@ The structure of the Github API, means we have to make at least 1 call to the Gi
 
 If we were building a dynamic site, we would be forced to come up with a very effective caching layer or have to run cron-jobs in the background keeping our low-latency datastore in synch with the Github API, since doing 50+ API request while rendering the page would be out of the question.
 
-With static site generation, things look completely different. Since we're just running the build a couple of times a day, there's absolutely no reason to worry about the latency of the API lookups, and we can happily use Github's API as our datastore for these lookups.
+With static site generation, things look completely different. Since we're just running the build a couple of times a day, there's absolutely no reason to worry about the latency of the API lookups, and we can happily use Github's API as our main datastore.
 
 There's an issue with the Github API, however. It doesn't give us any historical data, and we need this to draw our charts of stars, forks and issues or to indicate the traction of each static site generator.
 
@@ -216,3 +216,16 @@ end
 It's almost identical to our timer base workflow. The only difference is that instead of listening to a timer and then downloading the repo, we just listen to push events on the Github repo.
 
 Now whenever we merge in a new pull request, factor will trigger a build and the changes will go live on BitBalloon once the whole deploy has finished.
+
+
+## Final words
+
+The first version of StaticGen was (ironically) a dynamic site, and we ran into lots of problem around caching ithub API lookups and performance.
+
+Turning StaticGen into a static site made it perform at a whole other level, and leveraging Github means we have an awesome process in place for adding content and letting people contribute.
+
+The techniques we've used can be useful for just about any site that runs some kind of daily or hourly reporting.
+
+---
+Mathias Biilmann<br/>
+Founder, [BitBalloon](https://www.bitballoon.com)
