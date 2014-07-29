@@ -4,7 +4,7 @@ repo: hexojs/hexo
 homepage: http://hexo.io/
 language: JavaScript
 license: MIT
-templates: EJS
+templates: EJS, Swig
 description: 'Hexo is a fast, simple and powerful blog framework.'
 ---
 
