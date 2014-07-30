@@ -7,4 +7,6 @@ templates: Liquid
 description: A site generation tool (and then some) for .NET platforms.
 ---
 
-Graze is a static site generator. It takes a template and a configuration file and generates a static web site. The generated site is pure HTML / CSS / JavaScript and can be hosted on any web server. The Graze templates are created using the Razor Syntax.
+A simple, pluggable site generation tool for .NET developers and Windows users (with Mono support planned I think)
+
+Pretzel follows the same convensions as Jekyll and should be compatible with basic Jekyll websites. If you are not familiar with Jekyll, have a read at https://github.com/mojombo/jekyll/wiki/Usage
