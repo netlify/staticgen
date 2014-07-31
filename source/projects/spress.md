@@ -1,7 +1,7 @@
 ---
 title: Spress
 repo: spress/spress
-homepage: https://spress.yosymfony.com
+homepage: http://spress.yosymfony.com
 language: PHP
 license: MIT
 templates: Twig
