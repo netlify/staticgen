@@ -4,7 +4,7 @@ repo: middleman/middleman
 homepage: http://middlemanapp.com
 language: Ruby
 license: MIT
-templates: ERB
+templates: ERB/Tilt
 description: Hand-crafted, modern frontend development.
 ---
 

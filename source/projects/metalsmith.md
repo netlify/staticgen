@@ -4,7 +4,7 @@ repo: segmentio/metalsmith
 homepage: http://www.metalsmith.io/
 language: JavaScript
 license: MIT
-templates: Handlebars
+templates: HBS/Any JS
 description: An extremely simple, pluggable static site generator.
 ---
 

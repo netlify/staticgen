@@ -1,10 +1,10 @@
 ---
 title: Docpad
-repo: bevry/docpad
+repo: docpad/docpad
 homepage: http://docpad.org/
 language: CoffeeScript
 license: MIT
-templates: Everything
+templates: ECO/Any JS
 description: Feature rich, configurable and language agnostic.
 ---
 
