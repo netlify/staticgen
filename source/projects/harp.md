@@ -4,7 +4,7 @@ repo: sintaxi/harp
 homepage: http://harpjs.com/
 language: JavaScript
 license: MIT
-templates: EJS
+templates: EJS, Jade
 description: Harp is a static web server that can also compile your project down to static assets.
 ---
 

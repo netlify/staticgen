@@ -1,7 +1,7 @@
 ---
 title: Wheat
 repo: creationix/wheat
-homepage: https://github.com/creationix/howtonode.org
+homepage: https://github.com/creationix/wheat
 language: JavaScript
 license: MIT
 templates: Custom
