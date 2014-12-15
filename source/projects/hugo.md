@@ -1,7 +1,7 @@
 ---
 title: Hugo
 repo: spf13/hugo
-homepage: http://hugo.spf13.com/
+homepage: http://gohugo.io/
 language: Go
 license: SimPL-2.0
 templates: Go Templates
