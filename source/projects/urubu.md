@@ -15,7 +15,7 @@ practices.
 * Focus on navigation
 * Ready for Bootstrap
 * Markdown content
-* Support for wiki lines
+* Support for wiki links
 * Powerful templating with Jinja2
 * Sophisticated control
 * Built with Python
