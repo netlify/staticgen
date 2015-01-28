@@ -5,7 +5,7 @@ homepage: https://bitbucket.org/obensonne/poole/
 language: Python
 license: ?
 templates: HTML
-description: A simple, blog-aware, static site generator.
+description: A simple Markdown static site generator.
 ---
 
 Poole is an easy to use Markdown driven static website generator. You write the content of your pages in Markdown and Poole creates a nice and simple site with a navigation menu. You don't need to learn a template or preprocessing engine.
