@@ -3,7 +3,7 @@ title: Poole
 repo: obensonne/poole
 homepage: https://bitbucket.org/obensonne/poole/
 language: Python
-license: ?
+license: GPL3+
 templates: HTML
 description: A simple Markdown static site generator.
 ---
