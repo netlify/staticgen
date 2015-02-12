@@ -13,9 +13,9 @@ This post will show you all the tricks we used to take StaticGen static.
 
 ## Tools of the Trade
 
-StaticGen is built with [Middleman](/middleman), one of the most popular Ruby based static site generators. The site is hosted on [BitBalloon](https://www.bitballoon.com).
+StaticGen is built with [Middleman](/middleman), one of the most popular Ruby based static site generators. The site is hosted on [Netlify](https://www.netlify.com).
 
-All the source for StaticGen is in [this repository](https://github.com/bitballoon/staticgen) on Github, and each time we push a new commit or accept a pull request, [factor.io](https://factor.io) will run a middleman build and do a BitBalloon deploy of the generated site. Factor will also auto-deploy the site twice a day regardless of changes in the repository. We'll see why later.
+All the source for StaticGen is in [this repository](https://github.com/bitballoon/staticgen) on Github, and each time we push a new commit or accept a pull request, [Netlify](https://netlify.com) will run a middleman build and do a deploy of the generated site. Netlify will also auto-deploy the site once a day regardless of changes in the repository. We'll see why later.
 
 ## Data Sources
 
@@ -47,14 +47,15 @@ Again, since latency or write time is really not a concern, as long as it's some
 
 ## High level overview
 
-Each time we run a build of staticgen.com, Middleman will follow the following steps:
+Each time Netlify runs a build of staticgen.com, Middleman will follow the following steps:
 
 1. Get the list of projects from markdown files in the `/projects` folder
 2. Load the archive from the Gist
 3. Iterate through each project and add current stats from the Github API + historical data from archive
 4. Generate all pages
 5. Store the updated Gist archive
-6. Deploy the `/build` folder to BitBalloon
+
+Then Netlify deploys the resulting `/build` directory
 
 ## Nitty Gritty Details
 
@@ -173,59 +174,26 @@ This is generally useful technique for Middleman extensions, decorating some res
 
 In our case we add methods for accessing stars, forks and issues through the Github API and historical data through our Gist archive. I won't go into details on the Github API calls, it's pretty basic stuff.
 
-## Deploying to BitBalloon with Factor
+## Deploying to Netlify
 
 We now have a Middleman project that can get the relevant data from the Github API and generate StaticGen. Next step is to make sure StaticGen stays up to date.
 
-For this we're using [Factor](https://factor.io). They hve a nifty little DSL that you can use to string together different sources, tools and deployment options. In this case we're gonna use their cron source, their Github source, their Middleman tool and their BitBalloon deployment option.
-
-Here's the snippet we use to achieve that:
-
-```ruby
-listen 'timer','every', minutes: 60*8 do |timer_info|
-    run 'github','download_repo', username:'bitballoon', repo:'staticgen' do |repo_info|
-      run 'middleman','build', resource_id:repo_info['resource']['id'], env_vars:{'GITHUB_TOKEN'=>'...'}  do |build_info|
-        run 'bitballoon','deploy', resource_id:build_info['resource']['id'], site:'staticgen' do |deploy_info|
-          success "deploy complete with id #{deploy_info['id']}"
-        end
-      end
-    end
-end
-```
-
-It's really pretty self-explanatory. We listen to a timer that fires every 8 hours, then we download the staticgen repo from Github, run a middleman build (we set our Github API token as an environment variable), and deploy the result to BitBalloon.
-
-We now have a super fast site on the BitBalloon CDN that will keep an up-to-date index of all the most popular static site generators.
-
-## Collaboration
-
 All of StaticGen is open-source, and we're really keen on getting people to send us pull requests with new static site generators or improve our data on the ones we're currently listing. Github handles all of this for us, but we want to make sure changes go live as soon as we merge in a pull request.
 
-We solve that with another little factor workflow:
+Netlify makes it straight forward to setup continuous deployments from a Github repository and we've added our GITHUB_TOKEN as an environment variable in the Netlify backend.
 
-```ruby
-listen 'github','push', username:'bitballoon', repo:'staticgen' do |repo_info|
-  run 'middleman','build', resource_id:repo_info['resource']['id'], env_vars:{'GITHUB_TOKEN'=>'...'}  do |build_info|
-    run 'bitballoon','deploy', resource_id:build_info['resource']['id'], site:'staticgen' do |deploy_info|
-      success "deploy complete with id #{deploy_info['id']}"
-    end
-  end
-end
-```
+Now whenever we merge in a new pull request, Github will trigger a new Netlify build and the changes are live on our CDN just a few seconds later.
 
-It's almost identical to our timer base workflow. The only difference is that instead of listening to a timer and then downloading the repo, we just listen to push events on the Github repo.
-
-Now whenever we merge in a new pull request, factor will trigger a build and the changes will go live on BitBalloon once the whole deploy has finished.
-
+Netlify also lets us setup an inbound webhook we can use to let other services trigger a new build. We take advantage of this by having [Zapier's](https://zapier.com/) scheduler trigger a build once every day. That way we can make sure our statistics on stars, forks and issues stays up to day.
 
 ## Final words
 
-The first version of StaticGen was (ironically) a dynamic site, and we ran into lots of problem around caching ithub API lookups and performance.
+The first version of StaticGen was (ironically) a dynamic site, and we ran into lots of problem around caching Github API lookups and suffered from pretty abysmal performance.
 
-Turning StaticGen into a static site made it perform at a whole other level, and leveraging Github means we have an awesome process in place for adding content and letting people contribute.
+Turning StaticGen into a static site made it perform at a whole other level, and leveraging Github means we have an awesome process in place for adding content and letting people contribute. We've had more than 50 pull requesets since we launched StaticGen.
 
 The techniques we've used can be useful for just about any site that runs some kind of daily or hourly reporting.
 
 ---
 Mathias Biilmann<br/>
-Founder, [BitBalloon](https://www.bitballoon.com)
+Founder, [Netlify](https://www.netlify.com)

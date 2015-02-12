@@ -5,7 +5,7 @@ layout: page
 
 # About StaticGen
 
-StaticGen is a leaderboard of the top open-source static site generators. It's run by [BitBalloon](https://www.bitballoon.com), a hosting service for static websites, as a way to promote a static approach to building websites.
+StaticGen is a leaderboard of the top open-source static site generators. It's run by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps, as a way to promote a static approach to building websites.
 
 The site itself is built with [Middleman](http://middlemanapp.com/). Every day [Netlify](https://www.netlify.com/) builds and deploys the site. The source-code is available on [Github](https://github.com/bitballoon/staticgen) and you're more than welcome to contribute as long as you [follow the rules](/rules.html).
 

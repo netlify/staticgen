@@ -34,9 +34,9 @@ Then set these environment variables before running middleman:
 
 Then middleman will use the Gist you specified to archive stats (stars, forks and issues) for the repositories.
 
-## BitBalloon
+## Netlify
 
-StaticGen is built and maintained by [BitBalloon](https://www.bitballoon.com), a hosting service for static websites.
+StaticGen is built and maintained by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps.
 
 ## License
 This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
