@@ -1,5 +1,5 @@
 ---
-title: Asimov-Static
+title: Asimov
 repo: adamrenklint/asimov-static
 homepage: http://www.asimovjs.org/
 language: JavaScript
