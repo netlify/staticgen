@@ -10,6 +10,8 @@ description: A streaming static site generator for Gulp
 
 A tool for building static sites with Gulp. Inspired by wintersmith.
 
+Written by [William Riley-Land](http://kun.io/wprl).
+
 ### About
 
  * Parse files with or without YAML headers
