@@ -386,6 +386,9 @@ pre {
   border: 0;
   border-radius: 0;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px; /* Fix select appearance on Firefox https://gist.github.com/joaocunha/6273016/ */
+  text-overflow: '';
 }
 
 .dropdown-select:focus {
