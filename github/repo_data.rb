@@ -17,7 +17,7 @@ module Github
     end
 
     def languages
-      @languages.keys.sort {|a,b| @languages[b] <=> @languages[a] }
+      @languages.keys.sort.uniq { |language| language.downcase }
     end
 
     def manipulate_resource_list(resources)
