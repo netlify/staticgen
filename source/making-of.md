@@ -15,7 +15,7 @@ This post will show you all the tricks we used to take StaticGen static.
 
 StaticGen is built with [Middleman](/middleman), one of the most popular Ruby based static site generators. The site is hosted on [Netlify](https://www.netlify.com).
 
-All the source for StaticGen is in [this repository](https://github.com/bitballoon/staticgen) on Github, and each time we push a new commit or accept a pull request, [Netlify](https://netlify.com) will run a middleman build and do a deploy of the generated site. Netlify will also auto-deploy the site once a day regardless of changes in the repository. We'll see why later.
+All the source for StaticGen is in [this repository](https://github.com/netlify/staticgen) on Github, and each time we push a new commit or accept a pull request, [Netlify](https://netlify.com) will run a middleman build and do a deploy of the generated site. Netlify will also auto-deploy the site once a day regardless of changes in the repository. We'll see why later.
 
 ## Data Sources
 
