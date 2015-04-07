@@ -5,7 +5,7 @@ layout: page
 
 # The Rules
 
-Everybody is welcome to contribute to StaticGen, just fork the [Github repo](https://github.com/bitballoon/staticgen) and send a pull request.
+Everybody is welcome to contribute to StaticGen, just fork the [Github repo](https://github.com/netlify/staticgen) and send a pull request.
 Each static site generator is a markdown file in the `source/projects` directory.
 
 We'll only accept pull requests adding new static site generators if they follow the following rules:
