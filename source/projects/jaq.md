@@ -1,5 +1,5 @@
 ---
-title: Jekyll Asciidoc Quickstart
+title: JAQ
 repo: asciidoctor/jekyll-asciidoc-quickstart
 homepage: https://github.com/asciidoctor/jekyll-asciidoc-quickstart
 language: Ruby
