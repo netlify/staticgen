@@ -2,7 +2,7 @@
 title: Silex
 repo: silexlabs/Silex
 homepage: http://www.silex.me
-language: Javascript (ES6 and node.js)
+language: Javascript
 license: GPL
 templates: HTML/CSS
 description: A drag and drop editor mixed with an online CSS editor
