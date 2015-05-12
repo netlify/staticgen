@@ -1,27 +1,61 @@
 <% wrap_layout :layout do %>
   <%= partial "includes/navbar" %>
 
-  <div class="main">
+  <div class="main subpage">
+    <h1><%= current_page.title %></h1>
     <div class="sheet">
-      <h1><%= current_page.title %></h1>
-      <div class="links">
-        <a href="<%= current_page.homepage %>"><i class="fa fa-home"></i> <%= current_page.homepage %></a>
-        <span class="separator">|</span>
-        <a href="https://github.com/<%= current_page.repo %>"><i class="fa fa-github"></i> https://github.com/<%= current_page.repo %></a>
-      </div>
 
-
-      <div class="text">
+      <div class="left-side">
+        <div class="links">
+          <a href="<%= current_page.homepage %>" target="_blank"><i class="fa fa-home"></i> <%= current_page.homepage %></a>
+          <span class="separator">|</span>
+          <a href="https://github.com/<%= current_page.repo %>" target="_blank"><i class="fa fa-github"></i> https://github.com/<%= current_page.repo %></a>
+        </div>
 
         <%= yield %>
-
         <%= partial "includes/disqus" %>
 
       </div>
-      <div class="charts">
-        <div id="stars-chart" class="chart"></div>
-        <div id="forks-chart" class="chart"></div>
-        <div id="issues-chart" class="chart"></div>
+      <div class="right-side">
+        <div class="github-stats box">
+        <h4>GITHUB STATS</h4>
+            <ul class="stats">
+              <li title="Stars">
+                <i class="fa fa-star"></i>
+                <span class="stat"><%= current_page.stars %></span>
+              </li>
+              <li title="Forks">
+                <i class="fa fa-code-fork"></i>
+                <span class="stat"><%= current_page.forks %></span>
+              </li>
+              <li title="Open Issues">
+                <i class="fa fa-bug"></i>
+                <span class="stat"><%= current_page.issues %></span>
+              </li>
+            </ul>
+        </div>
+        <div class="installation box">
+            <h4>INSTALLATION</h4>
+                <div class="buttons">
+                    <a href="https://github.com/<%= current_page.repo %>/releases/latest" target="_blank" class="btn blue">Download on GitHub</a>
+                    <a href="<%= current_page.examples %>" target="_blank" class="btn red">See examples</a>
+                </div>
+            <dl>
+                <dt>License:</dt>
+                <dd><%= current_page.license %></dd>
+
+                <dt>Author:</dt>
+                <dd><%= current_page.author %></dd>
+            </dl>
+        </div>
+        <div class="charts box">
+            <h4>TRENDS</h4>
+            <div class="graphs">
+                <div id="stars-chart" class="chart"></div>
+                <div id="forks-chart" class="chart"></div>
+                <div id="issues-chart" class="chart"></div>
+            </div>
+        </div>
       </div>
     </div>
   </div>

@@ -7,50 +7,60 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title ? current_page.data.title + " - StaticGen" : "StaticGen - Open Source Static Site Generators" %></title>
+    <title><%= current_page.data.title ? current_page.data.title + " - JSpreadsheets" : "JSpreadsheets - Top Open-Source Spreadsheets and Data Grids written in JavaScript" %></title>
 
-    <meta name="description" content="StaticGen is a leaderboard of the top open-source static site generators. Promoting a static approach to building websites." />
+    <meta name="description" content="JSpreadsheets compiles top open-source spreadsheets and data grids written in JavaScript. It helps you choose the most suitable component for your project." />
 
     <!-- Twitter Card data -->
-    <meta name="twitter:card" value="StaticGen is a leaderboard of the top open-source static site generators. Promoting a static approach to websites.">
+    <meta name="twitter:card" value="JSpreadsheets compiles top open-source spreadsheets and data grids written in JavaScript.">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="StaticGen" />
+    <meta property="og:title" content="JSpreadsheets" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.staticgen.com/" />
-    <meta property="og:image" content="https://www.staticgen.com/images/staticgen.png" />
-    <meta property="og:description" content="StaticGen is a leaderboard of the top open-source static site generators. Promoting a static approach to building websites." />
+    <meta property="og:url" content="https://www.jspreadsheets.com/" />
+    <meta property="og:image" content="https://www.jspreadsheets.com/images/jspreadsheets-logo.png" />
+    <meta property="og:description" content="JSpreadsheets compiles top open-source spreadsheets and data grids written in JavaScript. It helps you choose the most suitable component for your project." />
 
     <!-- Font Awesome -->
     <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <!-- Roboto + Roboto Slab -->
-    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
+    <!-- Lato font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
     <!-- StaticGen styles -->
     <%= stylesheet_link_tag "normalize", "syntax", "all" %>
   </head>
 
   <body>
+
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MM9XG2"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MM9XG2');</script>
+  <!-- End Google Tag Manager -->
+
     <div class="hero">
-      <h1>
-        <a href="/" class="logo">StaticGen</a><br/>
-      </h1>
-      <h2>Top Open-Source Static Site Generators</h2>
-
-      <div id="share-button-top" class='share-button share-button-top'></div>
-
-      <a href="https://github.com/netlify/staticgen"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+      <div class="logo-group">
+        <a href="/" class="logo">JSpreadsheets</a>
+        <a href="http://handsoncode.net" target="_blank" class="author-top">
+            <img src="/images/handsoncode-logo-top.png" alt="Brought to you by Handsoncode" />
+        </a>
+      </div>
+      <h1>Open-Source Spreadsheets and Data Grids</h1>
     </div>
     <%= yield %>
     <div class="footer">
       <div class="footer-container">
-        <h3>StaticGen is hosted and maintained by <a href="https://www.netlify.com">Netlify</a>, the perfect way to deploy your static sites and apps.</h3>
+        <h3>This site is brought to you by Handsoncode. <a href="http://handsoncode.net" target="_blank">We are available to hire</a></h3>
       </div>
       <div class="postscript">
-        StaticGen was last deployed by <a href="https://www.netlify.com">netlify.com</a> on <strong><%= Time.now.utc.strftime("%B %-d, %Y") %></strong> at <strong><%= Time.now.utc.strftime("%k:%M") %> UTC</strong>.<br/>
-        &copy; Netlify <%= Time.now.year %>
+        <p>This project is based on a great piece of code written by
+        <a href="http://netlify.com" target="_blank">Netlify</a> and
+        <a href="https://github.com/netlify/staticgen" target="_blank">released on GitHub</p>
       </div>
     </div>
 
@@ -58,5 +68,8 @@
 
     <!-- Page specific scripts -->
     <%= yield_content :scripts %>
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-555261a702d1c974" async="async"></script>
+
   </body>
 </html>
