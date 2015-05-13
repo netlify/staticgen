@@ -1,0 +1,27 @@
+{
+  "name": "JSpreadsheets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open-Source Spreadsheets and Data Grids",
+  "main": "shipitfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krzysztofspilka/staticgen.git"
+  },
+  "keywords": [
+    "grids",
+    "spreadsheets"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krzysztofspilka/staticgen/issues"
+  },
+  "homepage": "https://github.com/krzysztofspilka/staticgen",
+  "devDependencies": {
+    "shipit-deploy": "^1.3.1"
+  }
+}

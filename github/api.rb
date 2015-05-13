@@ -7,7 +7,7 @@ module Github
       :get => Net::HTTP::Get,
       :patch => Net::HTTP::Patch
     }
-    GIST_ID = "3c9829b24df3aafef582"
+    GIST_ID = "ded53bcee031f83e3638"
 
     class << self
       attr_accessor :bulk_update

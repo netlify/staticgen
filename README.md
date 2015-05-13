@@ -1,6 +1,6 @@
 # JSpreadsheets
 
-[StaticGen.com](http://www.jspreadsheets.com), a list of top open source spreadsheets and data grids written in JavaScript.
+[JSpreadsheets.com](http://www.jspreadsheets.com), a list of top open source spreadsheets and data grids written in JavaScript.
 
 ## Copyrights
 
