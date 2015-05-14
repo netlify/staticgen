@@ -90,6 +90,22 @@ pre {
     border: 1px solid #000;
 }
 
+/* clearfix */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+.clearfix {
+  display: block;
+}
+/* end: clearfix */
+
 .logo-group {
     width: 470px;
     margin: 0 auto;
@@ -644,14 +660,56 @@ a.logo:hover {
 }
 
 @media all and (max-width: 499px) {
-    .project {
-        display: block;
-        width: 100%;
-    }
-
-    .projects {
-        margin-right: 0;
-    }
+  .hero h1 {
+    margin: 50px 0 0;
+    padding: 0 20px;
+    font-size: 32px;
+  }
+  .project {
+      display: block;
+      width: 100%;
+  }
+  .projects {
+      margin-right: 0;
+  }
+  .logo-group {
+    width: 100%;
+  }
+  .logo-group .author-top {
+    display: none;
+   }
+   .navbar {
+   }
+   .navbar .container {
+     text-align: center;
+   }
+  .navbar .right-menu a {
+     padding: 0 20px;
+  }
+  .left-side, .right-side {
+    width: 100%;
+    float: none;
+  }
+  .subpage h1 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .left-side .links {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .left-side .links a {
+    display: block;
+  }
+  .left-side .links .separator {
+    display: none;
+  }
+  .footer h3 a {
+    margin-top: 20px;
+    display: block;
+    font-size: 20px;
+  }
 }
 
 @media all and (min-width: 500px) {
