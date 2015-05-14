@@ -1,4 +1,6 @@
 
+var copyObject = require('copy-object');
+
 module.exports = function (shipit) {
   require('shipit-deploy')(shipit);
 
@@ -15,13 +17,13 @@ module.exports = function (shipit) {
 
   shipit.initConfig({
     production: (function() {
-      config = Object.create(null, config);
+      config = copyObject(config);
       config.deployTo = '/home/httpd/jspreadsheets.com';
 
       return config;
     }()),
     development: (function() {
-      config = Object.create(null, config);
+      config = copyObject(config);
       config.deployTo = '/home/httpd/dev.jspreadsheets.com';
 
       return config;
@@ -29,7 +31,7 @@ module.exports = function (shipit) {
   });
 
   shipit.task('test', function() {
-    shipit.remote('echo $LUAJIT_LIB');
+    shipit.remote('pwd');
   });
 
   shipit.on('published', function() {
