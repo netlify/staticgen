@@ -90,7 +90,7 @@ module Github
       end
 
       def fetch_last_commit(repo)
-        api_request("https://api.github.com/repos/#{repo}/commits/master?per_page=1")
+        api_request("https://api.github.com/repos/#{repo}/commits?per_page=1")
       end
 
       def fetch_archive
