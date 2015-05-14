@@ -15,7 +15,7 @@ $(function() {
     }
   });
 
-  $(".navbar").pin()
+  $(".navbar").pin();
 
   var sortAscending = {title: true};
 
@@ -25,18 +25,21 @@ $(function() {
       stars: "[data-stars] parseInt",
       forks: "[data-forks] parseInt",
       issues: "[data-issues] parseInt",
-      language: "[data-language]",
       title: "[data-title]"
     }
   });
 
   $("select[name='filter']").change(function(e) {
-    console.log("Filter by: %o", $(this).val());
     $(".projects").isotope({filter: $(this).val().replace(/^\.lang-\./, '.lang-')});
   });
 
   $("select[name='sort']").change(function(e) {
     var val = $(this).val();
-    $(".projects").isotope({sortBy: val, sortAscending: sortAscending[val] || false});
+
+    $(".projects").isotope({
+      sortBy: val,
+      itemSelector: '.project',
+      sortAscending: sortAscending[val] || false
+    });
   });
 });

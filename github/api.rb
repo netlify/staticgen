@@ -56,6 +56,7 @@ module Github
 
       def repo_from_api(repo)
         puts repo
+        sleep(5)
         JSON.parse(fetch_repo(repo)).with_indifferent_access.tap do |data|
           cache["archive"] ||= {}
           cache["archive"][repo] ||= {}
@@ -71,11 +72,11 @@ module Github
             "network_count" => data["network_count"],
             "subscribers_count" => data["subscribers_count"]
           }
-          #JSON.parse(fetch_pulls(repo)).with_indifferent_access.tap do |data|
-          #  cache["archive"][repo][today.to_s]["open_issues_count"] = cache["archive"][repo][today.to_s]["open_issues_count"] - data["total_count"]
-          #  cache["archive"][repo][today.to_s]["open_issues"] = cache["archive"][repo][today.to_s]["open_issues"] - data["total_count"]
-          #  cache["updated"] = true
-          #end
+          JSON.parse(fetch_pulls(repo)).with_indifferent_access.tap do |data|
+            cache["archive"][repo][today.to_s]["open_issues_count"] = cache["archive"][repo][today.to_s]["open_issues_count"] - data["total_count"]
+            cache["archive"][repo][today.to_s]["open_issues"] = cache["archive"][repo][today.to_s]["open_issues"] - data["total_count"]
+            cache["updated"] = true
+          end
           cache["updated"] = true
         end
       end
