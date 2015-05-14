@@ -66,13 +66,13 @@ dl dt, dl dd {
 
 dl dt {
     float: left;
-    width: 30%;
+    width: 40%;
     clear: left;
 }
 
 dl dd {
     float: left;
-    width: 70%;
+    width: 60%;
 }
 
 h2 a, h2 a:link, h2 a:visited, h2 a:active, h2 a:hover {
@@ -442,10 +442,10 @@ a.logo:hover {
     font-size: 14px;
 }
 .installation dl dt {
-    width: 24%;
+    width: 34%;
 }
 .installation dl dd {
-    width: 76%;
+    width: 66%;
 }
 .graphs {
     margin-top: 20px;
