@@ -55,26 +55,32 @@ module Github
       end
 
       def repo_from_api(repo)
+        puts repo
         JSON.parse(fetch_repo(repo)).with_indifferent_access.tap do |data|
-          unless repo_from_archive(repo)
-            cache["archive"] ||= {}
-            cache["archive"][repo] ||= {}
-            cache["archive"][repo][today.to_s] = {
-              "size" => data["size"],
-              "stargazers_count" => data["stargazers_count"],
-              "watchers_count" => data["watchers_count"],
-              "forks_count" => data["forks_count"],
-              "open_issues_count" => data["open_issues_count"],
-              "forks" => data["forks"],
-              "open_issues" => data["open_issues"],
-              "watchers" => data["watchers"],
-              "network_count" => data["network_count"],
-              "subscribers_count" => data["subscribers_count"]
-            }
+          cache["archive"] ||= {}
+          cache["archive"][repo] ||= {}
+          cache["archive"][repo][today.to_s] = {
+            "size" => data["size"],
+            "stargazers_count" => data["stargazers_count"],
+            "watchers_count" => data["watchers_count"],
+            "forks_count" => data["forks_count"],
+            "open_issues_count" => data["open_issues_count"],
+            "forks" => data["forks"],
+            "open_issues" => data["open_issues"],
+            "watchers" => data["watchers"],
+            "network_count" => data["network_count"],
+            "subscribers_count" => data["subscribers_count"]
+          }
+          JSON.parse(fetch_pulls(repo)).with_indifferent_access.tap do |data|
+            cache["archive"][repo][today.to_s]["open_issues_count"] = cache["archive"][repo][today.to_s]["open_issues_count"] - data["total_count"]
+            cache["archive"][repo][today.to_s]["open_issues"] = cache["archive"][repo][today.to_s]["open_issues"] - data["total_count"]
             cache["updated"] = true
-            store_cache!
           end
         end
+      end
+
+      def fetch_pulls(repo)
+        api_request("https://api.github.com/search/issues?q=repo:#{repo}%20type:pr%20state:open")
       end
 
       def fetch_archive
@@ -96,7 +102,7 @@ module Github
 
       def api_request(url, options = {})
         uri = URI.parse(url)
-        req = METHODS[options[:method] || :get].new(uri.path)
+        req = METHODS[options[:method] || :get].new(uri)
         req['Authorization'] = "token #{ENV["GITHUB_TOKEN"]}" if ENV["GITHUB_TOKEN"]
 
         if options[:body]
