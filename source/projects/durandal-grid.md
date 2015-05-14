@@ -22,7 +22,7 @@ This is the simplest possible setup. An array of objects is supplied with no con
 
 Sometimes you don't want any configuration and you just want the grid to bind against the simplest possibly data. In these cases you can either pass just the rows of data you want to show, letting the widget figure out everything else, or pass your data with a list of property-name-only columns. In either case it is still necessary that the configuration be an object with at the very least a data property.
 
-#### Adcanced configuration
+#### Advanced configuration
 
 In advanced scenarios, you will need more control over Durandal Grid's HTML. The following data-parts are available to be overriden:
 

@@ -11,7 +11,7 @@ technology: Vanilla JS
 leading technology: n/a
 author: Tesseris Pro
 authorurl: http://www.tesseris.com/
-description: HTML5 ready fully functional grid with Knockout.JS and AngularJS support
+description: HTML5 ready fully functional grid with Knockout.JS and AngularJS support.
 ---
 
 TypeScript, AngularJS and Knockout compatible, fully customizable grid with rich functionality.

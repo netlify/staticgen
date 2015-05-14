@@ -11,10 +11,10 @@ technology: AngularJS
 leading technology: AngularJS
 author: RENARD Laurent
 authorurl: https://lorenzofox3.github.io/resume/
-description: Code source of Smart Table module - a table/grid for AngularJSjs.
+description: Code source of Smart Table module - a table/grid for AngularJS.
 ---
 
-Smart table is a table module for angular js. It allows you to quickly compose your table in a declarative way including sorting, filtering, row selection pagination. It is lightweight (around 3kb minified) and has no other dependencies than AngularJS itself. Check the documentation website for more details.
+Smart table is a table module for angularJS. It allows you to quickly compose your table in a declarative way including sorting, filtering, row selection pagination. It is lightweight (around 3kb minified) and has no other dependencies than AngularJS itself. Check the documentation website for more details.
 
 ### Custom builds
 

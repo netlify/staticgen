@@ -4,6 +4,7 @@ repo: handsontable/handsontable
 homepage: http://handsontable.com
 examples: http://handsontable.com/examples.html
 license: MIT
+bower: handsontable
 technology: Vanilla JS
 author: Handsoncode
 authorurl: http://handsoncode.net
@@ -40,7 +41,7 @@ It all started in 2012 as Marcin Warpechowski's  private project. He aimed to ha
 * Conditional formatting
 * Custom borders
 * Formula support
-* Suport mobiles and tablets
+* Support mobiles and tablets
 * Context menu
 * Custom buttons
 * Comments

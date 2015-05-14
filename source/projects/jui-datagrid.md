@@ -11,7 +11,7 @@ technology: jquery, jquery-ui, jui_dropdown, jui_pagination, jui_filter_rules pl
 leading technology: jQury
 author: Christos Pontikis
 authorurl: http://www.pontikis.net/
-description: jQuery datagrid plugin using jQuery UI CSS Framework
+description: jQuery datagrid plugin using jQuery UI CSS Framework.
 ---
 
 jui_datagrid is an Ajax-enabled jQuery plugin, useful to manipulate database data in tabular format.

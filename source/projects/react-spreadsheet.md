@@ -11,7 +11,7 @@ technology: React
 leading technology: React
 author: Carlos Villuendas
 authorurl: http://carlosvillu.com/
-description: Spreadsheet as a reactJS component.
+description: Spreadsheet as a ReactJS component.
 ---
 
 The goal of this project is to build an online spreadsheet. It is a 40x40 grid with editable cells. Cells adapt to the data entered by the user.

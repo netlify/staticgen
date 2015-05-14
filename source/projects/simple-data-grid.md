@@ -14,7 +14,7 @@ authorurl: https://nl.linkedin.com/pub/marco-braak/94/389/694
 description: Simple-data-grid is a datagrid widget.
 ---
 
-Simple-data-grid is written in Coffeescript and it supports:
+Simple-data-grid is written in CoffeeScript and it supports:
 
 * Internet Explorer 7+
 * Firefox 3.6+ 

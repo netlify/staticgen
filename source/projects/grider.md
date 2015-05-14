@@ -11,7 +11,7 @@ technology: jQuery
 leading technology: jQuery
 author: Boris Barroso
 authorurl: https://github.com/boriscy
-description: jQuery plugin to enable calculations and modifications in a table
+description: jQuery plugin to enable calculations and modifications in a table.
 ---
 
 Grider is a plugin for jQuery that makes your life easier when you need to edit or create

@@ -41,14 +41,14 @@
                     <a href="<%= current_page.examples %>" target="_blank" class="btn red">See examples</a>
                 </div>
             <dl>
-                <dt>Last update:</dt>
-                <dd></dd>
-
                 <dt>License:</dt>
                 <dd><%= current_page.license %></dd>
 
                 <dt>Author:</dt>
                 <dd><%= current_page.author %></dd>
+
+                <dt>Last update:</dt>
+                <dd><%= current_page.last_commit.to_time.strftime('%d.%m.%G') %></dd>
             </dl>
         </div>
         <div class="charts box">

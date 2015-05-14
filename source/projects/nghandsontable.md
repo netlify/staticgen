@@ -11,7 +11,7 @@ technology: AngularJS
 leading technology: AngularJS
 author: Handsoncode
 authorurl: http://handsoncode.net
-description: AngularJSJS directive for Handsontable.
+description: AngularJS directive for Handsontable.
 ---
 
 ngHandsontable is the AngularJS version of the Handsontable data grid. The main directive for ngHandsontable is hot-table.

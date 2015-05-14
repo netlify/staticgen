@@ -23,7 +23,7 @@ title: Top Open-Source Static Site Generators
             <dd><%= project.author %></dd>
 
             <dt>Last update:</dt>
-            <dd></dd>
+            <dd><%= project.last_commit.to_time.strftime('%d.%m.%G') %></dd>
           </dl>
             <ul class="stats">
               <li title="Stars">
