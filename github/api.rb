@@ -64,7 +64,6 @@ module Github
             "size" => data["size"],
             "stargazers_count" => data["stargazers_count"],
             "watchers_count" => data["watchers_count"],
-            "pushed_at" => data["pushed_at"],
             "forks_count" => data["forks_count"],
             "open_issues_count" => data["open_issues_count"],
             "forks" => data["forks"],
@@ -76,14 +75,22 @@ module Github
           JSON.parse(fetch_pulls(repo)).with_indifferent_access.tap do |data|
             cache["archive"][repo][today.to_s]["open_issues_count"] = cache["archive"][repo][today.to_s]["open_issues_count"] - data["total_count"]
             cache["archive"][repo][today.to_s]["open_issues"] = cache["archive"][repo][today.to_s]["open_issues"] - data["total_count"]
-            cache["updated"] = true
+
+            JSON.parse(fetch_last_commit(repo)).with_indifferent_access.tap do |data|
+              cache["archive"][repo][today.to_s]["last_commit"] = data["commit"]["author"]["date"]
+              cache["updated"] = true
+            end
           end
-          cache["updated"] = true
+          #cache["updated"] = true
         end
       end
 
       def fetch_pulls(repo)
         api_request("https://api.github.com/search/issues?q=repo:#{repo}%20type:pr%20state:open")
+      end
+
+      def fetch_last_commit(repo)
+        api_request("https://api.github.com/repos/#{repo}/commits/master?per_page=1")
       end
 
       def fetch_archive
