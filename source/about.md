@@ -5,11 +5,10 @@ layout: page
 
 # About JSpreadsheets
 
-JSpreadsheets is a ...
-It's was first created by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps, as a way to promote a static approach to building websites.
+**[JSpreadsheets](http://jspreadsheets.com)** comprises the most popular open source spreadsheets and data grids written in JavaScript. Data grids are mostly created to display data while spreadsheets allow to edit data and make complicated calculations. The latter are also much more flexible when it comes to configuring and altering the source of data.
 
-The site itself is built with [Middleman](http://middlemanapp.com/).
+At **[Handsoncode](http://handsoncode.net)**, we believe that today's world relies on data. More and more companies are becoming data-driven as they noticed that the plain luck is not sufficient to provide a stable, long-term growth. There is a high demand for effective front-end components, like charts or grids, that handle thousands of single data-points. That's why we gathered the most popular and widely used JavaScript libraries in one place as we think it may be useful when choosing the right library for your next project.
 
-#### Why spreasheets?
+#### Contributing
 
-text
+If you would like us to add a new project to JSpreadsheets, see **[Submit new](http://jspreadsheets.com/submit-new.html)** section for more details.

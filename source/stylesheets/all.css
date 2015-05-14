@@ -473,7 +473,13 @@ a.logo:hover {
 .static h4 {
     margin: 30px 0 10px;
 }
-
+.static p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+.static p a {
+    color: #ef2b43;
+}
 .footer {
     background: #d6d6d6;
     margin: 46px 0 0;
