@@ -64,6 +64,7 @@ module Github
             "size" => data["size"],
             "stargazers_count" => data["stargazers_count"],
             "watchers_count" => data["watchers_count"],
+            "pushed_at" => data["pushed_at"],
             "forks_count" => data["forks_count"],
             "open_issues_count" => data["open_issues_count"],
             "forks" => data["forks"],

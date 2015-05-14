@@ -14,7 +14,7 @@ authorurl: https://angular-ui.github.io/
 description: UI Grid - AngularJS Data Grid.
 ---
 
-A data grid for AngularJS, part of the AngularJSUI suite with:
+A data grid for AngularJS, part of the AngularUI for AngularJS suite with:
 
 * native AngularJS implementation, no jQuery,
 * performs well with large data sets; even 10,000+ rows,

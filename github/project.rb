@@ -18,6 +18,10 @@ module Github
       repo_data[:open_issues]
     end
 
+    def pushed_at
+      repo_data[:pushed_at]
+    end
+
     def stars_last_week
       last_week.stars
     end

@@ -11,7 +11,7 @@ technology: Polymer
 leading technology: Polymer
 author: Handsoncode
 authorurl: http://handsoncode.net
-description: Polymer Element wrapper for Handsontable data grid editor
+description: Polymer Element wrapper for Handsontable data grid editor.
 ---
 
 Polymer Element wrapper for Handsontable data grid editor
