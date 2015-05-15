@@ -11,7 +11,7 @@ module.exports = function (shipit) {
       repositoryUrl: 'https://github.com/krzysztofspilka/staticgen.git',
       ignores: ['.git', 'node_modules'],
       rsync: ['--force', '--delete', '--delete-excluded', '-I', '--stats', '--chmod=ug=rwX'],
-      keepReleases: 3,
+      keepReleases: 5,
       shallowClone: false
     };
 
@@ -34,12 +34,20 @@ module.exports = function (shipit) {
     shipit.remote('pwd');
   });
 
-  shipit.on('published', function() {
-    var current = shipit.config.deployTo + '/current';
+  shipit.blTask('deploy', [
+    'deploy:init',
+    'deploy:fetch',
+    'deploy:update'
+  ]);
 
-    shipit.remote('cd ' + current + ' && bundle install --path=vendor').then(function() {
-      return shipit.remote('cd ' + current + ' && bundle exec middleman build');
+  shipit.on('updated', function() {
+    var path = shipit.releasePath;
 
+    shipit.remote('cd ' + path + ' && bundle install --path=vendor').then(function() {
+      return shipit.remote('cd ' + path + ' && bundle exec middleman build');
+
+    }).then(function() {
+      shipit.start(['deploy:publish', 'deploy:clean']);
     });
   });
 };
