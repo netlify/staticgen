@@ -76,7 +76,7 @@ module Github
             cache["archive"][repo][today.to_s]["open_issues_count"] = cache["archive"][repo][today.to_s]["open_issues_count"] - data["total_count"]
             cache["archive"][repo][today.to_s]["open_issues"] = cache["archive"][repo][today.to_s]["open_issues"] - data["total_count"]
 
-            JSON.parse(fetch_last_commit(repo)).with_indifferent_access.tap do |data|
+            JSON.parse(fetch_last_commit(repo))[0].with_indifferent_access.tap do |data|
               cache["archive"][repo][today.to_s]["last_commit"] = data["commit"]["author"]["date"]
               cache["updated"] = true
             end
