@@ -16,6 +16,6 @@ description: Code source of Smart Table module - a table/grid for AngularJS.
 
 Smart table is a table module for angularJS. It allows you to quickly compose your table in a declarative way including sorting, filtering, row selection pagination. It is lightweight (around 3kb minified) and has no other dependencies than AngularJS itself. Check the documentation website for more details.
 
-### Custom builds
+#### Custom builds
 
 smart-table is based around a main directive which generate a top level controller whose API can be accessed by sub directives (plugins), if you don't need some of these, simply edit the gulpfile (the pluginList variable) and run gulp build.

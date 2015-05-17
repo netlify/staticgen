@@ -16,7 +16,7 @@ description: Light weight but advanced data grid for AngularJS.
 
 Angular Grid is the first high performance and feature rich data grid for AngularJS. Light weight, minimal footprint, no external dependencies.
 
-## Features:
+#### Features:
 
 * Sorting
 * Filtering

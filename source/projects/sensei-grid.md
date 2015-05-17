@@ -18,7 +18,7 @@ Simple data grid library written in JavaScript. The data grid is part of Datazen
 
 Currently not intended for production use. This is the first public release, and the project is currently under active development.
 
-### Goals
+#### Goals
 
 * Simplicity: Sensei Grid will be a single purpose data grid without unrelated functionality.
 * Small code base: Bloatware and dirty workarounds/hacks will be avoided as much as possible to keep the code base small and tidy.

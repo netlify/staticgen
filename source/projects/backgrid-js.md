@@ -16,7 +16,7 @@ description: Easily stylable semantic HTML data grid widget.
 
 Backgrid.js is a set of components for building semantic and easily stylable data grid widgets. It offers a simple, intuitive programming interface that makes easy things easy, but hard things possible when dealing with tabular data.
 
-## Supported browsers:
+#### Supported browsers:
 
 * Internet Explorer 8
 * Internet Exploror 9+

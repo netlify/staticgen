@@ -73,6 +73,9 @@ dl dt {
 dl dd {
     float: left;
     width: 60%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 h2 a, h2 a:link, h2 a:visited, h2 a:active, h2 a:hover {
@@ -218,7 +221,7 @@ a.logo:hover {
 .links a {
     text-decoration: none;
     color: #666;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .links a:hover {

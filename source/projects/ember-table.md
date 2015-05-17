@@ -17,7 +17,7 @@ description: A table built using Ember.js that lazily renders rows.
 Ember table allows you to render very large data sets by only rendering the rows that are being displayed.
 It is written as an ember component with an API that is easy to understand and extend.
 
-### What Ember Tables offers:
+#### What Ember Tables offers:
 
 * Lazy rendering and support for millions of rows
 * Support for column resizing and reordering
