@@ -27,9 +27,9 @@ When building a dynamic site, we're always forced to focus on latency and query 
 
 With a static site, these concerns basically go away, as long as fetching the data can be done in a reasonable amount of time when running a build.
 
-The structure of the Github API, means we have to make at least 1 call to the Github API for each static site generator when generating our index listing of all the generators (to get the number of starts, forks and issues).
+The structure of the Github API, means we have to make at least 1 call to the Github API for each static site generator when generating our index listing of all the generators (to get the number of stars, forks and issues).
 
-If we were building a dynamic site, we would be forced to come up with a very effective caching layer or have to run cron-jobs in the background keeping our low-latency datastore in synch with the Github API, since doing 50+ API request while rendering the page would be out of the question.
+If we were building a dynamic site, we would be forced to come up with a very effective caching layer or have to run cron-jobs in the background keeping our low-latency datastore in sync with the Github API, since doing 50+ API request while rendering the page would be out of the question.
 
 With static site generation, things look completely different. Since we're just running the build a couple of times a day, there's absolutely no reason to worry about the latency of the API lookups, and we can happily use Github's API as our main datastore.
 
@@ -41,7 +41,7 @@ To keep these historical data around, we'll need a datastore we can write too as
 
 Enter Gist! Since we already need some Github API credentials to work with the Github API, we can take advantage of that to keep a really simple key value store around.
 
-When we start the build, we read a JSON document from a Gist with all the historical data we already have on the static site generators. Whenever we fetch new data from the Github API for a project, we add it to our in-memory archive, and once the built is done, we write a new version of our JSON archive to the Gist.
+When we start the build, we read a JSON document from a Gist with all the historical data we already have on the static site generators. Whenever we fetch new data from the Github API for a project, we add it to our in-memory archive, and once the build is done, we write a new version of our JSON archive to the Gist.
 
 Again, since latency or write time is really not a concern, as long as it's something reasonable for a build cycle, we can go for stupidly simple solutions. All of our StaticGen history can be found in [this gist](https://gist.github.com/biilmann/db8c50bf9fb8d0c0284b).
 
