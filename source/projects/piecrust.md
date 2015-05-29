@@ -1,16 +1,16 @@
 ---
-title: PieCrust
-repo: ludovicchabant/PieCrust
+title: PieCrust2
+repo: ludovicchabant/PieCrust2
 homepage: http://bolt80.com/piecrust
-language: PHP
+language: Python
 license: Apache
-templates: Twig, Mustache
-description: PieCrust is a static website generator
+templates: Jinja
+description: PieCrust is a static website generator and flat-file CMS
 ---
 
-PieCrust is a static website generator that’s all managed with text files. No
-complex setup, databases, or administrative panels. Simple, beautiful, and
-yummy.
+PieCrust is a static website generator and flat-file CMS. No complex setup,
+databases, or administrative panels  its all text files. Simple, beautiful,
+and yummy.
 
 PieCrust makes creating and maintaining a website as easy as pie:
 
@@ -24,7 +24,5 @@ PieCrust makes creating and maintaining a website as easy as pie:
 PieCrust uses all the ingredients you already like:
 
 - Markdown and Textile for formatting.
-- Twig (a Jinja/Django-like templating engine) and Mustache for writing layouts
-  and re-usable bits of markup.
+- Jinja for writing layouts and re-usable bits of markup.
 - Less, Sass and Compass for your CSS needs.
-- YUICompressor for optimization.
