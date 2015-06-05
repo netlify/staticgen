@@ -11,7 +11,7 @@ technology: cssify, dataframe, envify, lodash, react, reactify, wildemitter, xte
 leading technology: React
 author: David Guttman
 authorurl: http://davidguttman.com/
-description: Data-grid component using jQuery.
+description: Data-grid component with pivot-table-like functionality for data display, filtering, and exploration. Can be used without React.
 ---
 
 ReactPivot is a data-grid component with pivot-table-like functionality for data display, filtering, and exploration. Can be used without React.
