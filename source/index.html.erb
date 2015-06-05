@@ -14,7 +14,7 @@ title: JSpreadsheets
         <div class="card">
           <h4 class="title"><a href="<%= project.url %>"><%= project.title %></a></h4>
           <h6 class="url"><a href="<%= project.homepage %>" target="_blank"><%= project.homepage.sub(/^https?:\/\//, '') %></a></small></h6>
-          <div class="description"><%= project.description %></div>
+          <div class="description"><%= project.description.length > 90 ? project.description[0..90] << '...' : project.description %></div>
           <dl>
             <dt>License:</dt>
             <dd><%= project.license %></dd>
@@ -23,7 +23,7 @@ title: JSpreadsheets
             <dd><%= project.author %></dd>
 
             <dt>Last update:</dt>
-            <dd><%= project.last_commit.to_time.strftime('%d.%m.%G') %></dd>
+            <dd><%= project.last_commit ? project.last_commit.to_time.strftime('%d.%m.%G') : 'N/A' %></dd>
           </dl>
             <ul class="stats">
               <li title="Stars">
