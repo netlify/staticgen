@@ -2,8 +2,8 @@
 title: React-Data-Grid
 repo: adazzle/react-data-grid
 direct: https://github.com/adazzle/react-data-grid
-homepage: https://github.com/davidguttman/react-pivot
-examples: http://davidguttman.github.io/react-pivot
+homepage: http://adazzle.github.io/react-data-grid/
+examples: http://adazzle.github.io/react-data-grid/examples.html#/basic
 license: MIT
 bower: n/a
 npm: react-pivot
