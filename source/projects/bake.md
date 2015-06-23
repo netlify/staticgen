@@ -4,7 +4,7 @@ repo: felipetavares/bake
 homepage: http://ctrl-c.club/~philips/90s/
 language: C++
 license: Do What The Fuck You Want Public License V2
-templates: {vars}
+templates: \{vars\}
 description: The blogging tool for minimalists & make lovers.
 ---
 
