@@ -8,7 +8,7 @@ templates: Razor, Markdown
 description: A simple to use, highly modular, and extremely configurable static content generator.
 ---
 
-Wyam is different. It's not a Jekyll clone (not that there's anything wrong with that) and it's not designed around blogs (though it's great at those too). Wyam is a static content generator and can be used to generate web sites, produce documentation, create ebooks, and much more. Since everything is configured by chaining together flexible modules (that you can even write yourself), the only limits to what it can create are your imagination.
+Wyam is a static content generator and can be used to generate web sites, produce documentation, create ebooks, and much more. Since everything is configured by chaining together flexible modules (that you can even write yourself), the only limits to what it can create are your imagination.
 
 # Features
 
