@@ -12,4 +12,4 @@ Scalatic is a simple, blog-aware, static site generator perfect for personal, pr
 
 ### Philosophy
 
-Scalatic has been created with simplicity in mind: all you need to do is get the [executable .JAR](https://github.com/padurean/scalatic/releases) and run it using `java -jar scalatic-X.X.X.jar`. The only parameter required is the path to your blog source files. Scalatic gets out of your way and allows you to concentrate on what truly matters: your content.
+Scalatic has been created with simplicity in mind: all you need to do is get the [executable .JAR](https://github.com/padurean/scalatic/releases) and run it using `java -jar scalatic-X.X.X.jar /path/to/your/blog`. The only parameter required is the path to your blog source files. Scalatic gets out of your way and allows you to concentrate on what truly matters: your content.
