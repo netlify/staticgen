@@ -16,8 +16,7 @@ Statix is a stand-alone Bash script aimed at generating full-featured, routable 
 
 This script is also lightweight. Aside from some standard file management commands such as `cp`, `mkdir` and `rm`, the only serious dependency for Statix is GNU Grep compiled with PCRE support (i.e. the version that supports `-P` flag, included in most Linux distributions).
 
-Templates
----------
+### Templates
 
 In Statix, a template is a simple HTML file (or its partial) where also several special directives are allowed:
 
@@ -27,8 +26,7 @@ In Statix, a template is a simple HTML file (or its partial) where also several 
 
 Note that if a variable is set twice, the first set block occurence overrides any others. So if you want to set some page-specific variables and want to be sure they will not be overwritten by any included templates, please put the appropriate set blocks at the very top of the page.
 
-Route configuration
--------------------
+### Route configuration
 
 To let Statix know the entire structure of your website, it's mandatory to specify all routing in a separate file (say, `routes.conf`). This file contains the mapping of a physical template name (relative to your templates directory) and logical URL (relative to the supposed website root). Note that in order to avoid any building errors all URLs **must** end in `/` (forward slash). Physical names and URLs are separated with a colon (`:`). Each mapping pair is on a new line.
 
@@ -40,8 +38,7 @@ contact.html:/contact/
 work.html:/portfolio/
 ```
 
-Build process
--------------
+### Build process
 
 Building the website out of the source materials (templates, routes and assets) is as simple as calling the script with all necessary parameters:
 
