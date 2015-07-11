@@ -10,7 +10,7 @@ description: A simple to use, highly modular, and extremely configurable static 
 
 Wyam is a static content generator and can be used to generate web sites, produce documentation, create ebooks, and much more. Since everything is configured by chaining together flexible modules (that you can even write yourself), the only limits to what it can create are your imagination.
 
-# Features
+### Features
 
   - Written in .NET and [easily extensible](http://wyam.io/knowledgebase/writing-a-module)
   - [Low ceremony](http://wyam.io/getting-started/installation) - download a zip file, unzip, and run
