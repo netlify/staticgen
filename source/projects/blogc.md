@@ -1,6 +1,6 @@
 ---
 title: blogc
-repo: rafaelmartins/blogc
+repo: blogc/blogc
 homepage: http://blogc.org
 language: C
 license: BSD
