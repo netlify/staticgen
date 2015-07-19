@@ -11,7 +11,7 @@ module.exports = function (shipit) {
       repositoryUrl: 'https://github.com/krzysztofspilka/staticgen.git',
       ignores: ['.git', 'node_modules'],
       rsync: ['--force', '--delete', '--delete-excluded', '-I', '--stats', '--chmod=ug=rwX'],
-      keepReleases: 5,
+      keepReleases: 3,
       shallowClone: false
     };
 
