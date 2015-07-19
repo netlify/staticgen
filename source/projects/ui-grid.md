@@ -1,7 +1,7 @@
 ---
 title: UI Grid
-repo: angular-ui/ng-grid
-direct: https://github.com/angular-ui/ng-grid
+repo: angular-ui/ui-grid
+direct: https://github.com/angular-ui/ui-grid
 homepage: http://ui-grid.info
 examples: http://ui-grid.info/docs/#/tutorial/101_intro
 license: MIT
