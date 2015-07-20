@@ -48,7 +48,7 @@
                 <dd><%= current_page.author %></dd>
 
                 <dt>Last update:</dt>
-                <dd><%= current_page.last_commit ? current_page.last_commit.to_time.strftime('%d.%m.%G') : 'N/A' %></dd>
+                <dd><%= current_page.last_commit ? current_page.last_commit.to_time.strftime('%b %e, %G') : 'N/A' %></dd>
             </dl>
         </div>
         <div class="charts box">

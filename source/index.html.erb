@@ -23,7 +23,7 @@ title: JSpreadsheets
             <dd><%= project.author %></dd>
 
             <dt>Last update:</dt>
-            <dd><%= project.last_commit ? project.last_commit.to_time.strftime('%d.%m.%G') : 'N/A' %></dd>
+            <dd><%= project.last_commit ? project.last_commit.to_time.strftime('%b %e, %G') : 'N/A' %></dd>
           </dl>
             <ul class="stats">
               <li title="Stars">
