@@ -1,6 +1,6 @@
 ---
 title: PyKwiki
-repo: webgovernor/pykwiki
+repo: nullism/pykwiki
 homepage: http://pykwiki.nullism.com
 language: Python
 license: MIT
