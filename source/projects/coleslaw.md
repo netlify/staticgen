@@ -1,7 +1,7 @@
 ---
 title: Coleslaw
-repo: redline6561/coleslaw
-homepage: https://github.com/redline6561/coleslaw
+repo: kingcons/coleslaw
+homepage: https://github.com/kingcons/coleslaw
 language: Lisp
 license: BSD
 templates: Closure Templates
