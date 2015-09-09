@@ -1,7 +1,7 @@
 ---
 title: Rinco
-repo: rincojs/rinco-staticgen
-homepage: https://github.com/rincojs/rinco-staticgen
+repo: rincojs/rinco-sg
+homepage: https://github.com/rincojs/rinco-sg
 language: JavaScript
 license: MIT
 templates: Mustache
