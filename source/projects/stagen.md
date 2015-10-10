@@ -2,7 +2,7 @@
 title: StaGen
 repo: wiztools/stagen
 homepage: https://github.com/wiztools/stagen
-language: Java 8
+language: Java
 license: Apache
 templates: StringTemplate 4
 description: StaGen is the static site generator behind WizTools.org
