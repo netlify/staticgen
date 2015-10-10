@@ -2,7 +2,7 @@
 title: Tarbell
 repo: tarbell-project/tarbell
 homepage: http://tarbell.io
-language: Python (Flask)
+language: Python
 license: BSD
 templates: Jinja
 description: Simple static sites for storytellers.
@@ -12,4 +12,3 @@ description: Simple static sites for storytellers.
 Read more about [how to install Tarbell](http://tarbell.readthedocs.org/en/latest/install.html), or follow along with our [tutorial](http://tarbell.readthedocs.org/en/latest/tutorial.html). You can also [follow updates on Twitter](https://twitter.com/tarbellproject).
 
 Tarbell is named after celebrated journalist Ida Tarbell, who was all about making information more accessible.
-
