@@ -6,7 +6,7 @@ module.exports = function (shipit) {
 
   var
     config = {
-      servers: '142.4.202.189',
+      servers: 'deploy@142.4.202.189:22022',
       workspace: '/tmp/jspreadsheets.com',
       repositoryUrl: 'https://github.com/krzysztofspilka/staticgen.git',
       ignores: ['.git', 'node_modules'],
