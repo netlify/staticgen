@@ -2,19 +2,20 @@
 title: ag-Grid
 repo: ceolter/ag-grid
 direct: https://github.com/ceolter/ag-grid
-homepage: http://www.angulargrid.com/
-examples: http://www.angulargrid.com/example.html
+homepage: http://www.ag-grid.com/
+examples: http://www.ag-grid.com/example.html
 license: MIT
 bower: ag-grid
-npm: angular-grid
-technology: AngularJS, jQuery
-leading technology: AngularJS
+npm: ag-grid
+technology: Javascript, AngularJS, Web Component
+leading technology: Javascript
 author: Niall Crosby
 authorurl: https://www.linkedin.com/in/niallcrosby
-description: Light weight but advanced data grid for AngularJS.
+description: Framework AGnostic Grid. Very Fast. Feature Rich.
 ---
 
-ag-Grid is the first high performance and feature rich data grid for AngularJS. Light weight, minimal footprint, no external dependencies.
+Feature rich, high performance, no dependencies.
+'ag' stands for Agnostic - works with any framework.
 
 #### Features:
 
