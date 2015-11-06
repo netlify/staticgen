@@ -2,7 +2,7 @@
 title: InkPaper
 repo: InkProject/ink
 homepage: http://www.inkpaper.io/
-language: Golang
+language: Go
 license: MIT
 templates: GO Template
 description: 'InkPaper is an elegant, extremely fast static blog generator.'
