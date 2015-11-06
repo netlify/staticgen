@@ -3,7 +3,7 @@ title: GitBook
 repo: GitbookIO/gitbook
 homepage: https://www.gitbook.com/
 language: JavaScript
-license: Apache License 2.0
+license: APL 2.0
 templates: Jinja2
 description: 'A modern publishing toolchain. Simply taking you from ideas to finished, polished books.'
 ---
