@@ -3,7 +3,7 @@ title: Hugo
 repo: spf13/hugo
 homepage: http://gohugo.io/
 language: Go
-license: SimPL-2.0
+license: Apache-2.0
 templates: Go Templates
 description: A Fast and Flexible Static Site Generator.
 ---
