@@ -1,6 +1,6 @@
 ---
 title: LitePub
-repo: https://github.com/mirovarga/litepub
+repo: mirovarga/litepub
 homepage: http://litepub.com
 language: Go
 license: MIT
