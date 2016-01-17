@@ -1,7 +1,7 @@
 ---
 title: LitePub
 repo: mirovarga/litepub
-homepage: http://litepub.com
+homepage: https://github.com/mirovarga/litepub
 language: Go
 license: MIT
 templates: Go Templates
