@@ -31,3 +31,17 @@ ReactDataGrid is an advanced JavaScript spreadsheet component built using React
 * Filtering
 * Copy and Paste values into other cells
 * Multiple cell updates using cell dragdown
+
+#### Preview:
+
+##### Autocomplete selection
+![ReactDataGrid autocomplete selection](/images/libraries/react-data-grid/react-data-grid-autocomplete-feature-example.png "ReactDataGrid autocomplete selection")
+
+##### Inline editing
+![ReactDataGrid inline editing](/images/libraries/react-data-grid/react-data-grid-editable-table-example.png "ReactDataGrid inline editing")
+
+##### Custom cell types
+![ReactDataGrid custom cell types](/images/libraries/react-data-grid/react-data-grid-formatter-percent-data-example.png "ReactDataGrid custom cell types")
+
+##### Row selection
+![ReactDataGrid row selection](/images/libraries/react-data-grid/react-data-grid-select-and-html-data.png "ReactDataGrid row selection")

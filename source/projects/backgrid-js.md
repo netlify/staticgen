@@ -18,9 +18,16 @@ Backgrid.js is a set of components for building semantic and easily stylable dat
 
 #### Supported browsers:
 
-* Internet Explorer 8
-* Internet Exploror 9+
+* Internet Explorer 8+
 * Chrome 4+
 * Safari 4+
 * Firefox 4+
 * Opera 9+
+
+#### Preview:
+
+##### Data validation
+![Backgrid data validation](/images/libraries/backgrid-js/backgrid-data-validation-example.png "Backgrid data validation")
+
+##### Row selection with a checkbox
+![Backgrid row selection with a checkbox](/images/libraries/backgrid-js/backgrid-chechbox-examples.png "Backgrid row selection with a checkbox")

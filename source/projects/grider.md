@@ -23,3 +23,11 @@ way, it has the following features:
 * Adds or deletes rows based on a row
 * Has summaries for average (avg), sum (sum), maximum (max) and minimum (min)
 * Works nice with Ruby on rails [nested forms](http://weblog.rubyonrails.org/2009/1/26/nested-model-forms)
+
+#### Preview:
+
+##### Add/remove rows
+![Grider add and remove rows](/images/libraries/grider/grider-add-remove-rows.png "Grider add and remove rows")
+
+##### Dropdown list
+![Grider dropdown list](/images/libraries/grider/grider-dropdown-list-example.png "Grider dropdown list")

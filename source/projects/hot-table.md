@@ -15,3 +15,11 @@ description: Polymer Element wrapper for Handsontable data grid editor.
 ---
 
 Polymer Element wrapper for Handsontable data grid editor
+
+#### Preview:
+
+##### Custom cell renderer
+![hot-table custom cell renderer](/images/libraries/hot-table/hot-table-custom-renderers-example.png "hot-table custom cell renderer")
+
+##### Date cell type
+![hot-table date cell type](/images/libraries/hot-table/hot-table-date-cell-type-opened.png "hot-table date cell type")

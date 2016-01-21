@@ -18,3 +18,10 @@ The dgrid project provides widgets for lists of data, including simple sets of s
 
 dgrid is available under the same dual BSD/AFLv2 license as the Dojo Toolkit.
 
+#### Preview:
+
+##### Data pagination
+![dgrid data pagination](/images/libraries/dgrid/dgrid-pagination-example.png "dgrid data pagination")
+
+##### Row selection
+![dgrid row selection](/images/libraries/dgrid/dgrid-selection-example.png "dgrid row selection")

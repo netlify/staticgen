@@ -1,9 +1,9 @@
 ---
 title: jQuery.sheet
 repo: Spreadsheets/jQuery.sheet
-direct: https://github.com/Spreadsheets/jQuery.sheet
-homepage: http://visop-dev.com/Project+jQuery.sheet
-examples: http://visop-dev.com/jQuery.sheet/jquery.sheet.html
+direct: http://spreadsheets.github.io/jQuery.sheet/
+homepage: http://spreadsheets.github.io/jQuery.sheet/
+examples: http://spreadsheets.github.io/jQuery.sheet/
 license: MIT
 bower: jQuery.sheet
 npm: n/a
@@ -15,3 +15,20 @@ description: The ajax spreadsheet, jQuery plugin flavor
 ---
 
 The ajax spreadsheet, jQuery plugin flavor.
+
+#### Preview:
+
+##### Toolbar example
+![jQuery.sheet toolbar example](/images/libraries/jquery-sheet/jquery-sheet-toolbar-example.png "jQuery.sheet toolbar example")
+
+##### Bar chart in a cell
+![jQuery.sheet bar chart in a cell](/images/libraries/jquery-sheet/jquery-sheet-barchart-data-example.png "jQuery.sheet bar chart in a cell")
+
+##### Horizontal bar chart in a cell
+![jQuery.sheet horizontal bar chart in a cell](/images/libraries/jquery-sheet/jquery-sheet-horizontal-barchart-data-example.png "jQuery.sheet horizontal bar chart in a cell")
+
+##### Line chart in a cell
+![jQuery.sheet line chart in a cell](/images/libraries/jquery-sheet/jquery-sheet-linechart-data-example.png "jQuery.sheet line chart in a cell")
+
+##### Pie chart in a cell
+![jQuery.sheet pie chart in a cell](/images/libraries/jquery-sheet/jquery-sheet-piechart-data-example.png "jQuery.sheet pie chart in a cell")

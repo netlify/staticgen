@@ -22,3 +22,14 @@ The Recline Library consists of 3 parts: Models, Backends and Views:
 * Models help you structure your work with data by providing some standard objects such as Dataset and Record – a Dataset being a collection of Records
 * Backends connect your Models to data sources (and stores) – for example Google Docs spreadsheets, local CSV files, the DataHub, ElasticSearch etc.
 * Views are user interface components for displaying, editing or interacting with the data. For example, maps, graphs, data grids or a query editor.
+
+#### Preview:
+
+##### Extended editor
+![Recline.js extended editor](/images/libraries/recline-js/recline-js-extended-editor.png "Recline.js extended editor")
+
+##### Show or hide columns
+![Recline.js show or hide columns](/images/libraries/recline-js/recline-js-fields-feature-show-hide.png "Recline.js show or hide columns")
+
+##### Filter data
+![Recline.js filter data](/images/libraries/recline-js/recline-js-filters-range-values.png "Recline.js filter data")

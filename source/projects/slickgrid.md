@@ -16,7 +16,7 @@ description: A lightning fast JavaScript grid/spreadsheet.
 
 SlickGrid is an advanced JavaScript grid/spreadsheet component which enables: Adaptive virtual scrolling (handle hundreds of thousands of rows with extreme responsiveness), Extremely fast rendering speed, “GlobalEditorLock” to manage concurrent edits in cases where multiple Views on a page can edit the same data and supports million of rows.
 
-#### Some highlights:
+#### Features:
 
 * Adaptive virtual scrolling (handle hundreds of thousands of rows with extreme responsiveness)
 * Extremely fast rendering speed
@@ -32,3 +32,17 @@ SlickGrid is an advanced JavaScript grid/spreadsheet component which enables: Ad
 * Advanced detached & multi-field editors with undo/redo support.
 * "GlobalEditorLock" to manage concurrent edits in cases where multiple Views on a page can edit the same data.
 * Support for millions of rows
+
+#### Preview:
+
+##### Date cell type
+![Slickgrid date cell type](/images/libraries/slickgrid/slickgrid-date-cell-type.png "Slickgrid date cell type")
+
+##### Filter data
+![Slickgrid filter data](/images/libraries/slickgrid/slickgrid-filter-feature.png "Slickgrid filter data")
+
+##### Progress bar
+![Slickgrid progress bar](/images/libraries/slickgrid/slickgrid-progress-bar.png "Slickgrid progress bar")
+
+##### Sorting data
+![Slickgrid sorting data](/images/libraries/slickgrid/slickgrid-sorting-feature.png "Slickgrid sorting data")

@@ -22,3 +22,11 @@ ReactPivot takes four arguments: `rows`, `dimensions`, `reduce` and `calculation
 * `dimensions` is how you want to group your data,
 * `reduce` is how you calculate numbers for each group,
 * `calculations` is how you want to display the calculations done in `reduce`
+
+#### Preview:
+
+##### Filter data
+![React-Pivot filter data](/images/libraries/react-pivot/react-pivot-filtering-solo-cell-filter-example.png "React-Pivot filter data")
+
+##### Nested rows (Tree grid)
+![React-Pivot tree grid](/images/libraries/react-pivot/react-pivot-tree-table-example.png "React-Pivot tree grid")

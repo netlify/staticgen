@@ -51,3 +51,14 @@ DataTables is developed with two distinct groups of users in mind:
 * Sorting, type detection, API functions, pagination and filtering
 * Solid documentation and interface reference
 * 130+ pre-built examples
+
+#### Preview:
+
+##### Complex header
+![DataTables complex header](/images/libraries/datatables/datatables-complex-header-example.png "DataTables complex header")
+
+##### Grouping feature
+![DataTables grouping feature](/images/libraries/datatables/datatables-row-grouping-feature.png "DataTables grouping feature")
+
+##### Sorting data
+![DataTables sorting data](/images/libraries/datatables/datatables-sorting-feature.png "DataTables sorting data")

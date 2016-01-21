@@ -258,6 +258,14 @@ a.logo:hover {
     line-height: 1.2;
 }
 
+.sheet h5 {
+  font-size: 16px;
+  font-weight: normal;
+  padding-bottom: 0;
+  margin: 26px 0 0;
+  line-height: 1.2;
+}
+
 .sheet ol, .sheet ul {
     padding: 0;
 }
@@ -276,10 +284,14 @@ a.logo:hover {
 }
 
 .sheet img {
-    margin: 18px 0;
+    margin: 18px 0 0;
     width: 100%;
     border: none;
     box-shadow: 0 0 7px rgba(0, 0, 0, .2);
+}
+
+.sheet p a {
+  text-decoration: underline;
 }
 
 .projects, .stats {
@@ -395,7 +407,8 @@ a.logo:hover {
     list-style: square;
 }
 .left-side h4 {
-    margin: 30px 0 10px;
+    margin: 40px 0 10px;
+    font-size: 19px;
 }
 .right-side {
     width: 35%;

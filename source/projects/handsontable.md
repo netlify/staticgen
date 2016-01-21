@@ -11,11 +11,9 @@ authorurl: http://handsoncode.net
 description: Handsontable is a data grid component with an Excel-like appearance.
 ---
 
-Handsontable is a data grid component with an Excel-like appearance. Built in JavaScript, it integrates with any data source with peak efficiency. It comes with powerful features like data validation, sorting, grouping, data binding, formula support or column ordering. 
+Handsontable is a composite spreadsheet component for apps and websites. It is written in JavaScript and not constrained by any external framework. It can be easily modified or extended with custom plugins. It also binds to any source using the JSON format and handles large amounts of data. You can easily do all CRUD operations and provide end-users with an Excel-like experience.
 
-Built and actively supported by the Handsoncode team and the GitHub community , distributed free under the MIT license.
-
-It all started in 2012 as Marcin Warpechowski's  private project. He aimed to have a simple, yet functional spreadsheet and after a while, when the first stable version was ready, it made its debut on GitHub. Since then Handsontable has been used and widely appreciated by thousands of developers and companies.
+Take a look at this basic [demo on JSFiddle](http://jsfiddle.net/handsoncode/s6t768pq/ "Handsontable basic dmeo") for better insight.
 
 #### Features:
 
@@ -28,7 +26,6 @@ It all started in 2012 as Marcin Warpechowski's  private project. He aimed to ha
 * Scrollbars
 * Highlighting rows or columns
 * Stretching
-* Grouping
 * Resizing
 * Freezing
 * Moving
@@ -50,3 +47,14 @@ It all started in 2012 as Marcin Warpechowski's  private project. He aimed to ha
 * Chroma.js integration
 * Bootstrap integration
 * Backbone.js integration
+
+#### Preview:
+
+##### Drag down and data validation
+![Handsontable drag down and data validation](/images/libraries/handsontable/handsontable-drag-down-and-data-validation.gif "Handsontable drag down and data validation")
+
+##### Inline editor and date picker
+![Handsontable inline editor and date picker](/images/libraries/handsontable/handsontable-inline-editor-and-date-picker-example.gif "Handsontable inline editor and date picker")
+
+##### Merging cells using the context menu
+![Handsontable merging cells using the context menu](/images/libraries/handsontable/handsontable-merge-cells-example.gif "Handsontable merging cells using the context menu")
