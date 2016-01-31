@@ -3,7 +3,7 @@ title: Nesta
 repo: gma/nesta
 homepage: http://nestacms.com/
 language: Ruby
-license: Open Source Copyright
+license: MIT
 templates: haml/sass
 description: A Ruby CMS for developers and designers, Static Site Generation from Markdown or Textile files.
 ---
