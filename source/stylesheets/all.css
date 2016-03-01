@@ -307,9 +307,15 @@ a.logo:hover {
 .card {
     background: #fff;
     border: 1px solid #e9e9e9;
+    border-radius: 6px;
     padding: 18px 18px 16px;
     margin: 0 0 18px;
     font-size: 13px;
+}
+
+.project:first-child .card {
+    padding: 14px 14px 12px;
+    border: 4px solid #4EBB4B;
 }
 
 .card .title {
