@@ -8,7 +8,11 @@ templates: Go Templates
 description: Most zen static website generator in Golang.
 ---
 
-### Why another one? C'mon, you must be kidding...
+# ![Zas](http://i.imgur.com/e9abWRX.png)
+
+Most. Zen. Static. Website. Generator. Ever.
+
+## Why another one? C'mon, you must be kidding...
 
 I just wanted to set up a very simple website (just a few pages) with Jekyll and it didn't feel right. I didn't want a blog.
 
@@ -16,12 +20,13 @@ I checked other projects but they were incomplete, cumbersome or solved the wron
 
 Yes, it is another NIH but... I think Zas is a different kind of beast. I admit that I probably overlooked some projects.
 
-### Where is the difference with others?
+### Where is the difference?
 
-1. Markdown only.
-2. Just a loop. Zas just loops over all .md and .html files (oh, I told a little lie in #1, my bad - please, bear with me) in current directory (and subdirectories), ignoring all any other file (including dot-files).
-3. Your imagination as limit. Zas has a simple extension mechanism based in subcommands. Do you really need to handle a blog with Zas? Install/create a new extension and do it!
-4. Unobstrutive structure, no '_' files. More in [Usage](#usage) section.
+1. Gophers. Yes, there is [Hugo](http://gohugo.io/) (kudos!) but... Who wants to learn another directory layout? There is also [Hastie](https://github.com/mkaz/hastie) too. If you want a blog.
+2. Markdown only. And HTML, if you want.
+3. Just a loop. Zas just loops over all .md and .html files in current directory (and subdirectories), ignoring all any other file (including dot-files).
+4. Your imagination as limit. Zas has a simple extension mechanism based in subcommands. Do you really need to handle a blog with Zas? Install/create a new extension and do it!
+5. Unobstrutive structure, no '_' files. More in [Usage](#usage) section.
 
 ## Usage
 
