@@ -1,7 +1,7 @@
 ---
 title: deadsimplelog
-repo: tallesl/deadsimplelog
-homepage: https://github.com/tallesl/deadsimplelog
+repo: tallesl/node-deadsimplelog
+homepage: https://github.com/tallesl/node-deadsimplelog
 language: JavaScript
 license: MIT
 templates: HTML
