@@ -1,6 +1,6 @@
 ---
 title: Grow
-repo: grow/pygrow
+repo: grow/grow
 homepage: https://grow.io/
 language: Python
 license: MIT
