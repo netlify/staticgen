@@ -1,7 +1,7 @@
 ---
 title: blogc
 repo: blogc/blogc
-homepage: http://blogc.org
+homepage: https://blogc.rgm.io/
 language: C
 license: BSD
 templates: Custom
