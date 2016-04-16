@@ -1,7 +1,7 @@
 ---
 title: SSGEnv
 repo: javimosch/ssgenv
-homepage: 
+homepage: https://github.com/javimosch/ssgenv
 language: JavaScript
 license: Apache
 templates: Handlebars
