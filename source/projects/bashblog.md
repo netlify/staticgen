@@ -4,7 +4,7 @@ repo: cfenollosa/bashblog
 homepage: https://github.com/cfenollosa/bashblog
 language: Bash
 license: GPL 3
-templates: Ultra simple usage, no templating.
+templates: None
 description: A single Bash script to create blogs.
 ---
 
