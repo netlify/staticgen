@@ -17,5 +17,5 @@ based on the popular Jinja2, so if you come from a Django background, it is
 very easy to pick up.
 
 Ultimately, it generates a set of flat HTML files that should be able to be
-served directly by your web site.
+served directly by your web server.
 
