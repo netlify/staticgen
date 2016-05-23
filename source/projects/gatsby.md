@@ -5,7 +5,7 @@ homepage: https://github.com/gatsbyjs/gatsby
 language: JavaScript
 license: MIT
 templates: React Router
-description: A React.js static site generator.
+description: Transform plain text into dynamic blogs and websites using React.js
 ---
 
 Transform plain text into dynamic blogs and websites using React.js.
