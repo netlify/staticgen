@@ -1,6 +1,6 @@
 ---
 title: Static Stuff
-repo: javimosch/ssgenv
+repo: javimosch/staticstuff
 homepage: https://github.com/javimosch/staticstuff
 language: JavaScript
 license: Apache
