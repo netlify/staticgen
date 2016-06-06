@@ -1,6 +1,6 @@
 ---
 title: Cactus
-repo: koenbok/Cactus
+repo: eudicots/Cactus
 homepage: https://github.com/koenbok/Cactus/
 language: Python
 license: BSD
