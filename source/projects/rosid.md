@@ -1,7 +1,7 @@
 ---
 title: Rosid
-repo: electerious/rosid
-homepage: https://github.com/electerious/Rosid
+repo: electerious/Rosid
+homepage: http://rosid.electerious.com/
 language: JavaScript
 license: MIT
 templates: Any
