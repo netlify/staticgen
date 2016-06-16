@@ -1,28 +1,15 @@
 ---
 title: PHPoole
-repo: narno/phpoole
-homepage: http://phpoole.narno.org
+repo: Narno/PHPoole
+homepage: http://phpoole.org
 language: PHP
 license: MIT
 templates: Twig
 description: Light and easy static website generator written in PHP.
 ---
 
-PHPoole is a light and easy static website generator written in PHP. It takes your content (written in Markdown plain text format), merges it with layouts (Twig templates) and generates static HTML files.
+PHPoole takes your content (written in [Markdown](http://daringfireball.net/projects/markdown/) plain text format) and merges files with layouts ([Twig](http://twig.sensiolabs.org/) templates) to generate static HTML files.
 
-### Quick Start
+PHPoole is a [CLI](https://en.wikipedia.org/wiki/Command-line_interface) application, powered by a [core library](https://github.com/Narno/PHPoole-library).
 
-#### 1. Get PHPoole
-    $ curl -SO http://phpoole.narno.org/downloads/phpoole.phar
-
-#### 2. Initialize a new website
-    $ php phpoole.phar --init
-
-#### 3. Generate the static website
-    $ php phpoole.phar --generate
-
-#### 4. Serve the local website
-    $ php phpoole.phar --serve
-
-#### 5. Deploy the website on GitHub Pages
-    $ php phpoole.phar --deploy
+![Command line demo](https://raw.githubusercontent.com/Narno/PHPoole/master/docs/phpoole.gif)
