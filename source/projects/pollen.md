@@ -5,7 +5,7 @@ homepage:  http://pollenpub.com
 language: Racket
 license: LGPL
 templates: ...
-description: A web book-publishing system written in [Racket](http://racket-lang.org) with static html as default output target.
+description: A web book-publishing system written in Racket with static html as default output target.
 ---
 
 A book-publishing system written in [Racket](http://racket-lang.org). This is the software used to publish & maintain the web-based books [Practical Typography](http://practicaltypography.com), [Typography for Lawyers](http://typographyforlawyers.com), and the forthcoming [Beautiful Racket](http://beautifulracket.com).
