@@ -1,6 +1,6 @@
 ---
 title: Roots
-repo: jenius/roots
+repo: jescalan/roots
 homepage: http://roots.cx/
 language: CoffeeScript
 license: MIT
