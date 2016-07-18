@@ -1,7 +1,7 @@
 ---
 title: Statik
 repo: thanethomson/statik
-homepage: https://github.com/thanethomson/statik
+homepage: https://getstatik.com/
 language: Python
 license: MIT
 templates: Jinja2
