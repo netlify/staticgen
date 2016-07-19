@@ -5,10 +5,10 @@ homepage: http://www.madoko.net
 language: Javascript
 license: Apache
 templates: No
-description: One-page article-styled website from Markdown.
+description: One-page article-styled website from Markdown and LaTex.
 ---
 
-With Madoko you can write full-blown academic articles with internal references, mathematical formulas, and bibliographies completely in markdown and get beautiful PDF or HTML output.
+With Madoko you can write full-blown academic articles with internal references, mathematical formulas, and bibliographies completely in Markdown and LaTex to get beautiful PDF or HTML output.
 
 - Install with `npm install madoko -g` 
 - Transform a markdown document to HTML: `madoko -v mydoc.md` 
