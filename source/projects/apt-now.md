@@ -1,4 +1,4 @@
-﻿---
+---
 title: apt-now
 repo: cmotc/apt-now
 homepage: http://cmotc.github.io/apt-now
