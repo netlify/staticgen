@@ -3,7 +3,7 @@ title: apt-now
 repo: cmotc/apt-now
 homepage: http://cmotc.github.io/apt-now
 language: *sh
-license: MIT
+license: AGPL3
 templates: CSS
 description: Instant custom debian repositories
 ---
