@@ -4,7 +4,7 @@ repo: gatsbyjs/gatsby
 homepage: https://github.com/gatsbyjs/gatsby
 language: JavaScript
 license: MIT
-templates: React Router
+templates: React.js
 description: Transform plain text into dynamic blogs and websites using React.js
 ---
 
