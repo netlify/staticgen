@@ -8,11 +8,11 @@ templates: handlebars
 description: CopperSmith is a very simple command powered static site generator that uses markdown files.
 ---
 
-CopperSmith is a very simple static site builder that uses markdown files, primarily built for myself to quickly roll out documentation (default theme).
+CopperSmith is a very simple static site builder that uses markdown files.
 
 Using simple commands, you can quickly scaffold your site leaving you to simply edit the content of your pages.
 
-Once built, the site can be hosted anywhere static HTML content is supported, like GitHub Pages and Netlify. It's perfect for shared hosting and systems where you don't have account privileges.
+Once built, the site can be hosted anywhere static HTML content is supported, like GitHub Pages and Netlify.
 
 CopperSmith also comes with a simple FTP publisher, allowing you to easily upload your generated site to your plain FTP server.
 
