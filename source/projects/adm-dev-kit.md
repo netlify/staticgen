@@ -1,6 +1,6 @@
 ---
 title: adm-dev-kit
-repo: admdh/adm-dev-kit
+repo: iamfrntdv/adm-dev-kit
 homepage: https://github.com/iamfrntdv/adm-dev-kit
 language: JavaScript
 license: MIT
