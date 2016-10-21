@@ -1,7 +1,7 @@
 ---
 title: thumbsup
-repo: rprieto/thumbsup
-homepage: http://github.com/rprieto/thumbsup
+repo: thumbsup/thumbsup
+homepage: http://github.com/thumbsup/thumbsup
 language: JavaScript
 license: MIT
 templates: N/A
@@ -36,6 +36,6 @@ Any folder with photos and videos:
 
 ### What it looks like
 
-![screenshot](https://raw.github.com/rprieto/thumbsup/master/screenshot.jpg)
+![screenshot](https://raw.github.com/thumbsup/thumbsup/master/screenshot.jpg)
 
 Note that the goal of `thumbsup` is to generate a gallery in a quick and effortless way - just like Dropbox shared galleries. You can specify custom CSS, but it doesn't let you specify custom rendering templates (yet).
