@@ -1,7 +1,7 @@
 ---
 title: thumbsup
-repo: thumbsup/thumbsup
-homepage: http://github.com/thumbsup/thumbsup
+repo: thumbsup/node-thumbsup
+homepage: http://github.com/thumbsup/node-thumbsup
 language: JavaScript
 license: MIT
 templates: N/A
