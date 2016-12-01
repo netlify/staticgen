@@ -18,6 +18,7 @@ No configuration is needed, just write your Application with Vue.js components.
 ## Customisable
 
 If you want to write you content in markdown files, its super easy with the [vue markdown filter](https://vuejs.org/v2/examples/)
+
 You can extend your Application, Blog or Website with some packages on the [NPM ecosystem](http://npmjs.org/).
 
 Nuxt will help you generate and deploy a Vue.js Web Application faster than before.
