@@ -34,4 +34,4 @@ Netlify, Githup pages, Gitlab, AWS3, etc.
 ## Setup a project in a minute
 
 Creating a website based on Nuxt only takes a minute.
-[Just take a look](https://www.youtube.com/watch?v=kmf-p-pTi40&t=11s)
+[Quick introduction of Nuxt : 1 minute](https://www.youtube.com/watch?v=kmf-p-pTi40&t=11s)
