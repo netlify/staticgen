@@ -1,7 +1,7 @@
 ---
 title: Nuxt
 repo: nuxt/nuxtjs
-homepage: https://github.com/nuxt/nuxt.js
+homepage: http://nuxtjs.org/
 language: JavaScript
 license: MIT
 templates: Vue
@@ -34,4 +34,4 @@ Netlify, Githup pages, Gitlab, AWS3, etc.
 ## Setup a project in a minute
 
 Creating a website based on Nuxt only takes a minute.
-[Quick introduction of Nuxt : 1 minute](https://www.youtube.com/watch?v=kmf-p-pTi40&t=11s)
+[Quick introduction of Nuxt : 1 minute](http://nuxtjs.org/examples)
