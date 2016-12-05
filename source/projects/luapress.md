@@ -1,7 +1,7 @@
 ---
 title: Luapress
 repo: Fizzadar/Luapress
-homepage: http://github.com/Fizzadar/Luapress
+homepage: http://luapress.org/
 language: Lua
 license: MIT
 templates: LHTML
