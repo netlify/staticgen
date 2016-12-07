@@ -18,13 +18,16 @@ body {
 
 h1 { font-size: 76px; }
 h2 { font-size: 49px; font-weight: 100; }
-h3 { font-size: 47px; }
+h3 {
+  font-size: 47px;
+  line-height: 1.2;
+}
 h4 { font-size: 31px; }
 h5 { font-size: 29px; }
 
 small { font-size: 66.67%; }
 
-a, a:link, a:active, a:visited, a:hover { color: #7D49BD; text-decoration: none; }
+a, a:link, a:active, a:visited, a:hover { color: #00c7b7; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 dl {
@@ -259,6 +262,31 @@ pre {
   line-height: 1.4;
 }
 
+.projects .deploy-to-netlify {
+  margin: 0 0 40px 0;
+}
+
+.projects .deploy-to-netlify h3 {
+  margin-top: 0;
+}
+
+.deploy-to-netlify {
+  margin: 64px 0;
+}
+
+.deploy-to-netlify h3,
+.deploy-to-netlify p {
+  margin-bottom: 24px;
+}
+
+.deploy-to-netlify em {
+  color: grey;
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
 .deploy {
   display: block;
   margin: 22px -19px -19px -19px;
@@ -286,6 +314,7 @@ a.deploy-btn:hover {
 a.deploy-btn-interior img {
   margin: -4px 0 0 0;
   box-shadow: none;
+  width: auto;
 }
 
 .sheet:after {
