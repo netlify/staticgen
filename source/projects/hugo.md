@@ -6,6 +6,7 @@ language: Go
 license: APL 2.0
 templates: Go Templates
 description: A Fast and Flexible Static Site Generator.
+startertemplaterepo: netlify/victor-hugo
 ---
 
 Hugo is a static site generator written in Go. It is optimized for
