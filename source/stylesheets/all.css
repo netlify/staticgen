@@ -263,11 +263,16 @@ pre {
 }
 
 .landing .deploy-to-netlify {
-  margin: 0 0 50px 0;
+  margin: 0 0 20px 0;
 }
 
 .landing .deploy-to-netlify h3 {
-  margin-top: 47px;
+  font-size: 24px;
+  margin: 26px 0 16px 0;
+}
+
+.landing .deploy-to-netlify p {
+  font-size: 14px;
 }
 
 .deploy-to-netlify {
