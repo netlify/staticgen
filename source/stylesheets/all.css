@@ -274,6 +274,12 @@ pre {
   margin: 64px 0;
 }
 
+.deploy-to-netlify hr {
+  color: #fefefe;
+  border-top: 1px solid #fefefe;
+  margin-bottom: 30px;
+}
+
 .deploy-to-netlify h3,
 .deploy-to-netlify p {
   margin-bottom: 24px;
