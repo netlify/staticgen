@@ -2,12 +2,12 @@
 title: Top Open-Source Static Site Generators
 ---
 <%= partial "includes/navbar", :locals => {:controls => true} %>
-<div class="main">
+<div class="main landing">
+  <div class="deploy-to-netlify">
+    <h3>Want to get started with just one click?</h3>
+    <p>The “Deploy to Netlify” button on select generators below helps you deploy new sites from generator-specifc templates with one single click (<a href="https://www.netlify.com/docs/deploy_button/">learn more here</a>). It provides web developers a simple one-click step to let their users deploy their applications on Netlify.</p>
+  </div>
   <ul class="projects">
-    <div class="deploy-to-netlify">
-      <h3>Want to get started with just one click?</h3>
-      <p>The “Deploy to Netlify” button on select generators below helps you deploy new sites from generator-specifc templates with one single click (<a href="https://www.netlify.com/docs/deploy_button/">learn more here</a>). It provides web developers a simple one-click step to let their users deploy their applications on Netlify.</p>
-    </div>
     <% projects.each do |project| %>
       <li class="project lang-<%= project.language.downcase.gsub(/\s/, '-').gsub('.', '') %>"
           data-stars="<%= project.stars %>"

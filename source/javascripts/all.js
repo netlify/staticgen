@@ -20,7 +20,7 @@ $(function() {
   var sortAscending = {title: true};
 
   $(".projects").isotope({
-    layoutMode: "fitRows",
+    layoutMode: "masonry",
     getSortData: {
       stars: "[data-stars] parseInt",
       forks: "[data-forks] parseInt",

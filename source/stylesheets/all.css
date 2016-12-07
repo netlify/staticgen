@@ -262,12 +262,12 @@ pre {
   line-height: 1.4;
 }
 
-.projects .deploy-to-netlify {
-  margin: 0 0 40px 0;
+.landing .deploy-to-netlify {
+  margin: 0 0 50px 0;
 }
 
-.projects .deploy-to-netlify h3 {
-  margin-top: 0;
+.landing .deploy-to-netlify h3 {
+  margin-top: 47px;
 }
 
 .deploy-to-netlify {
