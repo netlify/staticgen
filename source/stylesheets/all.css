@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
   color: #444;
   margin: 0 0;
-  background: url(/images/background.png);
+  background: #fbfbfb;
 }
 
 h1 { font-size: 76px; }
@@ -62,11 +62,12 @@ pre {
 }
 
 .hero {
-  background: #4f3b5b;
-  background: -webkit-radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
-  background:    -moz-radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
-  background:     -ms-radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
-  background: radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4d9abf+0,00c7b7+100 */
+  background: #4d9abf; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #4d9abf 0%, #00c7b7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #4d9abf 0%,#00c7b7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #4d9abf 0%,#00c7b7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d9abf', endColorstr='#00c7b7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   text-align: center;
   padding: 29px 0;
 }
@@ -85,9 +86,8 @@ pre {
 .navbar {
   height: 45px;
   margin-bottom: 18px;
-  border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
-  background: #bbb;
+  background: #222;
   z-index: 100;
 }
 
@@ -111,14 +111,14 @@ pre {
   display: inline-block;
   line-height: 45px;
   height: 45px;
-  color: #222;
+  color: #fff;
   text-decoration: none;
   font-weight: normal;
   margin-left: 16px;
 }
 
 .right-menu > ul > li > a:hover {
-  color: #444;
+  color: #00c7b7;
 }
 
 .main, .container {
@@ -198,7 +198,7 @@ pre {
 /*  background: rgba(255,255,255,0.8);*/
   background: #fff;
   border: 1px solid #eee;
-  border-radius: 3px;
+  border-radius: 8px;
   padding: 18px;
   margin: 0 0 18px;
   font-size: 14px;
@@ -258,6 +258,36 @@ pre {
   padding: 6px;
   line-height: 1.4;
 }
+
+.deploy {
+  display: block;
+  margin: 22px -19px -19px -19px;
+}
+
+a.deploy-btn {
+  color: #313D3E;
+  background: #E6E6E6;
+  border-radius: 0 0 8px 8px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 14px 40px;
+  text-decoration: none;
+  transition: background .2s ease, color .2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+a.deploy-btn:hover {
+  background: #00C7B7;
+  color: white;
+  text-decoration: none;
+}
+
+a.deploy-btn-interior img {
+  margin: -4px 0 0 0;
+  box-shadow: none;
+}
+
 .sheet:after {
   content: "";
   display: table;

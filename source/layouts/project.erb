@@ -8,6 +8,10 @@
         <a href="<%= current_page.homepage %>"><i class="fa fa-home"></i> <%= current_page.homepage %></a>
         <span class="separator">|</span>
         <a href="https://github.com/<%= current_page.repo %>"><i class="fa fa-github"></i> https://github.com/<%= current_page.repo %></a>
+        <!-- HTML snippet -->
+        <a class="deploy-btn-interior pull-right" href="https://app.netlify.com/start/deploy?repository=https://github.com/<%= current_page.repo %>">
+          <img src="https://www.netlify.com/img/deploy/button.svg" title="Deploy to Netlify">
+        </a>
       </div>
 
 

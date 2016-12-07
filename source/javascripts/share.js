@@ -126,7 +126,7 @@ Share = (function(_super) {
         flyout: 'top center',
         button_font: true,
         button_color: '#333333',
-        button_background: '#a29baa',
+        button_background: '#ffffff',
         button_icon: 'export',
         button_text: 'Share'
       },
