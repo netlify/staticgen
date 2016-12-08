@@ -57,7 +57,9 @@ title: Top Open-Source Static Site Generators
           </dl>
           <% if project.startertemplaterepo %>
             <div class="deploy">
-              <a class="deploy-btn" href="https://app.netlify.com/start/deploy?repository=https://github.com/<%= project.startertemplaterepo %>" alt="Deploy to Netlify" title="Deploy to Netlify">Deploy to Netlify</a>
+              <a class="deploy-btn" href="https://app.netlify.com/start/deploy?repository=https://github.com/<%= project.startertemplaterepo %>" alt="Deploy to Netlify" title="Deploy to Netlify">
+                <img src="https://www.netlify.com/img/deploy/button.svg" title="Deploy to Netlify">
+              </a>
             </div>
           <% end %>
         </div>

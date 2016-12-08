@@ -300,26 +300,16 @@ pre {
 
 .deploy {
   display: block;
-  margin: 22px -19px -19px -19px;
+  margin: 22px 0 0 0;
 }
 
 a.deploy-btn {
-  color: #313D3E;
-  background: #E6E6E6;
-  border-radius: 0 0 8px 8px;
-  display: inline-block;
-  font-size: 16px;
-  padding: 14px 40px;
-  text-decoration: none;
-  transition: background .2s ease, color .2s ease;
+  min-height: 43px;
   width: 100%;
-  text-align: center;
 }
 
-a.deploy-btn:hover {
-  background: #00C7B7;
-  color: white;
-  text-decoration: none;
+a.deploy-btn img {
+  width: 100%;
 }
 
 a.deploy-btn-interior img {
