@@ -3,6 +3,7 @@
 //= require "jquery.flot.time"
 //= require "jquery.isotope"
 //= require "jquery.pin"
+//= require "jquery.matchHeight"
 //= require "share"
 //= require_self
 
@@ -20,7 +21,7 @@ $(function() {
   var sortAscending = {title: true};
 
   $(".projects").isotope({
-    layoutMode: "masonry",
+    layoutMode: "fitRows",
     getSortData: {
       stars: "[data-stars] parseInt",
       forks: "[data-forks] parseInt",
@@ -29,6 +30,8 @@ $(function() {
       title: "[data-title]"
     }
   });
+
+  $('.landing .card').matchHeight();
 
   $("select[name='filter']").change(function(e) {
     console.log("Filter by: %o", $(this).val());
