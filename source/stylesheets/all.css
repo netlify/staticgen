@@ -527,9 +527,14 @@ a.deploy-btn-interior img {
 
 
 @media all and (max-width: 499px) {
+  .main, .container {
+    margin: 0;
+  }
+
   .project {
     display: block;
     width: 100%;
+    padding: 20px 20px 0;
   }
   .projects {
     margin-right: 0;
