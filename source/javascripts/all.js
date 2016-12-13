@@ -3,6 +3,7 @@
 //= require "jquery.flot.time"
 //= require "jquery.isotope"
 //= require "jquery.pin"
+//= require "jquery.matchHeight"
 //= require "share"
 //= require_self
 
@@ -29,6 +30,8 @@ $(function() {
       title: "[data-title]"
     }
   });
+
+  $('.landing .card').matchHeight();
 
   $("select[name='filter']").change(function(e) {
     console.log("Filter by: %o", $(this).val());

@@ -13,18 +13,21 @@ body {
   line-height: 1.6;
   color: #444;
   margin: 0 0;
-  background: url(/images/background.png);
+  background: #fbfbfb;
 }
 
 h1 { font-size: 76px; }
 h2 { font-size: 49px; font-weight: 100; }
-h3 { font-size: 47px; }
+h3 {
+  font-size: 47px;
+  line-height: 1.2;
+}
 h4 { font-size: 31px; }
 h5 { font-size: 29px; }
 
 small { font-size: 66.67%; }
 
-a, a:link, a:active, a:visited, a:hover { color: #7D49BD; text-decoration: none; }
+a, a:link, a:active, a:visited, a:hover { color: #00c7b7; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 dl {
@@ -62,11 +65,12 @@ pre {
 }
 
 .hero {
-  background: #4f3b5b;
-  background: -webkit-radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
-  background:    -moz-radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
-  background:     -ms-radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
-  background: radial-gradient(ellipse at center, #4f3b5b 0%,#231733 100%);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4d9abf+0,00c7b7+100 */
+  background: #4d9abf; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #4d9abf 0%, #00c7b7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #4d9abf 0%,#00c7b7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #4d9abf 0%,#00c7b7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d9abf', endColorstr='#00c7b7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   text-align: center;
   padding: 29px 0;
 }
@@ -85,9 +89,8 @@ pre {
 .navbar {
   height: 45px;
   margin-bottom: 18px;
-  border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
-  background: #bbb;
+  background: #222;
   z-index: 100;
 }
 
@@ -111,14 +114,14 @@ pre {
   display: inline-block;
   line-height: 45px;
   height: 45px;
-  color: #222;
+  color: #fff;
   text-decoration: none;
   font-weight: normal;
   margin-left: 16px;
 }
 
 .right-menu > ul > li > a:hover {
-  color: #444;
+  color: #00c7b7;
 }
 
 .main, .container {
@@ -198,7 +201,7 @@ pre {
 /*  background: rgba(255,255,255,0.8);*/
   background: #fff;
   border: 1px solid #eee;
-  border-radius: 3px;
+  border-radius: 8px;
   padding: 18px;
   margin: 0 0 18px;
   font-size: 14px;
@@ -258,6 +261,63 @@ pre {
   padding: 6px;
   line-height: 1.4;
 }
+
+.landing .deploy-to-netlify {
+  margin: 0 0 20px 0;
+}
+
+.landing .deploy-to-netlify h3 {
+  font-size: 24px;
+  margin: 26px 0 16px 0;
+}
+
+.landing .deploy-to-netlify p {
+  font-size: 14px;
+}
+
+.deploy-to-netlify {
+  margin: 64px 0;
+}
+
+.deploy-to-netlify hr {
+  color: #fefefe;
+  border-top: 1px solid #fefefe;
+  margin-bottom: 30px;
+}
+
+.deploy-to-netlify h3,
+.deploy-to-netlify p {
+  margin-bottom: 24px;
+}
+
+.deploy-to-netlify em {
+  color: grey;
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.deploy {
+  display: block;
+  margin: 22px 0 0 0;
+}
+
+a.deploy-btn {
+  min-height: 43px;
+  width: 100%;
+}
+
+a.deploy-btn img {
+  width: 100%;
+}
+
+a.deploy-btn-interior img {
+  margin: -4px 0 0 0;
+  box-shadow: none;
+  width: auto;
+}
+
 .sheet:after {
   content: "";
   display: table;

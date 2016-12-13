@@ -2,9 +2,9 @@
 title: Top Open-Source Static Site Generators
 ---
 <%= partial "includes/navbar", :locals => {:controls => true} %>
-<div class="main">
+<div class="main landing">
   <ul class="projects">
-    <% projects.each do |project| %>
+    <% projects.each_with_index do |project, index| %>
       <li class="project lang-<%= project.language.downcase.gsub(/\s/, '-').gsub('.', '') %>"
           data-stars="<%= project.stars %>"
           data-forks="<%= project.forks %>"
@@ -51,7 +51,20 @@ title: Top Open-Source Static Site Generators
             <dt>License:</dt>
             <dd><%= project.license %></dd>
           </dl>
+          <% if project.startertemplaterepo %>
+            <div class="deploy">
+              <a class="deploy-btn" href="https://app.netlify.com/start/deploy?repository=https://github.com/<%= project.startertemplaterepo %>" alt="Deploy to Netlify" title="Deploy to Netlify">
+                <img src="/images/deploy-btn-wire-large.svg" title="Deploy to Netlify">
+              </a>
+            </div>
+          <% end %>
         </div>
+        <% if index == 2 %>
+          <li id="deploy-to-netlify" class="project deploy-to-netlify">
+            <h3>Want to get started with just one click?</h3>
+            <p>The “Deploy to Netlify” button on select generators below helps you deploy new sites from generator-specifc templates with one single click completely free (no credit card needed). It provides web developers a simple one-click step to let their users deploy their applications on Netlify (<a href="https://www.netlify.com/docs/deploy_button/">learn more here</a>).</p>
+          </li>
+        <% end %>
       </li>
     <% end %>
   </ul>

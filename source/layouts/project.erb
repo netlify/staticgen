@@ -8,6 +8,11 @@
         <a href="<%= current_page.homepage %>"><i class="fa fa-home"></i> <%= current_page.homepage %></a>
         <span class="separator">|</span>
         <a href="https://github.com/<%= current_page.repo %>"><i class="fa fa-github"></i> https://github.com/<%= current_page.repo %></a>
+        <% if current_page.startertemplaterepo %>
+          <a class="deploy-btn-interior pull-right" href="https://app.netlify.com/start/deploy?repository=https://github.com/<%= current_page.startertemplaterepo %>" alt="Deploy to Netlify" title="Deploy to Netlify">
+            <img src="https://www.netlify.com/img/deploy/button.svg" title="Deploy to Netlify">
+          </a>
+        <% end %>
       </div>
 
 
@@ -15,7 +20,19 @@
 
         <%= yield %>
 
-        <%= partial "includes/disqus" %>
+        <% if current_page.startertemplaterepo %>
+          <div class="deploy-to-netlify">
+            <hr>
+            <h3>Want to get started with just one click?</h3>
+            <p>The “Deploy to Netlify” button below helps you deploy new sites from templates (like this one) with one single click (<a href="https://www.netlify.com/docs/deploy_button/">learn more here</a>). It provides web developers a simple one-click step to let their users deploy their applications on Netlify.</p>
+            <p>
+              <em>Click below to give it a try with <%= current_page.title %>'s template.</em>
+              <a class="deploy-btn-interior inline" href="https://app.netlify.com/start/deploy?repository=https://github.com/<%= current_page.startertemplaterepo %>" alt="Deploy to Netlify" title="Deploy to Netlify">
+                <img src="https://www.netlify.com/img/deploy/button.svg" title="Deploy to Netlify">
+              </a>
+            </p>
+          </div>
+        <% end %>
 
       </div>
       <div class="charts">
