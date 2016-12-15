@@ -1,7 +1,7 @@
 ---
 title: Backgrid.js
-repo: wyuenho/backgrid
-direct: https://github.com/wyuenho/backgrid
+repo: cloudflare/backgrid
+direct: https://github.com/cloudflare/backgrid
 homepage: http://backgridjs.com/
 examples: http://backgridjs.com/#basic-example
 license: MIT
@@ -10,7 +10,7 @@ npm: backgrid
 technology: underscore, backbone, jQuery
 leading technology: jQuery
 author: Jimmy Yuen Ho Wong
-authorurl: https://wyuenho.github.io
+authorurl: https://cloudflare.github.io
 description: Easily stylable semantic HTML data grid widget.
 ---
 
