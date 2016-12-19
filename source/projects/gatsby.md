@@ -6,6 +6,7 @@ language: JavaScript
 license: MIT
 templates: React.js
 description: Transform plain text into dynamic blogs and websites using React.js
+startertemplaterepo: brianstone/gatsby-starter-clean 
 ---
 
 Transform plain text into dynamic blogs and websites using React.js.
