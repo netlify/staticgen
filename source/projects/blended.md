@@ -8,7 +8,7 @@ templates: HTML
 description: Static Site Generation Using Python
 ---
 
-Websites created using Blended are easy to manage and deploy. It combines the 'just write' mentality of Markdown and Plain Text with the design and practicality of HTML and Textile. Websites created using Blended are easy to manage and deploy.
+Websites created using Blended are easy to manage and deploy. It combines the 'just write' mentality of Markdown and Plain Text with the design and practicality of HTML and Textile. Blended also supports easy uploading of your built website through FTP to your server.
 
 Blended supports interactive (on file change) building as well as a standard build command. It is able to build from HTML, Markdown, Textile, and Plain Text source files at the same time. This gives you the flexibily to write however you want and to also be able to take other writings and use them easily.
 
