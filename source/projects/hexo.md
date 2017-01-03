@@ -6,6 +6,7 @@ language: JavaScript
 license: MIT
 templates: EJS, Swig
 description: 'Hexo is a fast, simple and powerful blog framework.'
+startertemplaterepo: netlify-templates/hexo-base 
 ---
 
 A fast, simple & powerful blog framework, powered by [Node.js](http://nodejs.org).
