@@ -1,6 +1,6 @@
-# StaticGen
+# staticgen.com
 
-[StaticGen.com](http://www.staticgen.com), a leaderboard of top open-source static site generators.
+[staticgen.com](http://staticgen.com), a leaderboard of top open-source static site generators.
 
 ## Contributing
 
@@ -14,29 +14,54 @@ Make sure to follow the following rules:
 *   **Stick to the format:** Fill out all the same fields as the other static site generators in `source/projects`.
 *   **Short description:** Keep all the details for the body text, keep the description for the overview page short and sweet.
 
-## Running locally
+## Usage
 
-StaticGen is built with Middleman. To install and run locally:
+Be sure that you have the latest node and npm installed, then clone this repository and run:
 
-    git clone https://github.com/netlify/staticgen.git
-    cd staticgen
-    bundle install (requires ruby 2.1.2 to work w/o errors)
-    bundle exec middleman
+```bash
+npm install
+npm start
+```
 
-You'll run into GitHub's API limits very quickly if you just do this. To avoid this we recommend you create a Github API token with permissions to access public repositories and Gist.
+In order to successfully retrieve Twitter followers and GitHub stars, you will need authentication
+keys for both services.
 
-Then create a Gist with a single file `data.json` with an empty javascript object literal as content: {}
+For GitHub, all you'll need is a personal access token. This can be generated at
+<https://github.com/settings/tokens>. For Twitter, you need to create an application at
+<https://apps.twitter.com> to get the necessary tokens. When deploying, you must set the environment
+variables per the example below. If you are developing locally, you can set
+these in a `.env` file at the root of the repo.
 
-Then set these environment variables before running middleman:
+```
+STATICGEN_GITHUB_TOKEN=examplekey123abc
+STATICGEN_TWITTER_CONSUMER_KEY=examplekey231abc
+STATICGEN_TWITTER_CONSUMER_SECRET=examplekey321abc
+STATICGEN_TWITTER_ACCESS_TOKEN_KEY=examplekey231abc
+STATICGEN_TWITTER_ACCESS_TOKEN_SECRET=examplekey321abc
+```
 
-    export GITHUB_TOKEN=YOUR_TOKEN
-    export GIST_ID=ID_OF_YOUR_GIST
+GitHub and Twitter data is cached in the `.tmp` directory, and online in a Gist. If neither has data
+newer than 24 hours old, fresh data is fetched from GitHub and Twitter. Fetching caching occur
+automatically during the build.
 
-Then middleman will use the Gist you specified to archive stats (stars, forks and issues) for the repositories.
+Then visit http://localhost:3000/ - React Static will automatically reload when changes occur.
+
+To test a production build locally, do:
+
+```bash
+npm run stage
+npm run serve
+```
+
+To run a production build for deployment:
+
+```bash
+npm run build
+```
 
 ## Netlify
 
-StaticGen is built and maintained by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps.
+staticgen.com is built and maintained by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps.
 
 ## License
 

@@ -1,0 +1,17 @@
+{
+  "extends": "react-static/.babelrc",
+  "plugins": [
+    ["babel-plugin-module-resolver", {
+      "alias": {
+        "App": "./src/App/",
+        "Home": "./src/Home/",
+        "Images": "./src/images/",
+        "Content": "./content/",
+        "Scripts": "./scripts/",
+      },
+    }],
+    "babel-plugin-styled-components",
+    "babel-plugin-import-glob",
+    "babel-plugin-transform-md-import-to-string",
+  ],
+}
