@@ -20,7 +20,7 @@ StaticGen is built with Middleman. To install and run locally:
 
     git clone https://github.com/netlify/staticgen.git
     cd staticgen
-    bundle install
+    bundle install (requires ruby 2.1.2 to work w/o errors)
     bundle exec middleman
 
 You'll run into GitHub's API limits very quickly if you just do this. To avoid this we recommend you create a Github API token with permissions to access public repositories and Gist.
