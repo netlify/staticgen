@@ -17,6 +17,35 @@ body {
 }
 
 h1 { font-size: 76px; }
+h1 > em {
+  color: white;
+  font-weight: 100;
+  line-height: 31px;
+  font-size: 24px;
+  max-width: 244px;
+  display: inline-block;
+  text-align: left;
+  border-left: 1px solid white;
+  padding-left: 16px;
+  font-style: normal;
+}
+h1 > strong {
+  color: white;
+  display: block;
+  font-size: 16px;
+  font-weight: 200;
+  font-style: italic;
+  max-width: 400px;
+  margin: 0 auto 35px auto;
+}
+h1 > strong > a,
+h1 > strong > a:link,
+h1 > strong > a:active,
+h1 > strong > a:visited,
+h1 > strong > a:hover {
+  color: white;
+  font-weight: 600;
+}
 h2 { font-size: 49px; font-weight: 100; }
 h3 {
   font-size: 47px;
