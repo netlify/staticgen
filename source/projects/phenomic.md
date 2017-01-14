@@ -6,6 +6,7 @@ language: JavaScript
 license: MIT
 templates: JavaScript (React)
 description:  A modern static website generator to create dynamic website using React components.
+startertemplaterepo: thangngoc89/statinamic-theme-lumen
 ---
 
 > Modern static website generator for creating dynamic websites using React
