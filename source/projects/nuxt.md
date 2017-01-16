@@ -1,11 +1,12 @@
 ---
 title: Nuxt
-repo: nuxt/nuxtjs
-homepage: http://nuxtjs.org/
+repo: nuxt/nuxt.js
+homepage: https://nuxtjs.org/
 language: JavaScript
 license: MIT
-templates: Vue
-description: A minimalistic framework for serverless Vue.js applications
+templates: JavaScript (Vue)
+description: A minimalistic framework for serverless Vue.js applications.
+startertemplaterepo: nuxt/starter
 ---
 
 An easy way to export your Vue.js Web Application into a static website.
