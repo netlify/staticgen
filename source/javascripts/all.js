@@ -2,7 +2,7 @@
 //= require "jquery.flot"
 //= require "jquery.flot.time"
 //= require "jquery.isotope"
-//= require "jquery.pin"
+
 //= require "share"
 //= require_self
 
@@ -14,8 +14,6 @@ $(function() {
       }
     }
   });
-
-  $(".navbar").pin();
 
   var sortAscending = {title: true};
 

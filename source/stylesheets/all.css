@@ -143,11 +143,12 @@ a.logo:hover {
 .hero {
     background: #2e3039;
     text-align: center;
-    padding: 60px 0 70px;
+    padding: 40px 0;
 }
 
 .hero h1 {
-    margin: 60px 0 0;
+    margin: 40px 0 0;
+    padding: 0 40px;
 }
 
 .hero h2 {
@@ -202,7 +203,7 @@ a.logo:hover {
 }
 
 .main {
-    margin-top: 47px;
+    padding: 20px;
 }
 .main.subpage {
     margin-top: 37px;
@@ -298,10 +299,6 @@ a.logo:hover {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.projects {
-    margin-right: -24px;
 }
 
 .card {
@@ -419,6 +416,7 @@ a.logo:hover {
 .right-side {
     width: 35%;
     margin-left: 3%;
+    overflow: hidden;
 }
 .right-side h4 {
     font-size: 14px;
@@ -700,14 +698,6 @@ a.logo:hover {
   .logo-group .author-top {
     display: none;
    }
-   .navbar {
-   }
-   .navbar .container {
-     text-align: center;
-   }
-  .navbar .right-menu a {
-     padding: 0 20px;
-  }
   .left-side, .right-side {
     width: 100%;
     float: none;
@@ -733,12 +723,13 @@ a.logo:hover {
     font-size: 20px;
   }
 }
+/* Responsiveness */
 
 @media all and (min-width: 500px) {
     .project {
         float: left;
-        width: 50%;
-        padding-right: 24px;
+        width: 48%;
+        margin: 1%;
     }
 
     .project:nth-of-type(n) {
@@ -750,29 +741,11 @@ a.logo:hover {
     }
 }
 
-@media all and (max-width: 800px) {
-    .navbar {
-        height: 90px;
-    }
-
-    .navbar .right-menu {
-        float: none;
-    }
-
-    .navbar .right-menu a {
-        margin-left: 0;
-    }
-
-    .navbar .container {
-        padding: 0 12px;
-    }
-}
-
 @media all and (min-width: 800px) {
     .project {
         float: left;
-        width: 33.333333333%;
-        padding-right: 24px;
+        width: 30%;
+        margin: 1%;
     }
 
     .project:nth-of-type(n) {
@@ -782,20 +755,34 @@ a.logo:hover {
     .project:nth-of-type(3n+1) {
         clear: both;
     }
-}
 
-@media all and (min-width: 1000px) {
-    .project {
-        float: left;
-        width: 25%;
-        padding-right: 24px;
-    }
-
-    .project:nth-of-type(n) {
-        clear: none;
-    }
-
-    .project:nth-of-type(4n+1) {
-        clear: both;
+    .navbar {
+      padding: 0 20px;
     }
 }
+
+
+/* navigation bar only */
+
+@media all and (max-width: 800px) {
+  .navbar {
+    height: 90px;
+  }
+
+  .navbar .container {
+    text-align: center;
+  }
+
+  .navbar .right-menu {
+    float: none;
+  }
+
+  .navbar .right-menu a {
+    margin-left: 0;
+  }
+
+  .navbar .container {
+    padding: 0 12px;
+  }
+}
+

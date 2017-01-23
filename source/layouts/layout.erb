@@ -6,8 +6,13 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
+    <!-- Mobile-optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title ? current_page.data.title + " - Best Open-Source Spreadsheets and Data Grids written in JavaScript" : "JSpreadsheets - Best Open-Source Spreadsheets and Data Grids written in JavaScript" %></title>
+
+    <link rel="shortcut icon" href="">
 
     <meta name="description" content="JSpreadsheets compiles the best open-source spreadsheets and data grids written in JavaScript. It helps you choose the most suitable component for your project." />
 
@@ -25,7 +30,7 @@
     <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Lato font -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
     <!-- StaticGen styles -->
     <%= stylesheet_link_tag "normalize", "syntax", "all" %>
@@ -59,7 +64,7 @@
       </div>
       <div class="postscript">
         <p>This project is based on a great piece of code written by
-        <a href="http://netlify.com" target="_blank">Netlify</a> and
+        <a href="https://netlify.com" target="_blank">Netlify</a> and
         <a href="https://github.com/netlify/staticgen" target="_blank">released on GitHub</p>
       </div>
     </div>
