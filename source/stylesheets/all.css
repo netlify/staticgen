@@ -295,6 +295,10 @@ a.logo:hover {
   text-decoration: underline;
 }
 
+.projects {
+    min-height: 900px;
+}
+
 .projects, .stats {
     list-style: none;
     margin: 0;
