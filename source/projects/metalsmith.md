@@ -1,6 +1,6 @@
 ---
 title: Metalsmith
-repo: metalsmith/metalsmith
+repo: segmentio/metalsmith
 homepage: http://www.metalsmith.io/
 language: JavaScript
 license: MIT
