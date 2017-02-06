@@ -5,7 +5,7 @@ homepage: https://github.com/brendt/stitcher
 language: PHP
 license: MIT
 templates: Twig and Smarty
-description: Static websites for real PHP developers
+description: Static websites for PHP developers
 ---
 
 Stitcher is a **PHP tool** for **developers** to create **high performant websites**. At its core, Stitcher is a 
