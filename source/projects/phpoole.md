@@ -1,6 +1,6 @@
 ---
 title: PHPoole
-repo: Narno/PHPoole
+repo: PHPoole/PHPoole
 homepage: http://phpoole.org
 language: PHP
 license: MIT
