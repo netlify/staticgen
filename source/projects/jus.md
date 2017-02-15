@@ -1,6 +1,6 @@
 ---
 title: jus
-repo: zeke/jus
+repo: jus/jus
 homepage: http://jus.js.org
 language: JavaScript
 license: MIT
