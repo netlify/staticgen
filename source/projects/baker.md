@@ -1,24 +1,13 @@
 ---
-title: Misakai Baker
-repo: Kelindar/misakai-baker
-homepage: http://baker.misakai.com
-language: .Net
-license: Apache
-templates: Razor
-description: Slice and Optimize with Razor and Markdown
+title: baker
+repo: taylorchu/baker
+homepage: https://dl.dropboxusercontent.com/u/10527821/baker/index.html
+language: Bash
+license: GPLv2
+templates: custom
+description: the real static blog generator in bash with real template engine
 ---
 
-The aim of this project is to write a flexible and extensible static website generator for C# / .Net people. Misakai Baker uses a combination of Markdown and Yaml headers and Razor templates to produce clean code separation.
-Current binaries can be found here: [misakai-baker.zip](http://pub.misakai.com/Baker/bin/misakai-baker.zip)
+baker is the real static blog generator in bash with real template engine.
 
-
-Features
-========
-* Combine Markdown + Razor view engine, layouts, sections and helpers
-* Jekyll-like headers for the model
-* Various optimizations: HTML minifier, CSS minifier, JavaScript minifier and PNG optimizer
-* Pipeline model for processors and various combinations
-* Yaml configuration file
-* Integrated web server for testing
-* File watcher and live reload for development cycle updates
- 
+It currently uses the implementation from Daring Fireball.
