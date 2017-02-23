@@ -10,7 +10,7 @@ description: A static site/blog generator for developers & designers
 
 igapyonv3 is a Java based open source static site/blog generator for developers.
 
-* Lightweight and turnkey static site/blog generator.
+* Lightweight and turn-key static site/blog generator.
 * Provided as a Maven Plugin.
 * Supports Markdown content.
 * RSS feed support.
