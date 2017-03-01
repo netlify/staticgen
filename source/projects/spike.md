@@ -1,7 +1,7 @@
 ---
 title: Spike
 repo: static-dev/spike
-homepage: 'https://github.com/static-dev/spike'
+homepage: 'https://www.spike.cf/'
 language: Javascript
 license: MIT
 templates: Reshape
@@ -10,7 +10,7 @@ description: 'An opinionated static build tool, powered by webpack'
 
 ## Why should you care?
 
-[We](https://github.com/carrot) [:heart:](http://giphy.com/gifs/steve-carell-cute-the-office-Yb8ebQV8Ua2Y0/tile) [static](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/).
+[We](https://github.com/carrot) [❤](http://giphy.com/gifs/steve-carell-cute-the-office-Yb8ebQV8Ua2Y0/tile) [static](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/).
 
 If you're building a website or client-side app – then :cactus: spike is probably for you. Spike aims to be simple, efficient, and a pleasure to use.
 
