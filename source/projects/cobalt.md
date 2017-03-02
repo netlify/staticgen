@@ -9,3 +9,8 @@ description: A static site generator written in Rust.
 ---
 
 Cobalt is a static site generator written in Rust. It uses Liquid templates and markdown.
+
+## Usage
+
+  $ cobalt new myBlog
+  $ cobalt build -s myBlog -d path/to/your/destination
