@@ -1,5 +1,5 @@
 ---
-title: Bookdown
+title: Bookdown (R)
 repo: rstudio/bookdown
 homepage: https://bookdown.org/
 language: R
