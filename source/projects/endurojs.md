@@ -6,7 +6,7 @@ language: JavaScript
 license: MIT
 templates: HBS
 description: 'Minimalistic, lean & mean, node.js static page generator'
-startertemplaterepo: gottwik/enduro_netlify_starter
+startertemplaterepo: gottwik/enduro_mirror
 ---
 
 ## Built for speed
