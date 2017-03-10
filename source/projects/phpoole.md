@@ -6,6 +6,7 @@ language: PHP
 license: MIT
 templates: Twig
 description: Light and easy static website generator written in PHP.
+startertemplaterepo: PHPoole/Cecil
 ---
 
 PHPoole takes your content (written in [Markdown](http://daringfireball.net/projects/markdown/) plain text format) and merges files with layouts ([Twig](http://twig.sensiolabs.org/) templates) to generate static HTML files.
