@@ -14,7 +14,7 @@ Don't want to compromise on WordPress's power as a powerful and extensible CMS? 
  - auto-deploy via FTP
  - auto-deploy via S3
  - auto-deploy via Dropbox
- - ready to deploy folder of zip of your static site 
+ - ready to deploy folder of zip of your static site
 
 With over 6,000 active installs and now back in active development, see if it works for you.
 
