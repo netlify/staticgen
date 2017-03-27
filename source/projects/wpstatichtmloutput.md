@@ -1,4 +1,3 @@
-
 ---
 title: WP Static HTML Output
 repo: leonstafford/wordpress-static-html-plugin
