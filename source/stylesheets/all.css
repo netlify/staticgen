@@ -1,5 +1,33 @@
 @charset "utf-8";
 
+.notification {
+  background: #313D3E;
+  box-sizing: border-box;
+  color: white;
+  padding: 16px 24px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.notification sup,
+.notification sub {
+  font-size: initial;
+  vertical-align: initial;
+  bottom: 0;
+  line-height: initial;
+  position: initial;
+}
+
+.notification em {
+  font-style: normal;
+  color: #8B8B8B;
+  padding: 0 8px;
+}
+
+.notification .text-link {
+  text-decoration: underline;
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
