@@ -1,5 +1,19 @@
 @charset "utf-8";
 
+.notification {
+  background: #313D3E;
+  box-sizing: border-box;
+  color: white;
+  padding: 16px 24px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  .text-link {
+    text-decoration: underline;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
