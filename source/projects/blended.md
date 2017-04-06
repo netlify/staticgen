@@ -1,6 +1,6 @@
 ---
 title: Blended
-repo: johnroper100/blended
+repo: BlendedSiteGenerator/Blended
 homepage: http://jmroper.com/blended/
 language: Python
 license: GPL 3.0
