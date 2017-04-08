@@ -15,3 +15,5 @@ Blended is the most versatile static site generator ever! It's multiple file for
 Blended's unique system allows you to write your content in eleven different markup formats at once! This allows you to use whatever markup you want to create work that looks just as good as if it were made in any other way. Blended supports building HTML, Markdown, Textile, reStructuredText, Jade, Docx, and Plain Text to HTML as well as Sass, Less, and Stylus to CSS and CoffeeScript to JavaScript.
 
 Once you have created your website, Blended enables you to upload the entire thing to your server through FTP with a single command. Also, a tool is included to zip up the build folder so that it is ready to distribute. Sites built with Blended work beautifully with GitHub pages and other such hosting platforms.
+
+Blended supports the easy import of posts and website information from WordPress and Blogger. With one simple command, you can convert everything in less than a second.
