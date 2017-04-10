@@ -1,41 +1,46 @@
 ---
 title: thumbsup
 repo: thumbsup/thumbsup
-homepage: http://github.com/thumbsup/thumbsup
+homepage: https://thumbsup.github.io
 language: JavaScript
 license: MIT
 templates: N/A
 description: Static photo &amp; video gallery generator
 ---
 
-`thumbup` generates static photo &amp; video galleries from your local media.
-Simply point it to a given folder, and upload the result to a static file server.
+## Static web galleries for all your photos and videos
 
-### Highlights
+Give `thumbsup` a folder full of photos and videos, and it will build HTML galleries to view them.
+It takes care of resizing photos, creating thumbnails, re-encoding videos to a web-friendly format, and more...
 
-- creates all thumbnails
-- generates multiple photo/video resolutions for web friendly browsing
-- only rebuilds changed files: it's fast :)
-- supports custom styles
+## Highlights
 
-### Input
+- Get started in seconds
 
-Any folder with photos and videos:
+Create a whole gallery from a single command.
+If you have more time, pick a theme, configure your styles, or change the config settings to control how albums are created.
 
+- Fast
 
-    media
-      |
-      |__ paris
-      |     |__ img001.jpg
-      |     |__ img002.jpg
-      |
-      |__ sydney
-            |__ vid001.mp4
-            |__ img003.png
+Thumbsup keeps track of which photos are new and only rebuilds what's necessary.
+If everything is up to date, running thumbsup on a 50GB folder only takes a few seconds.
 
+- Mobile friendly
 
-### What it looks like
+The generated website can be viewed on any device - including videos.
+Have a look for yourself at the demo site.
 
-![screenshot](https://raw.github.com/thumbsup/thumbsup/master/screenshot.jpg)
+- Cross-platform
 
-Note that the goal of `thumbsup` is to generate a gallery in a quick and effortless way - just like Dropbox shared galleries. You can specify custom CSS, but it doesn't let you specify custom rendering templates (yet).
+Available as an npm module or a Docker image, it works on macOS, Linux and Windows.
+Thumbsup it built upon well established tools like ffmpeg.
+
+- Deploy anywhere
+
+The generated galleries are fully static and self contained.
+Browse them from your computer, or upload them to AWS S3 for the world to see.
+
+## Examples
+
+![Mosaic albums](https://thumbsup.github.io/public/images/theme-mosaic-albums.png)
+![Mosaic media](https://thumbsup.github.io/public/images/theme-mosaic-media.png)
