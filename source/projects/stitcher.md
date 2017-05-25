@@ -1,7 +1,7 @@
 ---
 title: Stitcher
-repo: brendt/stitcher
-homepage: https://github.com/brendt/stitcher
+repo: pageon/stitcher-core
+homepage: https://github.com/pageon/stitcher-core
 language: PHP
 license: MIT
 templates: Twig and Smarty
