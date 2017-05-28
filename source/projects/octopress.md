@@ -1,6 +1,6 @@
 ---
 title: Octopress
-repo: imathis/octopress
+repo: octopress/octopress
 homepage: http://octopress.org
 language: Ruby
 license: MIT
