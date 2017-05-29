@@ -6,6 +6,7 @@ language: JavaScript
 license: MIT
 templates: HBS/Any JS
 description: An extremely simple, pluggable static site generator.
+startertemplaterepo: andreasvirkus/metalsmith-boilerplate
 ---
 
 An extremely simple, _pluggable_ static site generator.
