@@ -1,6 +1,6 @@
 ---
 title: Hugo
-repo: spf13/hugo
+repo: gohugoio/hugo
 homepage: http://gohugo.io/
 language: Go
 license: APL 2.0
