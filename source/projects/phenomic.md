@@ -1,6 +1,6 @@
 ---
 title: Phenomic
-repo: MoOx/phenomic
+repo: phenomic/phenomic
 homepage: https://phenomic.io
 language: JavaScript
 license: MIT
