@@ -5,7 +5,7 @@ homepage: https://github.com/azerupi/mdBook
 language: Rust
 license: MPL-2.0
 templates: Handlebars
-description: Gitbook alternative implemented in Rust.
+description: GitBook alternative implemented in Rust.
 ---
 
 Create book or documentation from markdown files as with GitBook.
