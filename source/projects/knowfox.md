@@ -19,7 +19,7 @@ Knowfox is written in Laravel, the friendly PHP framework for web artisans. Lara
 
 Markdown is a powerful yet simple to use writing format for things like articles, blog posts, or documentation pages.
 
-Knowfox takes your content written in Markdown, runs it through a layout easily created with Blade templates, and created a beautiful website from it.
+Knowfox takes your content written in Markdown, runs it through a layout easily created with Blade templates, and creates a beautiful website from it.
 
 ### Friendly content management built in
 
