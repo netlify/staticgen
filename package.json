@@ -5,7 +5,8 @@
   "description": "Open-Source Spreadsheets and Data Grids",
   "main": "shipitfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+"deploy": "shipit production deploy"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/krzysztofspilka/staticgen",
   "devDependencies": {
     "copy-object": "^1.0.0",
+    "shipit": "^1.0.2",
     "shipit-deploy": "^1.3.1"
   }
 }

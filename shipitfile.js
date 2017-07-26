@@ -34,20 +34,17 @@ module.exports = function (shipit) {
     shipit.remote('pwd');
   });
 
-  shipit.blTask('deploy', [
-    'deploy:init',
-    'deploy:fetch',
-    'deploy:update'
-  ]);
+  shipit.blTask('deploy', ['deploy:init', 'deploy:fetch', 'deploy:update']);
 
   shipit.on('updated', function() {
-    var path = shipit.releasePath;
+    const dirname = shipit.releaseDirname;
 
-    shipit.remote('cd ' + path + ' && bundle install --path=vendor').then(function() {
-      return shipit.remote('cd ' + path + ' && bundle exec middleman build');
-
-    }).then(function() {
+    shipit.remote(`cd ${shipit.config.deployTo} && ./build.sh ${dirname}`).then(function() {
       shipit.start(['deploy:publish', 'deploy:clean']);
     });
+  });
+
+  shipit.on('published', function() {
+    shipit.remote(`cd ${shipit.config.deployTo} && ./up.sh`);
   });
 };
