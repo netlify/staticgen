@@ -6,7 +6,7 @@
   "main": "shipitfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-"deploy": "shipit production deploy"
+    "deploy": "shipit production deploy"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,9 @@
     "url": "https://github.com/krzysztofspilka/staticgen/issues"
   },
   "homepage": "https://github.com/krzysztofspilka/staticgen",
+  "dependencies": {
+    "node-static": "^0.7.9"
+  },
   "devDependencies": {
     "copy-object": "^1.0.0",
     "shipit": "^1.0.2",
