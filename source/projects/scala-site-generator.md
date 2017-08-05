@@ -4,7 +4,7 @@ repo: chipsenkbeil/scala-site-generator
 homepage: https://github.com/chipsenkbeil/scala-site-generator
 language: Scala
 license: Apache 2
-templates: ScalaTags
+templates: ScalaTags, GitHub flavored Markdown
 description: Static site generator written in Scala using ScalaTags for templates and Flexmark for markdown.
 ---
 
