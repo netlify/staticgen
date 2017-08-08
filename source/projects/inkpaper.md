@@ -1,7 +1,7 @@
 ---
 title: InkPaper
 repo: InkProject/ink
-homepage: http://www.inkpaper.io/
+homepage: http://www.chole.io/
 language: Go
 license: MIT
 templates: GO Template
