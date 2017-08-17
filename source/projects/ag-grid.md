@@ -1,7 +1,7 @@
 ---
 title: ag-Grid
-repo: ceolter/ag-grid
-direct: https://github.com/ceolter/ag-grid
+repo: ag-grid/ag-grid
+direct: https://github.com/ag-grid/ag-grid
 homepage: http://www.ag-grid.com/
 examples: http://www.ag-grid.com/example.php
 license: MIT
