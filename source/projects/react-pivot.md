@@ -3,7 +3,7 @@ title: React-Pivot
 repo: davidguttman/react-pivot
 direct: https://github.com/davidguttman/react-pivot
 homepage: https://github.com/davidguttman/react-pivot
-examples: http://davidguttman.github.io/react-pivot
+examples: https://github.com/davidguttman/react-pivot
 license: MIT
 bower: n/a
 npm: react-pivot
