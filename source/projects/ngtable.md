@@ -13,8 +13,8 @@ author: Vitalii Savchuk
 authorurl: http://equalteam.net
 description: Simple table with sorting and filtering on AngularJS.
 ---
-
-This directive allow to liven up your tables. It support sorting, filtering and pagination. Header row with titles and filters automatic generated on compilation step.
+NG-table enhances your HTML tables. It supports sorting, filtering and pagination. Header row with titles and filters automatic generated.
+                  
 
 #### Preview:
 

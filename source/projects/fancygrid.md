@@ -18,6 +18,7 @@ FancyGrid provides comprehensive collection of grid and form solutions for Enter
 We try to do elegant samples for real business tasks with focus on DataViz.
 
 #### Features:
+
 * Paging
 * Sorting
 * Filtering

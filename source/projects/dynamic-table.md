@@ -26,7 +26,5 @@ your backend and control over what can be edited and how it is being saved.
 
 #### Preview:
 
-##### dynamic-tablegit 
-![Scrolling table](/images/libraries/dynamic-table/dynamic-table.png "Table preview")
-
-
+##### dynamic-table 
+![Dynamic table preview](/images/libraries/dynamic-table/dynamic-table.png "Dynamic table preview")

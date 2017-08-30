@@ -16,7 +16,27 @@ description: jQuery datagrid plugin using jQuery UI CSS Framework.
 
 jui_datagrid is an Ajax-enabled jQuery plugin, useful to manipulate database data in tabular format.
 
-Fully customizable, simple but powerful API, jQuery themes compatible, localization support. It has a modular design, so it is using jui_pagination plugin for paging and jui_filter_rules plugin for searching.
+Fully customizable, simple but powerful API, jQuery themes compatible, localization support. It has a modular design, 
+so it is using jui_pagination plugin for paging and jui_filter_rules plugin for searching.
+
+####Features
+
+* Features
+* Display tabular data
+* CSS based themes compatible with jQuery-UI Theming
+* Multiple instances in same page
+* Get data in JSON format using AJAX (any server-side technology)
+* Change columns order
+* Show/hide columns
+* Style columns
+* Flexible data sorting
+* Single or multi-select rows
+* Powerful pagination
+* Powerful filters (Query builder)
+* Column value conversion using javascript (or server side) function
+* Preferences dialog available to user
+* Debug mode available
+* Localization
 
 #### Preview:
 

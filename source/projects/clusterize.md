@@ -27,7 +27,7 @@ The main idea is not to pollute DOM with all used tags. Instead of that - it spl
 #### Preview:
 
 ##### Lazy loading
-![Scrolling table](/images/libraries/clusterize/clusterize-js-scrolling-table_example.gif "Scrolling table")
+![Clusterize lazy loading](/images/libraries/clusterize/clusterize-js-scrolling-table_example.gif "Clustrize lazy loading")
 
 ##### Scroll progress
-![Scrolling progress indicator](/images/libraries/clusterize/clusterize-js-with-progress-bar.png "Scrolling progress indicator")
+![Clusterize progress indicator](/images/libraries/clusterize/clusterize-js-with-progress-bar.png "Scrolling progress indicator")

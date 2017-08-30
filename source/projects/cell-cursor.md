@@ -29,6 +29,7 @@ Simple excel like spreadsheet development kit for angularJs.
 #### Preview:
 
 ##### Cell-cursor table 
-![Scrolling table](/images/libraries/cell-cursor/cell-capture-preview.png "Cell-cursor table")
+![Cell-cursor table wide view](/images/libraries/cell-cursor/cell-cursor-wide.png "Cell-cursor wide view")
 
-
+##### Cell-cursor table snapshot 
+![Cell-cursor table snapshot](/images/libraries/cell-cursor/cell-cursor-preview.png "Cell-cursor table snapshot")

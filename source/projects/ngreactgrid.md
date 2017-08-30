@@ -14,7 +14,11 @@ authorurl: http://www.josebalius.com/
 description: ngReactGrid AngularJS directive.
 ---
 
-ngReactGrid is an AngularJS directive that can be used to render an enhanced HTML table or grid of data very fast using React as the rendering engine. It is based on ng-grid and jQuery DataTables. It uses HTML tables and supports fixed column headers by default.
+A really fast Angular grid using the power of React to render hyper fast HTML tables.
+
+ngReactGrid is an AngularJS directive that can be used to render an enhanced HTML table or grid 
+of data very fast using React as the rendering engine. It is based on ng-grid and jQuery DataTables. 
+It uses HTML tables and supports fixed column headers by default.
 
 #### Preview:
 

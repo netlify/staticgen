@@ -14,7 +14,33 @@ authorurl: http://paramquery.com/grid
 description: jQuery grid plugin based on jQueryUI widget design.
 ---
 
-ParamQuery grid is open source jQuery grid plugin for displaying and manipulating tabular data in rich Ajax applications.Inspired by MS Excel and Google spreadsheet, it leaves no stone unturned when it comes to performance. It surpasses the benchmarks hitherto set by well known commercial and open source grids for gracefully handling largest number of records.
+ParamQuery grid is open source jQuery grid plugin with advanced features like row grouping, column grouping, nesting, 
+batch editing, export to Excel, csv, multiple selections, full keyboard navigation in addition to the basic features 
+like sorting, filtering, paging, inline editing, validations, etc. 
+
+Inspired by MS Excel and Google spreadsheet, it supports unlimited rows and columns with blazing fast performance. 
+
+Server side interaction is based on simple RESTful API and it can be implemented in any server side language i.e., 
+PHP, ASP.NET, J2EE, Cold fusion, etc. 
+
+It's free to use in any commercial or open source project under GPL v3 license. Hit like or star the github
+repo to support the grid. 
+
+####Features
+
+* Paging
+* Filtering
+* Sorting
+* Grouping
+* Virtualization
+* Spreadsheet/Excel
+* Inline editing
+* Selections
+* Hierarchy
+* Export
+* MVC/MVVM
+* Touch support
+
 
 #### Preview:
 

@@ -22,6 +22,24 @@ Compatible with modern web browsers. Tested with: Google Chrome, Mozilla Firefox
 
 Created for Bootstrap 3, but it is also compatible with Bootstrap 2 (bootstrap_version option)
 
+#### Features:
+
+* Created for Bootstrap 3 (Bootstrap 2 supported)
+* Responsive web design
+* Fully configurable
+* Get data in JSON format using AJAX (any server-side technology)
+* A php class is provided for server side operations
+* Change columns order
+* Show/hide columns
+* Style columns
+* Simple column sorting with a click
+* Flexible data sorting (multi-column)
+* Single or multiple row selection
+* Powerful pagination
+* Powerful filters (Query builder)
+* Multiple instances in same page
+* Localization
+
 #### Preview:
 
 ##### Advanced sorting
