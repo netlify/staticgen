@@ -13,7 +13,7 @@ description: Handsontable is a JavaScript composite spreadsheet component for ap
 
 Handsontable is a composite spreadsheet component for apps and websites. It is written in JavaScript and not constrained by any external framework. It can be easily modified or extended with custom plugins. It also binds to any source using the JSON format and handles large amounts of data. You can easily do all CRUD operations and provide end-users with an Excel-like experience.
 
-Take a look at this basic [demo on JSFiddle](http://jsfiddle.net/handsoncode/s6t768pq/ "Handsontable basic demo") for a better insight.
+Take a look at this basic [demo on JSFiddle](https://jsfiddle.net/9Luoerqh/ "Handsontable basic demo") for a better insight.
 
 #### Features:
 
