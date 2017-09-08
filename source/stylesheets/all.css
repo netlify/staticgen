@@ -230,9 +230,18 @@ a.logo:hover {
 }
 
 .sheet .links {
+    margin-top:0;
     margin-bottom: 25px;
     padding-bottom: 16px;
     border-bottom: 1px solid #eee;
+}
+
+.sheet .ellipsis {
+    width: 250px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sheet p {

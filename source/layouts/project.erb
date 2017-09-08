@@ -7,9 +7,8 @@
 
       <div class="left-side">
         <div class="links">
-          <a href="<%= current_page.homepage %>" target="_blank"><i class="fa fa-home"></i> <%= current_page.homepage %></a>
-          <span class="separator">|</span>
-          <a href="https://github.com/<%= current_page.repo %>" target="_blank"><i class="fa fa-github"></i> https://github.com/<%= current_page.repo %></a>
+          <a href="<%= current_page.homepage %>" target="_blank" class="ellipsis"><i class="fa fa-home"></i> <%= current_page.homepage %></a>
+          <a href="https://github.com/<%= current_page.repo %>" target="_blank" class="ellipsis"><i class="fa fa-github"></i> https://github.com/<%= current_page.repo %></a>
         </div>
 
         <%= yield %>
