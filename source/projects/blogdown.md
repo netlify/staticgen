@@ -14,19 +14,7 @@ description: A back-end agnostic, zero compilation, markdown blogging platform
 
 ## Features
 
-| Feature          | BlogDown | Jekyll | WordPress | Ghost |
-| ---------------- | :------: | :----: | :-------: | :---: |
-| Single Page      | Yes      | No     | No        | No    |
-| Page Transitions | Yes      | No     | No        | No    |
-| Modular Styles   | Yes      | No     | No        | No    |
-| Custom Rendering | Yes      | No     | Yes       | No    |
-| Taxonomies       | Yes      | No     | Yes       | No    |
-| No Compilation   | Yes      | No     | Yes       | Yes   |
-| Commenting       | Yes      | No     | Yes       | Yes   |
-| Server Agnostic  | Yes      | Yes    | No        | No    |
-| No Database      | Yes      | Yes    | No        | No    |
-| Modules/Plugins  | Yes      | Yes    | Yes       | No    |
-| Themes           | Yes      | Yes    | Yes       | Yes   |
+![BlogDown Features](https://drive.google.com/uc?export=view&id=151E88i6kqKLijZd0zSTKbDC20WoQoV4DAA)
 
 
 ## Installing
