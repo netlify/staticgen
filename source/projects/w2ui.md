@@ -16,20 +16,20 @@ description: A set of common UI widgets: Layout, Grid, Sidebar, Tabs, Toolbar, P
 
 The w2ui library is a set jQuery plugins for front-end development of data driven web applications. It contains all most common UI widgets: Layout, Grid, Sidebar, Tabs, Toolbar, Popup, Field Controls and Forms. You do not need to put together a collection of mismatched plugins to accomplish your goals.
 
-* Lightweight. Very small foot print, only 69Kb
-* Feature rich out of the box. Resisable columns, reordering, infinite scroll, fronzen columns, you name it.
-* Skinning - Create you own scheme by changing colors in LESS file, and it will propogate through out.
+* Lightweight. Very small foot print, only 69Kb.
+* Feature rich out of the box. Resizable columns, reordering, infinite scroll, frozen columns, you name it.
+* Skinning - Create you own scheme by changing colors in LESS file, and it will propagate through out.
 
 #### Preview:
 
-##### Column groupping
-![Column groupping](/images/libraries/w2ui/w2ui-03.png "Column groupping")
+##### Column grouping
+![Column grouping](/images/libraries/w2ui/w2ui-03.png "Column grouping")
 
 ##### Grid and sidebar
 ![Grid and sidebar](/images/libraries/w2ui/w2ui-02.png "Grid and sidebar")
 
 ##### Spreadsheet like grid
-![Spreadshee like grid](/images/libraries/w2ui/w2ui-01.png "Spreadshee like grid")
+![Spreadsheet like grid](/images/libraries/w2ui/w2ui-01.png "Spreadsheet like grid")
 
 ##### Advanced search
 ![Advanced search](/images/libraries/w2ui/w2ui-04.png "Advanced search")
