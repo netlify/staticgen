@@ -11,7 +11,7 @@ technology: jQuery, Vanila JS
 leading technology: Vanila JS
 author: Vitali Malinouski
 authorurl: http://w2ui.com
-description: A set of common UI widgets: Layout, Grid, Sidebar, Tabs, Toolbar, Popup, Field Controls and Forms.
+description: A set of common UI widgets such as Layout, Grid, Sidebar, Tabs, Toolbar, Popup, Field Controls and Forms.
 ---
 
 The w2ui library is a set jQuery plugins for front-end development of data driven web applications. It contains all most common UI widgets: Layout, Grid, Sidebar, Tabs, Toolbar, Popup, Field Controls and Forms. You do not need to put together a collection of mismatched plugins to accomplish your goals.
