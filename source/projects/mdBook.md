@@ -11,6 +11,7 @@ description: GitBook alternative implemented in Rust.
 Create book or documentation from markdown files as with GitBook.
 
 Highlights:
+
 * Handlebars templates
 * Math equations through [MathJax](https://www.mathjax.org/)
 * Can be used as a library
