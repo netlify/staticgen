@@ -1,7 +1,7 @@
 ---
 title: simple-website
-repo: alexanderteinum/simple-website
-homepage: https://github.com/alexanderteinum/simple-website
+repo: alexanderte/simple-website
+homepage: https://github.com/alexanderte/simple-website
 language: Go
 license: BSD
 templates: Markdown
