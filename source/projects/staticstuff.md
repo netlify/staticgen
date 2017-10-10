@@ -1,16 +1,16 @@
 ---
-title: Static Stuff
+title: ARFR
 repo: javimosch/staticstuff
-homepage: https://github.com/javimosch/staticstuff
+homepage: https://github.com/javimosch/arfr
 language: JavaScript
 license: Apache
 templates: Handlebars
 description: Generates simple static web content blazing fast using handlebars templates.
 ---
 
-## Static Stuff
+## ARFR
 
-staticstuff let you develop static web sites faster.
+ARFR let you develop static web sites faster.
 
 ### Features
 
