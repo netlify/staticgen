@@ -1,7 +1,7 @@
 ---
 title: Gutenberg
 repo: Keats/gutenberg
-homepage: https://github.com/Keats/gutenberg
+homepage: https://www.getgutenberg.io/
 language: Rust
 license: MIT
 templates: Tera Templates
