@@ -1,7 +1,7 @@
 ---
 title: Flatmarket
 repo: christophercliff/flatmarket
-homepage: https://json.expert/flatmarket/
+homepage: https://christophercliff.com/flatmarket/
 language: JavaScript
 license: MIT
 templates: Any
