@@ -1,7 +1,7 @@
 ---
 title: Gatsby
 repo: gatsbyjs/gatsby
-homepage: https://github.com/gatsbyjs/gatsby
+homepage: http://gatsbyjs.org
 language: JavaScript
 license: MIT
 templates: React.js
