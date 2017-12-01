@@ -1,7 +1,7 @@
 ---
 title: mdBook
 repo: azerupi/mdBook
-homepage: https://github.com/azerupi/mdBook
+homepage: https://github.com/rust-lang-nursery/mdBook
 language: Rust
 license: MPL-2.0
 templates: Handlebars
