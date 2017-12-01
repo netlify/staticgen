@@ -5,7 +5,7 @@ layout: making-of
 
 # The Making of StaticGen
 
-How do you build an up to date scoreboard for Github projects as a CDN backed static site with no moving parts?
+How do you build an up to date scoreboard for GitHub projects as a CDN backed static site with no moving parts?
 
 The answer, of course, is a static site generator with some cool tooling around it.
 
@@ -15,11 +15,11 @@ This post will show you all the tricks we used to take StaticGen static.
 
 StaticGen is built with [Middleman](/middleman), one of the most popular Ruby based static site generators. The site is hosted on [Netlify](https://www.netlify.com).
 
-All the source for StaticGen is in [this repository](https://github.com/netlify/staticgen) on Github, and each time we push a new commit or accept a pull request, [Netlify](https://netlify.com) will run a middleman build and do a deploy of the generated site. Netlify will also auto-deploy the site once a day regardless of changes in the repository. We'll see why later.
+All the source for StaticGen is in [this repository](https://github.com/netlify/staticgen) on GitHub, and each time we push a new commit or accept a pull request, [Netlify](https://netlify.com) will run a middleman build and do a deploy of the generated site. Netlify will also auto-deploy the site once a day regardless of changes in the repository. We'll see why later.
 
 ## Data Sources
 
-StaticGen combines data from the Github API with our own list of static site generators and some historical data on each of the static site generators we list.
+StaticGen combines data from the GitHub API with our own list of static site generators and some historical data on each of the static site generators we list.
 
 Building a site like StaticGen with a static site generator, means changing the way we think about our data sources.
 
@@ -27,21 +27,21 @@ When building a dynamic site, we're always forced to focus on latency and query 
 
 With a static site, these concerns basically go away, as long as fetching the data can be done in a reasonable amount of time when running a build.
 
-The structure of the Github API, means we have to make at least 1 call to the Github API for each static site generator when generating our index listing of all the generators (to get the number of stars, forks and issues).
+The structure of the GitHub API, means we have to make at least 1 call to the Github API for each static site generator when generating our index listing of all the generators (to get the number of stars, forks and issues).
 
-If we were building a dynamic site, we would be forced to come up with a very effective caching layer or have to run cron-jobs in the background keeping our low-latency datastore in sync with the Github API, since doing 50+ API request while rendering the page would be out of the question.
+If we were building a dynamic site, we would be forced to come up with a very effective caching layer or have to run cron-jobs in the background keeping our low-latency datastore in sync with the GitHub API, since doing 50+ API request while rendering the page would be out of the question.
 
-With static site generation, things look completely different. Since we're just running the build a couple of times a day, there's absolutely no reason to worry about the latency of the API lookups, and we can happily use Github's API as our main datastore.
+With static site generation, things look completely different. Since we're just running the build a couple of times a day, there's absolutely no reason to worry about the latency of the API lookups, and we can happily use GitHub's API as our main datastore.
 
-There's an issue with the Github API, however. It doesn't give us any historical data, and we need this to draw our charts of stars, forks and issues or to indicate the traction of each static site generator.
+There's an issue with the GitHub API, however. It doesn't give us any historical data, and we need this to draw our charts of stars, forks and issues or to indicate the traction of each static site generator.
 
 To keep these historical data around, we'll need a datastore we can write too as well as read from during our build process. There's plenty of options for this, but we wanted to keep everything as simple as possible.
 
 ## Gist as a Data Store
 
-Enter Gist! Since we already need some Github API credentials to work with the Github API, we can take advantage of that to keep a really simple key value store around.
+Enter Gist! Since we already need some GitHub API credentials to work with the GitHub API, we can take advantage of that to keep a really simple key value store around.
 
-When we start the build, we read a JSON document from a Gist with all the historical data we already have on the static site generators. Whenever we fetch new data from the Github API for a project, we add it to our in-memory archive, and once the build is done, we write a new version of our JSON archive to the Gist.
+When we start the build, we read a JSON document from a Gist with all the historical data we already have on the static site generators. Whenever we fetch new data from the GitHub API for a project, we add it to our in-memory archive, and once the build is done, we write a new version of our JSON archive to the Gist.
 
 Again, since latency or write time is really not a concern, as long as it's something reasonable for a build cycle, we can go for stupidly simple solutions. All of our StaticGen history can be found in [this gist](https://gist.github.com/biilmann/db8c50bf9fb8d0c0284b).
 
@@ -51,7 +51,7 @@ Each time Netlify runs a build of staticgen.com, Middleman will follow the follo
 
 1. Get the list of projects from markdown files in the `/projects` folder
 2. Load the archive from the Gist
-3. Iterate through each project and add current stats from the Github API + historical data from archive
+3. Iterate through each project and add current stats from the GitHub API + historical data from archive
 4. Generate all pages
 5. Store the updated Gist archive
 
@@ -65,7 +65,7 @@ But lets dive into the nitty gritty details of how we're doing this with Middlem
 
 ## The Basic Middleman Setup
 
-Middleman has excellent support for blog-like collections, so the main data-source in StaticGen is a folder with a markdown file for each Github project we want to list and track.
+Middleman has excellent support for blog-like collections, so the main data-source in StaticGen is a folder with a markdown file for each GitHub project we want to list and track.
 
 Each file has some metadata expressed as YAML front-matter, eg.:
 
@@ -83,7 +83,7 @@ description: Hand-crafted, modern frontend development.
 
 The body text is then the description of the static site generator written in Markdown.
 
-To access our pages, we can use the `sitemap` feature of Middleman. For a start we could do this straight from our templates (and in fact, while doing the first drafts of the design that's how StaticGen started out), but for StaticGen I wanted to decorate each of these pages with some more metadata fetched from Github's API.
+To access our pages, we can use the `sitemap` feature of Middleman. For a start we could do this straight from our templates (and in fact, while doing the first drafts of the design that's how StaticGen started out), but for StaticGen I wanted to decorate each of these pages with some more metadata fetched from GitHub's API.
 
 To get this done, I wrote an extension to Middleman, with the end goal of exposing a sorted list of projects to the templates so we could do stuff like this:
 
