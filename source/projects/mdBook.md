@@ -1,6 +1,6 @@
 ---
 title: mdBook
-repo: azerupi/mdBook
+repo: rust-lang-nursery/mdBook
 homepage: https://github.com/rust-lang-nursery/mdBook
 language: Rust
 license: MPL-2.0
