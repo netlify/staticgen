@@ -109,7 +109,7 @@ module Github
         }
         code = res.code.to_i
         unless code >= 200 && code <= 300
-          raise "Error communicating with Github #{uri} (#{res.code}): #{res.inspect}"
+          raise "Error communicating with Github #{url} (#{res.code}): #{res.inspect}"
         end
         res.body
       end
