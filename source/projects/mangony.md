@@ -1,6 +1,6 @@
 ---
 title: Mangony
-repo: sebastian-fitzner/mangony
+repo: https://github.com/Sebastian-Fitzner/mangony
 homepage: http://mangony.veams.org/
 language: JavaScript
 license: MIT
