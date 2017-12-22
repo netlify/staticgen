@@ -4,19 +4,20 @@ repo: nozzle/react-static
 homepage: https://github.com/nozzle/react-static
 language: JavaScript
 license: MIT
-templates: React.js
-description: A progressive static-site framework for React, optimized for SEO
+templates: React
+description: A progressive static-site framework for React.
+startertemplaterepo: tannerlinsley/react-static-starter
 ---
 
-We take SEO, site performance, and user/developer experience very seriously. We’ve launched many sites using different static site tools that claim to solve these goals, but we have yet to find one that satisfies our requirements completely. React Static is the framework we carefully designed to meet those standards and help everyone build next generation, high-performance websites for the internet.
+React-Static is a fast, lightweight, and powerful framework for building static-progressive React applications and websites. It's been carefully designed to meet the highest standards of **SEO, site performance, and user/developer experience**. [**Read the introduction article on Medium**](https://medium.com/@tannerlinsley/%EF%B8%8F-introducing-react-static-a-progressive-static-site-framework-for-react-3470d2a51ebc)
 
 ## Features
 
-* React. Enough said.
-* Blazing fast performance
-* Data agnostic. Feed your site data from anywhere, however you want
-* Built for SEO, by SEO professionals
-* React-first developer experience
-* Painless project setup & migration
-* Supports 99.9% of the React ecosystem. Including CSS-in-JS libraries, custom Query layers like GraphQL, and even Redux!
-* Aggressive and flexible reloading
+- :100:% React (or Preact!)
+- :rocket: Blazing fast builds and performance.
+- Data Agnostic. Supply your site with data from anywhere, **however you want**.
+- Near-instant page views via  [PRPL](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) pattern.
+- Built for **SEO**.
+- ⚛️ React-first developer experience.
+- Painless project setup & migration.
+- Supports 100% of the React ecosystem. Including CSS-in-JS libraries, custom Query layers like GraphQL, and even Redux.
