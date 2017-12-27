@@ -1,7 +1,7 @@
 ---
 title: Statie
 repo: Symplify/Statie
-homepage: https://github.com/Symplify/Statie
+homepage: https://www.statie.org
 language: PHP
 license: MIT
 templates: Latte
