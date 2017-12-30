@@ -1,5 +1,5 @@
 ---
-title: Dapper
+title: Plerd
 repo: jmacdotorg/plerd
 homepage: http://jmac.org/plerd/
 language: Perl
