@@ -4,8 +4,9 @@ repo: JavaEden/Orchid
 homepage: https://javaeden.github.io/Orchid/latest/OrchidCore/
 language: Java
 license: LGPL-3.0
-templates: Twig, Markdown
+templates: Pebble
 description: A beautiful and truly unique documentation engine and static site generator.
+startertemplaterepo: JavaEden/OrchidStarter
 ---
 
 Orchid is a general-purpose static site generator with a focus on extensibility, and aimed at developers looking to improve their technical documentation. Orchid was born out of a desire for better-looking Javadocs and frustration with how difficult is it to manage large Jekyll sites and keep it up-to-date with your code.
