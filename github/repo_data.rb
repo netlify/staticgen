@@ -7,7 +7,7 @@ module Github
       @app = app
       @extension = extension
       @projects = []
-      @languages = {}
+      @languages = Hash.new(0)
     end
 
     def projects
@@ -31,8 +31,9 @@ module Github
           resource.destination_path = resource.path.sub(/^projects\//, '')
 
           @projects << resource
-          @languages[resource.language] ||= 0
-          @languages[resource.language] += 1
+          resource.language.split(/\s*,\s*/).each do |l|
+            @languages[l] += 1
+          end
         end
       end
 

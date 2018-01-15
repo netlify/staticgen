@@ -5,7 +5,7 @@ title: Top Open-Source Static Site Generators
 <div class="main landing">
   <ul class="projects">
     <% projects.each_with_index do |project, index| %>
-      <li class="project lang-<%= project.language.downcase.gsub(/\s/, '-').gsub('.', '') %>"
+      <li class="project lang-<%= project.language.split(/\s*,\s*/).map { |l| l.downcase.gsub(/\s/, '-').gsub('.', '') }.join(' lang-') %>"
           data-stars="<%= project.stars %>"
           data-forks="<%= project.forks %>"
           data-issues="<%= project.issues %>"
