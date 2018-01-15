@@ -5,7 +5,7 @@
         <select name="filter" class="dropdown-select">
           <option value="" selected>All languages</option>
           <% languages.each do |language| %>
-            <option value=".lang-<%= language.downcase.gsub(/\s/, '-') %>"><%= language %></option>
+            <option value="lang-<%= language.downcase.gsub(/\s/, '-') %>"><%= language %></option>
           <% end %>
         </select>
       </div>
