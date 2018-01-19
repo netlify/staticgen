@@ -1,6 +1,6 @@
 ---
 title: blogdown
-repo: thingdown/blogdown
+repo: jamrizzi/blogdown
 homepage: https://thingdown.github.io/blogdown
 language: JavaScript
 license: MIT
