@@ -1,7 +1,7 @@
 ---
 title: Orchid
 repo: JavaEden/Orchid
-homepage: https://javaeden.github.io/Orchid/latest/OrchidCore/
+homepage: https://orchid.netlify.com
 language: Java
 license: LGPL-3.0
 templates: Pebble
