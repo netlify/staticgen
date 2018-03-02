@@ -1,21 +1,22 @@
 ---
 title: Madoko
-repo: houshuang/madoko
-homepage: http://www.madoko.net
+repo: koka-lang/madoko
+homepage: https://www.madoko.net
 language: Javascript
 license: Apache
-templates: No
-description: One-page article-styled website from Markdown and LaTex.
+templates: LaTeX, HTML/CSS
+description: A fast processor for high quality academic and technical articles from Markdown and LaTeX.
+
 ---
+
+The main design goal of Madoko is to enable light-weight creation of
+high-quality scholarly and industrial documents for the web and print,
+while maintaining John Gruber's Markdown philosophy of simplicity and
+focus on plain text readability.
 
 With Madoko you can write full-blown academic articles with internal references, mathematical formulas, and bibliographies completely in Markdown and LaTex to get beautiful PDF or HTML output.
 
-- Install with `npm install madoko -g` 
-- Transform a markdown document to HTML: `madoko -v mydoc.md` 
-
-Supports "including" source files and referencing both CSS and javascript. Read the [reference manual](http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html) to learn more.
-
-An easy way to manage a large project is to split up the content and have one `index.md` including the chucncks:
+Supports "including" source files and referencing both CSS and javascript. Read the [reference manual] to learn more. An easy way to manage a large project is to split up the content and have one `index.md` including the chuncks:
 
 ```md
 css : lib/style.css
@@ -30,5 +31,24 @@ script: lib/myAweseomScriptsAndAnalytics.js
 
 ```
 
+To learn more about Madoko, check out the [reference manual]. To use it, simply:
 
++ Install with:
 
+```
+npm install madoko -g
+``` 
+
++ Translating a Markdown document to HTML is as simple as:
+
+```
+madoko mydoc.mdk
+```
+
++ To also generate a PDF file, use:
+
+```
+madoko --pdf --odir=out mydoc
+```
+
+[reference manual]: http://madoko.org/reference.html
