@@ -1,6 +1,6 @@
 ---
 title: Glayu
-repo: pmartinezalvarez/glayu
+repo: pablomartinezalvarez/glayu
 homepage: http://www.glayu.com/
 language: Elixir
 license: MIT
