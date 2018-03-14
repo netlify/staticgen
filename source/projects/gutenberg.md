@@ -5,7 +5,7 @@ homepage: https://www.getgutenberg.io/
 language: Rust
 license: MIT
 templates: Tera Templates
-description: An opinionated static site generator written in Rust.
+description: A fast static site generator in a single binary with everything built-in.
 ---
 
 Static site generator built using the modern Rust programming language.
