@@ -38,8 +38,12 @@ $(function() {
   $('.landing .card').matchHeight();
 
   $("select[name='filter']").change(function(e) {
-    console.log("Filter by: %o", $(this).val());
-    $(".projects").isotope({filter: '.' + $(this).val().replace(/[^A-Z0-9_-]/gi, '\\$&')});
+    var v = $(this).val();
+    console.log("Filter by: %o", v);
+    if (v) {
+      v = '.' + v.replace(/[^A-Z0-9_-]/gi, '\\$&');
+    }
+    $(".projects").isotope({filter: v});
   });
 
   $("select[name='sort']").change(function(e) {
