@@ -1,6 +1,6 @@
 ---
 title: Luxaura.js
-repo: luxaurajs/Luxaura.js
+repo: luxaurajs/base
 homepage: https://luxaura.js.org
 language: JavaScript
 license: Unlicense
