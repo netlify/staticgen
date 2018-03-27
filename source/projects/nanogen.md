@@ -4,7 +4,7 @@ repo: doug2k1/nanogen
 homepage: https://github.com/doug2k1/nanogen
 language: JavaScript
 license: MIT
-templates: EJS, Markdown
+templates: EJS
 description: A minimalist static site generator in Node.js.
 ---
 
