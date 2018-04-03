@@ -1,7 +1,7 @@
 ---
 title: blogdown
-repo: jamrizzi/blogdown
-homepage: https://thingdown.github.io/blogdown
+repo: codejamninja/blogdown
+homepage: https://blogdown.info
 language: JavaScript
 license: MIT
 templates: pug
