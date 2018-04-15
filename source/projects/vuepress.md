@@ -6,6 +6,7 @@ language: JavaScript (Vue)
 license: MIT
 templates: Markdown, Vue
 description: Vue-powered Static Site Generator
+startertemplaterepo: anishkny/vuepress-base
 ---
 
 # Simplicity First
