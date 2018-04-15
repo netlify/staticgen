@@ -2,7 +2,7 @@
 title: VuePress
 repo: vuejs/vuepress
 homepage: https://vuepress.vuejs.org
-language: JavaScript (Vue)
+language: JavaScript
 license: MIT
 templates: Markdown, Vue
 description: Vue-powered Static Site Generator
