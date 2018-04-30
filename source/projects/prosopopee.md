@@ -4,13 +4,32 @@ repo: Psycojoker/prosopopee
 homepage: https://github.com/Psycojoker/prosopopee
 language: Python
 license: GPL
-templates: custom
-description: A static website generator that allows you to tell a story with your pictures (somehow a clone of exposure.co or Medium)
+templates: Jinja2
+description: A static website generator that allows you to tell a story with your pictures
 ---
 
-More or less a small clone of exposure.co in form of a static generator. For
-those of you who don't know what exposure.co is, this allows you to tell a
-story with your pictures.
+Prosopopee is static site generator for your story.
+
+Make beautiful customizable pictures galleries that tell a story using a static website generator written in Python. You don't need care about css, code and presentation, manage your contents in YAML file and Prosopopee will take care about the rest.
+
+### Features
+
+Prosopopee currently supports:
+
+ * Lightweight
+ * Thumbnails & multiple resolutions for fast previews (JPEG progressive)
+ * Videos support
+ * Mobile friendly
+ * Caching for fast rendering
+ * Multi level gallery
+ * Support themes (default, material, light)
+ * Password access (encrypt page)
+ * Image lazy loading
+ * Night Mode
+ * Completely static output is easy to host anywhere
+ * Hackable
+
+### How look Prosopopee ?
 
 You can find example usages here:
 
