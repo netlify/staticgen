@@ -8,7 +8,7 @@ templates: Jinja2
 description: A static website generator that allows you to tell a story with your pictures
 ---
 
-Prosopopee is static site generator for your story.
+Prosopopee. Static site generator for your story.
 
 Make beautiful customizable pictures galleries that tell a story using a static website generator written in Python. You don't need care about css, code and presentation, manage your contents in YAML file and Prosopopee will take care about the rest.
 
@@ -28,13 +28,3 @@ Prosopopee currently supports:
  * Night Mode
  * Completely static output is easy to host anywhere
  * Hackable
-
-### How look Prosopopee ?
-
-You can find example usages here:
-
-* http://surleschemins.fr
-* http://media.faimaison.net/photos/galerie/
-* https://www.thebrownianmovement.org/
-* http://outside.browny.pink
-* http://such.life
