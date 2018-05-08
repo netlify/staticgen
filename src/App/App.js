@@ -138,13 +138,13 @@ const AppStyles = styled.div`
 
   .staticgen-promo a,
   .text a {
-    color: #5f90ff;
+    color: #00c7b7;
     text-decoration: none;
 
     &:link,
     &:active,
     &:hover {
-      color: #5f90ff;
+      color: #00c7b7;
       text-decoration: none;
     }
   }
@@ -183,7 +183,7 @@ const AppStyles = styled.div`
   }
 
   .menu > ul > li > a:hover {
-    color: #5f90ff;
+    color: #00c7b7;
   }
 
   .main, .container {

@@ -27,7 +27,7 @@ When it's time to deploy, run `jus build` to compile your site down into plain o
 
 jus requires [node 4](https://nodejs.org/en/download/) or greater, because it uses some newer Javascript features. Install the command-line interface globally, then run it to see usage instructions:
 
-```
+```sh
 npm i -g jus && jus
 ```
 
@@ -205,7 +205,7 @@ and more.
 
 Here's how you use the string helpers:
 
-```
+```handlebars
 \{{lowerCase someString}}
 ```
 

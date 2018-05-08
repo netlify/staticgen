@@ -20,7 +20,7 @@ ____.page.js ->  ____.html
 
 ## Low level:
 
-```
+```js
 //Inside ___.page.js
 module.exports = function(){
     return html`

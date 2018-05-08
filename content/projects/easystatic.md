@@ -26,14 +26,14 @@ Easystatic uses [Markdown It](https://markdown-it.github.io/) for web pages,
 
 ### How to Use
 
-```bash
+```sh
 $ npm install -g easystatic
 $ es start <path>
 ```
 
 ...where `<path>` is the folder with `*.md` files, or an empty folder. For example:
 
-```
+```sh
 $ es start mysite.com
 ```
 
@@ -44,7 +44,7 @@ This command launches your site in a browser and starts watching for modificatio
 
 Here is an example of how you can deploy your site to GitHub Pages:
 
-```bash
+```sh
 $ es deploy mysite.com --repo=username/mysite.com --domain=mysite.com
 ```
 

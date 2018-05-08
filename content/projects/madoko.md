@@ -38,19 +38,19 @@ To learn more about Madoko, check out the [reference manual]. To use it, simply:
 
 + Install with:
 
-```
+```sh
 npm install madoko -g
 ``` 
 
 + Translating a Markdown document to HTML is as simple as:
 
-```
+```sh
 madoko mydoc.mdk
 ```
 
 + To also generate a PDF file, use:
 
-```
+```sh
 madoko --pdf --odir=out mydoc
 ```
 
