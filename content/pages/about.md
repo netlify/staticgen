@@ -4,9 +4,7 @@ title: About StaticGen
 
 # About StaticGen
 
-StaticGen is a leaderboard of the top open-source static site generators. It's run by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps, as a way to promote a static approach to building websites.
-
-The site itself is built with [Middleman](http://middlemanapp.com/). Every day [Netlify](https://www.netlify.com/) builds and deploys the site. The source-code is available on [GitHub](https://github.com/netlify/staticgen) and you're more than welcome to contribute as long as you [follow the rules](/rules.html).
+StaticGen is a leaderboard of the top open-source static site generators. It's run by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps, as a way to promote a static approach to building websites. The site itself is built with [React Static](https://react-static.js.org), and is built and deployed with fresh data every day by [Netlify](https://www.netlify.com/). You can check out the source on [GitHub](https://github.com/netlify/staticgen) and contributions are [more than welcome](/contributing)!
 
 ### Static Site Generators
 

@@ -60,7 +60,7 @@ const Header = () =>
             <LogoText>StaticGen</LogoText>
           </LogoLink>
         </h1>
-        <h2>A List of Content Management Systems for JAMstack Sites</h2>
+        <h2>A List of Static Site Generators for JAMstack Sites</h2>
 
         <ShareButtonWrapper>
           <ShareButton type="twitter" url={shareUrl} color="#1da1f2" text={shareText}/>
@@ -79,7 +79,8 @@ const Header = () =>
             <ul>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/contribute">Contribute</Link></li>
-              <li><a href="https://staticgen.com/" target="_blank">Need a Static CMS?</a></li>
+              <li><a href="https://jamstack.org" target="_blank">About JAMstack</a></li>
+              <li><a href="https://headlesscms.org" target="_blank">Need a Static CMS?</a></li>
             </ul>
           </div>
         </div>
