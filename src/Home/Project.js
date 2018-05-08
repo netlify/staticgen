@@ -3,6 +3,7 @@ import { Link } from 'react-static'
 import styled from 'styled-components'
 import Octicon from 'react-component-octicons'
 import { EntypoTwitter } from 'react-entypo'
+import netlifyLogo from 'Images/netlify-logo.svg'
 
 
 const DataPoint = styled.div`
@@ -145,14 +146,28 @@ const OpenSourceStats = styled(({
 `
 
 const DeployButton = styled(({ repo, className }) =>
-  <div className={className}>
-    <a href={`https://app.netlify.com/start/deploy?repository=https://github.com/${repo}`}>
-      <img title="Deploy to Netlify" src="https://www.netlify.com/img/deploy/button.svg"/>
-    </a>
-  </div>
+  <a
+    className={className}
+    href={`https://app.netlify.com/start/deploy?repository=https://github.com/${repo}`}
+  >
+    <img src={netlifyLogo}/> Deploy to Netlify
+  </a>
 )`
-  text-align: center;
-  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcfcfc;
+  border-top: 1px solid #eee;
+  margin: 20px -18px -18px;
+  border-radius: 0 0 8px 8px;
+  color: #374344 !important;
+  font-size: 17px;
+  padding: 11px;
+
+  img {
+    width: 28px;
+    margin-right: 8px;
+  }
 `
 
 
@@ -190,33 +205,35 @@ const Project = styled(({
   }
 
   return (
-    <Link to={`/projects/${slug}`} className={`card ${className}`}>
-      <h4 className={`title ${title.length > 14 ? 'title-small' : ''}`}>{title}</h4>
-      <OpenSourceStats {...stats}/>
-      <div className="description">{description}</div>
-      {
-        !language ? null :
-        <DataPoint>
-          <DataPointTitle>Languages:</DataPointTitle>
-          <p className="type">{language.join(', ')}</p>
-        </DataPoint>
-      }
-      {
-        !templates ? null :
-        <DataPoint>
-          <DataPointTitle>Templates:</DataPointTitle>
-          <p className="type">{templates.join(', ')}</p>
-        </DataPoint>
-      }
-      {
-        !license ? null :
-        <DataPoint>
-          <DataPointTitle>License:</DataPointTitle>
-          <p className="type">{license.join(', ')}</p>
-        </DataPoint>
-      }
+    <div className={`card ${className}`}>
+      <Link to={`/projects/${slug}`}>
+        <h4 className={`title ${title.length > 14 ? 'title-small' : ''}`}>{title}</h4>
+        <OpenSourceStats {...stats}/>
+        <div className="description">{description}</div>
+        {
+          !language ? null :
+          <DataPoint>
+            <DataPointTitle>Languages:</DataPointTitle>
+            <p className="type">{language.join(', ')}</p>
+          </DataPoint>
+        }
+        {
+          !templates ? null :
+          <DataPoint>
+            <DataPointTitle>Templates:</DataPointTitle>
+            <p className="type">{templates.join(', ')}</p>
+          </DataPoint>
+        }
+        {
+          !license ? null :
+          <DataPoint>
+            <DataPointTitle>License:</DataPointTitle>
+            <p className="type">{license.join(', ')}</p>
+          </DataPoint>
+        }
+      </Link>
       { starterTemplateRepo ? <DeployButton repo={starterTemplateRepo}/> : null }
-    </Link>
+    </div>
   )
 })`
   .title-small {
