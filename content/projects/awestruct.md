@@ -2,9 +2,12 @@
 title: Awestruct
 repo: awestruct/awestruct
 homepage: http://awestruct.org/
-language: Ruby
-license: MIT
-templates: Haml
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Haml
 description: A static site-baking tool
 ---
 

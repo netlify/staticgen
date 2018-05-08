@@ -2,9 +2,12 @@
 title: Broccoli Taco
 repo: moudy/broccoli-taco
 homepage: http://broccoli-taco.com/
-language: JavaScript
-license: MIT
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: A fast, simple, and flexible static site generator based on Broccoli.
 ---
 

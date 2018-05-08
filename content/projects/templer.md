@@ -2,9 +2,12 @@
 title: Templer
 repo: skx/templer
 homepage: http://steve.org.uk/Software/templer/
-language: Perl
-license: Perl
-templates: HTML::Template
+language:
+  - Perl
+license:
+  - Perl
+templates:
+  - HTML::Template
 description: Templer is a modular extensible static-site-generator written in perl.
 ---
 

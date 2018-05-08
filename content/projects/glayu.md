@@ -2,9 +2,12 @@
 title: Glayu
 repo: pablomartinezalvarez/glayu
 homepage: http://www.glayu.com/
-language: Elixir
-license: MIT
-templates: Elixir templating library, Eex.
+language:
+  - Elixir
+license:
+  - MIT
+templates:
+  - EEx
 description: A static site generator for mid-sized sites.
 ---
 

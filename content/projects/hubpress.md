@@ -2,9 +2,12 @@
 title: HubPress
 repo: HubPress/hubpress.io
 homepage: http://hubpress.github.io/
-language: JavaScript
-license: MIT
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: A web application to build your Blog on GitHub.
 startertemplaterepo: HubPress/hubpress.io
 twitter: HubPressIO

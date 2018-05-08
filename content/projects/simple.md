@@ -2,9 +2,12 @@
 title: simple
 repo: isnowfy/simple
 homepage: http://isnowfy.github.io/simple/
-language: JavaScript
-license: MIT
-templates: Markdown
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Markdown
 description: Simple is a pure static static blog generator.
 ---
 #Simple

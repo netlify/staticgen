@@ -2,9 +2,12 @@
 title: Stog
 repo: zoggy/stog
 homepage: http://zoggy.github.io/stog/
-language: OCaml
-license: GPL
-templates: XML
+language:
+  - OCaml
+license:
+  - GPL
+templates:
+  - XML
 description: Stog is a static blog and website generator, like Jekyll but in OCaml.
 ---
 

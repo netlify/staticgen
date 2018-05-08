@@ -2,9 +2,12 @@
 title: onessg
 repo: RyanZim/onessg
 homepage: https://github.com/RyanZim/onessg
-language: JavaScript
-license: MIT
-templates: Any
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Any JS
 description: 'The Static Site Generator that does only one thing: compile your html and markdown.'
 ---
 

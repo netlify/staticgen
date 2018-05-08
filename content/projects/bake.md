@@ -2,9 +2,12 @@
 title: Bake
 repo: felipetavares/bake
 homepage: http://ctrl-c.club/~philips/90s/
-language: C++
-license: WTFPL V2
-templates: "{vars}"
+language:
+  - C++
+license:
+  - WTFPL V2
+templates:
+  - HTML
 description: The blogging tool for minimalists & make lovers.
 ---
 

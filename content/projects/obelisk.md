@@ -2,9 +2,13 @@
 title: Obelisk
 repo: BennyHallett/obelisk
 homepage: https://github.com/BennyHallett/obelisk
-language: Elixir
-license: MIT
-templates: Elixir templating library, Eex, or haml.
+language:
+  - Elixir
+license:
+  - MIT
+templates:
+  - EEx
+  - Haml
 description: Static Site Generator written in Elixir.
 ---
 

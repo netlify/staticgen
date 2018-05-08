@@ -2,9 +2,12 @@
 title: Kotsu
 repo: LotusTM/Kotsu
 homepage: https://github.com/LotusTM/Kotsu
-language: JavaScript
-license: Apache-2.0
-templates: Nunjucks
+language:
+  - JavaScript
+license:
+  - Apache-2.0
+templates:
+  - Nunjucks
 description: An extremely simple, pluggable static site generator.
 startertemplaterepo: LotusTM/Kotsu
 ---

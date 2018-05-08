@@ -2,9 +2,12 @@
 title: React Static
 repo: nozzle/react-static
 homepage: https://github.com/nozzle/react-static
-language: JavaScript
-license: MIT
-templates: React
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - React
 description: A progressive static-site framework for React.
 startertemplaterepo: tannerlinsley/react-static-starter
 ---

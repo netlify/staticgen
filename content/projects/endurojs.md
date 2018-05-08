@@ -2,9 +2,12 @@
 title: Enduro.js
 repo: gottwik/enduro
 homepage: http://endurojs.com/
-language: JavaScript
-license: MIT
-templates: HBS
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: 'Minimalistic, lean & mean, node.js static page generator'
 startertemplaterepo: gottwik/enduro_mirror
 ---

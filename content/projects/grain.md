@@ -2,9 +2,12 @@
 title: Grain
 repo: sysgears/grain
 homepage: http://sysgears.com/grain
-language: Groovy
-license: Apache
-templates: Groovy-based
+language:
+  - Groovy
+license:
+  - Apache
+templates:
+  - Groovy
 description: A generator for sites, blogs & documentation, supports
  Markdown, AsciiDoc and RST
 ---

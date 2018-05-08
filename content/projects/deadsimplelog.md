@@ -2,9 +2,12 @@
 title: deadsimplelog
 repo: tallesl/node-deadsimplelog
 homepage: https://github.com/tallesl/node-deadsimplelog
-language: JavaScript
-license: MIT
-templates: HTML
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - HTML
 description: Static blog generator with simplistic configuration that aims for being dead simple.
 ---
 

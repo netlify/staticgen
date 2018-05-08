@@ -2,9 +2,12 @@
 title: Nanoc
 repo: nanoc/nanoc
 homepage: http://nanoc.ws/
-language: Ruby
-license: MIT
-templates: eRuby
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - eRuby
 description: Simple but very flexible static site generator
 ---
 

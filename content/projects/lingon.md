@@ -2,9 +2,12 @@
 title: Lingon
 repo: spotify/lingon
 homepage: http://www.lingon.io/
-language: JavaScript
-license: Apache 2
-templates: ejs
+language:
+  - JavaScript
+license:
+  - Apache 2
+templates:
+  - EJS
 description: Lingon is a performant single-page application dev tool that focuses on developer happiness.
 ---
 

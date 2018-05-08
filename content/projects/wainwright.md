@@ -2,9 +2,12 @@
 title: Wainwright
 repo: wprl/wainwright
 homepage: https://github.com/wprl/wainwright
-language: JavaScript
-license: MIT
-templates: consolidate.js
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Consolidate.js
 description: A streaming static site generator for Gulp
 ---
 

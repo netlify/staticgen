@@ -2,9 +2,12 @@
 title: blogdown
 repo: codejamninja/blogdown
 homepage: https://blogdown.info
-language: JavaScript
-license: MIT
-templates: pug
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Pug
 description: A back-end agnostic, zero compilation, markdown blogging platform
 ---
 

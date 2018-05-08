@@ -2,9 +2,12 @@
 title: drupan
 repo: fallenhitokiri/drupan
 homepage: https://github.com/fallenhitokiri/drupan
-language: Python
-license: BSD
-templates: Jinja2
+language:
+  - Python
+license:
+  - BSD
+templates:
+  - Jinja2
 description: trying to hit the sweet spot between simplicity and being feature rich enough for every use case.
 ---
 

@@ -2,9 +2,13 @@
 title: Docpad
 repo: docpad/docpad
 homepage: http://docpad.org/
-language: CoffeeScript
-license: MIT
-templates: ECO/Any JS
+language:
+  - CoffeeScript
+license:
+  - MIT
+templates:
+  - Eco
+  - Any JS
 description: Feature rich, configurable and language agnostic.
 ---
 

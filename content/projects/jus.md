@@ -2,9 +2,12 @@
 title: jus
 repo: jus/jus
 homepage: http://jus.js.org
-language: JavaScript
-license: MIT
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: dev server and build tool with no configuration and no boilerplate code
 ---
 

@@ -2,9 +2,13 @@
 title: Nikola
 repo: getnikola/nikola
 homepage: http://www.getnikola.com
-language: Python
-license: MIT
-templates: Jinja2, Mako
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Jinja2
+  - Mako
 description: A static website and blog generator
 ---
 

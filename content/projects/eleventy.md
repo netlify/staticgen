@@ -2,9 +2,19 @@
 title: Eleventy
 repo: 11ty/eleventy
 homepage: https://11ty.io/
-language: JavaScript
-license: MIT
-templates: Liquid, Nunjucks, Handlebars, Mustache, EJS, Haml, Pug, JavaScript Template Literals
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Liquid
+  - Nunjucks
+  - Handlebars
+  - Mustache
+  - EJS
+  - Haml
+  - Pug
+  - JavaScript
 description: A simpler static site generator
 startertemplaterepo: 11ty/eleventy-base-blog
 twitter: eleven_ty

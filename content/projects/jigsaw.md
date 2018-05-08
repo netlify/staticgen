@@ -2,9 +2,12 @@
 title: Jigsaw
 repo: tightenco/jigsaw
 homepage: http://jigsaw.tighten.co/
-language: PHP
-license: MIT
-templates: Blade
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Blade
 description: Static sites for Laravel developers
 ---
 

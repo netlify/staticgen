@@ -2,9 +2,14 @@
 title: JBake
 repo: jbake-org/jbake
 homepage: http://jbake.org/
-language: Java
-license: MIT
-templates: Freemarker, Groovy, Thymeleaf
+language:
+  - Java
+license:
+  - MIT
+templates:
+  - Freemarker
+  - Groovy
+  - Thymeleaf
 description: A static site/blog generator for developers & designers
 ---
 

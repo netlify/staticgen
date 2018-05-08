@@ -2,9 +2,12 @@
 title: MkDocs
 repo: mkdocs/mkdocs
 homepage: http://www.mkdocs.org/
-language: Python
-license: BSD
-templates: Jinja2
+language:
+  - Python
+license:
+  - BSD
+templates:
+  - Jinja2
 description: Project documentation with Markdown.
 startertemplaterepo: netlify-templates/mkdocs-base
 twitter: MkDocsProject

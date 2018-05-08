@@ -2,9 +2,12 @@
 title: markdown-styles
 repo: mixu/markdown-styles
 homepage: https://github.com/mixu/markdown-styles
-language: JavaScript
-license: BSD
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - BSD
+templates:
+  - Handlebars
 description: Markdown to static HTML generator and multiple CSS themes for Markdown
 ---
 

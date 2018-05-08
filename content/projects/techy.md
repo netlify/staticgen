@@ -2,9 +2,12 @@
 title: Techy
 repo: krasimir/techy
 homepage: http://krasimir.github.io/techy/
-language: JavaScript
-license: MIT
-templates: Custom
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Custom
 description: The geeky way of writing
 ---
 

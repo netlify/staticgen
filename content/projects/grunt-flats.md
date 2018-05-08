@@ -2,9 +2,12 @@
 title: grunt-flats
 repo: adamduncan/grunt-flats
 homepage: https://github.com/adamduncan/grunt-flats
-language: JavaScript
-license: MIT
-templates: Hogan.js
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Hogan.js
 description: Grunt task for generating static pages from templated partials.
 ---
 

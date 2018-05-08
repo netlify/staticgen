@@ -2,9 +2,12 @@
 title: Gutenberg
 repo: Keats/gutenberg
 homepage: https://www.getgutenberg.io/
-language: Rust
-license: MIT
-templates: Tera Templates
+language:
+  - Rust
+license:
+  - MIT
+templates:
+  - Tera
 description: A fast static site generator in a single binary with everything built-in.
 ---
 

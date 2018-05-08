@@ -2,9 +2,12 @@
 title: PFT
 repo: dacav/App-PFT
 homepage: http://dacav.roundhousecode.com/pages/pft.html
-language: Perl
-license: GPL3
-templates: TT3
+language:
+  - Perl
+license:
+  - GPL3
+templates:
+  - TT3
 description: PFT is a Static, Unicode-ready, Hacker-friendly, Free-as-in-freedom, Privacy-preserving website generator written in Perl.
 ---
 

@@ -2,9 +2,12 @@
 title: Polo
 repo: agonzalezro/polo
 homepage: https://github.com/agonzalezro/polo#just-markdown
-language: Go
-license: MIT
-templates: Go Templates
+language:
+  - Go
+license:
+  - MIT
+templates:
+  - Go
 description: Static site generator written in Go and "compatible" with Jekyll & Pelican content
 ---
 

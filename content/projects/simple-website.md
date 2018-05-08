@@ -2,9 +2,12 @@
 title: simple-website
 repo: alexanderte/simple-website
 homepage: https://github.com/alexanderte/simple-website
-language: Go
-license: BSD
-templates: Markdown
+language:
+  - Go
+license:
+  - BSD
+templates:
+  - Markdown
 description: simple-website is a static site generator written in Go
 ---
 # simple-website

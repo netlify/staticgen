@@ -2,9 +2,12 @@
 title: Hakyll
 repo: jaspervdj/hakyll
 homepage: http://jaspervdj.be/hakyll/
-language: Haskell
-license: BSD
-templates: Hakyll Templates
+language:
+  - Haskell
+license:
+  - BSD
+templates:
+  - Hakyll
 description: A configurable Haskell library, for small-to-medium sites.
 ---
 

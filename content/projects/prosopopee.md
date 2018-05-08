@@ -2,9 +2,12 @@
 title: Prosopopee
 repo: Psycojoker/prosopopee
 homepage: https://github.com/Psycojoker/prosopopee
-language: Python
-license: GPL
-templates: Jinja2
+language:
+  - Python
+license:
+  - GPL
+templates:
+  - Jinja2
 description: A static website generator that allows you to tell a story with your pictures
 ---
 

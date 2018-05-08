@@ -2,9 +2,13 @@
 title: Acrylamid
 repo: posativ/acrylamid
 homepage: http://posativ.org/acrylamid/
-language: Python
-license: BSD 
-templates: Jinja, Mako 
+language:
+  - Python
+license:
+  - BSD
+templates:
+  - Jinja
+  - Mako
 description: Static blog or site generator 
 ---
 

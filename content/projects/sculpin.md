@@ -2,9 +2,12 @@
 title: Sculpin
 repo: sculpin/sculpin
 homepage: https://sculpin.io
-language: PHP
-license: MIT
-templates: Twig
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Twig
 description: Sculpin is a static site generator written in PHP
 ---
 

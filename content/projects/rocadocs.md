@@ -2,9 +2,12 @@
 title: Rocadocs
 repo: rocadocs/rocadocs
 homepage: http://rocadocs.com
-language: Python
-license: Apache-2.0
-templates: No
+language:
+  - Python
+license:
+  - Apache-2.0
+templates:
+  - None
 description: Opinionated static documentation generator using Markdown
 ---
 

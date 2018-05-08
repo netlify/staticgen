@@ -2,9 +2,12 @@
 title: Grus
 repo: chipsenkbeil/grus
 homepage: https://github.com/chipsenkbeil/grus
-language: Scala
-license: Apache 2
-templates: ScalaTags, GitHub flavored Markdown
+language:
+  - Scala
+license:
+  - Apache 2
+templates:
+  - ScalaTags
 description: Static site generator written in Scala using ScalaTags for templates and Flexmark for markdown.
 ---
 

@@ -2,9 +2,12 @@
 title: GitBook
 repo: GitbookIO/gitbook
 homepage: https://www.gitbook.com/
-language: JavaScript
-license: APL 2.0
-templates: Jinja2
+language:
+  - JavaScript
+license:
+  - APL 2.0
+templates:
+  - Jinja2
 description: 'A modern publishing toolchain. Simply taking you from ideas to finished, polished books.'
 twitter: GitBookIO
 ---

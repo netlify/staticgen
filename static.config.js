@@ -110,7 +110,7 @@ async function getProjects() {
 function generateFilters(projects) {
   const languages = sortBy(uniq(flatten(map(projects, 'language'))))
   const templateTypes = sortBy(uniq(flatten(map(projects, 'templates'))))
-  const licenses = sortBy(uniq(map(projects, 'license')))
+  const licenses = sortBy(uniq(flatten(map(projects, 'license'))))
 
   return { languages, templateTypes, licenses }
 }

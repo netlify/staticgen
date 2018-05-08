@@ -2,9 +2,12 @@
 title: Dapper
 repo: markdbenson/dapper
 homepage: http://vanilladraft.com/dapper/
-language: Perl
-license: MIT
-templates: TT3
+language:
+  - Perl
+license:
+  - MIT
+templates:
+  - TT3
 description: Dapper is a simple, flexible, and pragmatic static site generator written in Perl.
 ---
 

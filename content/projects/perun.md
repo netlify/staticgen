@@ -2,9 +2,12 @@
 title: Perun
 repo: hashobject/perun
 homepage: https://perun.io/
-language: Clojure
-license: EPL
-templates: Hiccup
+language:
+  - Clojure
+license:
+  - EPL
+templates:
+  - Hiccup
 description: Composable static site generator build with Clojure and Boot
 ---
 

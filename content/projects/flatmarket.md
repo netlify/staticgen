@@ -2,9 +2,12 @@
 title: Flatmarket
 repo: christophercliff/flatmarket
 homepage: https://christophercliff.com/flatmarket/
-language: JavaScript
-license: MIT
-templates: Any
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Any JS
 description: A free, open source e-commerce platform for static websites.
 ---
 

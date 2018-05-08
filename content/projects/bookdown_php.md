@@ -2,9 +2,12 @@
 title: Bookdown (PHP)
 repo: bookdown/Bookdown.Bookdown
 homepage: http://bookdown.io/
-language: PHP
-license: MIT
-templates: Aura\View
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Aura View
 description: Bookdown generates DocBook-like HTML output using CommonMark and JSON files.
 ---
 

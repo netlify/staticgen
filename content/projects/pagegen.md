@@ -2,9 +2,12 @@
 title: Pagegen
 repo: oliverfields/pagegen_v2
 homepage: http://pagegen.phnd.net
-language: Python
-license: GPLv3
-templates: Pagegen
+language:
+  - Python
+license:
+  - GPLv3
+templates:
+  - Pagegen
 description: Manage sites and blogs, SEO friendly.
 ---
 

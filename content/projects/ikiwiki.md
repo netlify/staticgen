@@ -2,9 +2,12 @@
 title: Ikiwiki
 repo: joeyh/ikiwiki
 homepage: http://ikiwiki.info/
-language: Perl
-license: GPL
-templates: HTML::Template
+language:
+  - Perl
+license:
+  - GPL
+templates:
+  - HTML::Template
 description: a wiki compiler
 ---
 

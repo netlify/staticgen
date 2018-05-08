@@ -2,9 +2,12 @@
 title: Makdoc
 repo: pismute/gulp-makdoc
 homepage: https://github.com/pismute/gulp-makdoc
-language: JavaScript
-license: MIT
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: A (Gulp) task library for generating documents
 ---
 

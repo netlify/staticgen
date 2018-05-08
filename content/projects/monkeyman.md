@@ -2,9 +2,12 @@
 title: Monkeyman
 repo: wspringer/monkeyman
 homepage: https://github.com/wspringer/monkeyman
-language: Scala
-license: GPL
-templates: Haml
+language:
+  - Scala
+license:
+  - GPL
+templates:
+  - Haml
 description: "Simple static site generator for Scala and middleman lovers"
 ---
 

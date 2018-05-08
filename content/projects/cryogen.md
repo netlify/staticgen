@@ -2,9 +2,12 @@
 title: Cryogen
 repo: cryogen-project/cryogen
 homepage: http://cryogenweb.org/
-language: Clojure
-license: EPL
-templates: Selmer
+language:
+  - Clojure
+license:
+  - EPL
+templates:
+  - Selmer
 description: A simple static site generator shipped on Leiningen
 ---
 

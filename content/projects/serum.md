@@ -2,9 +2,12 @@
 title: Serum
 repo: Dalgona/Serum
 homepage: https://github.com/Dalgona/Serum
-language: Elixir
-license: MIT
-templates: EEx
+language:
+  - Elixir
+license:
+  - MIT
+templates:
+  - EEx
 description: A simple static website generator written in Elixir.
 ---
 

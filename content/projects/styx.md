@@ -2,9 +2,12 @@
 title: Styx
 repo: styx-static/styx
 homepage: https://styx-static.github.io/styx-site/
-language: Nix
-license: MIT
-templates: Nix
+language:
+  - Nix
+license:
+  - MIT
+templates:
+  - Nix
 description: Nix based static site generator.
 ---
 

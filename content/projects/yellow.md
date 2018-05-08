@@ -2,9 +2,12 @@
 title: Yellow
 repo: datenstrom/yellow
 homepage: http://datenstrom.se/yellow/
-language: PHP
-license: GPL
-templates: PHP
+language:
+  - PHP
+license:
+  - GPL
+templates:
+  - PHP
 description: Yellow is for people who make websites.
 ---
 Yellow is for people who make websites.

@@ -2,9 +2,13 @@
 title: Wyam
 repo: Wyamio/Wyam
 homepage: http://wyam.io
-language: .Net
-license: MIT
-templates: Razor, Markdown
+language:
+  - .Net
+license:
+  - MIT
+templates:
+  - Razor
+  - Markdown
 description: A simple to use, highly modular, and extremely configurable static content generator.
 ---
 

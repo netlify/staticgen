@@ -2,9 +2,12 @@
 title: Orchid
 repo: JavaEden/Orchid
 homepage: https://orchid.netlify.com
-language: Java
-license: LGPL-3.0
-templates: Pebble
+language:
+  - Java
+license:
+  - LGPL-3.0
+templates:
+  - Pebble
 description: A beautiful and truly unique documentation engine and static site generator.
 startertemplaterepo: JavaEden/OrchidStarter
 ---

@@ -2,9 +2,12 @@
 title: graze
 repo: mikoskinen/graze
 homepage: http://mikaelkoskinen.net/graze-static-site-generator-using-razor
-language: .Net
-license: MIT
-templates: Razor
+language:
+  - .Net
+license:
+  - MIT
+templates:
+  - Razor
 description: Static site generator using Razor.
 ---
 

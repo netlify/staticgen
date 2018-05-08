@@ -2,9 +2,12 @@
 title: PHPoole
 repo: PHPoole/PHPoole
 homepage: https://phpoole.org
-language: PHP
-license: MIT
-templates: Twig
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Twig
 description: An easy and lightweight static website generator, written in PHP.
 startertemplaterepo: PHPoole/Cecil
 ---

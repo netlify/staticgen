@@ -2,9 +2,12 @@
 title: Next
 repo: zeit/next.js
 homepage: https://learnnextjs.com/
-language: JavaScript
-license: MIT
-templates: JavaScript
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - JavaScript
 description: A framework for statically-exported React apps
 twitter: hexojs
 ---

@@ -2,9 +2,12 @@
 title: jssg
 repo: agrison/jssg
 homepage: https://github.com/agrison/jssg
-language: Java
-license: MIT
-templates: Freemarker
+language:
+  - Java
+license:
+  - MIT
+templates:
+  - Freemarker
 description: A static site/blog generator in Java
 ---
 

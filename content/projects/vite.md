@@ -2,9 +2,12 @@
 title: Vite
 repo: icyphox/vite
 homepage: https://github.com/icyphox/vite
-language: Python
-license: MIT
-templates: Jinja2
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Jinja2
 description: A simple and minimal static site generator
 ---
 

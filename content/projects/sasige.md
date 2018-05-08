@@ -2,9 +2,12 @@
 title: Sasige
 repo: brainfoolong/sasige
 homepage: http://sasige.0x.at
-language: PHP
-license: MIT
-templates: PHP
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - PHP
 description: One word, TextToWebsite. Sasige will generate static html files and a combination of these is your website.
 startertemplaterepo: brainfoolong/sasige-starter
 ---

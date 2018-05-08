@@ -2,9 +2,12 @@
 title: Gerablog
 repo: paulohrpinheiro/gerablog
 homepage: https://github.com/paulohrpinheiro/gerablog
-language: Ruby
-license: MIT
-templates: Markdown
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Tenjin
 description: Gerablog is a simple and small static blog generator.
 ---
 

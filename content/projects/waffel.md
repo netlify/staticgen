@@ -2,9 +2,12 @@
 title: Waffel
 repo: moonwave99/waffel
 homepage: http://moonwave99.github.io/waffel/
-language: JavaScript
-license: MIT
-templates: Nunjucks
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Nunjucks
 description: Static site generation done tasty.
 ---
 

@@ -2,9 +2,12 @@
 title: Muleify
 repo: AlexanderElias/muleify
 homepage: https://github.com/AlexanderElias/muleify
-language: JavaScript
-license: MPL-2.0
-templates: Comments
+language:
+  - JavaScript
+license:
+  - MPL-2.0
+templates:
+  - Custom
 description: "A zero configuration static site generator and asset preprocessor compiler."
 ---
 

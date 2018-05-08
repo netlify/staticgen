@@ -2,9 +2,11 @@
 title: WPWMM4
 repo: uzsolt/wpwmm4
 homepage: http://git.uzsolt.hu/wpwmm4/
-language: M4, Make
-license: BSD-2-Clause
-templates: any (pluggable)
+language:
+  - M4
+  - Make
+license:
+  - BSD-2-Clause
 description: Web Page With Make and M4
 ---
 With wpwmm4 can create web pages with simply 'make' and 'm4'.

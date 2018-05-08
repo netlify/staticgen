@@ -2,9 +2,12 @@
 title: Cuttlebelle
 repo: cuttlebelle/cuttlebelle
 homepage: https://cuttlebelle.com
-language: JavaScript
-license: GPL-3.0
-templates: JavaScript (React)
+language:
+  - JavaScript
+license:
+  - GPL-3.0
+templates:
+  - React
 description:  The react static site generator that separates editing and code concerns
 startertemplaterepo: cuttlebelle/website
 ---

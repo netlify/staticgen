@@ -2,9 +2,12 @@
 title: Poltergeist
 repo: pillars/poltergeist
 homepage: https://github.com/pillars/poltergeist
-language: JavaScript
-license: MIT
-templates: Nunjucks
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Nunjucks
 description: Build fast websites with HTML/Markdown/Sass deployed to S3 & CloudFront
 ---
 

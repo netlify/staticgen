@@ -2,9 +2,12 @@
 title: staticjinja
 repo: Ceasar/staticjinja
 homepage: http://staticjinja.readthedocs.org/en/latest/
-language: Python
-license: MIT
-templates: Jinja2
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Jinja2
 description: Effortlessly deploy static sites with Jinja2.
 ---
 

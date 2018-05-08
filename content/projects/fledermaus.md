@@ -2,9 +2,12 @@
 title: Fledermaus
 repo: sapegin/fledermaus
 homepage: https://github.com/sapegin/fledermaus
-language: JavaScript
-license: MIT
-templates: JSX
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - JSX
 description: Batman’s toolbelt for static site generation
 ---
 

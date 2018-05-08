@@ -2,9 +2,12 @@
 title: Expose
 repo: Jack000/Expose
 homepage: https://github.com/Jack000/Expose
-language: Bash
-license: MIT
-templates: custom
+language:
+  - Bash
+license:
+  - MIT
+templates:
+  - HTML
 description: A simple static site generator for photoessays
 ---
 

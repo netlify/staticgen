@@ -2,9 +2,12 @@
 title: Rinco
 repo: rincojs/rinco-sg
 homepage: https://github.com/rincojs/rinco-sg
-language: JavaScript
-license: MIT
-templates: Mustache
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Mustache
 description: A simple static site generator.
 ---
 

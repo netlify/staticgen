@@ -2,9 +2,12 @@
 title: CopperSmith
 repo: charlgottschalk/coppersmith
 homepage: http://charlgottschalk.co.za/projects/coppersmith
-language: JavaScript
-license: MIT
-templates: handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - handlebars
 description: CopperSmith is a very simple command powered static site generator that uses markdown files.
 ---
 

@@ -2,9 +2,12 @@
 title: Plerd
 repo: jmacdotorg/plerd
 homepage: http://jmac.org/plerd/
-language: Perl
-license: MIT
-templates: Template Toolkit (TT2)
+language:
+  - Perl
+license:
+  - MIT
+templates:
+  - TT2
 description: Ultralight Dropbox-friendly Markdown-based blogging.
 ---
 

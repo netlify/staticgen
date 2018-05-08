@@ -2,9 +2,12 @@
 title: Gor
 repo: wendal/gor
 homepage: https://github.com/wendal/gor
-language: Go
-license: BSD
-templates: Mustache
+language:
+  - Go
+license:
+  - BSD
+templates:
+  - Mustache
 description: A static websites and blog generator engine written in Go
 ---
 

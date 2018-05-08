@@ -2,9 +2,13 @@
 title: Bookdown (R)
 repo: rstudio/bookdown
 homepage: https://bookdown.org/
-language: R
-license: GPL-3
-templates: Custom R code / knitr / rmarkdown
+language:
+  - R
+license:
+  - GPL-3
+templates:
+  - R
+  - R Markdown
 description: An eBook authoring platform that generates GitBook-styled static sites
 ---
 

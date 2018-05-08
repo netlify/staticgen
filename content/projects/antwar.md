@@ -2,9 +2,12 @@
 title: Antwar
 repo: antwarjs/antwar
 homepage: https://antwar.js.org/
-language: JavaScript
-license: MIT
-templates: React
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - React
 description: A static site generator using React and webpack.
 ---
 

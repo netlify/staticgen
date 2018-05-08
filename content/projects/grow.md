@@ -2,9 +2,12 @@
 title: Grow
 repo: grow/grow
 homepage: https://grow.io/
-language: Python
-license: MIT
-templates: Jinja2
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Jinja2
 description: Grow is a declarative, file-based static site generator for building maintainable, high-quality websites.
 ---
 

@@ -2,9 +2,12 @@
 title: Cobalt
 repo: cobalt-org/cobalt.rs
 homepage: https://github.com/cobalt-org/cobalt.rs
-language: Rust
-license: MIT
-templates: Liquid
+language:
+  - Rust
+license:
+  - MIT
+templates:
+  - Liquid
 description: A static site generator written in Rust.
 ---
 

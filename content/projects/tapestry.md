@@ -2,9 +2,12 @@
 title: Tapestry
 repo: tapestry-cloud/tapestry
 homepage: https://www.tapestry.cloud/
-language: PHP
-license: MIT
-templates: Plates
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Plates
 description: Static sites for PHP developers
 ---
 

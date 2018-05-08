@@ -2,9 +2,12 @@
 title: HasClunk 
 repo: jellehermsen/HasClunk
 homepage: https://github.com/jellehermsen/HasClunk
-language: Haskell
-license: BSD3
-templates: Header+footer html and Html.hs
+language:
+  - Haskell
+license:
+  - BSD3
+templates:
+  - HTML
 description: Simple dependency light blog generator
 ---
 

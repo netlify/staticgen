@@ -2,9 +2,12 @@
 title: Ruhoh
 repo: ruhoh/ruhoh.rb
 homepage: http://ruhoh.com/
-language: Ruby
-license: MIT
-templates: Mustache
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Mustache
 description: The Universal Static Blog API.
 ---
 

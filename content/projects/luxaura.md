@@ -2,9 +2,12 @@
 title: Luxaura.js
 repo: luxaurajs/base
 homepage: https://luxaura.js.org
-language: JavaScript
-license: Unlicense
-templates: EJS
+language:
+  - JavaScript
+license:
+  - Unlicense
+templates:
+  - EJS
 description: A simple static site generator.
 startertemplaterepo: TristianK3604/Luxaura.js
 ---

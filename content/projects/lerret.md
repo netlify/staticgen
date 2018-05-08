@@ -2,9 +2,12 @@
 title: Lerret
 repo: jgrh/lerret
 homepage: https://github.com/jgrh/lerret
-language: JavaScript
-license: APL 2.0
-templates: Jade
+language:
+  - JavaScript
+license:
+  - APL 2.0
+templates:
+  - Jade
 description: A static site generator for image galleries.
 ---
 

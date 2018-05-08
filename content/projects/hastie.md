@@ -2,9 +2,12 @@
 title: Hastie
 repo: mkaz/hastie
 homepage: https://github.com/mkaz/hastie
-language: Go
-license: MIT
-templates: Go templates
+language:
+  - Go
+license:
+  - MIT
+templates:
+  - Go templates
 description: A static site generator written in Go
 ---
 

@@ -2,9 +2,12 @@
 title: BootDown
 repo: interstar/bootdown
 homepage: http://project.geekweaver.com/
-language: Python
-license: AGPL
-templates: BootStrap
+language:
+  - Python
+license:
+  - AGPL
+templates:
+  - Markdown
 description: Extremely simple static sites with Markdown and BootStrap.
 ---
 

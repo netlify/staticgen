@@ -2,9 +2,12 @@
 title: ghost-render
 repo: mixu/ghost-render
 homepage: https://github.com/mixu/ghost-render
-language: JavaScript
-license: BSD
-templates: Ghost
+language:
+  - JavaScript
+license:
+  - BSD
+templates:
+  - Ghost
 description: Render static blog sites from Markdown using Ghost themes
 ---
 

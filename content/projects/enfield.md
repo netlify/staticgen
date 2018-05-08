@@ -2,9 +2,12 @@
 title: Enfield
 repo: fortes/enfield
 homepage: https://github.com/fortes/enfield
-language: CoffeeScript
-license: MIT
-templates: Liquid
+language:
+  - CoffeeScript
+license:
+  - MIT
+templates:
+  - Liquid
 description: Node.js Jekyll Port
 ---
 

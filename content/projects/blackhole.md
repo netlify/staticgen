@@ -2,9 +2,12 @@
 title: Blackhole
 repo: BarryMode/grav-plugin-blackhole
 homepage: https://github.com/BarryMode/grav-plugin-blackhole
-language: PHP
-license: MIT
-templates: Twig
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Twig
 description: Static site generator for Grav CMS
 ---
 

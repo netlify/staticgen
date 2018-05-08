@@ -2,9 +2,12 @@
 title: PyKwiki
 repo: nullism/pykwiki
 homepage: http://pykwiki.nullism.com
-language: Python
-license: MIT
-templates: Jinja 2
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Jinja 2
 description: Markdown based authoring with static search. 
 ---
 

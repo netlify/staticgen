@@ -2,9 +2,12 @@
 title: Bang
 repo: squdle/Bang
 homepage: https://github.com/squdle/Bang
-language: Python
-license: MIT
-templates: custom
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Custom
 description: Quirky text processor and static website generator.
 ---
 

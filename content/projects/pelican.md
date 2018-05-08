@@ -2,9 +2,12 @@
 title: Pelican
 repo: getpelican/pelican
 homepage: http://blog.getpelican.com/
-language: Python
-license: AGPL
-templates: Jinja2
+language:
+  - Python
+license:
+  - AGPL
+templates:
+  - Jinja2
 description: A static site generator, imports from Wordpress, multi-lang publishing.
 twitter: getpelican
 ---

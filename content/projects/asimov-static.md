@@ -2,9 +2,12 @@
 title: Asimov
 repo: adamrenklint/asimov-static
 homepage: http://www.asimovjs.org/
-language: JavaScript
-license: MIT
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: Static site generator, powered by asimov.js and asimov-server.
 ---
 

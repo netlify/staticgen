@@ -1,10 +1,13 @@
 ---
 title: Statify
 repo: NBens/Statify
-language: Python
+language:
+  - Python
 homepage: https://github.com/NBens/Statify
-license: BSD
-templates: Jinja2
+license:
+  - BSD
+templates:
+  - Jinja2
 description: Simple, lightweight, one file static site generator, Powered by Python 3 & Jninja2.
 ---
 

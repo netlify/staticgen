@@ -2,9 +2,12 @@
 title: pretzel
 repo: Code52/pretzel
 homepage: http://code52.org/pretzel.html
-language: .Net
-license: MS-PL
-templates: Liquid
+language:
+  - .Net
+license:
+  - MS-PL
+templates:
+  - Liquid
 description: A site generation tool (and then some) for .NET platforms.
 ---
 
