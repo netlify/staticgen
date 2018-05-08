@@ -5,7 +5,7 @@ homepage: http://webgen.gettalong.org/
 language:
   - Ruby
 license:
-  - GPL
+  - GNU GPL v3.0
 templates:
   - ERB
 description: Static website generation made easy

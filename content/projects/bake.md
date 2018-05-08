@@ -5,7 +5,7 @@ homepage: http://ctrl-c.club/~philips/90s/
 language:
   - C++
 license:
-  - WTFPL V2
+  - WTFPL
 templates:
   - HTML
 description: The blogging tool for minimalists & make lovers.

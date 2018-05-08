@@ -7,7 +7,7 @@ language:
 templates:
   - PHP
 license:
-  - BSD
+  - BSD 3-Clause
 description: Gustav is a powerful static-site generator written in PHP.
 ---
 

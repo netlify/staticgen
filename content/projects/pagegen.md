@@ -5,7 +5,7 @@ homepage: http://pagegen.phnd.net
 language:
   - Python
 license:
-  - GPLv3
+  - GNU GPL v3.0
 templates:
   - Pagegen
 description: Manage sites and blogs, SEO friendly.

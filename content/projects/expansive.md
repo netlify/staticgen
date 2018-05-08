@@ -6,7 +6,7 @@ language:
   - C
   - Ejscript
 license:
-  - GPL-2.0
+  - GNU GPL v2.0
   - Commercial
 templates:
   - Ejscript

@@ -5,7 +5,7 @@ homepage: https://szeiger.github.io/ornate-doc/
 language:
   - Scala
 license:
-  - Apache
+  - Apache 2.0
 description: Ornate is a tool for building multi-page HTML sites from Markdown sources.
 ---
 

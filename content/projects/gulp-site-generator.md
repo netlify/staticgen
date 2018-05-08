@@ -5,7 +5,7 @@ homepage: https://github.com/ducksoupdev/gulp-site-generator
 language:
   - JavaScript
 license:
-  - None
+  - ISC
 templates:
   - Handlebars
 description: Static site generator using Gulp

@@ -5,7 +5,7 @@ homepage: https://github.com/fitnr/taft
 language:
   - JavaScript
 license:
-  - GPL-3.0
+  - GNU GPL v3.0
 templates:
   - Handlebars
 description: Static site generator for the command line

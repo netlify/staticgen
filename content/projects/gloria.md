@@ -5,7 +5,7 @@ homepage: https://gloriajs.com
 language:
   - JavaScript
 license:
-  - Apache 2
+  - Apache 2.0
 templates:
   - Handlebars
 description: Gloria is a static site generator, a beginners friendly project

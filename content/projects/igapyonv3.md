@@ -5,7 +5,7 @@ homepage: https://igapyon.github.io/igapyonv3/
 language:
   - Java
 license:
-  - Apache 2
+  - Apache 2.0
 templates:
   - Freemarker
 description: A static site/blog generator for developers & designers

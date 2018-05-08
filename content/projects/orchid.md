@@ -5,7 +5,7 @@ homepage: https://orchid.netlify.com
 language:
   - Java
 license:
-  - LGPL-3.0
+  - GNU LGPL v3.0
 templates:
   - Pebble
 description: A beautiful and truly unique documentation engine and static site generator.

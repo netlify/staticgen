@@ -5,7 +5,7 @@ homepage: https://perun.io/
 language:
   - Clojure
 license:
-  - EPL
+  - EPL 1.0
 templates:
   - Hiccup
 description: Composable static site generator build with Clojure and Boot

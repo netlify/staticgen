@@ -5,7 +5,7 @@ homepage: https://easystatic.com/
 language:
   - JavaScript
 license:
-  - Apache 2
+  - Apache 2.0
 templates:
   - EJS
 description: Static site generator powered by Markdown It, Postcss, Babel, Browsersync

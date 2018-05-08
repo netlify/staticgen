@@ -5,7 +5,7 @@ homepage: https://github.com/savuir/blo
 language:
   - Python
 license:
-  - BSD
+  - BSD 3-Clause
 templates:
   - Jinja2
 description: Static site generator for easy personal blogging

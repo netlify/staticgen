@@ -5,7 +5,7 @@ homepage: https://skyost.github.io/SkyDocs/
 language:
   - Java
 license:
-  - GNU GPL v3
+  - GNU GPL v3.0
 templates:
   - Jtwig
 description: SkyDocs is a lightweight static documentation builder with MarkDown.
