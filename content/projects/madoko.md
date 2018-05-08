@@ -2,7 +2,7 @@
 title: Madoko
 repo: koka-lang/madoko
 homepage: https://www.madoko.net
-language: Javascript
+language: JavaScript
 license: Apache
 templates: LaTeX, HTML/CSS
 description: A fast processor for high quality academic and technical articles from Markdown and LaTeX.

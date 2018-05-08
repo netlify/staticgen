@@ -2,7 +2,7 @@
 title: HubPress
 repo: HubPress/hubpress.io
 homepage: http://hubpress.github.io/
-language: Javascript
+language: JavaScript
 license: MIT
 templates: Handlebars
 description: A web application to build your Blog on GitHub.

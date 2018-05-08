@@ -2,7 +2,7 @@
 title: Mini Site Generator
 repo: ijmccallum/Mini-Site-Generator
 homepage: https://ijmccallum.github.io/Mini-Site-Generator/
-language: Javascript
+language: JavaScript
 license: MIT
 templates: JS Template literals
 description: It's just javascript!
