@@ -2,9 +2,12 @@
 title: wok 
 repo: mythmon/wok
 homepage: http://wok.mythmon.com/
-language: Python
-license: MIT
-templates: Jinja2
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Jinja2
 description: Toss some content, templates, and media in a pan and fry it up!
 ---
 

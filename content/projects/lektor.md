@@ -2,9 +2,12 @@
 title: Lektor
 repo: lektor/lektor
 homepage: https://www.getlektor.com/
-language: Python
-license: BSD
-templates: Jinja2
+language:
+  - Python
+license:
+  - BSD
+templates:
+  - Jinja2
 description: A static content management system that can deploy to any webserver.
 twitter: getlektor
 ---

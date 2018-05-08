@@ -2,9 +2,12 @@
 title: Go-Static!
 repo: colynb/generator-go-static
 homepage: https://github.com/colynb/generator-go-static
-language: JavaScript
-license: MIT
-templates: Swig
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Swig
 description: Yeoman generator for building static sites/blogs.
 ---
 

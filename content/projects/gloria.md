@@ -2,9 +2,12 @@
 title: gloria
 repo: gloriajs/gloria
 homepage: https://gloriajs.com
-language: JavaScript
-license: Apache 2
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - Apache 2
+templates:
+  - Handlebars
 description: Gloria is a static site generator, a beginners friendly project
 ---
 

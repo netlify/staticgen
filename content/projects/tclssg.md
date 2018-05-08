@@ -2,9 +2,12 @@
 title: Tclssg
 repo: tclssg/tclssg
 homepage: https://github.com/tclssg/tclssg
-language: Tcl
-license: MIT
-templates: custom
+language:
+  - Tcl
+license:
+  - MIT
+templates:
+  - custom
 description: A static site generator that uses Tcl for both code and templates.
 ---
 

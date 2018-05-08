@@ -2,9 +2,12 @@
 title: Webby
 repo: TwP/webby
 homepage: http://webby.rubyforge.org/
-language: Ruby
-license: MIT
-templates: Erb
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - ERB
 description: Webby is a fantastic little website management system.
 ---
 

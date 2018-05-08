@@ -2,9 +2,12 @@
 title: SuSi
 repo: AVGP/susi
 homepage: https://github.com/AVGP/susi
-language: JavaScript
-license: ISC
-templates: Markdown
+language:
+  - JavaScript
+license:
+  - ISC
+templates:
+  - HTML
 description: The SUper SImple site generator.
 ---
 

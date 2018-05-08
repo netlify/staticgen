@@ -2,9 +2,12 @@
 title: Webgen
 repo: gettalong/webgen
 homepage: http://webgen.gettalong.org/
-language: Ruby
-license: GPL
-templates: ERB + More
+language:
+  - Ruby
+license:
+  - GPL
+templates:
+  - ERB
 description: Static website generation made easy
 ---
 

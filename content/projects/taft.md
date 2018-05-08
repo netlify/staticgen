@@ -2,9 +2,12 @@
 title: Taft
 repo: fitnr/taft
 homepage: https://github.com/fitnr/taft
-language: JavaScript
-license: GPL-3.0
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - GPL-3.0
+templates:
+  - Handlebars
 description: Static site generator for the command line
 ---
 

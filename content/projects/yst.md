@@ -2,9 +2,12 @@
 title: yst
 repo: jgm/yst
 homepage: https://github.com/jgm/yst
-language: Haskell
-license: GPL
-templates: String Templates
+language:
+  - Haskell
+license:
+  - GPL
+templates:
+  - StringTemplate
 description: Static websites from YAML and string templates
 ---
 

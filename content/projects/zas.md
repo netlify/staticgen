@@ -2,9 +2,12 @@
 title: Zas
 repo: imdario/zas
 homepage: http://github.com/imdario/zas
-language: Go
-license: AGPL v3
-templates: Go Templates
+language:
+  - Go
+license:
+  - AGPL v3
+templates:
+  - Go
 description: Most zen static website generator in Golang.
 ---
 

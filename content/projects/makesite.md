@@ -2,9 +2,12 @@
 title: makesite.py
 repo: sunainapai/makesite
 homepage: https://github.com/sunainapai/makesite
-language: Python
-license: MIT
-templates: Simple variable substitution
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - HTML
 description: Simple, lightweight, and magic-free static site/blog generator for Python coders.
 ---
 

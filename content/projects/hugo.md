@@ -2,9 +2,12 @@
 title: Hugo
 repo: gohugoio/hugo
 homepage: http://gohugo.io/
-language: Go
-license: APL 2.0
-templates: Go Templates
+language:
+  - Go
+license:
+  - APL 2.0
+templates:
+  - Go
 description: A Fast and Flexible Static Site Generator.
 startertemplaterepo: netlify/victor-hugo
 twitter: GoHugoIO

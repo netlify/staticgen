@@ -2,9 +2,10 @@
 title: Scalatic
 repo: padurean/scalatic
 homepage: http://functionalprogramming.ro/scalatic
-language: Scala
-license: MIT
-templates: GitHub flavored Markdown
+language:
+  - Scala
+license:
+  - MIT
 description: Dead simple static blog generator written in Scala.
 ---
 

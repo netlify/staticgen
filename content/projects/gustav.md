@@ -2,8 +2,12 @@
 title: Gustav
 repo: futape/gustav
 homepage: http://gustav.futape.de
-language: PHP
-license: BSD
+language:
+  - PHP
+templates:
+  - PHP
+license:
+  - BSD
 description: Gustav is a powerful static-site generator written in PHP.
 ---
 

@@ -2,9 +2,12 @@
 title: Assemble
 repo: assemble/assemble
 homepage: http://assemble.io/
-language: JavaScript
-license: MIT
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: Static site generator for Grunt.js, Yeoman and Node.js
 ---
 

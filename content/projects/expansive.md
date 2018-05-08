@@ -2,9 +2,14 @@
 title: Expansive
 repo: embedthis/expansive
 homepage: https://embedthis.com/expansive
-language: C,Ejscript
-license: GPL-2.0, Embedthis Commercial License
-templates: Ejscript
+language:
+  - C
+  - Ejscript
+license:
+  - GPL-2.0
+  - Commercial
+templates:
+  - Ejscript
 description: Expansive is a static site generator. It is written in Ejscript, and is blazing fast.
 ---
 

@@ -194,18 +194,27 @@ const Project = styled(({
       <h4 className={`title ${title.length > 14 ? 'title-small' : ''}`}>{title}</h4>
       <OpenSourceStats {...stats}/>
       <div className="description">{description}</div>
-      <DataPoint>
-        <DataPointTitle>Languages:</DataPointTitle>
-        <p className="type">{language.join(', ')}</p>
-      </DataPoint>
-      <DataPoint>
-        <DataPointTitle>Templates:</DataPointTitle>
-        <p className="type">{templates.join(', ')}</p>
-      </DataPoint>
-      <DataPoint>
-        <DataPointTitle>License:</DataPointTitle>
-        <p>{license}</p>
-      </DataPoint>
+      {
+        !language ? null :
+        <DataPoint>
+          <DataPointTitle>Languages:</DataPointTitle>
+          <p className="type">{language.join(', ')}</p>
+        </DataPoint>
+      }
+      {
+        !templates ? null :
+        <DataPoint>
+          <DataPointTitle>Templates:</DataPointTitle>
+          <p className="type">{templates.join(', ')}</p>
+        </DataPoint>
+      }
+      {
+        !license ? null :
+        <DataPoint>
+          <DataPointTitle>License:</DataPointTitle>
+          <p className="type">{license.join(', ')}</p>
+        </DataPoint>
+      }
       { starterTemplateRepo ? <DeployButton repo={starterTemplateRepo}/> : null }
     </Link>
   )

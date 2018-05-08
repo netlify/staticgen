@@ -2,9 +2,12 @@
 title: Minimal
 repo: lutzroeder/Minimal
 homepage: https://github.com/lutzroeder/Minimal
-language: JavaScript
-license: MIT
-templates: Mustache
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Mustache
 description: A fast personal website and blog generator for Go, Node.js and Python without external dependencies.
 ---
 

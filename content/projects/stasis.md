@@ -2,9 +2,14 @@
 title: Stasis
 repo: winton/stasis
 homepage: http://stasis.me/
-language: Ruby
-license: MIT
-templates: Tilt (erb, haml, ...)
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Tilt
+  - ERB
+  - Haml
 description: Static Sites Made Powerful with Ruby gems.
 ---
 

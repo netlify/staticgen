@@ -2,9 +2,12 @@
 title: Stati
 repo: jfoucher/stati
 homepage: https://stati.jfoucher.com
-language: PHP
-license: MIT
-templates: Liquid
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Liquid
 description: Stati is an extensible PHP static site generator that can work with existing Jekyll sites.
 ---
 

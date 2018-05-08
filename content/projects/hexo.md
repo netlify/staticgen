@@ -2,9 +2,13 @@
 title: Hexo
 repo: hexojs/hexo
 homepage: http://hexo.io/
-language: JavaScript
-license: MIT
-templates: EJS, Pug
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - EJS
+  - Pug
 description: 'Hexo is a fast, simple and powerful blog framework.'
 startertemplaterepo: hexojs/site 
 ---

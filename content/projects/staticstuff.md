@@ -2,9 +2,12 @@
 title: ARFR
 repo: javimosch/staticstuff
 homepage: https://github.com/javimosch/arfr
-language: JavaScript
-license: Apache
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - Apache
+templates:
+  - Handlebars
 description: Generates simple static web content blazing fast using handlebars templates.
 ---
 

@@ -2,9 +2,12 @@
 title: blogc
 repo: blogc/blogc
 homepage: https://blogc.rgm.io/
-language: C
-license: BSD
-templates: Custom
+language:
+  - C
+license:
+  - BSD
+templates:
+  - Custom
 description: A blog compiler.
 startertemplaterepo: blogc/blogc-netlify
 ---

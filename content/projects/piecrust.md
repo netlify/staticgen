@@ -2,9 +2,12 @@
 title: PieCrust2
 repo: ludovicchabant/PieCrust2
 homepage: http://bolt80.com/piecrust
-language: Python
-license: Apache
-templates: Jinja
+language:
+  - Python
+license:
+  - Apache
+templates:
+  - Jinja
 description: PieCrust is a static website generator and flat-file CMS
 ---
 

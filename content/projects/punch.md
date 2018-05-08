@@ -2,9 +2,12 @@
 title: Punch
 repo: laktek/punch
 homepage: http://laktek.github.io/punch/
-language: JavaScript
-license: MIT
-templates: Mustache
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Mustache
 description: Simple, intuitive. It delights designers and developers alike.
 ---
 

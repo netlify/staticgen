@@ -2,9 +2,12 @@
 title: HastySite
 repo: h3rald/hastysite
 homepage: https://hastysite.h3rald.com/
-language: Nim
-license: MIT
-templates: Mustache
+language:
+  - Nim
+license:
+  - MIT
+templates:
+  - Mustache
 description: HastySite is a minimalist, self-contained, and highly-extensible static site generator.
 ---
 

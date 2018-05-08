@@ -2,9 +2,12 @@
 title: Docusaurus
 repo: facebook/Docusaurus
 homepage: https://docusaurus.io
-language: JavaScript
-license: MIT
-templates: Markdown
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Markdown
 description: 'Easy to Maintain Open Source Documentation Websites'
 startertemplaterepo: anishkny/docusaurus-base
 twitter: docusaurus

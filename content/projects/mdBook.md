@@ -2,9 +2,12 @@
 title: mdBook
 repo: rust-lang-nursery/mdBook
 homepage: https://github.com/rust-lang-nursery/mdBook
-language: Rust
-license: MPL-2.0
-templates: Handlebars
+language:
+  - Rust
+license:
+  - MPL-2.0
+templates:
+  - Handlebars
 description: GitBook alternative implemented in Rust.
 ---
 

@@ -46,7 +46,7 @@ class Project extends React.Component {
         title,
         repo,
         homepage,
-        languages,
+        language,
         stars,
         followers,
         twitter,
@@ -74,7 +74,7 @@ class Project extends React.Component {
 
             <SiteGenerators>
               <span className="title">Languages:</span>
-              <span>{languages.join(', ')}</span>
+              <span>{language ? language.join(', ') : null}</span>
             </SiteGenerators>
 
             <div className="text">

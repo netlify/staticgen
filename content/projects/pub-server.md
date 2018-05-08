@@ -2,9 +2,12 @@
 title: pub-server
 repo: jldec/pub-server
 homepage: http://jldec.github.io/pub-doc/
-language: JavaScript
-license: MIT
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: static HTML generator + editor with npm-based themes
 ---
 

@@ -2,9 +2,12 @@
 title: Urubu 
 repo: jandecaluwe/urubu 
 homepage: http://urubu.jandecaluwe.com
-language: Python 
-license: AGPL 
-templates: Jinja2 
+language:
+  - Python 
+license:
+  - AGPL 
+templates:
+  - Jinja2 
 description: A micro CMS for static websites
 ---
 

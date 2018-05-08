@@ -2,9 +2,12 @@
 title: sblg
 repo: kristapsdz/sblg
 homepage: http://kristaps.bsd.lv/sblg
-language: C
-license: ISC
-templates: None
+language:
+  - C
+license:
+  - ISC
+templates:
+  - None
 description: simple off-line blog utility
 ---
 

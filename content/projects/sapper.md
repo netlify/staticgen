@@ -2,9 +2,12 @@
 title: Sapper.js
 repo: sveltejs/sapper
 homepage: https://sapper.svelte.technology
-language: JavaScript
-license: MIT
-templates: Svelte
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Svelte
 description: Sapper is a framework for building high-performance universal web apps.
 startertemplaterepo: sveltejs/sapper-template
 ---

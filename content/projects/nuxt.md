@@ -2,9 +2,12 @@
 title: Nuxt
 repo: nuxt/nuxt.js
 homepage: https://nuxtjs.org/
-language: JavaScript
-license: MIT
-templates: JavaScript (Vue)
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Vue
 description: A minimalistic framework for serverless Vue.js applications.
 startertemplaterepo: bdougie/nuxt-starter
 twitter: nuxt_js

@@ -2,9 +2,12 @@
 title: Wheat
 repo: creationix/wheat
 homepage: https://github.com/creationix/wheat
-language: JavaScript
-license: MIT
-templates: Custom
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Custom
 description: "A blog engine for coders written in node.JS"
 ---
 

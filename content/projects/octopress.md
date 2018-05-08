@@ -2,9 +2,12 @@
 title: Octopress
 repo: octopress/octopress
 homepage: http://octopress.org
-language: Ruby
-license: MIT
-templates: Liquid
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Liquid
 description: A blogging framework for hackers based on Jekyll.
 twitter: octopress
 ---

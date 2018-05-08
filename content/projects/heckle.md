@@ -2,9 +2,12 @@
 title: Heckle
 repo: marijnh/heckle
 homepage: https://github.com/marijnh/heckle
-language: JavaScript
-license: MIT
-templates: Mold
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Mold
 description: A minimal Jekyll clone in node.js.
 ---
 

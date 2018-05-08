@@ -2,9 +2,12 @@
 title: Spelt
 repo: njdehoog/Spelt
 homepage: https://github.com/njdehoog/Spelt
-language: Swift
-license: MIT
-templates: Stencil
+language:
+  - Swift
+license:
+  - MIT
+templates:
+  - Stencil
 description: Delightfully simple static site generator written in Swift.
 ---
 

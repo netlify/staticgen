@@ -2,9 +2,12 @@
 title: Wintersmith
 repo: jnordberg/wintersmith
 homepage: http://wintersmith.io/
-language: CoffeeScript
-license: MIT
-templates: Jade, + plugins
+language:
+  - CoffeeScript
+license:
+  - MIT
+templates:
+  - Jade
 description: A flexible static site generator with awesome plugins.
 ---
 

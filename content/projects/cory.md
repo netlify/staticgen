@@ -2,9 +2,12 @@
 title: Cory
 repo: leo/cory
 homepage: https://www.npmjs.com/package/cory
-language: JavaScript
-license: MIT
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: A static site generator for JavaScript lovers.
 ---
 

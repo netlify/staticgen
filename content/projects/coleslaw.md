@@ -2,9 +2,12 @@
 title: Coleslaw
 repo: kingcons/coleslaw
 homepage: https://github.com/kingcons/coleslaw
-language: Lisp
-license: BSD
-templates: Closure Templates
+language:
+  - Lisp
+license:
+  - BSD
+templates:
+  - Closure Templates
 description: Flexible Lisp Blogware.
 ---
 

@@ -2,9 +2,12 @@
 title: LitePub
 repo: mirovarga/litepub
 homepage: https://github.com/mirovarga/litepub
-language: Go
-license: MIT
-templates: Go Templates
+language:
+  - Go
+license:
+  - MIT
+templates:
+  - Go
 description: A Lightweight Static Blog Generator
 ---
 

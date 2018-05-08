@@ -2,9 +2,13 @@
 title: Stitcher
 repo: pageon/stitcher-core
 homepage: https://github.com/pageon/stitcher-core
-language: PHP
-license: MIT
-templates: Twig and Smarty
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Twig
+  - Smarty
 description: Static websites for PHP developers
 ---
 

@@ -2,9 +2,12 @@
 title: Gatsby
 repo: gatsbyjs/gatsby
 homepage: http://gatsbyjs.org
-language: JavaScript
-license: MIT
-templates: React.js
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - React
 description: Transform plain text into dynamic blogs and websites using React.js
 startertemplaterepo: brianstone/gatsby-starter-clean 
 twitter: gatsbyjs

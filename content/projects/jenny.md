@@ -2,9 +2,12 @@
 title: Jenny
 repo: hmngwy/jenny
 homepage: https://github.com/hmngwy/jenny
-language: Bash
-license: MIT
-templates: Bash/HEREDOCS
+language:
+  - Bash
+license:
+  - MIT
+templates:
+  - Bash
 description: Static blog generator that uses basic GNU tools.
 ---
 

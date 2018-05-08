@@ -2,9 +2,12 @@
 title: Brunch
 repo: brunch/brunch
 homepage: http://brunch.io/
-language: JavaScript
-license: MIT
-templates: Any JS
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Any JS
 description: An ultra-fast HTML5 build tool. Capable of static site generation.
 twitter: brunch
 ---

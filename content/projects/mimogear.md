@@ -2,9 +2,12 @@
 title: Mimogear
 repo: mimoduo/mimogear
 homepage: http://mimoduo.github.io/mimogear/
-language: JavaScript
-license: MIT
-templates: Pug
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Pug
 description: A super simple static site generator and web development boilerplate.
 ---
 

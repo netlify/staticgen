@@ -2,9 +2,12 @@
 title: Carew
 repo: carew/carew
 homepage: http://carew.github.io/
-language: PHP
-license: MIT
-templates: Twig
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Twig
 description: The tiny website generator
 ---
 

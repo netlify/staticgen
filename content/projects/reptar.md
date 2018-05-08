@@ -2,9 +2,12 @@
 title: Reptar
 repo: reptar/reptar
 homepage: http://reptar.github.io/
-language: JavaScript
-license: MIT
-templates: Nunjucks
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Nunjucks
 description: A modern static site generator written in next generation (ES2015+) JavaScript.
 ---
 

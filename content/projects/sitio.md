@@ -2,9 +2,12 @@
 title: Sitio
 repo: fiatjaf/sitio
 homepage: https://github.com/fiatjaf/sitio
-language: JavaScript
-license: MIT
-templates: React.js
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - React
 description: An imperative static site generator built with React and browserify
 ---
 

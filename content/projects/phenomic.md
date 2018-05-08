@@ -2,9 +2,12 @@
 title: Phenomic
 repo: phenomic/phenomic
 homepage: https://phenomic.io
-language: JavaScript
-license: MIT
-templates: JavaScript (React)
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - React
 description:  A modern static website generator to create dynamic website using React components.
 startertemplaterepo: capriosa/phenomic-cms
 twitter: Phenomic_app

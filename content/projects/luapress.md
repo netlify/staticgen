@@ -2,9 +2,12 @@
 title: Luapress
 repo: Fizzadar/Luapress
 homepage: http://luapress.org/
-language: Lua
-license: MIT
-templates: LHTML
+language:
+  - Lua
+license:
+  - MIT
+templates:
+  - LHTML
 description: Luapress is *yet another* static blog generator, written in Lua.
 ---
 

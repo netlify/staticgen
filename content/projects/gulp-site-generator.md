@@ -2,9 +2,12 @@
 title: Gulp Site
 repo: ducksoupdev/gulp-site-generator
 homepage: https://github.com/ducksoupdev/gulp-site-generator
-language: JavaScript
-license: None
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - None
+templates:
+  - Handlebars
 description: Static site generator using Gulp
 ---
 

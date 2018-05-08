@@ -2,9 +2,10 @@
 title: WP Static HTML Output
 repo: leonstafford/wordpress-static-html-plugin
 homepage: https://wordpress.org/plugins/static-html-output-plugin
-language: PHP
-license: Unlicense
-templates: WordPress
+language:
+  - PHP
+license:
+  - Unlicense
 description: Benefit from WordPress as a CMS but with the speed, performance and portability of a static site
 ---
 

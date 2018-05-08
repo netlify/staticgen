@@ -2,9 +2,12 @@
 title: Jekyll
 repo: jekyll/jekyll
 homepage: http://jekyllrb.com
-language: Ruby
-license: MIT
-templates: Liquid
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Liquid
 description: A simple, blog-aware, static site generator.
 twitter: jekyllrb
 startertemplaterepo: netlify-templates/jekyll-base

@@ -2,9 +2,12 @@
 title: Halwa
 repo: mhlakhani/halwa
 homepage: https://github.com/mhlakhani/halwa
-language: Python
-license: MIT
-templates: Jinja2
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Jinja2
 description: Halwa is a single file static site generator written in Python.
 ---
 

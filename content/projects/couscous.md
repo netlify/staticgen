@@ -2,9 +2,12 @@
 title: Couscous
 repo: CouscousPHP/Couscous
 homepage: http://couscous.io/
-language: PHP
-license: MIT
-templates: Twig
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Twig
 description: Couscous turn Markdown documentation into beautiful websites.
 ---
 ### Step 1

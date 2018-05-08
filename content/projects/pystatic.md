@@ -2,9 +2,12 @@
 title: pystatic
 repo: zedelghem/pystatic
 homepage: https://github.com/Zedelghem/pystatic
-language: Python
-license: GNU
-templates: Any HTML file
+language:
+  - Python
+license:
+  - GNU
+templates:
+  - HTML
 description: Dead simple, one-line, few options static website generator. Just write your stuff instead of learning generators.
 ---
 

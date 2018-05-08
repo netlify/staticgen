@@ -2,9 +2,12 @@
 title: Photish
 repo: henrylawson/photish
 homepage: https://github.com/henrylawson/photish
-language: Ruby
-license: MIT
-templates: Slim
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Slim
 description: Fast, simple, configurable photo portfolio website generator.
 ---
 

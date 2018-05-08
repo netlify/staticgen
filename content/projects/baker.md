@@ -2,9 +2,12 @@
 title: Misakai Baker
 repo: Kelindar/misakai-baker
 homepage: http://baker.misakai.com
-language: .Net
-license: Apache
-templates: Razor
+language:
+  - .Net
+license:
+  - Apache
+templates:
+  - Razor
 description: Slice and Optimize with Razor and Markdown
 ---
 

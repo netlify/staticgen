@@ -2,9 +2,12 @@
 title: adm-dev-kit
 repo: iamfrntdv/adm-dev-kit
 homepage: https://github.com/iamfrntdv/adm-dev-kit
-language: JavaScript
-license: MIT
-templates: pug
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - pug
 description: ADM-DEV-KIT is static web server and build tool built with plugins and tools like Node.js, JSPM, Express.js, Browser-Sync, Gulp.js, PostHTML, PostCSS and others.
 ---
 

@@ -2,9 +2,12 @@
 title: Blogofile
 repo: enigmacurry/blogofile
 homepage: http://blogofile.com
-language: Python
-license: MIT
-templates: Mako
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Mako
 description: A static website compiler and blog engine, written and extended in Python
 ---
 

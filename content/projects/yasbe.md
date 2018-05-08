@@ -2,9 +2,12 @@
 title: YASBE
 repo: underr/yasbe
 homepage: http://github.com/underr/yasbe
-language: Python
-license: WTFPL
-templates: Mako
+language:
+  - Python
+license:
+  - WTFPL
+templates:
+  - Mako
 description: Yet Another Static Blog Engine
 ---
 

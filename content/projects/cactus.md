@@ -2,9 +2,12 @@
 title: Cactus
 repo: eudicots/Cactus
 homepage: https://github.com/koenbok/Cactus/
-language: Python
-license: BSD
-templates: Django
+language:
+  - Python
+license:
+  - BSD
+templates:
+  - Django
 description: Static site generator for designers.
 startertemplaterepo: netlify-templates/cactus-base
 ---

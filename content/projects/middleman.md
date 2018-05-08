@@ -2,9 +2,13 @@
 title: Middleman
 repo: middleman/middleman
 homepage: http://middlemanapp.com
-language: Ruby
-license: MIT
-templates: ERB/Tilt
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - ERB
+  - Tilt
 description: Hand-crafted, modern frontend development.
 startertemplaterepo: wallin/middleman-template
 twitter: middlemanapp

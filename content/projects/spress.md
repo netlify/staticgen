@@ -2,9 +2,12 @@
 title: Spress
 repo: spress/spress
 homepage: http://spress.yosymfony.com
-language: PHP
-license: MIT
-templates: Twig
+language:
+  - PHP
+license:
+  - MIT
+templates:
+  - Twig
 description: Spress is a static site generator and blog engine written in PHP 
 ---
 Spress is a static site generator built with Symfony components. Spress allows you write a blog and create site for 

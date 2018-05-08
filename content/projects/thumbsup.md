@@ -2,9 +2,12 @@
 title: thumbsup
 repo: thumbsup/thumbsup
 homepage: https://thumbsup.github.io
-language: JavaScript
-license: MIT
-templates: N/A
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - None
 description: Static photo &amp; video gallery generator
 ---
 

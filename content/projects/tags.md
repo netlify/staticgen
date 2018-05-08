@@ -2,9 +2,12 @@
 title: Tags
 repo: braceio/tags
 homepage: http://tags.brace.io/
-language: Python
-license: MIT
-templates: Tags
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Tags
 description: The simplest static site generator
 ---
 

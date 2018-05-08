@@ -2,9 +2,12 @@
 title: Poet
 repo: jsantell/poet
 homepage: http://jsantell.github.io/poet/
-language: JavaScript
-license: MIT
-templates: Jade
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Jade
 description: "A node.js blog engine."
 ---
 

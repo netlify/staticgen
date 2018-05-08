@@ -2,9 +2,12 @@
 title: django-distill
 repo: mgrp/django-distill
 homepage: https://github.com/mgrp/django-distill
-language: Python
-license: MIT
-templates: Django
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Django
 description: django-distill lets you to create and publish a static website from any Django project.
 ---
 

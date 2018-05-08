@@ -2,9 +2,12 @@
 title: Reem
 repo: andrejewski/reem
 homepage: http://github.com/andrejewski/reem
-language: JavaScript
-license: ISC
-templates: Consolidate
+language:
+  - JavaScript
+license:
+  - ISC
+templates:
+  - Consolidate
 description: JavaScript static site generator for anything
 ---
 

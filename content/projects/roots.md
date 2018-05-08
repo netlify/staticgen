@@ -2,9 +2,12 @@
 title: Roots
 repo: jescalan/roots
 homepage: http://roots.netlify.com
-language: CoffeeScript
-license: MIT
-templates: Jade
+language:
+  - CoffeeScript
+license:
+  - MIT
+templates:
+  - Jade
 description: roots is a toolbox for building simple, beautiful, and efficient products for the web.
 ---
 

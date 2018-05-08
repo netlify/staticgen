@@ -2,9 +2,13 @@
 title: Statik
 repo: thanethomson/statik
 homepage: https://getstatik.com/
-language: Python
-license: MIT
-templates: Jinja2, Mustache
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Jinja2
+  - Mustache
 description: A simple, generic, static web site generator for developers.
 ---
 

@@ -2,9 +2,12 @@
 title: SkyDocs
 repo: Skyost/SkyDocs
 homepage: https://skyost.github.io/SkyDocs/
-language: Java
-license: GNU GPL v3
-templates: jtwig
+language:
+  - Java
+license:
+  - GNU GPL v3
+templates:
+  - Jtwig
 description: SkyDocs is a lightweight static documentation builder with MarkDown.
 ---
 

@@ -2,9 +2,12 @@
 title: Sphinx
 repo: sphinx-doc/sphinx
 homepage: http://www.sphinx-doc.org/
-language: Python
-license: BSD
-templates: Jinja2
+language:
+  - Python
+license:
+  - BSD
+templates:
+  - Jinja2
 description: A tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl.
 ---
 

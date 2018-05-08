@@ -2,9 +2,12 @@
 title: Serif
 repo: aprescott/serif
 homepage: https://aprescott.com/posts/serif
-language: Ruby
-license: MIT
-templates: Liquid
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Liquid
 description: Serif is a static site generator and an optional admin interface
 ---
 

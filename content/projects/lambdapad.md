@@ -2,9 +2,12 @@
 title: Lambda Pad
 repo: gar1t/lambdapad
 homepage: https://github.com/gar1t/lambdapad
-language: Erlang
-license: Apache 2
-templates: Django
+language:
+  - Erlang
+license:
+  - Apache 2
+templates:
+  - Django
 description: Static site generator using Erlang. Yes, Erlang.
 ---
 

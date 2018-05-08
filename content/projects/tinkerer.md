@@ -2,9 +2,12 @@
 title: Tinkerer
 repo: vladris/tinkerer
 homepage: http://tinkerer.me
-language: Python
-license: BSD
-templates: Jinja2
+language:
+  - Python
+license:
+  - BSD
+templates:
+  - Jinja2
 description: Tinkerer is a blogging engine/static website generator powered by Sphinx
 ---
 

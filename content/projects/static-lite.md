@@ -2,9 +2,12 @@
 title: Static Lite
 repo: BrandonRomano/static-lite
 homepage: 'https://github.com/BrandonRomano/static-lite'
-language: JavaScript
-license: MIT
-templates: Jade
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Jade
 description: A minimalist configuration for generating static sites, powered entirely by NPM scripts.
 ---
 

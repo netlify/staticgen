@@ -2,9 +2,12 @@
 title: Blogo
 repo: kevin14/blogo
 homepage: https://github.com/kevin14/blogo
-language: JavaScript
-license: MIT
-templates: Jade
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Jade
 description: 'Blogo is a blog generator based on JS and Jade'
 ---
 

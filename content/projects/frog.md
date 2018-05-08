@@ -2,9 +2,12 @@
 title: Frog
 repo: greghendershott/frog
 homepage: https://github.com/greghendershott/frog
-language: Racket
-license: MIT
-templates: Racket
+language:
+  - Racket
+license:
+  - MIT
+templates:
+  - Racket
 description: Frog is a static web site generator implemented in Racket, targeting Bootstrap.
 ---
 

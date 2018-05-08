@@ -2,9 +2,12 @@
 title: Rosid
 repo: electerious/Rosid
 homepage: http://rosid.electerious.com/
-language: JavaScript
-license: MIT
-templates: Any
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Any JS
 description: Just-in-time development server and static site exporter.
 ---
 

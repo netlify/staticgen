@@ -2,9 +2,12 @@
 title: s2gen
 repo: denisftw/s2gen
 homepage: http://appliedscala.com/s2gen/
-language: Scala
-license: MIT
-templates: FreeMarker
+language:
+  - Scala
+license:
+  - MIT
+templates:
+  - Freemarker
 description: A dead-simple Scala-based site generator
 ---
 

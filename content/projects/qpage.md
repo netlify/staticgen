@@ -2,9 +2,12 @@
 title: QPage
 repo: sepandhaghighi/qpage
 homepage: http://www.qpage.ir
-language: Python
-license: MIT
-templates: None
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - None
 description: "QPage or QuickPage is a free project for creating academic homepage without any code"
 ---
 

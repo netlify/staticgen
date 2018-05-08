@@ -2,9 +2,12 @@
 title: SKF
 repo: moebiuseye/skf
 homepage: http://skf.jeannedhack.org/
-language: Bash
-license: GPLv3
-templates: Custom
+language:
+  - Bash
+license:
+  - GPLv3
+templates:
+  - Custom
 description: Plugin-based static website generator inspired by Suckless Web Framework. 
 ---
 

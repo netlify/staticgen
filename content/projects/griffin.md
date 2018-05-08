@@ -2,9 +2,12 @@
 title: Griffin
 repo: pawandubey/griffin
 homepage: http://github.com/pawandubey/griffin
-language: Java
-license: Apache
-templates: Handlebars
+language:
+  - Java
+license:
+  - Apache
+templates:
+  - Handlebars
 description: Blazing fast, simple, static site generator
 ---
 

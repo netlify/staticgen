@@ -2,9 +2,12 @@
 title: Mangony
 repo: Sebastian-Fitzner/mangony
 homepage: http://mangony.veams.org/
-language: JavaScript
-license: MIT
-templates: Handlebars
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Handlebars
 description: Yet another static site generator for Grunt, Gulp and Node.js - fast, simple and powerful.
 ---
 

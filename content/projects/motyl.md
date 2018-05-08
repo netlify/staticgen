@@ -2,9 +2,12 @@
 title: Motyl
 repo: fcambus/motyl
 homepage: https://github.com/fcambus/motyl
-language: Ruby
-license: BSD
-templates: Mustache
+language:
+  - Ruby
+license:
+  - BSD
+templates:
+  - Mustache
 description: Opinionated static site generator written in Lua.
 ---
 

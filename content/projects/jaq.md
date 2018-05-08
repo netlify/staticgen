@@ -2,9 +2,12 @@
 title: JAQ
 repo: asciidoctor/jekyll-asciidoc-quickstart
 homepage: https://github.com/asciidoctor/jekyll-asciidoc-quickstart
-language: Ruby
-license: MIT
-templates: Liquid
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Liquid
 description: A shortcut to Asciidoc templating on Github's Jekyll hosting infrastructure.
 ---
 

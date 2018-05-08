@@ -2,9 +2,12 @@
 title: VuePress
 repo: vuejs/vuepress
 homepage: https://vuepress.vuejs.org
-language: JavaScript
-license: MIT
-templates: Markdown, Vue
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Vue
 description: Vue-powered Static Site Generator
 startertemplaterepo: capriosa/vuepress-deploy
 twitter: vuepress

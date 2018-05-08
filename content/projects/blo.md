@@ -2,9 +2,12 @@
 title: Blo
 repo: savuir/blo
 homepage: https://github.com/savuir/blo
-language: Python
-license: BSD
-templates: Jinja2
+language:
+  - Python
+license:
+  - BSD
+templates:
+  - Jinja2
 description: Static site generator for easy personal blogging
 ---
 

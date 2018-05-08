@@ -2,9 +2,13 @@
 title: Almace Scaffolding
 repo: sparanoid/almace-scaffolding
 homepage: https://sparanoid.com/lab/amsf/
-language: Ruby, JavaScript
-license: MIT
-templates: Liquid
+language:
+  - Ruby
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Liquid
 description: Super-fast Jekyll framework.
 ---
 

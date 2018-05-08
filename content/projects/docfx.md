@@ -2,9 +2,13 @@
 title: DocFX
 repo: dotnet/docfx
 homepage: https://dotnet.github.io/docfx
-language: C#
-license: MIT
-templates: Mustache or Liquid
+language:
+  - C#
+license:
+  - MIT
+templates:
+  - Mustache
+  - Liquid
 description: A documentation generation tool for API reference and Markdown files.
 ---
 

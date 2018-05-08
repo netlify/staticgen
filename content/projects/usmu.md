@@ -2,9 +2,13 @@
 title: Usmu
 repo: usmu/usmu
 homepage: http://usmu.io
-language: Ruby
-license: MIT
-templates: Slim, Markdown
+language:
+  - Ruby
+license:
+  - MIT
+templates:
+  - Slim,
+  - Markdown
 description: A small, extensible, static site generator.
 ---
 
