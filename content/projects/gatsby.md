@@ -7,6 +7,7 @@ license: MIT
 templates: React.js
 description: Transform plain text into dynamic blogs and websites using React.js
 startertemplaterepo: brianstone/gatsby-starter-clean 
+twitter: gatsbyjs
 ---
 
 Transform plain text into dynamic blogs and websites using React.js.

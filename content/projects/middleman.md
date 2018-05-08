@@ -7,6 +7,7 @@ license: MIT
 templates: ERB/Tilt
 description: Hand-crafted, modern frontend development.
 startertemplaterepo: wallin/middleman-template
+twitter: middlemanapp
 ---
 
 **Middleman** is a static site generator using all the shortcuts and tools in modern web development. Check out [middlemanapp.com](http://middlemanapp.com/) for detailed tutorials, including a [getting started guide](http://middlemanapp.com/basics/getting-started/). You can also follow [@middlemanapp](https://twitter.com/middlemanapp) for updates.

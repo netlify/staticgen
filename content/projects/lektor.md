@@ -6,6 +6,7 @@ language: Python
 license: BSD
 templates: Jinja2
 description: A static content management system that can deploy to any webserver.
+twitter: getlektor
 ---
 
 Lektor is a static content management system that runs offline, written in Python.

@@ -6,6 +6,7 @@ language: Ruby
 license: MIT
 templates: Liquid
 description: A blogging framework for hackers based on Jekyll.
+twitter: octopress
 ---
 
 Octopress is Jekyll blogging at its finest.

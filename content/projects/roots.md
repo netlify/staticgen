@@ -1,7 +1,7 @@
 ---
 title: Roots
 repo: jescalan/roots
-homepage: http://roots.cx/
+homepage: http://roots.netlify.com
 language: CoffeeScript
 license: MIT
 templates: Jade
