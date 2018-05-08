@@ -304,9 +304,10 @@ const AppStyles = styled.div`
       }
     }
 
-    &:visited,
-    &:active,
-    &:hover {
+    a,
+    a:visited,
+    a:active,
+    a:hover {
       color: #313D3E;
       text-decoration: none;
     }
