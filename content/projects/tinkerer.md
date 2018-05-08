@@ -5,7 +5,7 @@ homepage: http://tinkerer.me
 language:
   - Python
 license:
-  - BSD
+  - BSD 2-Clause
 templates:
   - Jinja2
 description: Tinkerer is a blogging engine/static website generator powered by Sphinx

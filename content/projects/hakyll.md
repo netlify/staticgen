@@ -5,7 +5,7 @@ homepage: http://jaspervdj.be/hakyll/
 language:
   - Haskell
 license:
-  - BSD
+  - BSD 3-Clause
 templates:
   - Hakyll
 description: A configurable Haskell library, for small-to-medium sites.

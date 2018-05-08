@@ -5,7 +5,9 @@ homepage: http://steve.org.uk/Software/templer/
 language:
   - Perl
 license:
-  - Perl
+  - GNU GPL v2.0
+  - GNU GPL v3.0
+  - Artistic 2.0
 templates:
   - HTML::Template
 description: Templer is a modular extensible static-site-generator written in perl.

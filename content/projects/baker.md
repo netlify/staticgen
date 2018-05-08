@@ -5,7 +5,7 @@ homepage: http://baker.misakai.com
 language:
   - .Net
 license:
-  - Apache
+  - Apache 2.0
 templates:
   - Razor
 description: Slice and Optimize with Razor and Markdown

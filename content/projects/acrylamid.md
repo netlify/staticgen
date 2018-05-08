@@ -5,7 +5,7 @@ homepage: http://posativ.org/acrylamid/
 language:
   - Python
 license:
-  - BSD
+  - BSD 2-Clause
 templates:
   - Jinja
   - Mako

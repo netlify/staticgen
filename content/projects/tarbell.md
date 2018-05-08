@@ -5,7 +5,7 @@ homepage: http://tarbell.io
 language:
   - Python
 license:
-  - BSD
+  - BSD 3-Clause
 templates:
   - Jinja
 description: Simple static sites for storytellers.

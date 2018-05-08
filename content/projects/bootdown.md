@@ -5,7 +5,7 @@ homepage: http://project.geekweaver.com/
 language:
   - Python
 license:
-  - AGPL
+  - AGPL v3.0
 templates:
   - Markdown
 description: Extremely simple static sites with Markdown and BootStrap.

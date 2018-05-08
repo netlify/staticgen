@@ -5,7 +5,7 @@ homepage: https://github.com/Psycojoker/prosopopee
 language:
   - Python
 license:
-  - GPL
+  - GNU GPL v3.0
 templates:
   - Jinja2
 description: A static website generator that allows you to tell a story with your pictures

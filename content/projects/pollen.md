@@ -5,7 +5,7 @@ homepage:  http://pollenpub.com
 language:
   - Racket
 license:
-  - LGPL
+  - GNU LGPL v3.0
 description: A web book-publishing system written in Racket with static html as default output target.
 ---
 

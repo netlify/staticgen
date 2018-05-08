@@ -5,7 +5,7 @@ homepage: https://github.com/fallenhitokiri/drupan
 language:
   - Python
 license:
-  - BSD
+  - BSD 2-Clause
 templates:
   - Jinja2
 description: trying to hit the sweet spot between simplicity and being feature rich enough for every use case.

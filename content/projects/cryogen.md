@@ -5,7 +5,7 @@ homepage: http://cryogenweb.org/
 language:
   - Clojure
 license:
-  - EPL
+  - EPL 1.0
 templates:
   - Selmer
 description: A simple static site generator shipped on Leiningen

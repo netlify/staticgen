@@ -5,7 +5,7 @@ homepage: http://rocadocs.com
 language:
   - Python
 license:
-  - Apache-2.0
+  - Apache 2.0
 templates:
   - None
 description: Opinionated static documentation generator using Markdown

@@ -5,7 +5,7 @@ homepage: https://sake92.github.io/hepek/
 language:
   - Scala
 license:
-  - Apache2
+  - Apache 2.0
 templates:
   - Scala
 description: Render Scala objects into files

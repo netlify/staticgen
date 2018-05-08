@@ -5,7 +5,7 @@ homepage: http://liquidz.github.io/misaki/
 language:
   - Clojure
 license:
-  - EPL
+  - EPL 1.0
 templates:
   - Hiccup
 description: A Jekyll inspired static site generator in Clojure.

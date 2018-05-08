@@ -5,7 +5,7 @@ homepage: http://datenstrom.se/yellow/
 language:
   - PHP
 license:
-  - GPL
+  - GNU GPL v2.0
 templates:
   - PHP
 description: Yellow is for people who make websites.

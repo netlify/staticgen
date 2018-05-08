@@ -5,7 +5,7 @@ homepage: https://bookdown.org/
 language:
   - R
 license:
-  - GPL-3
+  - GNU GPL v3.0
 templates:
   - R
   - R Markdown

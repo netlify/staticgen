@@ -5,7 +5,7 @@ homepage: https://github.com/mixu/markdown-styles
 language:
   - JavaScript
 license:
-  - BSD
+  - BSD 3-Clause
 templates:
   - Handlebars
 description: Markdown to static HTML generator and multiple CSS themes for Markdown

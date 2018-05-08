@@ -5,7 +5,7 @@ homepage: http://gohugo.io/
 language:
   - Go
 license:
-  - APL 2.0
+  - Apache 2.0
 templates:
   - Go
 description: A Fast and Flexible Static Site Generator.

@@ -5,7 +5,7 @@ homepage: https://github.com/wendal/gor
 language:
   - Go
 license:
-  - BSD
+  - BSD 3-Clause
 templates:
   - Mustache
 description: A static websites and blog generator engine written in Go
