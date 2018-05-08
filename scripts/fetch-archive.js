@@ -55,10 +55,10 @@ async function getAllProjectData(projects) {
   const twitterFollowers = twitterScreenNames.length && await getTwitterFollowers(twitterScreenNames)
   const gitHubRepos = map(projects, 'repo').filter(val => val)
   const gitHubReposData = await getAllProjectGitHubData(gitHubRepos)
-  const data = projects.reduce((obj, { slug, repo, twitter }) => {
+  const data = projects.reduce((obj, { key, repo, twitter }) => {
     const twitterData = twitter ? { followers: twitterFollowers[twitter] } : {}
     const gitHubData = repo ? { ...(gitHubReposData[repo]) } : {}
-    return { ...obj, [slug]: [{ timestamp, ...twitterData, ...gitHubData }] }
+    return { ...obj, [key]: [{ timestamp, ...twitterData, ...gitHubData }] }
   }, {})
   return { timestamp, data }
 }

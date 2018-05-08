@@ -1,15 +1,47 @@
 import React from 'react'
+import styled from 'styled-components'
+import { SiteData } from 'react-static'
+
+const FooterContainer = styled.div`
+  background: #b6b6b6;
+  margin: 48px 0 0;
+  padding: 48px 48px 24px;
+  color: #fff;
+`
+
+const FooterContentContainer = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
+`
+
+const FooterContent = styled.h3`
+  font-weight: 300;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.4;
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+    font-weight: normal;
+  }
+`
+
+const Copyright = styled.div`
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 48px;
+`
 
 const Footer = () =>
-  <div>
-    <div className="footer">
-      <div className="footer-container">
-        <h3>StaticGen is hosted and maintained by <a href="https://www.netlify.com">Netlify</a>, the perfect way to deploy your JAMstack sites and apps.</h3>
-      </div>
-      <div className="postscript">
-        © Netlify {new Date().getFullYear()}
-      </div>
-    </div>
-  </div>
+  <SiteData render={({ footerText, copyrightName }) =>
+    <FooterContainer>
+      <FooterContentContainer>
+        <FooterContent dangerouslySetInnerHTML={{ __html: footerText}}/>
+      </FooterContentContainer>
+      <Copyright>© {copyrightName} {new Date().getFullYear()}</Copyright>
+    </FooterContainer>
+  }/>
 
 export default Footer

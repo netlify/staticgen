@@ -1,11 +1,17 @@
 import React from 'react'
-import { RouteData } from 'react-static'
+import { SiteData, RouteData, Head } from 'react-static'
+import { Container } from 'Components'
 
 const Page = () =>
-  <RouteData render={({ content }) =>
-    <div className="main">
-      <div className="sheet text" dangerouslySetInnerHTML={{ __html: content }}></div>
-    </div>
+  <RouteData render={({ title, content }) =>
+    <React.Fragment>
+      <SiteData render={({ title: siteTitle }) =>
+        <Head>
+          <title>{`${title} | ${siteTitle}`}</title>
+        </Head>
+      }/>
+      <Container dangerouslySetInnerHTML={{ __html: content }}/>
+    </React.Fragment>
   }/>
 
 export default Page
