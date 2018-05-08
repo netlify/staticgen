@@ -149,10 +149,6 @@ const AppStyles = styled.div`
     }
   }
 
-  .staticgen-promo a {
-    display: block;
-  }
-
   .navbar {
     height: 45px;
     background: #313D3E;
@@ -442,7 +438,7 @@ const AppStyles = styled.div`
   }
 
   .landing .staticgen-promo p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .deploy-to-netlify {

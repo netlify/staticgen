@@ -30,10 +30,13 @@ const ControlLabel = styled.div`
 
 const StaticGenPromo = () =>
   <li className="project staticgen-promo">
-    <h3>
-      Also visit <a href="https://www.staticgen.com" target="_blank">staticgen.com</a>
-      for a ranked list of open source static site generators!
-    </h3>
+    <h3>Get started with one click!</h3>
+    <p>
+      For generators with the "Deploy to Netlify" button, you can deploy a new site from a template with one click. Get HTTPS, continuous delivery, and bring a custom domain, free of charge.
+    </p>
+    <p>
+      Want your own Deploy to Netlify button? <a href="https://www.netlify.com/docs/deploy_button/">Learn more here.</a>
+    </p>
   </li>
 
 const ProjectCard = ({ project }) =>
