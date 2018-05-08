@@ -6,6 +6,7 @@ language: Python
 license: AGPL
 templates: Jinja2
 description: A static site generator, imports from Wordpress, multi-lang publishing.
+twitter: getpelican
 ---
 
 Pelican is a static site generator, written in Python.

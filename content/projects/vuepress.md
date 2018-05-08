@@ -7,6 +7,7 @@ license: MIT
 templates: Markdown, Vue
 description: Vue-powered Static Site Generator
 startertemplaterepo: capriosa/vuepress-deploy
+twitter: vuepress
 ---
 
 # Simplicity First

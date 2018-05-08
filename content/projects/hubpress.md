@@ -1,12 +1,13 @@
 ---
 title: HubPress
 repo: HubPress/hubpress.io
-homepage: http://hubpress.io/
+homepage: http://hubpress.github.io/
 language: Javascript
 license: MIT
 templates: Handlebars
 description: A web application to build your Blog on GitHub.
 startertemplaterepo: HubPress/hubpress.io
+twitter: HubPressIO
 ---
 
 HubPress is a static site generator written in JavaScript, powered by Vue.js, Asciidoctor and GitHub 

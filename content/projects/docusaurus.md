@@ -7,6 +7,7 @@ license: MIT
 templates: Markdown
 description: 'Easy to Maintain Open Source Documentation Websites'
 startertemplaterepo: anishkny/docusaurus-base
+twitter: docusaurus
 ---
 
 ## Powered by Markdown

@@ -6,6 +6,7 @@ language: JavaScript
 license: MIT
 templates: JavaScript
 description: A framework for statically-exported React apps
+twitter: hexojs
 ---
 
 Next.js is a minimalistic framework for server-rendered React applications.

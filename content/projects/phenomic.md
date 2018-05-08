@@ -7,6 +7,7 @@ license: MIT
 templates: JavaScript (React)
 description:  A modern static website generator to create dynamic website using React components.
 startertemplaterepo: capriosa/phenomic-cms
+twitter: Phenomic_app
 ---
 
 > Modern static website generator for creating dynamic websites using React

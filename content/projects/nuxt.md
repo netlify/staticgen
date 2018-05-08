@@ -7,6 +7,7 @@ license: MIT
 templates: JavaScript (Vue)
 description: A minimalistic framework for serverless Vue.js applications.
 startertemplaterepo: bdougie/nuxt-starter
+twitter: nuxt_js
 ---
 
 An easy way to export your Vue.js Web Application into a static website.
