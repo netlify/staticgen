@@ -4,9 +4,9 @@ import styled from 'styled-components'
 import { EntypoHome, EntypoTwitter, EntypoGithub } from 'react-entypo'
 import Prism from 'prismjs/components/prism-core'
 import prismLoadLanguages from 'prismjs/components/index'
-import 'prismjs/themes/prism-okaidia.css'
+import 'prismjs/themes/prism-tomorrow.css'
 
-prismLoadLanguages(['json', 'bash'])
+prismLoadLanguages(['json', 'bash', 'markdown', 'clojure', 'javascript', 'handlebars'])
 
 const EntypoIcon = styled(({ Icon, className }) =>
   <Icon className={className}/>

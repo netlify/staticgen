@@ -17,7 +17,7 @@ Most static site generators are cumbersome to use. Nevertheless, when deploying 
 
 staticjinja is designed to be lightweight, easy-to-use, and highly extensible, enabling you to focus on simply making your site.
 
-```
+```sh
 $ mkdir templates
 $ vim templates/index.html
 $ python -m staticjinja

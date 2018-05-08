@@ -29,7 +29,7 @@ Other examples include a [presentation theme](https://github.com/jldec/pub-sampl
 
 running **pub-server** locally requires node.js.
 
-``` bash
+```sh
 npm install -g pub-server
 ```
 
