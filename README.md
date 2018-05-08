@@ -59,6 +59,15 @@ To run a production build for deployment:
 npm run build
 ```
 
+## Configuration
+
+This repo uses a `site.yaml` file to provide high level configurability, with the eventual goal of
+deriving a generic boilerplate that can be used for generating an open source leaderboard without
+editing the site source.
+
+The currently supported keys for `site.yaml` are present in the file itself, documentation of
+available options will be provided when the generic boilerplate is published.
+
 ## Netlify
 
 staticgen.com is built and maintained by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps.

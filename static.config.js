@@ -1,21 +1,33 @@
+import fs from 'fs'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
-import { map, mapValues, find, uniq, flatten, sortBy, pickBy } from 'lodash'
+import { reloadRoutes } from 'react-static/node'
+import { map, mapValues, find, uniq, flatten, sortBy, pick, pickBy, flatMap } from 'lodash'
 import decamelize from 'decamelize'
 import dateFns from 'date-fns'
 import { toSlug } from 'Scripts/util'
 import grayMatter from 'gray-matter'
 import marked from 'marked'
+import yaml from 'js-yaml'
+import titleCase from 'title-case'
+import siteYaml from './site.yaml'
 import fetchArchive from './scripts/fetch-archive'
 import * as projectsMarkdown from './content/projects/*.md'
 import * as pagesMarkdown from './content/pages/*.md'
+import promoMarkdown from './content/promo.md'
+import footerMarkdown from './content/footer.md'
 
-const SITE_URL = 'https://www.staticgen.com'
+const siteConfig = yaml.safeLoad(siteYaml)
+
+const pageCache = {}
 
 function processMarkdown(markdown, key) {
+  if (pageCache[key]) {
+    return pageCache[key]
+  }
   const { content, data } = grayMatter(markdown)
   const html = marked(content)
-  return { content: html, key: decamelize(key, '-'), ...data }
+  return pageCache[key] = { content: html, key: decamelize(key, '-'), ...data }
 }
 
 function mapProjectFrontMatter({
@@ -26,9 +38,6 @@ function mapProjectFrontMatter({
   startertemplaterepo,
   content,
   twitter,
-  language,
-  license,
-  templates,
 }) {
   return {
     title,
@@ -39,9 +48,6 @@ function mapProjectFrontMatter({
     description,
     starterTemplateRepo: startertemplaterepo,
     content,
-    language,
-    license,
-    templates,
   }
 }
 
@@ -80,8 +86,7 @@ async function getProjects() {
   /**
    * Get project details from frontmatter.
    */
-  const projectDetailsRaw = map(projectsMarkdown, processMarkdown)
-  const projectDetails = await Promise.all(map(projectDetailsRaw, mapProjectFrontMatter))
+  const projectDetails = map(projectsMarkdown, processMarkdown)
 
   /**
    * Get external project data.
@@ -98,7 +103,10 @@ async function getProjects() {
   const projects = projectDetails.map(project => {
     const slug = toSlug(project.title)
     const data = projectData[slug]
-    return pickBy({ ...project, ...data }, val => val)
+    const fieldValues = pick(project, map(siteConfig.fields, 'name'))
+    const mappedProject = mapProjectFrontMatter(project)
+    const filteredProject = pickBy({ ...mappedProject, ...data }, val => val)
+    return { fieldValues, ...filteredProject, ...data }
   })
 
   return projects
@@ -108,58 +116,77 @@ async function getProjects() {
  * Generate dropdown filter values from frontmatter values.
  */
 function generateFilters(projects) {
-  const languages = sortBy(uniq(flatten(map(projects, 'language'))))
-  const templateTypes = sortBy(uniq(flatten(map(projects, 'templates'))))
-  const licenses = sortBy(uniq(flatten(map(projects, 'license'))))
-
-  return { languages, templateTypes, licenses }
+  return siteConfig.filters.map(filter => ({
+    ...filter,
+    values: sortBy(uniq(flatMap(projects, `fieldValues.${filter.field}`)))
+  }))
 }
 
 /**
  * Retrieve and format markdown for unique pages.
  */
 function getPages() {
-  return map(pagesMarkdown, processMarkdown)
+  const pages = map(pagesMarkdown, processMarkdown)
+  return pages.map(page => {
+    const path = `/${page.key}`
+    return { path, name: titleCase(path), ...page }
+  })
 }
 
 export default {
   getSiteData: () => ({
-    title: 'React Static',
+    title: siteConfig.title,
+    subtitle: siteConfig.subtitle,
+    titleHome: siteConfig.titleHome,
+    repo: siteConfig.repo,
+    shareUrl: siteConfig.url,
+    shareText: siteConfig.shareText,
+    shareButtons: siteConfig.shareButtons,
+    pages: getPages(),
+    navLinks: siteConfig.navLinks,
+    footerText: marked(footerMarkdown),
+    copyrightName: siteConfig.copyrightName,
   }),
   getRoutes: async () => {
     const projects = await getProjects()
-    const pages = await getPages()
-    const defaultShareText = `Check out StaticGen, a leaderboard of open source static site generators.`;
+    const pages = getPages()
+    const promo = marked(promoMarkdown)
     return [
       {
         path: '/',
         component: 'src/Home/Home',
-        getData: () => {
-          const { languages, templateTypes, licenses } = generateFilters(projects)
-          return { projects, languages, templateTypes, licenses, shareUrl: SITE_URL, shareText: defaultShareText }
-        },
+        getData: () => ({
+          projects,
+          promo,
+          sorts: siteConfig.sorts,
+          filters: generateFilters(projects),
+          fields: siteConfig.fields,
+        }),
         children: projects.map(project => ({
           path: project.slug,
           component: 'src/Project/Project',
           getData: () => ({
             ...project,
-            shareUrl: `${SITE_URL}/projects/${project.slug}`,
-            shareText: `Check out ${project.title}, an open source static site generator on the staticgen.com leaderboard.`,
+            fields: siteConfig.fields,
+            shareUrl: `${siteConfig.url}/${project.slug}`,
+            shareText: `${siteConfig.shareTextProjectStart}${project.title}${siteConfig.shareTextProjectEnd}`
           }),
         }))
       },
-      ...[ 'about', 'contribute' ].map(key => ({
-        path: key,
+      ...pages.map(({ key, title, content }) => ({
+        path: `/${key}`,
         component: 'src/Page',
-        getData: () => {
-          const { title, content } = find(pages, { key })
-          return { title, content, shareUrl: SITE_URL, shareText: defaultShareText }
-        }
+        getData: () => ({
+          title,
+          content,
+          shareUrl: siteConfig.url,
+          shareText: siteConfig.shareText,
+        }),
       })),
       {
         is404: true,
         component: 'src/App/404',
-        getData: () => ({ shareUrl: SITE_URL, shareText: defaultShareText }),
+        getData: () => ({ shareUrl: siteConfig.url, shareText: siteConfig.shareText }),
       },
     ]
   },
@@ -169,7 +196,7 @@ export default {
     meta.styleTags = sheet.getStyleElement()
     return html
   },
-  siteRoot: SITE_URL,
+  siteRoot: siteConfig.url,
   Document: class CustomHtml extends Component {
     render () {
       const { Html, Head, Body, children, renderMeta } = this.props
@@ -183,12 +210,12 @@ export default {
 
             <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible"/>
 
-            <meta name="twitter:card" value="StaticGen is a leaderboard of the top open source static site generators. Promoting a static approach to building websites."/>
+            <meta name="twitter:card" value={siteConfig.description}/>
 
-            <meta property="og:title" content="StaticGen" />
+            <meta property="og:title" content={siteConfig.title} />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://staticgen.com/" />
-            <meta property="og:description" content="StaticGen is a leaderboard of the top open source static site generators. Promoting a static approach to building websites." />
+            <meta property="og:url" content={siteConfig.url} />
+            <meta property="og:description" content={siteConfig.description}/>
 
             <link href='//fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'/>
             <link href='//fonts.googleapis.com/css?family=Roboto:100,400,600,700' rel='stylesheet' type='text/css'/>
