@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - pug
+  - Pug
 description: ADM-DEV-KIT is static web server and build tool built with plugins and tools like Node.js, JSPM, Express.js, Browser-Sync, Gulp.js, PostHTML, PostCSS and others.
 ---
 

@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - custom
+  - Custom
 description: A static site generator that uses Tcl for both code and templates.
 ---
 

@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - handlebars
+  - Handlebars
 description: CopperSmith is a very simple command powered static site generator that uses markdown files.
 ---
 
