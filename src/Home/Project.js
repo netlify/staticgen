@@ -195,12 +195,12 @@ const Project = styled(({
       <OpenSourceStats {...stats}/>
       <div className="description">{description}</div>
       <DataPoint>
-        <DataPointTitle>Language:</DataPointTitle>
-        <p className="type">{language}</p>
+        <DataPointTitle>Languages:</DataPointTitle>
+        <p className="type">{language.join(', ')}</p>
       </DataPoint>
       <DataPoint>
         <DataPointTitle>Templates:</DataPointTitle>
-        <p>{templates}</p>
+        <p className="type">{templates.join(', ')}</p>
       </DataPoint>
       <DataPoint>
         <DataPointTitle>License:</DataPointTitle>

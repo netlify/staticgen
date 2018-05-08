@@ -108,8 +108,8 @@ async function getProjects() {
  * Generate dropdown filter values from frontmatter values.
  */
 function generateFilters(projects) {
-  const languages = sortBy(uniq(map(projects, 'language')))
-  const templateTypes = sortBy(uniq(map(projects, 'templates')))
+  const languages = sortBy(uniq(flatten(map(projects, 'language'))))
+  const templateTypes = sortBy(uniq(flatten(map(projects, 'templates'))))
   const licenses = sortBy(uniq(map(projects, 'license')))
 
   return { languages, templateTypes, licenses }

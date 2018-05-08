@@ -67,8 +67,8 @@ class Home extends React.Component {
   canShow = (project) => {
     const { license, templates, language } = this.state.filter
     const shouldHide = (license && project.license !== license)
-      || (templates && project.templates !== templates)
-      || (language && project.language !== language)
+      || (templates && !project.templates.includes(templates) && !project.templates.includes('Any'))
+      || (language && !project.language.includes(language))
     return !shouldHide
   }
 
