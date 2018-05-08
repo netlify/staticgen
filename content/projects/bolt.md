@@ -2,7 +2,7 @@
 title: Bolt
 repo: argyleink/bolt
 homepage: http://argyleink.github.io/Bolt
-language: Javascript
+language: JavaScript
 license: MIT 
 templates: Jade, Your Choice
 description: ⚡ is a fast, organized, mobile first Grunt seed project for fast static apps.
