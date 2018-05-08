@@ -6,7 +6,7 @@ import Prism from 'prismjs/components/prism-core'
 import prismLoadLanguages from 'prismjs/components/index'
 import 'prismjs/themes/prism-okaidia.css'
 
-prismLoadLanguages(['json'])
+prismLoadLanguages(['json', 'bash'])
 
 const EntypoIcon = styled(({ Icon, className }) =>
   <Icon className={className}/>
@@ -74,7 +74,7 @@ class Project extends React.Component {
 
             <SiteGenerators>
               <span className="title">Languages:</span>
-              <span>{languages}</span>
+              <span>{languages.join(', ')}</span>
             </SiteGenerators>
 
             <div className="text">
