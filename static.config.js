@@ -10,7 +10,7 @@ import fetchArchive from './scripts/fetch-archive'
 import * as projectsMarkdown from './content/projects/*.md'
 import * as pagesMarkdown from './content/pages/*.md'
 
-const SITE_URL = 'https://staticgen.com'
+const SITE_URL = 'https://www.staticgen.com'
 
 function processMarkdown(markdown, key) {
   const { content, data } = grayMatter(markdown)
