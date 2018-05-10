@@ -206,7 +206,7 @@ const Project = styled(({
 
   return (
     <div className={`card ${className}`}>
-      <Link to={`/projects/${slug}`}>
+      <Link to={`/${slug}`}>
         <h4 className={`title ${title.length > 14 ? 'title-small' : ''}`}>{title}</h4>
         <OpenSourceStats {...stats}/>
         <div className="description">{description}</div>

@@ -137,10 +137,7 @@ export default {
         getData: () => {
           const { languages, templateTypes, licenses } = generateFilters(projects)
           return { projects, languages, templateTypes, licenses, shareUrl: SITE_URL, shareText: defaultShareText }
-        }
-      },
-      {
-        path: 'projects',
+        },
         children: projects.map(project => ({
           path: project.slug,
           component: 'src/Project/Project',
