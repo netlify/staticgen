@@ -4,7 +4,7 @@ repo: gflohr/qgoda
 homepage: http://www.qgoda.net/
 language: Perl
 license: MIT
-templates: Template::Toolkit 2 
+templates: Template Toolkit 2 
 description: A sophisticated, blog-aware static site generator with unprecedented multi-language features
 startertemplaterepo: gflohr/qgoda-multilang 
 ---
