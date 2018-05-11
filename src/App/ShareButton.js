@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiteData } from 'react-static'
+import { SiteData, RouteData } from 'react-static'
 import styled from 'styled-components'
 import {
   TwitterShareButton,
@@ -32,8 +32,10 @@ const Button = styled(({ type, url, text, className }) => {
 `
 
 const ShareButton = ({ type }) =>
-  <SiteData render={({ shareUrl, shareText }) =>
-    <Button type={type} url={shareUrl} text={shareText}/>
+  <SiteData render={({ shareUrlSite, shareTextSite }) =>
+    <RouteData render ={({ shareUrl , shareText }) =>
+      <Button type={type} url={shareUrl || shareUrlSite} text={shareText || shareTextSite}/>
+    }/>
   }/>
 
 export default ShareButton

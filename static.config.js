@@ -139,8 +139,8 @@ export default {
     subtitle: siteConfig.subtitle,
     titleHome: siteConfig.titleHome,
     repo: siteConfig.repo,
-    shareUrl: siteConfig.url,
-    shareText: siteConfig.shareText,
+    shareUrlSite: siteConfig.url,
+    shareTextSite: siteConfig.shareText,
     shareButtons: siteConfig.shareButtons,
     pages: getPages(),
     navLinks: siteConfig.navLinks,
@@ -179,14 +179,11 @@ export default {
         getData: () => ({
           title,
           content,
-          shareUrl: siteConfig.url,
-          shareText: siteConfig.shareText,
         }),
       })),
       {
         is404: true,
         component: 'src/App/404',
-        getData: () => ({ shareUrl: siteConfig.url, shareText: siteConfig.shareText }),
       },
     ]
   },
@@ -214,6 +211,7 @@ export default {
 
             <meta property="og:title" content={siteConfig.title} />
             <meta property="og:type" content="website" />
+            <meta property="og:image" content={`/images/${siteConfig.socialPreviewImage}`}/>
             <meta property="og:url" content={siteConfig.url} />
             <meta property="og:description" content={siteConfig.description}/>
 

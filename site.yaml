@@ -4,6 +4,7 @@ repo: https://github.com/netlify/staticgen
 titleHome: StaticGen | Top Open Source Static Site Generators
 subtitle: A List of Static Site Generators for JAMstack Sites
 description: StaticGen is a leaderboard of the top open source static site generators. Promoting a static approach to building websites.
+socialPreviewImageFilename: staticgen.png
 shareButtons:
   - twitter
   - reddit
