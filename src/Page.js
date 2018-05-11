@@ -1,6 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
 import { SiteData, RouteData, Head } from 'react-static'
 import { Container } from 'Components'
+
+const Content = styled.div`
+  a {
+    &, &:link, &:active, &:hover {
+      color: #00c7b7;
+      text-decoration: none;
+  }
+`
 
 const Page = () =>
   <RouteData render={({ title, content }) =>
@@ -10,7 +19,9 @@ const Page = () =>
           <title>{`${title} | ${siteTitle}`}</title>
         </Head>
       }/>
-      <Container dangerouslySetInnerHTML={{ __html: content }}/>
+      <Content>
+        <Container dangerouslySetInnerHTML={{ __html: content }}/>
+      </Content>
     </React.Fragment>
   }/>
 

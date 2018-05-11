@@ -16,10 +16,19 @@ const EntypoIcon = styled(({ Icon, className }) =>
   top: 1px;
 `
 
-const DetailLink = styled.div`
+const DetailLink = styled.a`
   display: inline-block;
   white-space: nowrap;
   margin-right: 18px;
+
+  &, &:visited {
+    color: #666;
+  }
+
+  &:link, &:active, &:hover {
+    color: #222;
+    text-decoration: none;
+  }
 `
 
 const FieldsContainer = styled.div`
@@ -81,17 +90,15 @@ class Project extends React.Component {
           }/>
           <h1>{title}</h1>
           <div>
-            <DetailLink>
-              <a href={homepage}><EntypoIcon Icon={EntypoHome}/> {homepage}</a>
-            </DetailLink>
+            <DetailLink href={homepage}><EntypoIcon Icon={EntypoHome}/> {homepage}</DetailLink>
             {!twitter ? null :
-              <DetailLink>
-                <a href={`https://twitter.com/${twitter}`}><EntypoIcon Icon={EntypoTwitter}/> {twitter} ({followers})</a>
+              <DetailLink href={`https://twitter.com/${twitter}`}>
+                <EntypoIcon Icon={EntypoTwitter}/> {twitter} ({followers})
               </DetailLink>
             }
             {!repo ? null :
-              <DetailLink>
-                <a href={`https://github.com/${repo}`}><EntypoIcon Icon={EntypoGithub}/> https://github.com/{repo} ({stars})</a>
+              <DetailLink href={`https://github.com/${repo}`}>
+                <EntypoIcon Icon={EntypoGithub}/> https://github.com/{repo} ({stars})
               </DetailLink>
             }
           </div>
@@ -108,7 +115,9 @@ class Project extends React.Component {
             })}
           </FieldsContainer>
 
-          <Content dangerouslySetInnerHTML={{ __html: content }} ref={this.contentContainer}/>
+          <Content>
+            <div dangerouslySetInnerHTML={{ __html: content }} ref={this.contentContainer}/>
+          </Content>
         </Container>
       }/>
     )
