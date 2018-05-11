@@ -11,13 +11,6 @@ shareText: Check out StaticGen, a leaderboard of open source static site generat
 shareTextProjectStart: "Check out "
 shareTextProjectEnd: ", an open source static site generator on the staticgen.com leaderboard."
 copyrightName: Netlify
-codeHighlightLanguages:
-  - json
-  - bash
-  - markdown
-  - clojure
-  - javascript
-  - handlebars
 navLinks:
   - { url: https://jamstack.org, text: About JAMstack }
   - { url: https://headlesscms.org, text: Need a Static CMS? }
