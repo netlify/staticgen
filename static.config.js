@@ -1,7 +1,6 @@
 import fs from 'fs'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
-import { reloadRoutes } from 'react-static/node'
 import { map, mapValues, find, uniq, flatten, sortBy, pick, pickBy, flatMap } from 'lodash'
 import decamelize from 'decamelize'
 import dateFns from 'date-fns'
