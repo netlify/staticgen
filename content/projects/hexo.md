@@ -10,6 +10,7 @@ templates:
   - EJS
   - Pug
 description: 'Hexo is a fast, simple and powerful blog framework.'
+twitter: hexojs
 startertemplaterepo: hexojs/site 
 ---
 
