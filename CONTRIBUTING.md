@@ -1,34 +1,30 @@
 # CONTRIBUTING
 
-Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+Contributions are always welcome, no matter how large or small. Before contributing, please read the
+[code of conduct](CODE_OF_CONDUCT.md).
 
-## Setup
+## Running Locally
 
-StaticGen requires Ruby 2.1.2 to work without errors.
+To run this project locally, clone the repo and install dependencies:
 
 ```sh
-$ git clone https://github.com/netlify/staticgen
-$ cd staticgen
-$ bundle install 
-$ bundle exec middleman
+git clone https://github.com/netlify/staticgen
+cd staticgen
+npm install
+npm start
 ```
 
 ## Building
 
+To generate a production build, use the npm `build` script:
+
 ```sh
-$ bundle exec middleman
+npm build
 ```
 
 ## Pull Requests
 
-We actively welcome your pull requests.
-
-1. Fork the repo and create your branch from `master`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
+We appreciate any pull requests to add projects to StaticGen or improve the project!
 
 ## License
 
