@@ -8,17 +8,17 @@ license:
   - MIT
 templates:
   - React
-description: Transform plain text into dynamic blogs and websites using React.js
+description: Blazing fast static site generator for React 
 startertemplaterepo: brianstone/gatsby-starter-clean 
 twitter: gatsbyjs
 ---
 
-Transform plain text into dynamic blogs and websites using React.js.
+Blazing fast static site generator for React.
 
 ## Features
 
-* No-reload page transitions
-* React.js component model
+* Fast no-reload page changes
+* Build sites with React.js components
 * Hot reload editing. Tweak pages, templates, and styles and see changes in real time.
 
 ## Modern web tech without the headache
