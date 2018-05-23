@@ -95,13 +95,11 @@ async function getProjects() {
 
   /**
    * Combine project details from frontmatter and project data from
-   * external sources, using the sluggified title as the link, since
-   * the sluggified titles are used as top level keys in the collected
-   * external data.
+   * external sources, using the project's key derived from its Markdown
+   * filename.
    */
   const projects = projectDetails.map(project => {
-    const slug = toSlug(project.title)
-    const data = projectData[slug]
+    const data = projectData[project.key]
     const fieldValues = pick(project, map(siteConfig.fields, 'name'))
     const mappedProject = mapProjectFrontMatter(project)
     const filteredProject = pickBy({ ...mappedProject, ...data }, val => val)
