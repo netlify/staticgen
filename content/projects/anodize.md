@@ -6,6 +6,8 @@ language:
 - JavaScript
 license:
 - GNU AGPL v3.0
+templates:
+  - Liquid
 description: Generate modern pages from minimal source files.
 ---
 
