@@ -56,7 +56,7 @@ function extractRelevantProjectData(data) {
     const newestTimestamp = dateFns.max(...timestamps).getTime()
     const oldestTimestamp = dateFns.min(...timestamps).getTime()
     const dataAgeInDays = dateFns.differenceInDays(Date.now(), oldestTimestamp)
-    const { followers, forks, stars, issues } = find(project, { timestamp: newestTimestamp }) || {}
+    const { followers, forks, stars, issues, installSize } = find(project, { timestamp: newestTimestamp }) || {}
     const {
       forks: forksPrevious,
       stars: starsPrevious,
@@ -74,6 +74,7 @@ function extractRelevantProjectData(data) {
       followers,
       followersPrevious,
       dataAgeInDays,
+      installSize,
     }
   })
 }

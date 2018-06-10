@@ -2,12 +2,11 @@ require('dotenv').config()
 
 import path from 'path'
 import fs from 'fs-extra'
-import { map, pick, pickBy, isEmpty, find, chunk, flatten, filter, fromPairs, mapValues } from 'lodash'
+import { map, find, fromPairs, mapValues } from 'lodash'
 import { differenceInMinutes } from 'date-fns'
 import Octokit from '@octokit/rest'
-import Twitter from 'twitter'
 import twitterFollowersCount from 'twitter-followers-count'
-import { toSlug } from 'Scripts/util'
+import https from 'https';
 
 const GITHUB_TOKEN = process.env.STATICGEN_GITHUB_TOKEN
 const TWITTER_CONSUMER_KEY = process.env.STATICGEN_TWITTER_CONSUMER_KEY
@@ -18,6 +17,7 @@ const PROJECTS_PATH = 'site/content/projects'
 const ARCHIVE_FILENAME = 'staticgen-archive.json'
 const LOCAL_ARCHIVE_PATH = `tmp/${ARCHIVE_FILENAME}`
 const GIST_ARCHIVE_DESCRIPTION = 'STATICGEN.COM DATA ARCHIVE'
+const PACKAGE_SIZE_URL = 'https://packagephobia.now.sh/api.json?p=';
 
 let octokit, getTwitterFollowers
 
@@ -39,6 +39,26 @@ async function getProjectGitHubData(repo) {
   return { stars: stargazers_count, forks: forks_count, issues: open_issues_count }
 }
 
+async function getPackageSize(npm) {
+  console.log('getPackageSize ', npm);
+  return new Promise((resolve, reject) => {
+    https.get(PACKAGE_SIZE_URL + npm, (res) => {
+      let str = '';
+    
+      res.on('data', (chunk) => {
+        str += chunk;
+      });
+    
+      res.on('end', () => {
+        resolve(JSON.parse(str));
+      });
+    
+    }).on('error', (err) => {
+      reject(error);
+    });
+  });
+}
+
 async function getAllProjectGitHubData(repos) {
   const data = []
   for (const repo of repos) {
@@ -49,16 +69,30 @@ async function getAllProjectGitHubData(repos) {
   return fromPairs(data)
 }
 
+async function getAllProjectPackageSizes(npms) {
+  const data = []
+  for (const npm of npms) {
+    await new Promise(res => setTimeout(res, 100))
+    const size = await getPackageSize(npm)
+    data.push([ npm, size ])
+  }
+  return fromPairs(data)
+}
+
 async function getAllProjectData(projects) {
   const timestamp = Date.now()
   const twitterScreenNames = map(projects, 'twitter').filter(val => val)
-  const twitterFollowers = twitterScreenNames.length && await getTwitterFollowers(twitterScreenNames)
+  const twitterFollowers = {}
   const gitHubRepos = map(projects, 'repo').filter(val => val)
   const gitHubReposData = await getAllProjectGitHubData(gitHubRepos)
-  const data = projects.reduce((obj, { key, repo, twitter }) => {
-    const twitterData = twitter ? { followers: twitterFollowers[twitter] } : {}
+  const npms = map(projects, 'npm').filter(val => val);
+  const npmPackageData = await getAllProjectPackageSizes(npms);
+  
+  const data = projects.reduce((obj, { key, repo, npm, twitter }) => {
+    const twitterData = {}
     const gitHubData = repo ? { ...(gitHubReposData[repo]) } : {}
-    return { ...obj, [key]: [{ timestamp, ...twitterData, ...gitHubData }] }
+    const npmData = npm ? npmPackageData[npm] : {}
+    return { ...obj, [key]: [{ timestamp, ...twitterData, ...gitHubData, ...npmData }] }
   }, {})
   return { timestamp, data }
 }
@@ -126,13 +160,13 @@ async function run(projects) {
 
   // This is synchronous.
   authenticate()
-
+  
   const archive = await getArchive()
   if (archive && !archiveExpired(archive)) {
     await updateLocalArchive(archive)
     return archive.data
   }
-
+  
   const projectData = await getAllProjectData(projects)
   const updatedArchive = await updateArchive(projectData, archive)
   await updateLocalArchive(updatedArchive)

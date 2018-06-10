@@ -5,7 +5,6 @@ import Octicon from 'react-component-octicons'
 import { EntypoTwitter } from 'react-entypo'
 import Card from './Card'
 import OpenSourceStat from './OpenSourceStat'
-import DataPoint from './DataPoint'
 
 const TwitterIcon = styled(({ className }) =>
   <EntypoTwitter className={className}/>
@@ -33,6 +32,7 @@ const Project = ({
   className,
   fields,
   fieldValues,
+  installSize,
 }) =>
   <Card
     url={`/${slug}`}
@@ -74,6 +74,15 @@ const Project = ({
         label="Twitter followers"
         value={followers}
         change={followers - followersPrevious}
+        indicateColor={true}
+        dataAgeInDays={dataAgeInDays}
+      />,
+      <OpenSourceStat
+        key="installSize"
+        Icon={() => <Octicon name="package" zoom="100%"/>}
+        label="Install Size"
+        value={installSize} /* TODO: format with `pretty-bytes` */
+        change={0}
         indicateColor={true}
         dataAgeInDays={dataAgeInDays}
       />,
