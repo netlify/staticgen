@@ -1,7 +1,7 @@
 ---
 title: Hugo
 repo: gohugoio/hugo
-homepage: http://gohugo.io/
+homepage: https://gohugo.io/
 language:
   - Go
 license:
