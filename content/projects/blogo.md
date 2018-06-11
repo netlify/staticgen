@@ -1,6 +1,7 @@
 ---
 title: Blogo
 repo: kevin14/blogo
+npm: blogo
 homepage: https://github.com/kevin14/blogo
 language:
   - JavaScript

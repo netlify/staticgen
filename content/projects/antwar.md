@@ -1,6 +1,7 @@
 ---
 title: Antwar
 repo: antwarjs/antwar
+npm: antwar
 homepage: https://antwar.js.org/
 language:
   - JavaScript

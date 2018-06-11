@@ -1,6 +1,7 @@
 ---
 title: NanoGen
 repo: doug2k1/nanogen
+npm: nanogen
 homepage: https://github.com/doug2k1/nanogen
 language:
   - JavaScript

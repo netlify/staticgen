@@ -1,6 +1,7 @@
 ---
 title: Metalsmith
 repo: segmentio/metalsmith
+npm: metalsmith
 homepage: http://www.metalsmith.io/
 language:
   - JavaScript

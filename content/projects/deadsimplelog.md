@@ -1,6 +1,7 @@
 ---
 title: deadsimplelog
 repo: tallesl/node-deadsimplelog
+npm: deadsimplelog
 homepage: https://github.com/tallesl/node-deadsimplelog
 language:
   - JavaScript

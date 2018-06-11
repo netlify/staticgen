@@ -1,6 +1,7 @@
 ---
 title: Flatmarket
 repo: christophercliff/flatmarket
+npm: flatmarket-cli
 homepage: https://christophercliff.com/flatmarket/
 language:
   - JavaScript

@@ -1,6 +1,7 @@
 ---
 title: Reptar
 repo: reptar/reptar
+npm: reptar
 homepage: http://reptar.github.io/
 language:
   - JavaScript

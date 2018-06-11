@@ -1,6 +1,7 @@
 ---
 title: Spike
 repo: static-dev/spike
+npm: spike
 homepage: 'https://www.spike.cf/'
 language:
   - JavaScript

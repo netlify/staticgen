@@ -1,6 +1,7 @@
 ---
 title: Blacksmith
 repo: flatiron/blacksmith
+npm: blacksmith
 homepage: https://github.com/flatiron/blacksmith
 language:
   - JavaScript

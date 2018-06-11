@@ -1,6 +1,7 @@
 ---
 title: Muleify
 repo: AlexanderElias/muleify
+npm: muleify
 homepage: https://github.com/AlexanderElias/muleify
 language:
   - JavaScript

@@ -1,6 +1,7 @@
 ---
 title: GitBook
 repo: GitbookIO/gitbook
+npm: gitbook
 homepage: https://www.gitbook.com/
 language:
   - JavaScript

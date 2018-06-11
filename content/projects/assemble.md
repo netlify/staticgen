@@ -1,6 +1,7 @@
 ---
 title: Assemble
 repo: assemble/assemble
+npm: assemble
 homepage: http://assemble.io/
 language:
   - JavaScript

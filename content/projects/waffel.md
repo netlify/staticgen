@@ -1,6 +1,7 @@
 ---
 title: Waffel
 repo: moonwave99/waffel
+npm: waffel
 homepage: http://moonwave99.github.io/waffel/
 language:
   - JavaScript

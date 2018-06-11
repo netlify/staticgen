@@ -1,6 +1,7 @@
 ---
 title: Reem
 repo: andrejewski/reem
+npm: reem
 homepage: http://github.com/andrejewski/reem
 language:
   - JavaScript

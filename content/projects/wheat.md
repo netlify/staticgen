@@ -1,6 +1,7 @@
 ---
 title: Wheat
 repo: creationix/wheat
+npm: wheat
 homepage: https://github.com/creationix/wheat
 language:
   - JavaScript

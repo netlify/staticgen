@@ -1,6 +1,7 @@
 ---
 title: grunt-flats
 repo: adamduncan/grunt-flats
+npm: grunt-flats
 homepage: https://github.com/adamduncan/grunt-flats
 language:
   - JavaScript

@@ -1,6 +1,7 @@
 ---
 title: Taft
 repo: fitnr/taft
+npm: taft
 homepage: https://github.com/fitnr/taft
 language:
   - JavaScript

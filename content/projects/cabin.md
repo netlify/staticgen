@@ -1,6 +1,7 @@
 ---
 title: Cabin
 repo: CabinJS/Cabin
+npm: cabin
 homepage: http://www.cabinjs.com/
 language:
   - JavaScript

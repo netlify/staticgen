@@ -1,6 +1,7 @@
 ---
 title: Sitio
 repo: fiatjaf/sitio
+npm: sitio
 homepage: https://github.com/fiatjaf/sitio
 language:
   - JavaScript

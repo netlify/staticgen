@@ -1,6 +1,7 @@
 ---
 title: Fledermaus
 repo: sapegin/fledermaus
+npm: fledermaus
 homepage: https://github.com/sapegin/fledermaus
 language:
   - JavaScript

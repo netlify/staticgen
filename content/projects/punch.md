@@ -1,6 +1,7 @@
 ---
 title: Punch
 repo: laktek/punch
+npm: punch
 homepage: http://laktek.github.io/punch/
 language:
   - JavaScript

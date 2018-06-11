@@ -1,6 +1,7 @@
 ---
 title: VuePress
 repo: vuejs/vuepress
+npm: vuepress
 homepage: https://vuepress.vuejs.org
 language:
   - JavaScript

@@ -1,6 +1,7 @@
 ---
 title: Mini Site Generator
 repo: ijmccallum/Mini-Site-Generator
+npm: mini-site-generator
 homepage: https://ijmccallum.github.io/Mini-Site-Generator/
 language:
   - JavaScript

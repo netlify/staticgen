@@ -1,6 +1,7 @@
 ---
 title: pub-server
 repo: jldec/pub-server
+npm: pub-server
 homepage: http://jldec.github.io/pub-doc/
 language:
   - JavaScript

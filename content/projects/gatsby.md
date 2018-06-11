@@ -1,6 +1,7 @@
 ---
 title: Gatsby
 repo: gatsbyjs/gatsby
+npm: gatsby
 homepage: http://gatsbyjs.org
 language:
   - JavaScript

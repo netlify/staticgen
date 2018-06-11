@@ -1,6 +1,7 @@
 ---
 title: markdown-styles
 repo: mixu/markdown-styles
+npm: markdown-styles
 homepage: https://github.com/mixu/markdown-styles
 language:
   - JavaScript

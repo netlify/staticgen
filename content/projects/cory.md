@@ -1,6 +1,7 @@
 ---
 title: Cory
 repo: leo/cory
+npm: cory
 homepage: https://www.npmjs.com/package/cory
 language:
   - JavaScript

@@ -1,6 +1,7 @@
 ---
 title: Lingon
 repo: spotify/lingon
+npm: lingon
 homepage: http://www.lingon.io/
 language:
   - JavaScript

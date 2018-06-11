@@ -1,6 +1,7 @@
 ---
 title: Broccoli Taco
 repo: moudy/broccoli-taco
+npm: broccoli-taco
 homepage: http://broccoli-taco.com/
 language:
   - JavaScript

@@ -1,6 +1,7 @@
 ---
 title: React Static
 repo: nozzle/react-static
+npm: react-static
 homepage: https://github.com/nozzle/react-static
 language:
   - JavaScript

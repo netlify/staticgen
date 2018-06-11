@@ -1,6 +1,7 @@
 ---
 title: Eleventy
 repo: 11ty/eleventy
+npm: '@11ty/eleventy'
 homepage: https://11ty.io/
 language:
   - JavaScript

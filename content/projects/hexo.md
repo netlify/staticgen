@@ -1,6 +1,7 @@
 ---
 title: Hexo
 repo: hexojs/hexo
+npm: hexo
 homepage: http://hexo.io/
 language:
   - JavaScript

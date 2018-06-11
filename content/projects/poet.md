@@ -1,6 +1,7 @@
 ---
 title: Poet
 repo: jsantell/poet
+npm: poet
 homepage: http://jsantell.github.io/poet/
 language:
   - JavaScript

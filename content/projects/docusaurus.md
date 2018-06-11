@@ -1,6 +1,7 @@
 ---
 title: Docusaurus
 repo: facebook/Docusaurus
+npm: docusaurus
 homepage: https://docusaurus.io
 language:
   - JavaScript

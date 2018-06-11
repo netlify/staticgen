@@ -1,6 +1,7 @@
 ---
 title: Nuxt
 repo: nuxt/nuxt.js
+npm: nuxt
 homepage: https://nuxtjs.org/
 language:
   - JavaScript

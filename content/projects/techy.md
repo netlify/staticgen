@@ -1,6 +1,7 @@
 ---
 title: Techy
 repo: krasimir/techy
+npm: techy
 homepage: http://krasimir.github.io/techy/
 language:
   - JavaScript

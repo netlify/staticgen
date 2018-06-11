@@ -1,6 +1,7 @@
 ---
 title: Madoko
 repo: koka-lang/madoko
+npm: madoko
 homepage: https://www.madoko.net
 language:
   - JavaScript

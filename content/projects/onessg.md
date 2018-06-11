@@ -1,6 +1,7 @@
 ---
 title: onessg
 repo: RyanZim/onessg
+npm: onessg
 homepage: https://github.com/RyanZim/onessg
 language:
   - JavaScript

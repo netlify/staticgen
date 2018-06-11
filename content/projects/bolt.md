@@ -1,6 +1,7 @@
 ---
 title: Bolt
 repo: argyleink/bolt
+npm: bolt-cli
 homepage: http://argyleink.github.io/Bolt
 language:
   - JavaScript

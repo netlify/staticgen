@@ -1,6 +1,7 @@
 ---
 title: Easystatic
 repo: easystatic/easystatic
+npm: easystatic
 homepage: https://easystatic.com/
 language:
   - JavaScript

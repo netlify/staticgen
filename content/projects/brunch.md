@@ -1,6 +1,7 @@
 ---
 title: Brunch
 repo: brunch/brunch
+npm: brunch
 homepage: http://brunch.io/
 language:
   - JavaScript

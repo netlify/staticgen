@@ -1,6 +1,7 @@
 ---
 title: Go-Static!
 repo: colynb/generator-go-static
+npm: generator-go-static
 homepage: https://github.com/colynb/generator-go-static
 language:
   - JavaScript

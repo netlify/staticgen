@@ -1,6 +1,7 @@
 ---
 title: Wainwright
 repo: wprl/wainwright
+npm: wainwright
 homepage: https://github.com/wprl/wainwright
 language:
   - JavaScript

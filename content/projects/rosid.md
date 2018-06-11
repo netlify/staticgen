@@ -1,6 +1,7 @@
 ---
 title: Rosid
 repo: electerious/Rosid
+npm: rosid
 homepage: http://rosid.electerious.com/
 language:
   - JavaScript

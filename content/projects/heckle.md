@@ -1,6 +1,7 @@
 ---
 title: Heckle
 repo: marijnh/heckle
+npm: heckle-blog
 homepage: https://github.com/marijnh/heckle
 language:
   - JavaScript

@@ -1,6 +1,7 @@
 ---
 title: Lerret
 repo: jgrh/lerret
+npm: lerret
 homepage: https://github.com/jgrh/lerret
 language:
   - JavaScript

@@ -1,6 +1,7 @@
 ---
 title: Next
 repo: zeit/next.js
+npm: next
 homepage: https://learnnextjs.com/
 language:
   - JavaScript

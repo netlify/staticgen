@@ -1,6 +1,7 @@
 ---
 title: Cuttlebelle
 repo: cuttlebelle/cuttlebelle
+npm: cuttlebelle
 homepage: https://cuttlebelle.com
 language:
   - JavaScript

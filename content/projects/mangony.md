@@ -1,6 +1,7 @@
 ---
 title: Mangony
 repo: Sebastian-Fitzner/mangony
+npm: mangony
 homepage: http://mangony.veams.org/
 language:
   - JavaScript

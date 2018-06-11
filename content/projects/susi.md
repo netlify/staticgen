@@ -1,6 +1,7 @@
 ---
 title: SuSi
 repo: AVGP/susi
+npm: susi
 homepage: https://github.com/AVGP/susi
 language:
   - JavaScript
