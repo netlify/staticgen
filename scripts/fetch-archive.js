@@ -88,7 +88,7 @@ async function getAllProjectData(projects) {
   const npmPackageData = await getAllProjectPackageSizes(npms);
   
   const data = projects.reduce((obj, { key, repo, npm, twitter }) => {
-    const twitterData = twitter ? { followers: twitterFollowers[twitter] } 
+    const twitterData = twitter ? { followers: twitterFollowers[twitter] }
     const gitHubData = repo ? { ...(gitHubReposData[repo]) } : {}
     const npmData = npm ? npmPackageData[npm] : {}
     return { ...obj, [key]: [{ timestamp, ...twitterData, ...gitHubData, ...npmData }] }
