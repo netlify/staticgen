@@ -15,6 +15,7 @@
     "gray-matter": "^3.1.1",
     "js-yaml": "^3.11.0",
     "marked": "^0.3.14",
+    "pretty-bytes": "^5.1.0",
     "prismjs": "^1.14.0",
     "react": "^16.0.0",
     "react-component-octicons": "^1.5.0",

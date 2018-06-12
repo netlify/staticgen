@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { capitalize } from 'lodash'
 import Octicon from 'react-component-octicons'
 import { EntypoTwitter } from 'react-entypo'
 import Card from './Card'
@@ -81,10 +80,11 @@ const Project = ({
         key="installSize"
         Icon={() => <Octicon name="package" zoom="100%"/>}
         label="Install Size"
-        value={installSize} /* TODO: format with `pretty-bytes` */
+        value={installSize}
         change={0}
         indicateColor={true}
         dataAgeInDays={dataAgeInDays}
+        isBytes={true}
       />,
     ]}
   />

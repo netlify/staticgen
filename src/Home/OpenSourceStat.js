@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import prettyBytes from 'pretty-bytes'
 
 const OpenSourceStatIcon = styled.span`
   display: inline-block;
@@ -20,10 +21,16 @@ const OpenSourceStat = styled(({
   indicateColor,
   label,
   dataAgeInDays,
-  className
+  className,
+  isBytes,
 }) => {
   const disabled = typeof value !== 'number'
   const changeValue = parseFloat(change, 10) > 0 ? `+${change}` : change
+  let valClass = '';
+  if (isBytes && !disabled) {
+    value = prettyBytes(value)
+    valClass = 'small'
+  }
 
   return (
     <div title={label} className={`${className} ${disabled ? 'disabled' : ''}`}>
@@ -32,7 +39,7 @@ const OpenSourceStat = styled(({
       </OpenSourceStatIcon>
       {disabled ? <div>N/A</div> :
         <div>
-          <strong>{value}</strong>
+          <strong className={valClass}>{value}</strong>
           {dataAgeInDays < 1 ? null :
             <OpenSourceStatChange
               title={`${label} in the last ${dataAgeInDays} days`}
@@ -61,6 +68,10 @@ const OpenSourceStat = styled(({
     & svg {
       fill: #bbb !important;
     }
+  }
+
+  .small {
+    font-size: 12px;
   }
 `
 
