@@ -40,7 +40,6 @@ async function getProjectGitHubData(repo) {
 }
 
 async function getPackageSize(npm) {
-  console.log('getPackageSize ', npm);
   return new Promise((resolve, reject) => {
     https.get(PACKAGE_SIZE_URL + npm, (res) => {
       let str = '';
