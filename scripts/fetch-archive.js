@@ -82,14 +82,14 @@ async function getAllProjectPackageSizes(npms) {
 async function getAllProjectData(projects) {
   const timestamp = Date.now()
   const twitterScreenNames = map(projects, 'twitter').filter(val => val)
-  const twitterFollowers = {}
+  const twitterFollowers = twitterScreenNames.length && await getTwitterFollowers(twitterScreenNames)
   const gitHubRepos = map(projects, 'repo').filter(val => val)
   const gitHubReposData = await getAllProjectGitHubData(gitHubRepos)
   const npms = map(projects, 'npm').filter(val => val);
   const npmPackageData = await getAllProjectPackageSizes(npms);
   
   const data = projects.reduce((obj, { key, repo, npm, twitter }) => {
-    const twitterData = {}
+    const twitterData = twitter ? { followers: twitterFollowers[twitter] } 
     const gitHubData = repo ? { ...(gitHubReposData[repo]) } : {}
     const npmData = npm ? npmPackageData[npm] : {}
     return { ...obj, [key]: [{ timestamp, ...twitterData, ...gitHubData, ...npmData }] }
@@ -160,13 +160,13 @@ async function run(projects) {
 
   // This is synchronous.
   authenticate()
-  
+
   const archive = await getArchive()
   if (archive && !archiveExpired(archive)) {
     await updateLocalArchive(archive)
     return archive.data
   }
-  
+
   const projectData = await getAllProjectData(projects)
   const updatedArchive = await updateArchive(projectData, archive)
   await updateLocalArchive(updatedArchive)
