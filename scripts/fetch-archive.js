@@ -6,7 +6,7 @@ import { map, find, fromPairs, mapValues } from 'lodash'
 import { differenceInMinutes } from 'date-fns'
 import Octokit from '@octokit/rest'
 import twitterFollowersCount from 'twitter-followers-count'
-import https from 'https';
+import https from 'https'
 
 const GITHUB_TOKEN = process.env.STATICGEN_GITHUB_TOKEN
 const TWITTER_CONSUMER_KEY = process.env.STATICGEN_TWITTER_CONSUMER_KEY
@@ -17,7 +17,7 @@ const PROJECTS_PATH = 'site/content/projects'
 const ARCHIVE_FILENAME = 'staticgen-archive.json'
 const LOCAL_ARCHIVE_PATH = `tmp/${ARCHIVE_FILENAME}`
 const GIST_ARCHIVE_DESCRIPTION = 'STATICGEN.COM DATA ARCHIVE'
-const PACKAGE_SIZE_URL = 'https://packagephobia.now.sh/api.json?p=';
+const PACKAGE_SIZE_URL = 'https://packagephobia.now.sh/api.json?p='
 
 let octokit, getTwitterFollowers
 
@@ -88,7 +88,7 @@ async function getAllProjectData(projects) {
   const npmPackageData = await getAllProjectPackageSizes(npms);
   
   const data = projects.reduce((obj, { key, repo, npm, twitter }) => {
-    const twitterData = twitter ? { followers: twitterFollowers[twitter] }
+    const twitterData = twitter ? { followers: twitterFollowers[twitter] } : {}
     const gitHubData = repo ? { ...(gitHubReposData[repo]) } : {}
     const npmData = npm ? npmPackageData[npm] : {}
     return { ...obj, [key]: [{ timestamp, ...twitterData, ...gitHubData, ...npmData }] }
