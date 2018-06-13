@@ -6,7 +6,7 @@ import { map, find, fromPairs, mapValues } from 'lodash'
 import { differenceInMinutes } from 'date-fns'
 import Octokit from '@octokit/rest'
 import twitterFollowersCount from 'twitter-followers-count'
-import https from 'https'
+import fetch from 'node-fetch'
 
 const GITHUB_TOKEN = process.env.STATICGEN_GITHUB_TOKEN
 const TWITTER_CONSUMER_KEY = process.env.STATICGEN_TWITTER_CONSUMER_KEY
@@ -39,24 +39,6 @@ async function getProjectGitHubData(repo) {
   return { stars: stargazers_count, forks: forks_count, issues: open_issues_count }
 }
 
-async function getPackageSize(npm) {
-  return new Promise((resolve, reject) => {
-    https.get(PACKAGE_SIZE_URL + npm, (res) => {
-      let str = '';
-    
-      res.on('data', (chunk) => {
-        str += chunk;
-      });
-    
-      res.on('end', () => {
-        resolve(JSON.parse(str));
-      });
-    
-    }).on('error', (err) => {
-      reject(error);
-    });
-  });
-}
 
 async function getAllProjectGitHubData(repos) {
   const data = []
@@ -72,7 +54,8 @@ async function getAllProjectPackageSizes(npms) {
   const data = []
   for (const npm of npms) {
     await new Promise(res => setTimeout(res, 100))
-    const size = await getPackageSize(npm)
+    const res = await fetch(PACKAGE_SIZE_URL + npm)
+    const size = await res.json()
     data.push([ npm, size ])
   }
   return fromPairs(data)
@@ -84,8 +67,8 @@ async function getAllProjectData(projects) {
   const twitterFollowers = twitterScreenNames.length && await getTwitterFollowers(twitterScreenNames)
   const gitHubRepos = map(projects, 'repo').filter(val => val)
   const gitHubReposData = await getAllProjectGitHubData(gitHubRepos)
-  const npms = map(projects, 'npm').filter(val => val);
-  const npmPackageData = await getAllProjectPackageSizes(npms);
+  const npms = map(projects, 'npm').filter(val => val)
+  const npmPackageData = await getAllProjectPackageSizes(npms)
   
   const data = projects.reduce((obj, { key, repo, npm, twitter }) => {
     const twitterData = twitter ? { followers: twitterFollowers[twitter] } : {}
