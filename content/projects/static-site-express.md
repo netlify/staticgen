@@ -1,7 +1,7 @@
 ---
 title: static-site-express
 repo: SalsaBoy990/static-site-express
-homepage: https://static-site-express.netlify.com/
+homepage: https://github.com/SalsaBoy990/static-site-express
 language:
   - JavaScript
 license:
