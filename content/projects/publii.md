@@ -8,9 +8,8 @@ license:
   - GPL 3.0
 templates:
   - Handlebars
-description: desktop-based CMS for Windows and Mac that makes creating static websites fast and hassle-free
+description: Desktop-based CMS for creating static websites.
 twitter: getpublii
-startertemplaterepo: GetPublii/theme-Starter
 ---
 
 
