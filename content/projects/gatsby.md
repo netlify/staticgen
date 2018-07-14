@@ -9,7 +9,7 @@ license:
 templates:
   - React
 description: Blazing fast static site generator for React 
-startertemplaterepo: brianstone/gatsby-starter-clean 
+startertemplaterepo: gatsbyjs/gatsby-starter-default
 twitter: gatsbyjs
 ---
 
