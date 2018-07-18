@@ -9,6 +9,7 @@ license:
 templates:
   - Markdown
 description: Painless Markdown publishing
+twitter: rstacruz
 ---
 
 ## What is it
