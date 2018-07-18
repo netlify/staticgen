@@ -2,17 +2,12 @@
 title: Docpress
 repo: docpress/docpress
 homepage: http://docpress.github.io
-language:
-  - JavaScript
-license:
-  - MIT
-templates:
-  - Markdown
+language: JavaScript
+license: MIT
+templates: Markdown
 description: Painless Markdown publishing
-twitter: rstacruz
 ---
 
-## What is it
 Docpress generates websites from your project's basic documentation; that is, at the very least, a README.md file. 
 It also supports multiple Markdown pages in `docs/`. Checkout our [Homepage](http://docpress.github.io) for a quick example.
 
