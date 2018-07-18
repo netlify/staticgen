@@ -1,27 +1,64 @@
 ---
-title: Hugos
-repo: gohugoio/hugo
-homepage: https://gohugo.io/
-language:
-  - Go
-license:
-  - Apache 2.0
-templates:
-  - Go
-description: A Fast and Flexible Static Site Generator.
-startertemplaterepo: netlify/victor-hugo
-twitter: GoHugoIO
+title: Docpress
+repo: docpress/docpress
+homepage: http://docpress.github.io
+language: JavaScript
+license: MIT
+templates: Markdown
+description: Painless Markdown publishing
 ---
 
-Hugo is a static site generator written in Go. It is optimized for
-speed, easy use and configurability. Hugo takes a directory with content and
-templates and renders them into a full html website.
+Docpress generates websites from your project's basic documentation; that is, at the very least, a README.md file. 
+It also supports multiple Markdown pages in `docs/`. Checkout our [Homepage](http://docpress.github.io) for a quick example.
 
-Hugo makes use of Markdown files with front matter for meta data.
+## Examples
+Check out the [Docpress Showcase](https://github.com/docpress/docpress/blob/master/docs/showcase.md) to see how Docpress helped developers build great-looking websites.
 
-A typical website of moderate size can be
-rendered in a fraction of a second. A good rule of thumb is that Hugo
-takes around 1 millisecond for each piece of content.
+## Usage
 
-It is written to work well with any
-kind of website including blogs, tumbles and docs.
+Still under heavy development, consider this a preview.
+See the [Getting Started](docs/getting-started/quickstart.md) guide for more details.
+
+```sh
+$ npm install -g docpress
+$ echo "# My project" > README.md
+$ echo "Documented by Markdown files." >> README.md
+$ docpress serve
+
+  Docpress
+  starting development - ^C to exit
+
+  350ms ✓   first build                 
+      on    watching changes
+      on    livereload
+      on    http://localhost:3000
+
+  Running
+```
+
+Screenshot
+-----------
+
+![Screenshot](https://i.imgur.com/eSXOeVw.png)
+
+
+Support
+-------
+
+- [Documentation](http://docpress.github.io/)
+- [Gitter chat](https://gitter.im/docpress/Lobby)
+
+Let's build our first Docpress site.
+[Quickstart guide →](docs/getting-started/quickstart.md)
+
+Thanks
+------
+**docpress** © 2015+, Rico Sta. Cruz. Released under the [MIT] License.<br>
+Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]).
+
+> [ricostacruz.com](http://ricostacruz.com) &nbsp;&middot;&nbsp;
+> GitHub [@rstacruz](https://github.com/rstacruz) &nbsp;&middot;&nbsp;
+> Twitter [@rstacruz](https://twitter.com/rstacruz)
+
+[MIT]: http://mit-license.org/
+[contributors]: http://github.com/rstacruz/docpress/contributors
