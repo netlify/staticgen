@@ -1,64 +1,34 @@
 ---
-title: Docpress
-repo: docpress/docpress
-homepage: http://docpress.github.io
-language: JavaScript
-license: MIT
-templates: Markdown
-description: Painless Markdown publishing
+title: Grow
+repo: grow/grow
+homepage: https://grow.io/
+language:
+  - Python
+license:
+  - MIT
+templates:
+  - Jinja2
+description: Grow is a declarative, file-based static site generator for building maintainable, high-quality websites.
 ---
 
-Docpress generates websites from your project's basic documentation; that is, at the very least, a README.md file. 
-It also supports multiple Markdown pages in `docs/`. Checkout our [Homepage](http://docpress.github.io) for a quick example.
+### Grow's mission is to bring joy to building and launching microsites
 
-## Examples
-Check out the [Docpress Showcase](https://github.com/docpress/docpress/blob/master/docs/showcase.md) to see how Docpress helped developers build great-looking websites.
+We want Grow to be the canonical way for teams and individuals to build, launch, and maintain high-quality, content-rich web sites. It's architected to work for humans, to allow people pair it with their own development tools, to run locally and in the cloud, and to bring simplicity to web site management.
 
-## Usage
+Grow (the app) and the stuff you make with it (your sites) are portable. You can run Grow anywhere, and you can take your content anywhere because your content is stored as flat files. There will never be lock-in with Grow.
 
-Still under heavy development, consider this a preview.
-See the [Getting Started](docs/getting-started/quickstart.md) guide for more details.
+### Configuration, not code.
 
-```sh
-$ npm install -g docpress
-$ echo "# My project" > README.md
-$ echo "Documented by Markdown files." >> README.md
-$ docpress serve
+Control your site's URLs, content hierarchy, structure and behavior all with configuration, not with code. You won't have to program your site's serving logic again and again, so website production stays rapid and nimble. Modifications to to your architecture are always just a config change away.
 
-  Docpress
-  starting development - ^C to exit
+### Îñtérñåtîøñålization made simple.
 
-  350ms ✓   first build                 
-      on    watching changes
-      on    livereload
-      on    http://localhost:3000
+Flexible localization is easy and comes included. You can configure localized URL formats, easily specify what content is translated and what isn't, localize your content, and integrate with translation providers to translate your projects.
 
-  Running
-```
+### Develop everywhere, deploy anywhere.
 
-Screenshot
------------
+Grow sites are entirely file-based, backed by Git with no database to maintain. Development can happen locally or in the cloud. You can deploy to a variety of destinations – including exporting as static files for integration with your custom server.
 
-![Screenshot](https://i.imgur.com/eSXOeVw.png)
+### No installation or maintenance.
 
-
-Support
--------
-
-- [Documentation](http://docpress.github.io/)
-- [Gitter chat](https://gitter.im/docpress/Lobby)
-
-Let's build our first Docpress site.
-[Quickstart guide →](docs/getting-started/quickstart.md)
-
-Thanks
-------
-**docpress** © 2015+, Rico Sta. Cruz. Released under the [MIT] License.<br>
-Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]).
-
-> [ricostacruz.com](http://ricostacruz.com) &nbsp;&middot;&nbsp;
-> GitHub [@rstacruz](https://github.com/rstacruz) &nbsp;&middot;&nbsp;
-> Twitter [@rstacruz](https://twitter.com/rstacruz)
-
-[MIT]: http://mit-license.org/
-[contributors]: http://github.com/rstacruz/docpress/contributors
+Focus on what matters (your web sites!) when using Grow. Your projects are stored and managed entirely separate from the app, so you'll never have to maintain a deployed installation or deal with upgrades. Grow tests and verifies your sites upon each build.
