@@ -9,6 +9,7 @@ license:
 templates:
   - Scala
 description: Render Scala objects into files
+startertemplaterepo: sake92/hepek-starter
 ---
 
 Hepek is a tool that turns Scala `object`s into files.  
@@ -16,7 +17,7 @@ Everything that can be represented as a String can be written to a file.
 
 ## Features
 - full Scala support
-- automatic calculation of relative links
+- automatic relative links
 - incremental rendering and file watching
 - custom, extensible and **typesafe**:
     - templates
@@ -24,5 +25,7 @@ Everything that can be represented as a String can be written to a file.
     - abstractions (data, functions)
 - Markdown syntax
 - Prismjs code highlighter
-- Mathjax for math formulas
+- Katex or Mathjax for math formulas
+- PDF rendering
+- form helpers
 - simple installation, it's just an sbt plugin
