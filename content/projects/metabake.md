@@ -25,17 +25,17 @@ mbake
 ## First Page
 
 Create index.pug
-```pug
+```
 header
 body
     p Hello #{key1}
 ```
 and dat.yaml
-```yaml
+```
 key1: World
 ```
 
-## Make/mbake:
+## Make with mbake:
 
 ```sh
 mbake .
