@@ -32,10 +32,10 @@ body
 ```
 and dat.yaml
 ```
-key1: World
+key1 World
 ```
 
-## Make with mbake:
+## Make with mbake
 
 ```sh
 mbake .
