@@ -1,20 +1,35 @@
 ---
-title: WP Static HTML Output
+title: WP Static Site Generator
 repo: leonstafford/wordpress-static-html-plugin
-homepage: https://wordpress.org/plugins/static-html-output-plugin
+homepage: https://wp2static.com
 language:
   - PHP
 license:
   - Unlicense
-description: Benefit from WordPress as a CMS but with the speed, performance and portability of a static site
+description: The optimum solution to speed up and secure your WordPress site – export to static HTML and hide all traces of WordPress from your site!
 ---
 
-Don't want to compromise on WordPress's power as a powerful and extensible CMS? Get the speed, security and portability of a static site, easily exported out of WordPress into one of the following targets:
+Tired of your WordPress sites getting hacked?
 
- - auto-deploy via FTP
- - auto-deploy via S3
- - auto-deploy via Dropbox
- - ready to deploy folder of zip of your static site
+A static site closes all the doors that an out of date WordPress, theme or plugin can leave open.
 
-With over 6,000 active installs and now back in active development, see if it works for you.
+Your visitors not sticking around due to your site loading too slow?
+
+A pre-generated static site can outperform popular caching plugins like WP Super Cache, WP Fastest Cache and W3 Total Cache.
+
+### FEATURES
+
+ - protects you from malicious attacks/malware
+ - speeds up your site by not hitting the database or executing any PHP code
+ - generates a standalone, static html copy of your whole WordPress website
+ - removes tell-tale signs your site is running WordPress, making it unattractive to hackers
+ - auto-deploy to a folder on your server, a ZIP file, FTP server, S3, Dropbox, GitHub, Netlify or BunnyCDN
+ - schedule unattended exports via the WP Crontrol plugin or by hitting the custom hook
+ - desktop notifications alert you to when exports are complete
+ - multi-language support (English/Japanese currently, Spanish and Chinese in progress)
+ - realtime logs visible during / saved after export
+ - asynchronous exports for deployment methods overcome hosting limitations for large site exports
+
+
+Trusted by more than 8,000 developers, agencies and government departments.
 
