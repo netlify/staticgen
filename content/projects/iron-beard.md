@@ -12,7 +12,7 @@ templates:
 description: Simple, zero-configuration static site generator written in .NET Core.
 ---
 
-A simple and easy to use cross-platform static site generator built with .NET Core. IronBeard processes your Razor `.cshtml` files, markdown `.md` files into full `.html` files ready for static hosting on services like Amazon S3.
+A simple and easy to use cross-platform static site generator built with .NET Core. IronBeard processes your Razor `.cshtml` files and markdown `.md` files into full `.html` files ready for static hosting on services like Amazon S3.
 
 IronBeard maintains your folder structure and copies static assets like images, JS, and CSS into their respective directories to maintain the correct linking on the generated site.
 
