@@ -3,6 +3,7 @@ require('dotenv').config()
 import path from 'path'
 import fs from 'fs-extra'
 import { map, pick, pickBy, isEmpty, find, chunk, flatten, filter, fromPairs, mapValues } from 'lodash'
+import fetch from 'node-fetch'
 import { differenceInMinutes } from 'date-fns'
 import Octokit from '@octokit/rest'
 import Twitter from 'twitter'
@@ -43,8 +44,12 @@ async function getAllProjectGitHubData(repos) {
   const data = []
   for (const repo of repos) {
     await new Promise(res => setTimeout(res, 100))
-    const repoData = await getProjectGitHubData(repo)
-    data.push([ repo, repoData ])
+    try {
+      const repoData = await getProjectGitHubData(repo)
+      data.push([ repo, repoData ])
+    } catch(err) {
+      console.error(`Could not load repository "${repo}". Please make sure it still exists.`);
+    }
   }
   return fromPairs(data)
 }
@@ -76,6 +81,12 @@ function updateLocalArchive(data) {
   return fs.outputJson(path.join(process.cwd(), LOCAL_ARCHIVE_PATH), data)
 }
 
+function getArchiveJson(archive) {
+  if (archive.truncated) {
+    return fetch(archive.raw_url).then(resp => resp.json())
+  }
+  return archive.content
+}
 
 async function getArchive() {
   const gists = await octokit.gists.getAll({ per_page: 100 })
@@ -84,8 +95,9 @@ async function getArchive() {
     return
   }
   const gistArchiveContent = await octokit.gists.get({ id: gistArchive.id })
-  const archive = JSON.parse(gistArchiveContent.data.files[ARCHIVE_FILENAME].content)
-  return { ...archive, id: gistArchive.id }
+  const archive = gistArchiveContent.data.files[ARCHIVE_FILENAME];
+  const archiveJson = await getArchiveJson(archive);
+  return { ...archiveJson, id: gistArchive.id }
 }
 
 function createGist(content) {
