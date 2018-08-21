@@ -5,8 +5,7 @@
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
-    "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "build": "react-static build"
   },
   "dependencies": {
     "@octokit/rest": "^14.0.9",
@@ -36,7 +35,6 @@
     "babel-plugin-module-resolver": "^3.1.0",
     "babel-plugin-styled-components": "^1.3.0",
     "eslint-config-react-tools": "1.x.x",
-    "serve": "^7.0.0",
     "tiny-fns": "^1.0.3"
   },
   "private": true
