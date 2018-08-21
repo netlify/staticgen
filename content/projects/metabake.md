@@ -11,7 +11,7 @@ templates:
 description: 10 times faster web app development via low code
 ---
 
-Metabake mbake CLI lets you generate websites and dynanmic webapps in Pug with optional RIOTjs leveraging low code pillars for high developer productivity
+Metabake mbake CLI lets you generate websites and dynanmic webapps in Pug with optional RIOTjs  by leveraging low code pillars for high developer productivity
 
 ## Install
 
@@ -43,4 +43,4 @@ mbake .
 
 ## Home Page
 
-[MetaBake.org](http://metabake.org)
+[MetaBake.org](http://www.metabake.org)
