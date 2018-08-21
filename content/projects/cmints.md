@@ -8,11 +8,10 @@ license:
   - MIT
 templates:
   - EJS
-description: CMS and Static Content Generator created with the internationalization in mind.
-startertemplaterepo: Manvel/cmints-website
+description: CMS and Static Site Generator created with the internationalization in mind.
 ---
 
-CMintS is a CMS and Static Content Generator that has been implemented with the
+CMintS is a CMS and Static Site Generator that has been implemented with the
 Internationalization in mind. CMintS is quite easy to [install and use](https://cmints.io/documentation).
 
 # Features
