@@ -1,21 +1,21 @@
 ---
-title: MetaBake.org
+title: Metabake.org
 repo: metabake/_mBake
-homepage: https://metabake.org
+homepage: http://www.metabake.org
 language:
   - Pug
 license:
   - GPL v3.0
 templates:
   - Pug
-description: 10 times faster web app development via 'low code'
+description: 10 times faster web app development via low code
 ---
 
-MetaBake's mbake CLI lets you generate websites and dynanmic webapps, in Pug, w/ optional RIOTjs - leveraging low code pillars for high productivity.
+Metabake mbake CLI lets you generate websites and dynanmic webapps in Pug with optional RIOTjs leveraging low code pillars for high developer productivity
 
 ## Install
 
-It's easy to install
+Easy to install
 
 ```sh
 npm -g i mbake
