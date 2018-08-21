@@ -22,14 +22,14 @@ mbake
 ## First Page
 
 Create file index.pug
-```
+```pug
 header
 body
     p Hello #{key1}
 ```
 and create file dat.yaml
-```
-key1 World
+```yaml
+key1: World
 ```
 
 ### Now make with mbake
