@@ -1,7 +1,7 @@
 ---
 title: Spike
 repo: static-dev/spike
-homepage: 'https://www.spike.cf/'
+homepage: 'https://spike.js.org/'
 language:
   - JavaScript
 license:
