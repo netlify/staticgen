@@ -5,7 +5,7 @@ homepage: https://getpublii.com
 language:
   - JavaScript
 license:
-  - GPL 3.0
+  - GNU GPL v3.0
 templates:
   - Handlebars
 description: Desktop-based CMS for creating static websites.
