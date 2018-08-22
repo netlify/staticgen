@@ -2,7 +2,7 @@
 title: Metabake.org
 repo: metabake/_mBake
 homepage: http://www.metabake.org
-language: Pug
+language: JavaScript
 license: GPL v3.0
 templates: Pug
 description: 10 times faster web app development via low code
