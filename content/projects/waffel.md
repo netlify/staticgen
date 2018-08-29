@@ -11,7 +11,7 @@ templates:
 description: Static site generation done tasty.
 ---
 
-![Waffel](http://moonwave99.github.io/waffel/images/waffel.svg)
+![Waffel](https://moonwave99.github.io/waffel/images/waffel.svg)
 
 I built Waffel because I missed a JavaScript static generator that featured:
 

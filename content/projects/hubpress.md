@@ -34,7 +34,7 @@ Learn more about your readers with Google Analytics, you just have to set your t
 ### Videos
 
 #### Demo - Take a closer look in more detail (YouTube)
-[![Demo - Take a closer look in more detail](http://img.youtube.com/vi/7gP3i4tHlRM/0.jpg)](http://www.youtube.com/watch?v=7gP3i4tHlRM)
+[![Demo - Take a closer look in more detail](https://img.youtube.com/vi/7gP3i4tHlRM/0.jpg)](http://www.youtube.com/watch?v=7gP3i4tHlRM)
 
 #### How To Create A Free Blog With HubPress And Netlify (YouTube)
 
