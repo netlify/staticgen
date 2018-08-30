@@ -11,7 +11,7 @@ templates:
 description: Most zen static website generator in Golang.
 ---
 
-# ![Zas](http://i.imgur.com/e9abWRX.png)
+# ![Zas](https://i.imgur.com/e9abWRX.png)
 
 Most. Zen. Static. Website. Generator. Ever.
 

@@ -34,7 +34,7 @@ With Simple and github pages you can easily create your static blog. Here is wha
 6. Click `New post` to create a new post and when finish writing click `save` to generate the static page.
 7. Now you can browse the `your_user_name.github.io` site and enjoy it!
 
-![simple](http://isnowfy.github.io/img/Simple.png)
+![simple](https://isnowfy.github.io/img/Simple.png)
 
 * You can use your own blog name, just modify the `main.json` file, and change `name="username"`.
 
