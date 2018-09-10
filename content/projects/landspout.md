@@ -3,7 +3,7 @@ title: Landspout
 repo: gmr/landspout
 homepage: https://github.com/gmr/landspout
 language:
-  - Python (3.5+)
+  - Python
 license:
   - BSD 3-Clause
 templates:
