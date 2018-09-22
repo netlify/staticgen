@@ -8,12 +8,12 @@ license:
   - MIT
 templates:
   - React
-description: Blazing fast static site generator for React 
+description: Build blazing fast, modern apps and websites with React
 startertemplaterepo: gatsbyjs/gatsby-starter-default
 twitter: gatsbyjs
 ---
 
-Blazing fast static site generator for React.
+Build blazing-fast, modern apps and websites with React
 
 ## Features
 
