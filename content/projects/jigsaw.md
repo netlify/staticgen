@@ -9,6 +9,7 @@ license:
 templates:
   - Blade
 description: Static sites for Laravel developers
+twitter: jigsawbytighten
 ---
 
 Jigsaw is a framework for rapidly building static sites using the same modern tooling that powers your web applications.
@@ -25,8 +26,8 @@ Markdown is a fantastic writing format for things like articles, blog posts, or 
 
 Jigsaw makes it painless to create a layout in Blade, and fill it with content written in Markdown.
 
-### Compile your assets using Laravel Elixir.
+### Compile your assets using Laravel Mix.
 
-Jigsaw bakes in support for Laravel Elixir so you can compile your CSS and Javascript assets the same way you're used to in Laravel.
+Jigsaw bakes in support for Laravel Mix so you can compile your CSS and Javascript assets the same way you're used to in Laravel.
 
-We also preconfigure Elixir to watch your Blade files so your site is rebuilt automatically when you make a change. Combined with out-of-the-box Browsersync support, previewing your changes quickly couldn't be easier.
+We also preconfigure Mix to watch your Blade files so your site is rebuilt automatically when you make a change. Combined with out-of-the-box Browsersync support, previewing your changes quickly couldn't be easier.
