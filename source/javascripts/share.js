@@ -272,9 +272,9 @@ Share = (function(_super) {
     return this.popup("https://plus.google.com/share?url=" + this.config.networks.google_plus.url);
   };
 
-  // Share.prototype.inject_icons = function() {
-  //   return this.inject_stylesheet("https://www.sharebutton.co/fonts/v2/entypo.min.css");
-  // };
+  Share.prototype.inject_icons = function() {
+    // return this.inject_stylesheet("https://www.sharebutton.co/fonts/v2/entypo.min.css");
+  };
 
   Share.prototype.inject_fonts = function() {
     return this.inject_stylesheet("//fonts.googleapis.com/css?family=Lato:900&text=" + this.config.ui.button_text);
