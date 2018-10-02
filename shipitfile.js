@@ -18,12 +18,14 @@ module.exports = function (shipit) {
   shipit.initConfig({
     production: (function() {
       config = copyObject(config);
+      config.branch = 'master';
       config.deployTo = '/home/httpd/jspreadsheets.com';
 
       return config;
     }()),
     development: (function() {
       config = copyObject(config);
+      config.branch = 'develop';
       config.deployTo = '/home/httpd/dev.jspreadsheets.com';
 
       return config;
