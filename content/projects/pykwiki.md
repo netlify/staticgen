@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - Jinja 2
+  - Jinja2
 description: Markdown based authoring with static search. 
 ---
 
