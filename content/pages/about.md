@@ -14,4 +14,4 @@ The typical CMS driven website works by building each page on-demand, fetching c
 
 For most sites this is completely unnecessary overhead and only adds complexity, performance problems and security issues. After all, by far the most websites only change when the content authors or their design team makes changes.
 
-A **Static Site Generator** takes a different approach and generate all the pages of the website once when there's actually changes to the site. This means there's no moving parts in the deployed website. Caching gets much easier, performance goes up and static sites are far more secure.
+A **Static Site Generator** takes a different approach and generates all the pages of the website once when there's actually changes to the site. This means there's no moving parts in the deployed website. Caching gets much easier, performance goes up and static sites are far more secure.
