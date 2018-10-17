@@ -24,4 +24,4 @@ Use **any modern frontend stack** (**webpack** bundled) – [Vue.JS](https://vue
 Performs nearly 1.000 pages per second (depends on the pages content and raw computer processor power).<br>
  Server can handle thousands requests per second to serve static files (even on tiny VPS).
 * 🚚  **Deploy built in**<br>
-[Create a preset](/docs/deploy) and update your site to the server via FTP, SFTP or even `rsync`.
+[Create a preset](https://cogearjs.org/docs/deploy) and update your site to the server via FTP, SFTP or even `rsync`.
