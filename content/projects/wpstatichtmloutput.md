@@ -6,30 +6,32 @@ language:
   - PHP
 license:
   - Unlicense
-description: The optimum solution to speed up and secure your WordPress site – export to static HTML and hide all traces of WordPress from your site!
+description: Leverage WordPress as a great CMS, but benefit from the speed, security and portability that a static website provides
+twitter: wp2static
 ---
 
-Tired of your WordPress sites getting hacked?
+Allows you to leverage WordPress as a great CMS, but benefit from the speed, security and portability that a static website provides.
 
-A static site closes all the doors that an out of date WordPress, theme or plugin can leave open.
+---
 
-Your visitors not sticking around due to your site loading too slow?
+## Features
 
-A pre-generated static site can outperform popular caching plugins like WP Super Cache, WP Fastest Cache and W3 Total Cache.
-
-### FEATURES
-
- - protects you from malicious attacks/malware
- - speeds up your site by not hitting the database or executing any PHP code
  - generates a standalone, static html copy of your whole WordPress website
- - removes tell-tale signs your site is running WordPress, making it unattractive to hackers
- - auto-deploy to a folder on your server, a ZIP file, FTP server, S3, Dropbox, GitHub, Netlify or BunnyCDN
- - schedule unattended exports via the WP Crontrol plugin or by hitting the custom hook
+ - auto-deploy to local folder, FTP, Dropbox, S3, GitHub Pages, Netlify or BunnyCDN
+ - scheduled exports via WP-Crontrol of by hitting the custom hook
+ - one site to unlimited export targets
+ - specify extra files to include in the output (ie, dynamically loaded assets)
  - desktop notifications alert you to when exports are complete
- - multi-language support (English/Japanese currently, Spanish and Chinese in progress)
- - realtime logs visible during / saved after export
- - asynchronous exports for deployment methods overcome hosting limitations for large site exports
 
+## Use cases
 
-Trusted by more than 8,000 developers, agencies and government departments.
+ - Securing a website from malicious attacks/malware
+ - Fastest hosting options for static websites
+ - Free hosting via GitHub, GitLab, BitBucket, etc.
+ - Website archival
+ - Cheap, fast and secure hosting for a digital agency
+
+## Getting started
+
+Please refer to the [documentation](https://docs.wp2static.com).
 
