@@ -1,7 +1,7 @@
 ---
-title: NanoGen
+title: Nanogen
 repo: doug2k1/nanogen
-homepage: https://github.com/doug2k1/nanogen
+homepage: https://doug2k1.github.io/nanogen/
 language:
   - JavaScript
 license:
@@ -9,6 +9,7 @@ license:
 templates:
   - EJS
 description: A minimalist static site generator in Node.js.
+startertemplaterepo: doug2k1/nanogen-template
 ---
 
 Minimalist static site generator written in Node.js.
@@ -19,9 +20,4 @@ Minimalist static site generator written in Node.js.
 * Multiple layouts
 * Reusable partials
 * Store settings in JSON files
-
-## Tutorial
-
-Read the blog post that originated **NanoGen**:
-
-* [Build a static site generator in 40 lines with Node.js](https://medium.com/douglas-matoso-english/build-static-site-generator-nodejs-8969ebe34b22)
+* "init" command to create a new site
