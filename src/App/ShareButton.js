@@ -5,19 +5,21 @@ import {
   TwitterShareButton,
   TwitterIcon,
   RedditShareButton,
-  RedditIcon
+  RedditIcon,
 } from 'react-share'
 
 const buttonConfigs = {
-  twitter: { Button: TwitterShareButton, Icon: TwitterIcon, color: '#1da1f2'  },
+  twitter: { Button: TwitterShareButton, Icon: TwitterIcon, color: '#1da1f2' },
   reddit: { Button: RedditShareButton, Icon: RedditIcon, color: '#ff4500' },
 }
 
-const Button = styled(({ type, url, text, className }) => {
-  const { Button, Icon, color } = buttonConfigs[type];
+const Button = styled(({
+  type, url, text, className,
+}) => {
+  const { Button, Icon } = buttonConfigs[type]
   return (
     <Button url={url} title={text} className={className}>
-      <Icon size={40} round={true} iconBgStyle={{ fill: '#313d3e' }}/>
+      <Icon size={40} round iconBgStyle={{ fill: '#313d3e' }} />
     </Button>
   )
 })`
@@ -31,11 +33,12 @@ const Button = styled(({ type, url, text, className }) => {
   }
 `
 
-const ShareButton = ({ type }) =>
-  <SiteData render={({ shareUrlSite, shareTextSite }) =>
-    <RouteData render ={({ shareUrl , shareText }) =>
-      <Button type={type} url={shareUrl || shareUrlSite} text={shareText || shareTextSite}/>
-    }/>
-  }/>
+const ShareButton = ({ type }) => (
+  <SiteData render={({ shareUrlSite, shareTextSite }) => (
+    <RouteData render={({ shareUrl, shareText }) =>
+      <Button type={type} url={shareUrl || shareUrlSite} text={shareText || shareTextSite} />
+    } />
+  )} />
+)
 
 export default ShareButton

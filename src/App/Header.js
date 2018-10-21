@@ -1,20 +1,20 @@
-import React from "react";
-import { SiteData } from "react-static";
-import styled from "styled-components";
-import Hero from "./Hero";
-import Nav from "./Nav";
-import NavLink, { NavAnchor } from "./NavLink";
+import React from 'react'
+import { SiteData } from 'react-static'
+import styled from 'styled-components'
+import Hero from './Hero'
+import Nav from './Nav'
+import NavLink, { NavAnchor } from './NavLink'
 
 // swyx: temporary insert jamstack conf banner
 const JamstackConfBanner = ({ className }) => (
   <div className={className}>
     <p>
-      Learn more about the JAMstack at{" "}
+      Learn more about the JAMstack at{' '}
       <a href="https://jamstackconf.com">JAMstack Conf</a>, San Francisco —
       29-30 October, 2018
     </p>
   </div>
-);
+)
 const JamstackConfBannerStyled = styled(JamstackConfBanner)`
   background-color: #000;
   color: #fff;
@@ -30,37 +30,39 @@ const JamstackConfBannerStyled = styled(JamstackConfBanner)`
     padding-top: 0.6em;
     padding-bottom: 0.6em;
   }
-`;
+`
 // swyx: temporary insert jamstack conf banner
 
 const Header = () => (
   <SiteData
-    render={({ title, subtitle, shareButtons, repo, pages, navLinks }) => (
-      <div>
-        {/* swyx: temporary insert jamstack conf banner */}
-        <JamstackConfBannerStyled />
-        {/* swyx: temporary insert jamstack conf banner */}
-        <Hero
-          title={title}
-          subheading={subtitle}
-          shareButtons={shareButtons}
-          repoLink={repo}
+    render={({
+ title, subtitle, shareButtons, repo, pages, navLinks,
+}) => (
+  <div>
+    {/* swyx: temporary insert jamstack conf banner */}
+    <JamstackConfBannerStyled />
+    {/* swyx: temporary insert jamstack conf banner */}
+    <Hero
+      title={title}
+      subheading={subtitle}
+      shareButtons={shareButtons}
+      repoLink={repo}
         />
-        <Nav>
-          {pages.map(({ path, name }) => (
-            <NavLink key={path} to={path}>
-              {name}
-            </NavLink>
+    <Nav>
+      {pages.map(({ path, name }) => (
+        <NavLink key={path} to={path}>
+          {name}
+        </NavLink>
           ))}
-          {navLinks.map(({ url, text }) => (
-            <NavAnchor key={url} href={url} target="_blank">
-              {text}
-            </NavAnchor>
+      {navLinks.map(({ url, text }) => (
+        <NavAnchor key={url} href={url} target="_blank">
+          {text}
+        </NavAnchor>
           ))}
-        </Nav>
-      </div>
+    </Nav>
+  </div>
     )}
   />
-);
+)
 
-export default Header;
+export default Header

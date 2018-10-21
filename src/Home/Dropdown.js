@@ -102,8 +102,9 @@ const DropdownOption = styled.option`
   cursor: pointer;
 `
 
-const Dropdown = ({ emptyLabel, options, selection, onChange, field }) => {
-  return (
+const Dropdown = ({
+  emptyLabel, options, selection, onChange, field,
+}) => (
   <DropdownContainer>
     <DropdownSelect value={selection} onChange={onChange}>
       {emptyLabel ? <DropdownOption value="">{emptyLabel}</DropdownOption> : null}
@@ -112,6 +113,6 @@ const Dropdown = ({ emptyLabel, options, selection, onChange, field }) => {
       )}
     </DropdownSelect>
   </DropdownContainer>
-  )}
+)
 
 export default Dropdown

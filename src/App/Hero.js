@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-static";
-import GitHubCorner from "react-github-corner";
-import ShareButton from "./ShareButton";
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'react-static'
+import GitHubCorner from 'react-github-corner'
+import ShareButton from './ShareButton'
 
 const LogoText = styled.span`
   font-size: 76px;
   font-family: "Roboto Slab", sans-serif;
-`;
+`
 
 const LogoLink = styled(Link)`
   &,
@@ -17,13 +17,13 @@ const LogoLink = styled(Link)`
     color: #fff;
     text-decoration: none;
   }
-`;
+`
 
 const HeroContainer = styled.div`
   background: linear-gradient(45deg, #4d9abf, #00c7b7);
   text-align: center;
   padding: 29px 0;
-`;
+`
 
 const HeroHeading = styled.h1`
   margin: 31px 0 0;
@@ -34,7 +34,7 @@ const HeroHeading = styled.h1`
     max-width: 80%;
     margin: 0 auto;
   }
-`;
+`
 const HeroSubheading = styled.h2`
   margin: 0 auto 40px;
   color: #313d3e;
@@ -42,7 +42,7 @@ const HeroSubheading = styled.h2`
   line-height: 1.5;
   font-weight: 100;
   font-size: 24px;
-`;
+`
 
 const ShareButtonGroup = styled.div`
   display: flex;
@@ -51,9 +51,11 @@ const ShareButtonGroup = styled.div`
   > * {
     margin: 0 4px;
   }
-`;
+`
 
-const Hero = ({ title, subheading, shareButtons, repoLink }) => (
+const Hero = ({
+  title, subheading, shareButtons, repoLink,
+}) => (
   <HeroContainer>
     <HeroHeading>
       <LogoLink to="/" title={title}>
@@ -72,9 +74,9 @@ const Hero = ({ title, subheading, shareButtons, repoLink }) => (
       href={repoLink}
       bannerColor="#313d3e"
       size="100"
-      svgStyle={{ "z-index": "300" }}
+      svgStyle={{ 'z-index': '300' }}
     />
   </HeroContainer>
-);
+)
 
-export default Hero;
+export default Hero

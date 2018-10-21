@@ -28,12 +28,13 @@ const DropdownGroupMember = styled.div`
   }
 `
 
-const DropdownGroup = ({ label, children }) =>
+const DropdownGroup = ({ label, children }) => (
   <div>
     {label ? <DropdownGroupLabel>{label}</DropdownGroupLabel> : null}
     <DropdownGroupMembersContainer>
       {React.Children.map(children, child => <DropdownGroupMember>{child}</DropdownGroupMember>)}
     </DropdownGroupMembersContainer>
   </div>
+)
 
 export default DropdownGroup

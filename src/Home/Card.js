@@ -62,17 +62,22 @@ const OpenSourceStats = styled.div`
   justify-content: center;
 `
 
-const Card = ({ url, title, description, starterTemplateRepo, Stats, fields, fieldValues }) =>
+const Card = ({
+  url, title, description, starterTemplateRepo, Stats, fields, fieldValues,
+}) => (
   <CardContainer>
     <CardBodyLink to={url}>
       <Title small={title && title.length > 14}>{title}</Title>
       <OpenSourceStats>
-        <Stats/>
+        <Stats />
       </OpenSourceStats>
       <Description>{description}</Description>
-      {fields.map(field => <DataPoint key={field.name} value={fieldValues[field.name]} field={field}/>)}
+      {fields.map(field =>
+        <DataPoint key={field.name} value={fieldValues[field.name]} field={field} />
+      )}
     </CardBodyLink>
-    { starterTemplateRepo ? <DeployButton repo={starterTemplateRepo}/> : null }
+    { starterTemplateRepo ? <DeployButton repo={starterTemplateRepo} /> : null }
   </CardContainer>
+)
 
 export default Card

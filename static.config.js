@@ -1,7 +1,6 @@
-import fs from 'fs'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
-import { map, mapValues, find, uniq, flatten, sortBy, pick, pickBy, flatMap } from 'lodash'
+import { map, mapValues, find, uniq, sortBy, pick, pickBy, flatMap } from 'lodash'
 import decamelize from 'decamelize'
 import dateFns from 'date-fns'
 import { toSlug } from 'Scripts/util'
@@ -20,16 +19,16 @@ const siteConfig = yaml.safeLoad(siteYaml)
 
 const pageCache = {}
 
-function processMarkdown(markdown, key) {
-  if (pageCache[key]) {
-    return pageCache[key]
+function processMarkdown (markdown, key) {
+  if (!pageCache[key]) {
+    const { content, data } = grayMatter(markdown)
+    const html = marked(content)
+    pageCache[key] = { content: html, key: decamelize(key, '-'), ...data }
   }
-  const { content, data } = grayMatter(markdown)
-  const html = marked(content)
-  return pageCache[key] = { content: html, key: decamelize(key, '-'), ...data }
+  return pageCache[key]
 }
 
-function mapProjectFrontMatter({
+function mapProjectFrontMatter ({
   title,
   repo,
   homepage,
@@ -50,13 +49,15 @@ function mapProjectFrontMatter({
   }
 }
 
-function extractRelevantProjectData(data) {
+function extractRelevantProjectData (data) {
   return mapValues(data, project => {
-    const timestamps = map(project, 'timestamp');
+    const timestamps = map(project, 'timestamp')
     const newestTimestamp = dateFns.max(...timestamps).getTime()
     const oldestTimestamp = dateFns.min(...timestamps).getTime()
     const dataAgeInDays = dateFns.differenceInDays(Date.now(), oldestTimestamp)
-    const { followers, forks, stars, issues } = find(project, { timestamp: newestTimestamp }) || {}
+    const {
+      followers, forks, stars, issues,
+    } = find(project, { timestamp: newestTimestamp }) || {}
     const {
       forks: forksPrevious,
       stars: starsPrevious,
@@ -71,7 +72,6 @@ function extractRelevantProjectData(data) {
       forksPrevious,
       starsPrevious,
       issuesPrevious,
-      followers,
       followersPrevious,
       dataAgeInDays,
     }
@@ -81,7 +81,7 @@ function extractRelevantProjectData(data) {
 /**
  * Retrieve and format all project data.
  */
-async function getProjects() {
+async function getProjects () {
   /**
    * Get project details from frontmatter.
    */
@@ -112,17 +112,17 @@ async function getProjects() {
 /**
  * Generate dropdown filter values from frontmatter values.
  */
-function generateFilters(projects) {
+function generateFilters (projects) {
   return siteConfig.filters.map(filter => ({
     ...filter,
-    values: sortBy(uniq(flatMap(projects, `fieldValues.${filter.field}`)))
+    values: sortBy(uniq(flatMap(projects, `fieldValues.${filter.field}`))),
   }))
 }
 
 /**
  * Retrieve and format markdown for unique pages.
  */
-function getPages() {
+function getPages () {
   const pages = map(pagesMarkdown, processMarkdown)
   return pages.map(page => {
     const path = `/${page.key}`
@@ -166,9 +166,9 @@ export default {
             ...project,
             fields: siteConfig.fields,
             shareUrl: `${siteConfig.url}/${project.slug}`,
-            shareText: `${siteConfig.shareTextProjectStart}${project.title}${siteConfig.shareTextProjectEnd}`
+            shareText: `${siteConfig.shareTextProjectStart}${project.title}${siteConfig.shareTextProjectEnd}`,
           }),
-        }))
+        })),
       },
       ...pages.map(({ key, title, content }) => ({
         path: `/${key}`,
@@ -193,27 +193,29 @@ export default {
   siteRoot: siteConfig.url,
   Document: class CustomHtml extends Component {
     render () {
-      const { Html, Head, Body, children, renderMeta } = this.props
+      const {
+        Html, Head, Body, children, renderMeta,
+      } = this.props
 
       return (
         <Html>
           <Head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link type="image/x-icon" rel="shortcut icon" href="favicon.ico"/>
+            <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
 
-            <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible"/>
+            <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
 
-            <meta name="twitter:card" value={siteConfig.description}/>
+            <meta name="twitter:card" value={siteConfig.description} />
 
             <meta property="og:title" content={siteConfig.title} />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content={`/images/${siteConfig.socialPreviewImage}`}/>
+            <meta property="og:image" content={`/images/${siteConfig.socialPreviewImage}`} />
             <meta property="og:url" content={siteConfig.url} />
-            <meta property="og:description" content={siteConfig.description}/>
+            <meta property="og:description" content={siteConfig.description} />
 
-            <link href='//fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'/>
-            <link href='//fonts.googleapis.com/css?family=Roboto:100,400,600,700' rel='stylesheet' type='text/css'/>
+            <link href="//fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet" type="text/css" />
+            <link href="//fonts.googleapis.com/css?family=Roboto:100,400,600,700" rel="stylesheet" type="text/css" />
 
             {renderMeta.styleTags}
           </Head>

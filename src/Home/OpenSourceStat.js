@@ -20,7 +20,7 @@ const OpenSourceStat = styled(({
   indicateColor,
   label,
   dataAgeInDays,
-  className
+  className,
 }) => {
   const disabled = typeof value !== 'number'
   const changeValue = parseFloat(change, 10) > 0 ? `+${change}` : change
@@ -28,20 +28,20 @@ const OpenSourceStat = styled(({
   return (
     <div title={label} className={`${className} ${disabled ? 'disabled' : ''}`}>
       <OpenSourceStatIcon>
-        <Icon/>
+        <Icon />
       </OpenSourceStatIcon>
       {disabled ? <div>N/A</div> :
-        <div>
-          <strong>{value}</strong>
-          {dataAgeInDays < 1 ? null :
-            <OpenSourceStatChange
-              title={`${label} in the last ${dataAgeInDays} days`}
-              indicateColor={indicateColor}
+      <div>
+        <strong>{value}</strong>
+        {dataAgeInDays < 1 ? null :
+        <OpenSourceStatChange
+          title={`${label} in the last ${dataAgeInDays} days`}
+          indicateColor={indicateColor}
             >
-              {changeValue === 0 ? '--' : changeValue}
-            </OpenSourceStatChange>
+          {changeValue === 0 ? '--' : changeValue}
+        </OpenSourceStatChange>
           }
-        </div>
+      </div>
       }
     </div>
   )

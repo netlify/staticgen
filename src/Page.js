@@ -11,18 +11,19 @@ const Content = styled.div`
   }
 `
 
-const Page = () =>
-  <RouteData render={({ title, content }) =>
+const Page = () => (
+  <RouteData render={({ title, content }) => (
     <React.Fragment>
-      <SiteData render={({ title: siteTitle }) =>
+      <SiteData render={({ title: siteTitle }) => (
         <Head>
           <title>{`${title} | ${siteTitle}`}</title>
         </Head>
-      }/>
+      )} />
       <Content>
-        <Container dangerouslySetInnerHTML={{ __html: content }}/>
+        <Container dangerouslySetInnerHTML={{ __html: content }} />
       </Content>
     </React.Fragment>
-  }/>
+  )} />
+)
 
 export default Page
