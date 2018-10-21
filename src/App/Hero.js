@@ -74,7 +74,7 @@ const Hero = ({
       href={repoLink}
       bannerColor="#313d3e"
       size="100"
-      svgStyle={{ 'z-index': '300' }}
+      svgStyle={{ zIndex: 300 }}
     />
   </HeroContainer>
 )
