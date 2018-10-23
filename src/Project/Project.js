@@ -91,15 +91,15 @@ class Project extends React.Component {
           <h1>{title}</h1>
           <div>
             <DetailLink href={homepage}><EntypoIcon Icon={EntypoHome} /> {homepage}</DetailLink>
-            {!twitter ? null :
-            <DetailLink href={`https://twitter.com/${twitter}`}>
-              <EntypoIcon Icon={EntypoTwitter} /> {twitter} ({followers})
-            </DetailLink>
+            {twitter &&
+              <DetailLink href={`https://twitter.com/${twitter}`}>
+                <EntypoIcon Icon={EntypoTwitter} /> {twitter} ({followers})
+              </DetailLink>
             }
-            {!repo ? null :
-            <DetailLink href={`https://github.com/${repo}`}>
-              <EntypoIcon Icon={EntypoGithub} /> https://github.com/{repo} ({stars})
-            </DetailLink>
+            {repo &&
+              <DetailLink href={`https://github.com/${repo}`}>
+                <EntypoIcon Icon={EntypoGithub} /> https://github.com/{repo} ({stars})
+              </DetailLink>
             }
           </div>
 

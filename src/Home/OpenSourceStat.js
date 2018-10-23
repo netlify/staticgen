@@ -30,19 +30,19 @@ const OpenSourceStat = styled(({
       <OpenSourceStatIcon>
         <Icon />
       </OpenSourceStatIcon>
-      {disabled ? <div>N/A</div> :
-      <div>
-        <strong>{value}</strong>
-        {dataAgeInDays < 1 ? null :
-        <OpenSourceStatChange
-          title={`${label} in the last ${dataAgeInDays} days`}
-          indicateColor={indicateColor}
+      {disabled ? <div>N/A</div> : (
+        <div>
+          <strong>{value}</strong>
+          {(dataAgeInDays >= 1) &&
+            <OpenSourceStatChange
+              title={`${label} in the last ${dataAgeInDays} days`}
+              indicateColor={indicateColor}
             >
-          {changeValue === 0 ? '--' : changeValue}
-        </OpenSourceStatChange>
+              {changeValue === 0 ? '--' : changeValue}
+            </OpenSourceStatChange>
           }
-      </div>
-      }
+        </div>
+      )}
     </div>
   )
 })`

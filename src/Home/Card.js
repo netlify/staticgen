@@ -76,7 +76,7 @@ const Card = ({
         <DataPoint key={field.name} value={fieldValues[field.name]} field={field} />
       )}
     </CardBodyLink>
-    { starterTemplateRepo ? <DeployButton repo={starterTemplateRepo} /> : null }
+    {starterTemplateRepo && <DeployButton repo={starterTemplateRepo} />}
   </CardContainer>
 )
 
