@@ -23,7 +23,7 @@
     "react-github-corner": "^2.1.0",
     "react-router": "^4.2.0",
     "react-share": "^2.0.0",
-    "react-static": "^5.1.8",
+    "react-static": "^5.9.12",
     "slug": "^0.9.1",
     "styled-components": "^3",
     "title-case": "^2.1.1",
