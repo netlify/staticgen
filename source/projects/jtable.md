@@ -1,6 +1,6 @@
 ---
 title: jTable
-repo: hikalkan/jtable
+repo: volosoft/jtable
 direct: https://github.com/volosoft/jtable
 homepage: http://www.jtable.org
 examples: http://www.jtable.org/Demo
