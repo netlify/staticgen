@@ -9,6 +9,7 @@ license:
 templates:
   - Jinja2
   - Mako
+twitter: GetNikola
 description: A static website and blog generator
 ---
 
