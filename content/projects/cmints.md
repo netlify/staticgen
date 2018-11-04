@@ -9,6 +9,7 @@ license:
 templates:
   - EJS
 description: CMS and Static Site Generator created with the internationalization in mind.
+startertemplaterepo: Manvel/cmints-website
 ---
 
 CMintS is a CMS and Static Site Generator that has been implemented with the
