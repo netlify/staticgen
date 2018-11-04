@@ -33,9 +33,9 @@ const OpenSourceStat = styled(({
       {disabled ? <div>N/A</div> : (
         <div>
           <strong>{value}</strong>
-          {(dataAgeInDays >= 1) &&
+          {dataAgeInDays >= 1 &&
             <OpenSourceStatChange
-              title={`${label} in the last ${dataAgeInDays} days`}
+              title={`${label} in the last ${dataAgeInDays} day${dataAgeInDays === 1 ? '' : 's'}`}
               indicateColor={indicateColor}
             >
               {changeValue === 0 ? '--' : changeValue}
