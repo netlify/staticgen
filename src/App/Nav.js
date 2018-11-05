@@ -16,11 +16,12 @@ const NavMenu = Container.extend`
   }
 `
 
-const Nav = ({ children }) =>
+const Nav = ({ children }) => (
   <NavBar>
     <NavMenu>
       {children}
     </NavMenu>
   </NavBar>
+)
 
 export default Nav

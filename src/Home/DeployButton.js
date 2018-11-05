@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import netlifyLogo from 'Images/netlify-logo.svg'
 
-const DeployButton = styled(({ repo, className }) =>
+const DeployButton = styled(({ repo, className }) => (
   <a
     className={className}
     href={`https://app.netlify.com/start/deploy?repository=https://github.com/${repo}`}
   >
-    <img src={netlifyLogo}/> Deploy to Netlify
+    <img alt="" src={netlifyLogo} /> Deploy to Netlify
   </a>
-)`
+))`
   display: flex;
   justify-content: center;
   align-items: center;

@@ -34,14 +34,14 @@ const Copyright = styled.div`
   margin-top: 48px;
 `
 
-const Footer = () =>
-  <SiteData render={({ footerText, copyrightName }) =>
+const Footer = () => (
+  <SiteData render={({ footerText, copyrightName }) => (
     <FooterContainer>
       <FooterContentContainer>
-        <FooterContent dangerouslySetInnerHTML={{ __html: footerText}}/>
+        <FooterContent dangerouslySetInnerHTML={{ __html: footerText }} />
       </FooterContentContainer>
       <Copyright>© {copyrightName} {new Date().getFullYear()}</Copyright>
     </FooterContainer>
-  }/>
+  )} />)
 
 export default Footer

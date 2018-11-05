@@ -102,16 +102,17 @@ const DropdownOption = styled.option`
   cursor: pointer;
 `
 
-const Dropdown = ({ emptyLabel, options, selection, onChange, field }) => {
-  return (
+const Dropdown = ({
+  emptyLabel, options, selection, onChange, field,
+}) => (
   <DropdownContainer>
     <DropdownSelect value={selection} onChange={onChange}>
-      {emptyLabel ? <DropdownOption value="">{emptyLabel}</DropdownOption> : null}
+      {emptyLabel && <DropdownOption value="">{emptyLabel}</DropdownOption>}
       {options.map(option =>
         <DropdownOption key={`${field}_${option}`} value={option}>{option}</DropdownOption>
       )}
     </DropdownSelect>
   </DropdownContainer>
-  )}
+)
 
 export default Dropdown

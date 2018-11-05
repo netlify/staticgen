@@ -1,11 +1,11 @@
 import React from 'react'
 import { SiteData, RouteData, Head } from 'react-static'
 import styled from 'styled-components'
-import { partial, sortBy, reverse, map, find, difference, filter } from 'lodash'
+import { partial, sortBy, reverse, difference, filter } from 'lodash'
+import { Container } from 'Components'
 import DropdownGroup from './DropdownGroup'
 import Dropdown from './Dropdown'
 import ProjectsList from './ProjectsList'
-import { Container } from 'Components'
 import Project from './Project'
 
 const Promo = styled.div`
@@ -20,7 +20,7 @@ const Promo = styled.div`
 `
 
 const withPromo = (promo, projects) => {
-  projects.splice(3, 0, <Promo dangerouslySetInnerHTML={{ __html: promo }} key="__promo"/>)
+  projects.splice(3, 0, <Promo dangerouslySetInnerHTML={{ __html: promo }} key="__promo" />)
   return projects
 }
 
@@ -47,10 +47,12 @@ class Home extends React.Component {
     filter: {},
   }
 
-  canShow = (project) => {
+  canShow = project => {
+    // eslint-disable-next-line guard-for-in, no-restricted-syntax
     for (const filterName in this.state.filter) {
       const filter = this.state.filter[filterName]
       if (!filter) {
+        // eslint-disable-next-line no-continue
         continue
       }
 
@@ -74,22 +76,20 @@ class Home extends React.Component {
     if (sortObj.reverse) {
       const withSortField = filter(sorted, sortObj.field)
       const withoutSortField = difference(sorted, withSortField)
-      return [ ...reverse(withSortField), ...withoutSortField ]
+      return [...reverse(withSortField), ...withoutSortField]
     }
 
     return sorted
   }
 
-  filter = projects => {
-    return projects.filter(this.canShow)
-  }
+  filter = projects => projects.filter(this.canShow)
 
   handleFilterChange = (filter, event) => {
     this.setState({
       filter: {
         ...this.state.filter,
         [filter]: event.target.value,
-      }
+      },
     })
   }
 
@@ -97,10 +97,9 @@ class Home extends React.Component {
     this.setState({ sort: event.target.value })
   }
 
-  render() {
+  render () {
     return (
       <RouteData render={({
-        dataAgeInDays,
         projects = [],
         promo,
         sorts = [],
@@ -108,17 +107,20 @@ class Home extends React.Component {
         fields = [],
       }) => {
         const currentSort = this.state.sort || sorts[0].label
-        const visibleProjects = this.sort(sorts.find(({ label }) => label === currentSort), this.filter(projects))
+        const visibleProjects = this.sort(
+          sorts.find(({ label }) => label === currentSort),
+          this.filter(projects)
+        )
         return (
           <Container>
-            <SiteData render={({ titleHome }) =>
+            <SiteData render={({ titleHome }) => (
               <Head>
                 <title>{titleHome}</title>
               </Head>
-            }/>
+            )} />
             <DropdownRow>
               <DropdownGroup label="Filter">
-                {filters.map(({ field, emptyLabel, values }) =>
+                {filters.map(({ field, emptyLabel, values }) => (
                   <Dropdown
                     key={field}
                     field={field}
@@ -127,7 +129,7 @@ class Home extends React.Component {
                     selection={this.state.filter[field]}
                     onChange={partial(this.handleFilterChange, field)}
                   />
-                )}
+                ))}
               </DropdownGroup>
               <DropdownGroup label="Sort">
                 <Dropdown
@@ -139,17 +141,17 @@ class Home extends React.Component {
               </DropdownGroup>
             </DropdownRow>
             <ProjectsList>
-              {withPromo(promo, visibleProjects.map(project =>
+              {withPromo(promo, visibleProjects.map(project => (
                 <li key={project.slug}>
-                  <Project fields={fields} { ...project }/>
+                  <Project fields={fields} {...project} />
                 </li>
-              ))}
+              )))}
             </ProjectsList>
           </Container>
         )
-      }}/>
+      }} />
     )
   }
 }
 
-export default Home;
+export default Home
