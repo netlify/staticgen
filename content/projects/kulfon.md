@@ -8,7 +8,7 @@ license:
   - Apache 2.0
 templates:
   - Nunjucks
-description: Harp is a static web server that can also compile your project down to static assets.
+description: Kulfon is a static site generator written in JavaScript and inspired by Hugo.
 twitter: kulfonjs
 ---
 
