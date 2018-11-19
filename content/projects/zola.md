@@ -1,7 +1,7 @@
 ---
-title: Gutenberg
-repo: Keats/gutenberg
-homepage: https://www.getgutenberg.io/
+title: Zola
+repo: getzola/zola
+homepage: https://www.getzola.org/
 language:
   - Rust
 license:
@@ -20,3 +20,4 @@ Static site generator built using the modern Rust programming language.
 * Built-in support for themes
 * Code highlighting themes
 * Tera template engine, and built-in shortcodes
+
