@@ -4,9 +4,9 @@ repo: syncfusion/ej2-grids
 homepage: http://www.Syncfusion.com
 examples: https://www.syncfusion.com/javascript-ui-controls/grid
 license: syncfusion license
-npm: @syncfusion/ej2-grids
+npm: \@syncfusion/ej2-grids
 technology: JavaScript, Angular, React, Vue, ASP.NET MVC and ASP.NET Core
-author: Syncfusion 
+author: Syncfusion
 authorurl: http://www.Syncfusion.com
 description: A high-performance HTML5 JavaScript (JS) DataGrid component has built-in support for editing, Excel-like filtering, grouping, paging, sorting, and Excel export.
 ---
@@ -24,10 +24,10 @@ The JavaScript DataGrid, or DataTable, is a feature-rich control for displaying 
 * Merge Rows
 * Drag and Drop
 * Read-only
-* Editing(Inlcudes Excel like Editing)
+* Editing(Includes Excel like Editing)
 * Different cell Edit types
 * Frozen rows and columns
-* Scrollbars 
+* Scrollbars
 * Resizing
 * Reordering
 * Copy and Paste
@@ -35,11 +35,11 @@ The JavaScript DataGrid, or DataTable, is a feature-rich control for displaying 
 * Column and Row templates
 * Detail templates
 * Master and Details
-* Foreignkey Column
+* Foreign key Column
 * Remote Data binding
 * Context Menu
 * Column Menu
-* Mulitple Selection & Checkbox selection
+* Multiple Selection & Checkbox selection
 * Column validation
 * Search for values
 * Column Chooser
@@ -63,4 +63,3 @@ The JavaScript DataGrid, or DataTable, is a feature-rich control for displaying 
 
 ##### Aggregates
 ![ejs-grid Aggregates feature](/images/libraries/ejs-grid/DataGrid_Aggregates.PNG "Aggregates feature in DataGrid")
-
