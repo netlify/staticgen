@@ -1,7 +1,7 @@
 ---
 title: Hexo
 repo: hexojs/hexo
-homepage: http://hexo.io/
+homepage: https://hexo.io/
 language:
   - JavaScript
 license:
@@ -21,7 +21,7 @@ twitter: hexojs
 startertemplaterepo: hexojs/hexo-starter
 ---
 
-A fast, simple & powerful blog framework, powered by [Node.js](http://nodejs.org) and NPM.
+A fast, simple & powerful blog framework, powered by [Node.js](https://nodejs.org) and NPM.
 
 + [Themes](https://hexo.io/themes)
 + [Plugins](https://hexo.io/plugins)
