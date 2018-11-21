@@ -1,7 +1,7 @@
 ---
-title: Gutenberg
-repo: Keats/gutenberg
-homepage: https://www.getgutenberg.io/
+title: Zola
+repo: getzola/zola
+homepage: https://www.getzola.org
 language:
   - Rust
 license:
