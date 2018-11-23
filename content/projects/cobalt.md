@@ -1,7 +1,7 @@
 ---
 title: Cobalt
 repo: cobalt-org/cobalt.rs
-homepage: https://github.com/cobalt-org/cobalt.rs
+homepage: https://cobalt-org.github.io/
 language:
   - Rust
 license:
