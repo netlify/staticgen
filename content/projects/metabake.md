@@ -5,7 +5,7 @@ homepage: http://www.metabake.net
 language: JavaScript
 license: MIT
 templates: Pug and Markdown
-description: Low-code for programmer via generators for Pug, Markdown and much more; including dynamic data binding
+description: Low-code productivity for programmer via generators for Pug, Markdown and much more; including dynamic data binding.
 ---
 
 Metabake mbake CLI lets you generate websites and dynamic webapps in Pug by leveraging low code pillars for high development productivity.
