@@ -1,7 +1,7 @@
 ---
 title: React Static
 repo: nozzle/react-static
-homepage: https://github.com/nozzle/react-static
+homepage: https://react-static.js.org/
 language:
   - JavaScript
 license:
