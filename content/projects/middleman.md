@@ -9,6 +9,7 @@ license:
 templates:
   - ERB
   - Tilt
+  - Haml
 description: Hand-crafted, modern frontend development.
 startertemplaterepo: wallin/middleman-template
 twitter: middlemanapp
