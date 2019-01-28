@@ -10,9 +10,6 @@ templates:
   - ERB
   - Tilt
   - Haml
-  - Sass
-  - SCSS
-  - CoffeeScript
 description: Hand-crafted, modern frontend development.
 startertemplaterepo: wallin/middleman-template
 twitter: middlemanapp
