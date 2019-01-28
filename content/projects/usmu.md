@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - Slim,
+  - Slim
   - Markdown
 description: A small, extensible, static site generator.
 ---
