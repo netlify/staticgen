@@ -2,6 +2,8 @@
 
 [staticgen.com](http://staticgen.com), a leaderboard of top open-source static site generators.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/388637c1-8040-4b2d-84b4-1cfa38cd62bb/deploy-status)](https://app.netlify.com/sites/staticgen/deploys)
+
 ## Contributing
 
 Missing a static site generator here? Just fork the repo and add your generator
