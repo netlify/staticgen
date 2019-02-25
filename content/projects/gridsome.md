@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - Vue.js
+  - Vue
 description: Build blazing fast websites for any CMS or data with Vue.js
 startertemplaterepo: gridsome/gridsome-starter-default
 twitter: gridsome
