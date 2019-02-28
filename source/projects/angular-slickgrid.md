@@ -20,12 +20,12 @@ Take a look at the multiple [demos](https://ghiscoding.github.io/Angular-Slickgr
 * Cell Formatters (support built-in & custom)
 * Cell Editors with Validation/Undo (support built-in & custom)
 * Column Filters (support built-in & custom)
-   * input/date picker/slider/single & multiple select
+* input/date picker/slider/single & multiple select
 * Compound Column Filters (operator + filter)
 * Column Resize/Reorder/Show/Hide
 * Column Autosizing, Force-Fit or Custom Size
 * Column Header Button Plugin
-* Column Header Menu Plugin (support buit-in & custom commands)
+* Column Header Menu Plugin (support built-in & custom commands)
 * Column Header Grouped
 * Column Span
 * Row Highlighting
@@ -38,7 +38,7 @@ Take a look at the multiple [demos](https://ghiscoding.github.io/Angular-Slickgr
 * Grouping with Column Dragging
 * Support Multiple Locale Dynamically
 * Data Export to CSV or Text File
-* Grid Menu (aka hambuger menu, support built-in and custom commands)
+* Grid Menu (aka hamburger menu, support built-in and custom commands)
 * Grid State & Presets using Local Storage (or anything else)
 * Pinned Columns/Rows (aka frozen)
 * Grid Auto-Resize & Responsive
@@ -57,23 +57,23 @@ Screenshots from the demo app with the `Bootstrap` theme (that is the only avail
 
 ##### Slickgrid example with Formatters (last column shown is a custom Formatter)
 
-###### You can also see the Grid Menu opened (aka hambuger menu)
+###### You can also see the Grid Menu opened (aka hamburger menu)
 
-![Default Slickgrid Example](/screenshots/formatters.png)
+![Default Slickgrid Example](/images/libraries/angular-slickgrid/formatters.png)
 
 ##### Filter and Sort (clientside with DataView)
 
-![Slickgrid Server Side](/screenshots/filter_and_sort.png)
+![Slickgrid Server Side](/images/libraries/angular-slickgrid/filter_and_sort.png)
 
 ##### Editors and/or onCellClick
 
-![Editors](/screenshots/editors.png)
+![Editors](/images/libraries/angular-slickgrid/editors.png)
 
 ##### Pinned (aka frozen) Columns/Rows
 
-![Slickgrid Server Side](/screenshots/frozen.png)
+![Slickgrid Server Side](/images/libraries/angular-slickgrid/frozen.png)
 
 ##### Slickgrid Example with Server Side (Filter/Sort/Pagination)
 ###### Comes with OData & GraphQL support (you can implement custom too)
 
-![Slickgrid Server Side](/screenshots/pagination.png)
+![Slickgrid Server Side](/images/libraries/angular-slickgrid/pagination.png)
