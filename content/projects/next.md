@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - JavaScript
+  - React
 description: A framework for statically-exported React apps
 ---
 
