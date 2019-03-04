@@ -15,15 +15,15 @@ startertemplaterepo: cmints/multi-lang-starter
 [CMintS](https://cmints.io/) is a CMS and Static Site Generator for single and
 multi-language websites creation.
 
-You can learn more about CMintS at [https://cmints.io/](https://cmints.io/).
-It's an open source project and every related repository can be found in the
-[CMintS GitHub organization](https://github.com/cmints).
+Learn more about CMintS at [https://cmints.io/](https://cmints.io/). It's an
+open source project and every related repository can be found in the [CMintS
+GitHub organization](https://github.com/cmints).
 
 You can either install CMintS globally as it's described in the [installation
-documentation](https://cmints.io/documentation) or by installing it locally,
+documentation](https://cmints.io/documentation) or as a local dependency,
 following the [Quick Start tutorial](https://cmints.io/en/quick-start).
 
-You can also find Single and Multi lanuguage website starters at
+Single and multi-language website starters can be found at
 [https://single.cmints.io/](https://single.cmints.io/) and
 [https://multi.cmints.io/](https://multi.cmints.io/) accordingly.
 
@@ -53,4 +53,4 @@ use EJS or a regular HTML.
 
 [Integrate your project with the
 Crowdin](https://cmints.io/en/documentation/i18n/crowdin) and start translating
-your website right away with the help of translation community.
+your website right away with the help of the translation community.
