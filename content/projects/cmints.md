@@ -13,7 +13,7 @@ startertemplaterepo: cmints/multi-lang-starter
 ---
 
 [CMintS](https://cmints.io/) is a CMS and Static Site Generator for single and
-multi-language websites creation.
+multi-language website creation.
 
 Learn more about CMintS at [https://cmints.io/](https://cmints.io/). It's an
 open source project and every related repository can be found in the [CMintS
@@ -32,7 +32,7 @@ Single and multi-language website starters can be found at
 ## i18n
 
 [Comprehensive internationalization](https://cmints.io/documentation/i18n/) out
-of the box for [layouting](https://cmints.io/documentation/i18n/theme) and
+of the box for [layout](https://cmints.io/documentation/i18n/theme) and
 [translatable page content
 creation](https://cmints.io/documentation/i18n/pages).
 
@@ -41,16 +41,16 @@ creation](https://cmints.io/documentation/i18n/pages).
 Use [EJS](https://cmints.io/documentation/themes/ejs),
 [LESS](https://cmints.io/documentation/themes/less) and [JS
 modules](https://cmints.io/documentation/themes/js-modules) to create amazing
-[themes](https://cmints.io/documentation/themes/) for you website.
+[themes](https://cmints.io/documentation/themes/) for your website.
 
 ## Markdown
 
 CMintS uses CommonMark for markdown [pages
-creation](https://cmints.io/documentation/pages), alternativelly you can also
+creation](https://cmints.io/documentation/pages), alternatively you can also
 use EJS or a regular HTML.
 
 ## TMS integration
 
-[Integrate your project with the
+[Integrate your project with
 Crowdin](https://cmints.io/en/documentation/i18n/crowdin) and start translating
 your website right away with the help of the translation community.
