@@ -53,5 +53,5 @@ If you’d like to see everything in practice, check out these sites using Charg
 [mdx]: https://github.com/mdx-js/mdx
 [babel]: https://babeljs.io
 [postcss]: https://postcss.org
-[docs]: https://brandonweiss.github.io/charge
+[docs]: https://charge.js.org
 [gatsby]: https://www.gatsbyjs.org
