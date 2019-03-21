@@ -1,6 +1,6 @@
 ---
 title: Kulfon
-repo: zaiste/kulfon
+repo: kulfonjs/kulfon
 homepage: https://kulfon.org
 language:
   - JavaScript
