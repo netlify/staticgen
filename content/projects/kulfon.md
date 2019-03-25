@@ -1,18 +1,20 @@
 ---
 title: Kulfon
-repo: zaiste/kulfon
-homepage: https://kulfon.net
+repo: kulfonjs/kulfon
+homepage: https://kulfon.org
 language:
   - JavaScript
 license:
   - Apache 2.0
 templates:
   - Nunjucks
+  - Org Mode
+  - Markdown
 description: Kulfon is a static site generator written in JavaScript and inspired by Hugo.
 twitter: kulfonjs
 ---
 
-Kulfon is a « one command », static site generator written entirely in JavaScript. It's fast, modern and simple.
+Kulfon /kuːl fəʊn/ is a static site generator for the rest of us. It combines data sources with templates to tranform them into HTML pages at once. 
 
 ### Features
 
@@ -28,6 +30,7 @@ convince you to try **Kulfon**
 - [Sass][2] for stylesheets
 - [Nunjucks][1] for views (a simple, designer friendly HTML-based syntax)
 - Written in ES6/ES2015
+- [Org Mode][16] support
 - [Markdown][15] support
 - Unified approach to external dependencies management with either [unpkg][13] or [Yarn][4]
 - [HTTP/2][14] ready
@@ -55,3 +58,4 @@ convince you to try **Kulfon**
 [13]: https://unpkg.com/#/
 [14]: https://en.wikipedia.org/wiki/HTTP/2
 [15]: https://en.wikipedia.org/wiki/Markdown
+[16]: https://orgmode.org/
