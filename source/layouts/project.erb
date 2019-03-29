@@ -2,22 +2,25 @@
   <%= partial "includes/navbar" %>
 
   <div class="main subpage">
-    <h1><%= current_page.title %></h1>
+
     <div class="sheet">
 
       <div class="left-side">
+
+        <h2><%= current_page.title %></h2>
         <div class="links">
           <a href="<%= current_page.homepage %>" target="_blank" class="ellipsis"><i class="fa fa-home"></i> <%= current_page.homepage %></a>
           <a href="https://github.com/<%= current_page.repo %>" target="_blank" class="ellipsis"><i class="fa fa-github"></i> https://github.com/<%= current_page.repo %></a>
         </div>
 
         <%= yield %>
-        <%= partial "includes/disqus" %>
 
       </div>
+
       <div class="right-side">
+
         <div class="github-stats box">
-        <h4>GITHUB STATS</h4>
+        <h4>STATS ON GITHUB</h4>
             <ul class="stats">
               <li title="Stars">
                 <i class="fa fa-star"></i>
@@ -33,22 +36,22 @@
               </li>
             </ul>
         </div>
-        <div class="installation box">
-            <h4>INSTALLATION</h4>
-                <div class="buttons">
-                    <a href="https://github.com/<%= current_page.repo %>/releases/latest" target="_blank" class="btn blue">Download on GitHub</a>
-                    <a href="<%= current_page.examples %>" target="_blank" class="btn red">See examples</a>
-                </div>
-            <dl>
-                <dt>License:</dt>
-                <dd><%= current_page.license %></dd>
-
-                <dt>Author:</dt>
-                <dd><%= current_page.author %></dd>
-
-                <dt>Last update:</dt>
-                <dd><%= current_page.last_commit ? current_page.last_commit.to_time.strftime('%b %e, %G') : 'N/A' %></dd>
-            </dl>
+        <div class="installation box clearfix">
+          <ul>
+            <li>License: <%= current_page.license %></li>
+            <li>Author: <%= current_page.author %></li>
+            <li>Last update: <%= current_page.last_commit ? current_page.last_commit.to_time.strftime('%b %e, %G') : 'N/A' %></li>
+          </ul>
+          <ul>
+            <li>Angular: <% if current_page.angular == true %>Supported<% else %>Not supported<% end %></li>
+            <li>React: <% if current_page.react == true %>Supported<% else %>Not supported<% end %></li>
+            <li>Vue: <% if current_page.vue == true %>Supported<% else %>Not supported<% end %></li>
+            <li>Web Components: <% if current_page.webcomponents == true %>Supported<% else %>Not supported<% end %></li>
+          </ul>
+          <div class="buttons">
+              <a href="https://github.com/<%= current_page.repo %>" target="_blank" class="btn purple">Explore on GitHub</a>
+              <a href="<%= current_page.examples %>" target="_blank" class="btn lightpurple">Live examples</a>
+          </div>
         </div>
         <div class="charts box">
             <h4>TRENDS</h4>
@@ -76,7 +79,8 @@
         },
         xaxis: {
           transform: function (v) { return v; },
-          mode: "time"
+          mode: "time",
+          tickColor: "#fff"
         }
       };
       $.plot("#<%= type %>-chart", [chart_<%= type %>] , options_<%= type %>);

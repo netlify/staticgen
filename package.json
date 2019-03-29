@@ -2,7 +2,7 @@
   "name": "JSpreadsheets",
   "version": "1.0.0",
   "private": true,
-  "description": "Open-Source Spreadsheets and Data Grids",
+  "description": "Best JavaScript Data Grids and Spreadsheets",
   "main": "shipitfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

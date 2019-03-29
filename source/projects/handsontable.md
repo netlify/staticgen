@@ -1,11 +1,14 @@
 ---
 title: Handsontable
 repo: handsontable/handsontable
-homepage: http://handsontable.com
-examples: http://handsontable.com/examples.html
-license: MIT
-bower: handsontable
-technology: Vanilla JS
+homepage: https://handsontable.com
+twitter: handsontable
+examples: https://handsontable.com/examples
+angular: true
+vue: true
+react: true
+webcomponents: true
+license: Non-commercial
 author: Handsoncode
 authorurl: http://handsoncode.net
 description: Handsontable is a JavaScript composite spreadsheet component for apps and websites.

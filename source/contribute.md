@@ -1,9 +1,9 @@
 ---
-title: Submit new
+title: Contribute
 layout: page
 ---
 
-# Submit new
+# <%= current_page.title %>
 
 To add a new library to our leaderboard, **[fork the GitHub repo](https://github.com/krzysztofspilka/JSpreadsheets)** then add a new file to the **[source/projects](https://github.com/krzysztofspilka/JSpreadsheets/tree/master/source/projects)** directory and make a pull request. We accept most requests as long as they stay relevant and have any sign of community activity (forks, stars, issues etc.).
 

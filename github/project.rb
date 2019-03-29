@@ -1,6 +1,6 @@
 module Github
   module Project
-    [:title, :repo, :homepage, :examples, :language, :technology, :license, :templates, :author, :authorurl, :description].each do |attr|
+    [:title, :repo, :homepage, :twitter, :examples, :angular, :vue, :react, :webcomponents, :language, :license, :templates, :author, :authorurl, :description].each do |attr|
       define_method attr do
         data[attr]
       end

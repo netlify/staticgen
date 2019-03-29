@@ -27,10 +27,6 @@ $(function() {
     }
   });
 
-  $("select[name='filter']").change(function(e) {
-    $(".projects").isotope({filter: $(this).val().replace(/^\.lang-\./, '.lang-')});
-  });
-
   $("select[name='sort']").change(function(e) {
     var val = $(this).val();
 

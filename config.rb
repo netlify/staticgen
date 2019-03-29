@@ -6,6 +6,8 @@ set :images_dir, 'images'
 
 activate :github
 activate :syntax
+activate :directory_indexes
+activate :asset_hash
 
 helpers do
   def caret_icon(number)
@@ -19,7 +21,6 @@ end
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
-
 
 # Build-specific configuration
 configure :build do
