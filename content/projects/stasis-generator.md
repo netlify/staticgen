@@ -1,6 +1,6 @@
 ---
 title: Stasis
-repo: https://github.com/Gioni06/stasis-generator
+repo: Gioni06/stasis-generator
 homepage: https://getstasis.com/
 language:
   - Typescript
