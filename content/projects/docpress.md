@@ -8,7 +8,7 @@ templates: Markdown
 description: Painless Markdown publishing
 ---
 
-Docpress generates websites from your project's basic documentation; that is, at the very least, a README.md file. 
+Docpress generates websites from your project's basic documentation; that is, at the very least, a README.md file.
 It also supports multiple Markdown pages in `docs/`. Checkout our [Homepage](http://docpress.github.io) for a quick example.
 
 ## Examples
@@ -17,7 +17,7 @@ Check out the [Docpress Showcase](https://github.com/docpress/docpress/blob/mast
 ## Usage
 
 Still under heavy development, consider this a preview.
-See the [Getting Started](docs/getting-started/quickstart.md) guide for more details.
+See the [Getting Started](http://docpress.github.io/getting-started/quickstart.html) guide for more details.
 
 ```sh
 $ npm install -g docpress
@@ -28,7 +28,7 @@ $ docpress serve
   Docpress
   starting development - ^C to exit
 
-  350ms ✓   first build                 
+  350ms ✓   first build
       on    watching changes
       on    livereload
       on    http://localhost:3000
@@ -49,10 +49,11 @@ Support
 - [Gitter chat](https://gitter.im/docpress/Lobby)
 
 Let's build our first Docpress site.
-[Quickstart guide →](docs/getting-started/quickstart.md)
+[Quickstart guide →](http://docpress.github.io/getting-started/quickstart.html)
 
 Thanks
 ------
+
 **docpress** © 2015+, Rico Sta. Cruz. Released under the [MIT] License.<br>
 Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]).
 

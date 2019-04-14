@@ -42,7 +42,7 @@ Pages are written in Markdown, HTML, Handlebars, or any combination thereof. At 
 
 - Markdown parsing with [marky-markdown](http://npm.im/marky-markdown), the battle-tested [commonmark](http://commonmark.org/)-compliant parser used by [npmjs.com](https://npmjs.com).
 - GitHub-flavored Markdown support, including [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/)
-- Syntax Highlighting powered by [Atom](https://atom.io)'s [highlights](npm.im/highlights) package.
+- Syntax Highlighting powered by [Atom](https://atom.io)'s [highlights](https://npm.im/highlights) package.
 - Markdown headings (`H1`, `H2`, etc) are automatically converted to anchored hyperlinks.
 - Emoji support. Converts :emoji:-style shortcuts to unicode emojis.
 - [HTML frontmatter](#frontmatter) as page metadata

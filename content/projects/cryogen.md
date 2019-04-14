@@ -39,7 +39,6 @@ It then spits out a ready-to-publish website complete with a sitemap and RSS fee
 - [Cryogen Documentation Site](http://cryogenweb.org/)
 - [Carmen LA Blog](http://carmenla.me/blog/index.html)
 - [(iterate think thoughts)](http://yogthos.net/)
-- [Clojure :in Tunisia](http://www.clojure.tn/)
 - [dl1ely.github.io](http://dl1ely.github.io/)
 - [nil/recur](http://jonase.github.io/nil-recur/)
 - [on the clojure move](http://tangrammer.github.io/)

@@ -33,7 +33,6 @@ Discover my features below, or skip ahead to the installation instructions to ge
 - Built in support for dynamic documents (e.g. search pages, signup forms, etc.), so you can code pages that change on each request by just adding `dynamic: true` to your document's meta data (exposes the [express.js](http://expressjs.com/) `req` and `res` objects to your templating engine)
 - You can use it standalone, or even easily include it within your existing systems with our [API](http://docpad.org/docs/api)
 
-
 #### With our amazing community maintained plugins
 
 - Use the [Live Reload](http://docpad.org/plugin/livereload/) plugin to automatically refresh your web browser whenever a change is made, this is amazing
@@ -50,9 +49,8 @@ Discover my features below, or skip ahead to the installation instructions to ge
 - Pretty much if DocPad doesn't already do something, it is trivial to [write a plugin](http://docpad.org/docs/extend) to do it, seriously DocPad can accomplish anything, it never holds you back, there are no limits, it's like super powered guardian angel
 - There are also [plenty of other plugins](http://docpad.org/docs/plugins) not listed here that are still definitely worth checking out! :)
 
-
 ### People love DocPad
 
-All sorts of people love DocPad, from first time web developers to even industry leaders and experts. In fact, people even migrate to DocPad from other systems as they love it so much. Here are some our [favourite tweets](https://twitter.com/#!/DocPad/favorites) of what people are saying about DocPad :)
+All sorts of people love DocPad, from first time web developers to even industry leaders and experts. In fact, people even migrate to DocPad from other systems as they love it so much. Here are some our favourite tweets of what people are saying about DocPad :)
 
-[![Some favourite tweets about DocPad](https://github.com/bevry/designs/raw/master/docpad/favourites/docpad-favs.gif)](https://twitter.com/#!/DocPad/favorites)
+![Some favourite tweets about DocPad](https://github.com/bevry/designs/raw/master/docpad/favourites/docpad-favs.gif)
