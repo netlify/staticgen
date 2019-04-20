@@ -2,7 +2,7 @@
 title: Metabake
 repo: metabake/MetaBake
 homepage: https://www.Metabake.org
-language: JavaScript
+language: TypeScript
 license: MIT
 templates: Pug and Markdown
 description: Metabake is open source and extensible low-code productivity tool for programmers.
@@ -13,15 +13,15 @@ description: Metabake is open source and extensible low-code productivity tool f
 
 ## 'All my friends KNOW the low-coder'
 
-## Overview
+#### Metabake is open source and extensible low-code productivity tool for programmers.
 
-### Metabake is open source and extensible low-code productivity tool for programmers.
+## Overview
 
 Metabake(mbake) provides all the necessary tools for a developer to write cleaner code faster, with `pug` templating and livereload out of the box.
 
 You can gradually adopt it while it allows you to develop faster - and with clean simplicity - Static Websites, Web Components, custom CMS/E-Commerce, CRUD and all sorts of dynamic web-apps.
 
-## Prerequisites
+### Prerequisites
 
 You should know HTML, CSS and JavaScript - that is all we use. If you need to catch up, we recommend this book: 'Design and Build Websites' by Jon Duckett.
 
@@ -220,8 +220,8 @@ Now that you know mbake foundation, here are some choices for next things to lea
 
 # Links
 
+- Full Docs: [docs.Metabake.org](http://docs.Metabake.org)
 - [Metabake.org](https://www.Metabake.org)
-- Docs: [docs.Metabake.org](http://docs.Metabake.org)
 - [blog.Metabake.org](http://blog.Metabake.org)
 - [Github](http://git.Metabake.org)
 - Check for the latest version of mbake: [npm.js](http://npmjs.com/package/mbake)
