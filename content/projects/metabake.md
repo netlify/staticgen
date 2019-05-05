@@ -8,7 +8,6 @@ templates: Pug and Markdown
 description: Metabake is open source and extensible low-code productivity tool for programmers.
 ---
 
-
 # Metabake
 
 ## 'All my friends KNOW the low-coder'
@@ -150,6 +149,7 @@ mbake -t .
 It will create a `.js` and `min.js` files. It will output ES5 to support IE11, so feel free to use class { } syntax.
 If there is no `.ts`, than it will simply slightly mimifify js files into min.js (but no ES5 conversion).
 
+Lots of time you use .ts to call DB services: such as Google FireStore.
 
 ## Examples - Website
 
@@ -192,11 +192,17 @@ mbake -i .
 ```
 It will create `items.json`. This allows you to fetch that json and search for content, CMS, items, etc.
 
-### `mbake -b` will emit an example CMS with above.
+## MetaBake FrameWork(FW)/Application Architecture(AA)
 
+There is not much to ours. 
 
-The example CMS will also show you how the `items.json` is read to display a nice searchable and paginated
-list of items. No magic.
+```sh
+mbake -f .
+```
+
+This emits a Pug file that you should include in your Pug's layout head section.
+In turn, the included file calls a 'setup-deffs' js file that defines and show you how to define things you can require later.
+
 
 
 ## Extras and next steps
