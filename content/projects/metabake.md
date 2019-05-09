@@ -1,13 +1,12 @@
 ---
 title: Metabake
 repo: metabake/MetaBake
-homepage: https://mBake.org
+homepage: https://www.metabake.org
 language: JavaScript
 license: MIT
 templates: Pug and Markdown
 description: MetaBake is the extensible open source low-code productivity tool for programmers; including dynamic apps and data binding.
 ---
-
 
 ## MetaBake is the extensible open source low-code productivity tool for programmers; including dynamic apps and data binding.
 
@@ -25,7 +24,7 @@ mbake
 ```
 
 Install note:
-- If you get an error like 'Node Sass could not find a binding for your current environment' 
+- If you get an error like 'Node Sass could not find a binding for your current environment'
 run$: ``` yarn global upgrade ```
 
 ## First Page
@@ -47,7 +46,7 @@ key1: World
 mbake .
 ```
 
-This will create index.html. 
+This will create index.html.
 
 Of course you can use regular Pug syntax to include other Pug files; or Markdown. MetaBake markdown flavor includes CSS support:
 ```pug
@@ -56,7 +55,7 @@ Of course you can use regular Pug syntax to include other Pug files; or Markdown
 
 ## More
 
-There are many example apps, and shipped templates include include: an CMS module, a watcher, SPA, Blog, Website, Slides, Dashboard, CRUD, PWA, Electron, Hybrid mobile apps, server-less via AWS | GCP FireStore, RIOTjs, Ads and more. 
+There are many example apps, and shipped templates include include: an CMS module, a watcher, SPA, Blog, Website, Slides, Dashboard, CRUD, PWA, Electron, Hybrid mobile apps, server-less via AWS | GCP FireStore, RIOTjs, Ads and more.
 
 
 MetaBake supports CSS classes in Markdown, plus, because it uses Pug - it can also do any HTML layout. But MetaBake is not static only - it fully supports and has examples, shipped apps, and docs for dynamic and even mobile apps.

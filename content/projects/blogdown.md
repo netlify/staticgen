@@ -1,7 +1,6 @@
 ---
 title: blogdown
 repo: codejamninja/blogdown
-homepage: https://blogdown.info
 language:
   - JavaScript
 license:

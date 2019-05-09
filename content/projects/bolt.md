@@ -17,7 +17,7 @@ description: ⚡ is a fast, organized, mobile first Grunt seed project for fast 
 1. Dev builds are extremely legible, source mapped, and ready for debugging with your tools `grunt`
 1. Production builds squish the crap out [images,css,html,js,svg] `grunt --prod`
 1. Dev and Prod builds have their own output directory, they don't share a `dist/` folder
-1. Very fast, [concurrent Grunt builds](https://github.com/argyleink/Bolt/blob/master/tasks/concurrent.coffee), with jit a plugin for really fast watch task running
+1. Very fast concurrent Grunt builds with jit a plugin for really fast watch task running
 1. Concise [Grunt main file](https://github.com/argyleink/Bolt/blob/master/gruntfile.coffee)
 1. [Grunt tasks](https://github.com/argyleink/Bolt/tree/master/tasks) are individual, short, easy as hell to read
 1. [Configuration file](https://github.com/argyleink/Bolt/blob/master/app.coffee) keeps project assets and plugins centralized
@@ -29,7 +29,7 @@ description: ⚡ is a fast, organized, mobile first Grunt seed project for fast 
 1. Proper [Jade inheritance](https://github.com/paulyoung/jade-inheritance) compilation, so 1 file changed doesn't require the whole project to compile
 1. [Auto generated](https://github.com/argyleink/Bolt/blob/master/tasks/manifest.coffee) HTML5 appcache for production builds
 1. Autoprefixed stylus
-1. 2 powerful stylus mixin libraries [Nib](http://nibstyl.us) and [Axis](http://axis.netlify.com) (will never bloat your file with crap you aren't using)
+1. 2 powerful stylus mixin libraries [Nib](https://github.com/stylus/nib) and [Axis](http://axis.netlify.com) (will never bloat your file with crap you aren't using)
 1. Git tagging and releasing `grunt bump`
 1. Easily create custom [build notifications](https://github.com/argyleink/Bolt/blob/master/tasks/notify.coffee)
 1. Customize your crunched files comment banner

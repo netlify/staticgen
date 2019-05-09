@@ -30,9 +30,7 @@ _Phenomic_ will help you generate and deploy a website in a heartbeat.
 
 ## Static and dynamic
 
-[React](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
-is used to generate pages for both client and server; it's called ~~Isomorphic~~
-[Universal rendering](https://medium.com/@mjackson/universal-javascript-4761051b7ae9).
+React is used to generate pages for both client and server; it's called ~~Isomorphic~~ [Universal rendering](https://medium.com/@mjackson/universal-javascript-4761051b7ae9).
 
 A pre-rendered, *static* version of your website is generated first; then when
 a user browses your website, **they can get the same UX as an app by grabbing
@@ -41,8 +39,7 @@ the minimal amount of data for each new page**
 
 ## Setup a website in a flash
 
-Creating a website based on Phenomic only takes a minute.
-[Why not give it a try?](https://phenomic.io/docs/setup/)
+Creating a website based on Phenomic only takes a minute. Why not give it a try?
 
 ## Awesome DX (Developer Experience)
 

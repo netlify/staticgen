@@ -11,7 +11,6 @@ templates:
 description: A simple static blog generation tool in bash that supports markdown.
 ---
 
-
 blog.sh is a relatively simple static blog generation tool written in bash. It supports markdown (via pandoc, but other converters could be used) and a very basic templating system. It is designed for simplicity and easy of hacking.
 
 ## Features
