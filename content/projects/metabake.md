@@ -2,7 +2,7 @@
 title: Metabake
 repo: metabake/MetaBake
 homepage: https://www.Metabake.org
-language: TypeScript
+language: JavaScript
 license: MIT
 templates: Pug and Markdown
 description: Metabake is open source and extensible low-code productivity tool for programmers.
