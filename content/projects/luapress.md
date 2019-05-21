@@ -7,6 +7,7 @@ language:
 license:
   - MIT
 templates:
+  - Mustache
   - LHTML
 description: Luapress is *yet another* static blog generator, written in Lua.
 ---
