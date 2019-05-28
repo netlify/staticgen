@@ -15,6 +15,7 @@ templates:
   - Haml
   - Pug
   - JavaScript
+  - Markdown
 description: A simpler static site generator
 startertemplaterepo: 11ty/eleventy-base-blog
 twitter: eleven_ty
