@@ -2,7 +2,6 @@
 title: Next.js
 repo: zeit/next.js
 homepage: https://nextjs.org
-twitter: zeithq
 language:
   - JavaScript
 license:
