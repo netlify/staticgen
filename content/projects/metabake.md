@@ -2,9 +2,13 @@
 title: Metabake
 repo: metabake/MetaBake
 homepage: https://www.metabake.org
-language: JavaScript
-license: MIT
-templates: Pug and Markdown
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Pug
+  - Markdown
 description: MetaBake is the extensible open source low-code productivity tool for programmers; including dynamic apps and data binding.
 ---
 

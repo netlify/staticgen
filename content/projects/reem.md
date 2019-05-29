@@ -7,7 +7,7 @@ language:
 license:
   - ISC
 templates:
-  - Consolidate
+  - Consolidate.js
 description: JavaScript static site generator for anything
 ---
 

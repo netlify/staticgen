@@ -7,7 +7,8 @@ language:
 license:
   - MIT
 templates:
-  - Pug, Jade
+  - Pug
+  - Jade
 description: A structured, scalable and modular platform for web and frontend development.
 startertemplaterepo: platframe/platframe
 twitter: platframe
@@ -17,7 +18,7 @@ Whether it's bespoke development, building a JAMstack app, or making it your blo
 
 ## Setup
 
-Option 1: hit the **Deploy to netlify** button  
+Option 1: hit the **Deploy to netlify** button
 Option 2: run the following in your shell, optionally chaning "my-app" to a preferred name
 ```bash
 npx degit platframe/new my-app && cd $_ && git init && yarn

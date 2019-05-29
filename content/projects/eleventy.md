@@ -15,11 +15,13 @@ templates:
   - Haml
   - Pug
   - JavaScript
+  - HTML
   - Markdown
 description: A simpler static site generator
 startertemplaterepo: 11ty/eleventy-base-blog
 twitter: eleven_ty
 ---
 
-A simpler static site generator. An alternative to Jekyll.
-Written in JavaScript. Transforms a directory of templates (of varying types) into HTML.
+A simpler static site generator. An alternative to Jekyll. Written in JavaScript. Transforms a directory of templates (of varying types) into HTML.
+
+Works with HTML, Markdown, Liquid, Nunjucks, Handlebars, Mustache, EJS, Haml, Pug, and JavaScript Template Literals.

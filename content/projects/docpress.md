@@ -2,9 +2,12 @@
 title: Docpress
 repo: docpress/docpress
 homepage: http://docpress.github.io
-language: JavaScript
-license: MIT
-templates: Markdown
+language:
+  - JavaScript
+license:
+  - MIT
+templates:
+  - Markdown
 description: Painless Markdown publishing
 ---
 

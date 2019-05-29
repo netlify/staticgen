@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - Go templates
+  - Go
 description: A static site generator written in Go
 ---
 

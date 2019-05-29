@@ -6,6 +6,8 @@ language:
   - Scala
 license:
   - Apache 2.0
+templates:
+  - Markdown
 description: Ornate is a tool for building multi-page HTML sites from Markdown sources.
 ---
 
