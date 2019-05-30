@@ -31,20 +31,31 @@ function processMarkdown (markdown, key) {
 function mapProjectFrontMatter ({
   title,
   repo,
+  repohost,
   homepage,
   description,
   startertemplaterepo,
   content,
   twitter,
 }) {
+  const repoHost = repohost || 'github'
+  let starterTemplateRepo = startertemplaterepo
+  if (starterTemplateRepo && !starterTemplateRepo.includes(':')) {
+    if (repoHost === 'github') {
+      starterTemplateRepo = `https://github.com/${starterTemplateRepo}`
+    } else if (repoHost === 'gitlab') {
+      starterTemplateRepo = `https://gitlab.com/${starterTemplateRepo}`
+    }
+  }
   return {
     title,
     slug: toSlug(title),
     repo,
+    repoHost,
     homepage,
     twitter,
     description,
-    starterTemplateRepo: startertemplaterepo,
+    starterTemplateRepo,
     content,
   }
 }
@@ -56,7 +67,7 @@ function extractRelevantProjectData (data) {
     const oldestTimestamp = dateFns.min(...timestamps).getTime()
     const dataAgeInDays = dateFns.differenceInDays(Date.now(), oldestTimestamp)
     const {
-      followers, forks, stars, issues,
+      followers, forks, stars, issues, repo
     } = find(project, { timestamp: newestTimestamp }) || {}
     const {
       forks: forksPrevious,
@@ -64,7 +75,7 @@ function extractRelevantProjectData (data) {
       issues: issuesPrevious,
       followers: followersPrevious,
     } = find(project, { timestamp: oldestTimestamp }) || {}
-    return {
+    const relevantData = {
       followers,
       forks,
       stars,
@@ -75,6 +86,8 @@ function extractRelevantProjectData (data) {
       followersPrevious,
       dataAgeInDays,
     }
+    if (repo) relevantData.repo = repo
+    return relevantData
   })
 }
 
