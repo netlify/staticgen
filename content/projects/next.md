@@ -1,17 +1,17 @@
 ---
-title: Next
+title: Next.js
 repo: zeit/next.js
-homepage: https://learnnextjs.com/
+homepage: https://nextjs.org
 language:
   - JavaScript
 license:
   - MIT
 templates:
   - React
-description: A framework for statically-exported React apps
+description: A framework for statically-exported React apps (supports server side rendering)
 ---
 
-Next.js is a minimalistic framework for server-rendered React applications.
+Next.js is a minimalistic framework for server-rendered React applications as well as statically exported React apps.
 
 ## Install
 
