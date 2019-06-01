@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - null, dev, simple
+  - Custom
 description: A cross-platform git-like and LaTeX-like site manager.
 twitter: nifty-site-man
 startertemplaterepo: nifty-site-manager/simple-site
