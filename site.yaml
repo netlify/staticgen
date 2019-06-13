@@ -16,7 +16,7 @@ navLinks:
   - { url: https://jamstack.org, text: About JAMstack }
   - { url: https://headlesscms.org, text: Need a Static CMS? }
 sorts:
-  - { field: "stars", label: "GitHub stars", reverse: true }
+  - { field: "stars", label: "Repo stars", reverse: true }
   - { field: "followers", label: "Twitter followers", reverse: true }
   - { field: "title", label: "Title" }
 filters:

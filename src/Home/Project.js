@@ -40,7 +40,7 @@ const Project = ({
       <OpenSourceStat
         key="stars"
         Icon={() => <Octicon name="star" zoom="100%" />}
-        label="GitHub stars"
+        label="Repo stars"
         value={stars}
         change={stars - starsPrevious}
         indicateColor
@@ -49,7 +49,7 @@ const Project = ({
       <OpenSourceStat
         key="issues"
         Icon={() => <Octicon name="issue-opened" zoom="100%" />}
-        label="GitHub open issues"
+        label="Open issues"
         value={issues}
         change={issues - issuesPrevious}
         dataAgeInDays={dataAgeInDays}
@@ -57,7 +57,7 @@ const Project = ({
       <OpenSourceStat
         key="forks"
         Icon={() => <Octicon name="repo-forked" zoom="100%" />}
-        label="GitHub forks"
+        label="Repo forks"
         value={forks}
         change={forks - forksPrevious}
         indicateColor

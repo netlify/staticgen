@@ -97,8 +97,8 @@ class Project extends React.Component {
               </DetailLink>
             }
             {repo &&
-              <DetailLink href={`https://github.com/${repo}`}>
-                <EntypoIcon Icon={EntypoGithub} /> https://github.com/{repo} ({stars})
+              <DetailLink href={repo}>
+                <EntypoIcon Icon={EntypoGithub} /> {repo} ({stars})
               </DetailLink>
             }
           </div>
