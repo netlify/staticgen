@@ -102,7 +102,7 @@ function getArchiveJson (archive) {
   if (archive.truncated) {
     return fetch(archive.raw_url).then(resp => resp.json())
   }
-  return archive.content
+  return JSON.parse(archive.content)
 }
 
 async function getArchive () {
