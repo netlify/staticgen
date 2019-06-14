@@ -85,7 +85,7 @@ class Project extends React.Component {
         <Container>
           <SiteData render={({ title: siteTitle }) => (
             <Head>
-              <title>{title} | {siteTitle}</title>
+              <title>{`${title} | ${siteTitle}`}</title>
             </Head>
           )} />
           <h1>{title}</h1>
