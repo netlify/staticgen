@@ -1,14 +1,16 @@
 import path from 'path'
 import fs from 'fs-extra'
-import { map, find, fromPairs, mapValues } from 'lodash'
+import { compact, map, find, fromPairs, mapValues } from 'lodash'
 import fetch from 'node-fetch'
 import { differenceInMinutes } from 'date-fns'
 import Octokit from '@octokit/rest'
+import { Gitlab } from 'gitlab'
 import twitterFollowersCount from 'twitter-followers-count'
 
 require('dotenv').config()
 
 const GITHUB_TOKEN = process.env.STATICGEN_GITHUB_TOKEN
+const GITLAB_TOKEN = process.env.STATICGEN_GITLAB_TOKEN
 const TWITTER_CONSUMER_KEY = process.env.STATICGEN_TWITTER_CONSUMER_KEY
 const TWITTER_CONSUMER_SECRET = process.env.STATICGEN_TWITTER_CONSUMER_SECRET
 const TWITTER_ACCESS_TOKEN_KEY = process.env.STATICGEN_TWITTER_ACCESS_TOKEN_KEY
@@ -18,11 +20,13 @@ const LOCAL_ARCHIVE_PATH = `tmp/${ARCHIVE_FILENAME}`
 const GIST_ARCHIVE_DESCRIPTION = 'STATICGEN.COM DATA ARCHIVE'
 
 let octokit
+let gitlab
 let getTwitterFollowers
 
 function authenticate () {
   octokit = Octokit()
   octokit.authenticate({ type: 'token', token: GITHUB_TOKEN })
+  gitlab = new Gitlab({ personaltoken: GITLAB_TOKEN })
   getTwitterFollowers = twitterFollowersCount({
     consumer_key: TWITTER_CONSUMER_KEY,
     consumer_secret: TWITTER_CONSUMER_SECRET,
@@ -34,22 +38,35 @@ function authenticate () {
 async function getProjectGitHubData (repo) {
   const [owner, repoName] = repo.split('/')
   const { data } = await octokit.repos.get({ owner, repo: repoName })
-  const { stargazers_count, forks_count, open_issues_count } = data
-  return { stars: stargazers_count, forks: forks_count, issues: open_issues_count }
+  const { stargazers_count, forks_count, open_issues_count, html_url } = data
+  return { stars: stargazers_count, forks: forks_count, issues: open_issues_count, repo: html_url }
 }
 
-async function getAllProjectGitHubData (repos) {
+async function getProjectGitLabData (repo) {
+  const { id, star_count, forks_count, web_url } = await gitlab.Projects.show(repo)
+  const open_issues_count = (await gitlab.Issues.all({ projectId: id, state: 'opened' })).length
+  return { stars: star_count, forks: forks_count, issues: open_issues_count, repo: web_url }
+}
+
+async function getAllProjectRepoData (repos) {
   const data = []
   // eslint-disable-next-line no-restricted-syntax
-  for (const repo of repos) {
+  for (const repoWithHost of repos) {
+    const [repoHost, repo] = repoWithHost.split(':')
     // eslint-disable-next-line no-await-in-loop
     await new Promise(res => setTimeout(res, 100))
     try {
-      // eslint-disable-next-line no-await-in-loop
-      const repoData = await getProjectGitHubData(repo)
-      data.push([repo, repoData])
+      if (repoHost === 'gitlab') {
+        // eslint-disable-next-line no-await-in-loop
+        const repoData = await getProjectGitLabData(repo)
+        data.push([repoWithHost, repoData])
+      } else {
+        // eslint-disable-next-line no-await-in-loop
+        const repoData = await getProjectGitHubData(repo)
+        data.push([repoWithHost, repoData])
+      }
     } catch (err) {
-      console.error(`Could not load repository "${repo}". Please make sure it still exists.`)
+      console.error(`Could not load repository "${repo}" from ${repoHost}. Please make sure it still exists.`)
     }
   }
   return fromPairs(data)
@@ -57,15 +74,14 @@ async function getAllProjectGitHubData (repos) {
 
 async function getAllProjectData (projects) {
   const timestamp = Date.now()
-  const twitterScreenNames = map(projects, 'twitter').filter(val => val)
-  const twitterFollowers = twitterScreenNames.length &&
-    await getTwitterFollowers(twitterScreenNames)
-  const gitHubRepos = map(projects, 'repo').filter(val => val)
-  const gitHubReposData = await getAllProjectGitHubData(gitHubRepos)
-  const data = projects.reduce((obj, { key, repo, twitter }) => {
+  const twitterScreenNames = compact(map(projects, 'twitter'))
+  const twitterFollowers = twitterScreenNames.length && await getTwitterFollowers(twitterScreenNames)
+  const repos = compact(map(projects, val => val.repo ? [val.repohost || 'github', val.repo].join(':') : undefined))
+  const reposData = await getAllProjectRepoData(repos)
+  const data = projects.reduce((obj, { key, repo, repohost, twitter }) => {
     const twitterData = twitter ? { followers: twitterFollowers[twitter] } : {}
-    const gitHubData = repo ? { ...(gitHubReposData[repo]) } : {}
-    return { ...obj, [key]: [{ timestamp, ...twitterData, ...gitHubData }] }
+    const repoData = repo ? { ...(reposData[[repohost || 'github', repo].join(':')]) } : {}
+    return { ...obj, [key]: [{ timestamp, ...twitterData, ...repoData }] }
   }, {})
   return { timestamp, data }
 }
@@ -86,7 +102,7 @@ function getArchiveJson (archive) {
   if (archive.truncated) {
     return fetch(archive.raw_url).then(resp => resp.json())
   }
-  return archive.content
+  return JSON.parse(archive.content)
 }
 
 async function getArchive () {

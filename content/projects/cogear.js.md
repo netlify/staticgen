@@ -8,8 +8,8 @@ license:
   - MIT
 templates:
   - EJS
-  - PUG
-  - HBS
+  - Pug
+  - Handlebars
 description: A modern static sites generator based on Webpack.
 ---
 

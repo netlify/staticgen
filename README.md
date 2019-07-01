@@ -25,14 +25,15 @@ npm install
 npm start
 ```
 
-In order to successfully retrieve Twitter followers and GitHub stars, you will need authentication
-keys for both services.
+In order to successfully retrieve Twitter followers and repository stars (GitHub or GitLab), you
+will need authentication keys for these services.
 
-For GitHub, all you'll need is a personal access token. This can be generated at
-<https://github.com/settings/tokens>. For Twitter, you need to create an application at
-<https://apps.twitter.com> to get the necessary tokens. When deploying, you must set the environment
-variables per the example below. If you are developing locally, you can set
-these in a `.env` file at the root of the repo.
+For GitHub, all you'll need is a personal access token with the repo and gist scopes. This can be
+generated at <https://github.com/settings/tokens>. For GitLab, you'll also need a personal access
+token. This can be generated at <https://gitlab.com/profile/personal_access_tokens>. For Twitter,
+you need to create an application at <https://apps.twitter.com> to get the necessary tokens. When
+deploying, you must set the environment variables per the example below. If you are developing
+locally, you can set these in a `.env` file at the root of the repo.
 
 ```
 STATICGEN_GITHUB_TOKEN=examplekey123abc
@@ -42,9 +43,9 @@ STATICGEN_TWITTER_ACCESS_TOKEN_KEY=examplekey231abc
 STATICGEN_TWITTER_ACCESS_TOKEN_SECRET=examplekey321abc
 ```
 
-GitHub and Twitter data is cached in the `.tmp` directory, and online in a Gist. If neither has data
-newer than 24 hours old, fresh data is fetched from GitHub and Twitter. Fetching caching occur
-automatically during the build.
+GitHub, GitLab, and Twitter data is cached in the `.tmp` directory, and online in a Gist. If neither
+has data newer than 24 hours old, fresh data is fetched from GitHub, GitLab, and Twitter. Fetching
+caching occur automatically during the build.
 
 Then visit http://localhost:3000/ - React Static will automatically reload when changes occur.
 

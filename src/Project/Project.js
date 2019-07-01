@@ -85,7 +85,7 @@ class Project extends React.Component {
         <Container>
           <SiteData render={({ title: siteTitle }) => (
             <Head>
-              <title>{title} | {siteTitle}</title>
+              <title>{`${title} | ${siteTitle}`}</title>
             </Head>
           )} />
           <h1>{title}</h1>
@@ -97,8 +97,8 @@ class Project extends React.Component {
               </DetailLink>
             }
             {repo &&
-              <DetailLink href={`https://github.com/${repo}`}>
-                <EntypoIcon Icon={EntypoGithub} /> https://github.com/{repo} ({stars})
+              <DetailLink href={repo}>
+                <EntypoIcon Icon={EntypoGithub} /> {repo} ({stars})
               </DetailLink>
             }
           </div>
