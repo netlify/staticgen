@@ -9,6 +9,7 @@ license:
 templates:
   - lit-html
 description: Create pages, layouts, partials, and contextual data using lit-html
+startertemplaterepo: megazear7/orison-netlify-starter-kit
 ---
 
 OrisonJS is a static site generator built on top of lit-html.
@@ -24,3 +25,5 @@ Pages can also be declared as a list, so a single page file produces a list of p
 All pages also produce fragments. These are html files with the same content as the full page but without the layout applied. This makes implementing single page application style redirects easy to implement, and the template projects do just this.
 
 Projects can be initialized for use with Netlify, Firebase, or GitHub Pages, and can be easily configured for any hosting service.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/megazear7/orison-netlify-starter-kit)
