@@ -1,12 +1,13 @@
 ---
 title: InkPaper
 repo: InkProject/ink
-homepage: http://www.chole.io/
+homepage: https://imeoer.github.io
 language:
   - Go
 license:
   - MIT
 templates:
+  - Markdown
   - Go
 description: 'InkPaper is an elegant, extremely fast static blog generator.'
 ---
