@@ -8,7 +8,7 @@ license:
   - BSD 2-Clause
 templates:
   - Mustache
-description: Opinionated static site generator written in Lua.
+description: Opinionated blog-aware static site generator written in Ruby.
 ---
 
 Motyl is an opinionated blog-aware static site generator written in Ruby.
