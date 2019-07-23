@@ -1,15 +1,18 @@
 ---
 title: Docsify
-repo: /docsifyjs/docsify/
-homepage: https://github.com/docsifyjs/docsify/
+repo: docsifyjs/docsify
+homepage: https://docsify.js.org/
 language:
-  - Vue
+  - JavaScript
 license:
   - MIT
 templates:
   - Markdown
+  - Vue
 description:  A magical documentation site generator.
 ---
+
+docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. 
 
 Simple and lightweight (~21kB gzipped)
 No statically built html files
