@@ -8,6 +8,7 @@ license:
   - MIT
 templates:
   - Markdown
+  - Vue
 description:  A magical documentation site generator.
 ---
 
