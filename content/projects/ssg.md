@@ -1,6 +1,5 @@
 ---
 title: ssg
-repo: https://www.romanzolotarev.com/bin/ssg4
 homepage: https://www.romanzolotarev.com/ssg.html
 language:
   - ksh
