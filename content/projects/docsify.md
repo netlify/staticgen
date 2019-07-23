@@ -1,6 +1,6 @@
 ---
 title: Docsify
-repo: docsifyjs/docsify/
+repo: docsifyjs/docsify
 homepage: https://docsify.js.org/
 language:
   - JavaScript
