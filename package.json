@@ -14,7 +14,7 @@
     "gitlab": "^5.0.1",
     "gray-matter": "^3.1.1",
     "js-yaml": "^3.11.0",
-    "marked": "^0.3.14",
+    "marked": "^0.7.0",
     "node-fetch": "^2.2.0",
     "prismjs": "^1.14.0",
     "react": "^16.0.0",
