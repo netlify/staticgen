@@ -6613,8 +6613,8 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     strip-json-comments "~2.0.1"
 
 react-component-octicons@^1.5.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/react-component-octicons/-/react-component-octicons-1.6.0.tgz#a318ba78f464739db7788f05aa17d66758f35563"
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/react-component-octicons/-/react-component-octicons-1.8.0.tgz#60bc7491a8529d98060ff85db8b69ed3417698dc"
 
 react-dev-utils@^4.0.1:
   version "4.2.1"
