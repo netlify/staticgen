@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "babel-plugin-import-glob": "^2.0.0",
-    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-inline-import": "^3.0.0",
     "babel-plugin-module-resolver": "^3.1.0",
     "babel-plugin-styled-components": "^1.10.6",
     "eslint-config-react-tools": "1.x.x",
