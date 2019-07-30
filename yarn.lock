@@ -6795,13 +6795,13 @@ react-universal-component@^2.8.1:
     prop-types "^15.5.10"
 
 react@^16, react@^16.0.0:
-  version "16.3.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.3.2.tgz#fdc8420398533a1e58872f59091b272ce2f91ea9"
+  version "16.8.6"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    scheduler "^0.13.6"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
