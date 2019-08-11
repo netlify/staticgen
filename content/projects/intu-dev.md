@@ -1,7 +1,7 @@
 ---
 title: INTUITION.DEV
 repo: intuition-dev/INTUITION
-homepage: https://www.INTU.DEV
+homepage: https://www.INTUITION.DEV
 language:
   - TypeScript
 license:
@@ -48,7 +48,7 @@ In WebAdmin, you can edit screen app or content using markdown or pug - which wo
 - [Docs/Training](http://docs.mbake.org)
 - [Git Repo](http://git.mbake.org)
 - [Pug example](https://pug.mbake.org)
-- [INTUITION.DEV Home Page](https://www.INTU.DEV)
+- [INTUITION.DEV Home Page](https://www.INTUITION.DEV)
 
 
 ## Short Installation and Tutorial
@@ -97,7 +97,7 @@ or
 - [Docs/Training](http://docs.mbake.org)
 - [Git Repo](http://git.mbake.org)
 - [Pug example](https://pug.mbake.org)
-- [INTUITION.DEV Home Page](https://www.INTU.DEV)
+- [INTUITION.DEV Home Page](https://www.INTUITION.DEV)
 
 
 ## *Software will eat the world: The digital revolution!*
