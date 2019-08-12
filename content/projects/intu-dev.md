@@ -30,17 +30,17 @@ INTUITION.DEV has WebAdmin Screen for any CRUD app, CMS, e-Com, Mobile, AMP, etc
 
 1. Standards Based / Pug
 1. SEO
-2.  native Custom Elements/standard Web Components
+2.  Custom Elements
 2. CRUD | ViewModel
 2. built in user auth
 2. FTS and SQL
-2. keyboard driven (arrow up WebComps))
+2. keyboard driven (F12 Custom Elements in v1.1))
 2. cross platform / mobile from single code base
 
 
 ### Easy
 
-In WebAdmin, you can edit screen app or content using markdown or pug - which won't let you pages become broken. It also can leverage  native Custom Elements/standard Web Components and use any framework. It allows you clone existing pages to write another post/page, upload images, custom write own layout in pug, etc. Any app that you can write or use in HTML, .js/.ts or css/SASS can leverage INTUITION.DEV. Since it is only CSS/.js/HTML there is almost no learning curve.  If you need to catch up, we recommend this book: ‘Design and Build Websites’ by Jon Duckett.
+In WebAdmin, you can edit screen app or content using markdown or pug - which won't let you pages become broken. It also can leverage  Custom Elements and use any framework. It allows you clone existing pages to write another post/page, upload images, custom write own layout in pug, etc. Any app that you can write or use in HTML, .js/.ts or css/SASS can leverage INTUITION.DEV. Since it is only CSS/.js/HTML there is almost no learning curve.  If you need to catch up, we recommend this book: ‘Design and Build Websites’ by Jon Duckett.
 
 
 # Documentation
@@ -83,11 +83,11 @@ or
 
 ## Full train-the-trainer training incudes:
 - SEO
--  native Custom Elements/standard Web Components
+-  Custom Elements
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
-- keyboard driven (arrow up WebComps))
+- keyboard driven (F12 Custom Elements in v1.1))
 - cross platform / mobile from single code base
 - lazy loading
 
