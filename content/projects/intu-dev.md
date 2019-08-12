@@ -98,8 +98,3 @@ or
 - [Git Repo](http://git.mbake.org)
 - [Pug example](https://pug.mbake.org)
 - [INTUITION.DEV Home Page](https://www.INTUITION.DEV)
-
-
-## *Software will eat the world: The digital revolution!*
-### We just need to make more software: better and faster.
-## INTUITION.DEV, 'It will LEAD you in the right direction'
