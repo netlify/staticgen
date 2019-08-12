@@ -34,7 +34,7 @@ INTUITION.DEV has WebAdmin Screen for any CRUD app, CMS, e-Com, Mobile, AMP, etc
 2. CRUD | ViewModel
 2. built in user auth
 2. FTS and SQL
-2. keyboard driven (F12 Custom Elements in v1.1))
+2. keyboard driven (F12 Custom Elements In V1.1)
 2. cross platform / mobile from single code base
 
 
@@ -87,7 +87,7 @@ or
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
-- keyboard driven (F12 Custom Elements in v1.1))
+- keyboard driven (F12 Custom Elements In V1.1)
 - cross platform / mobile from single code base
 - lazy loading
 
