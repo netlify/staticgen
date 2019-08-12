@@ -29,8 +29,9 @@ INTUITION.DEV has WebAdmin Screen for any CRUD app, CMS, e-Com, Mobile, AMP, etc
 # INTUITION.DEV pro development features:
 
 1. Standards Based / Pug
+1. Open Source
 1. SEO
-2.  Custom Elements
+2. Custom Elements
 2. CRUD | ViewModel
 2. built in user auth
 2. FTS and SQL
