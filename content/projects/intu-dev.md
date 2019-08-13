@@ -8,13 +8,13 @@ license:
   - MIT
 templates:
   - Pug
-description: INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users.
+description: INTUITION.DEV is the futuristic open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users.
  
 ---
 
 # INTUITION.DEV
 
-#### 'INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users.'
+#### 'INTUITION.DEV is the futuristic open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users.'
 
 #### Please star our main project here:
 - https://github.com/intuition-dev/INTUITION
@@ -23,8 +23,6 @@ description: INTUITION.DEV is an open source tool for pro developers w/ 10 fold 
 
 In a future with increasing automation, citizen-developers have become more widespread. Nowadays almost everybody can pull out a form or a web app using GUI tools.
 In contrast to tools for citizen-developers: INTUITION.DEV aims to make professional developers more productive, 10 fold productivity increase; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users.'
-
-INTUITION.DEV has WebAdmin Screen for any CRUD app, CMS, e-Com, Mobile, AMP, etc.  It uses [markdown](https://daringfireball.net/projects/markdown/syntax), and is written in [pug](https://pugjs.org/language/tags.html).
 
 # INTUITION.DEV pro development features:
 
@@ -41,16 +39,17 @@ INTUITION.DEV has WebAdmin Screen for any CRUD app, CMS, e-Com, Mobile, AMP, etc
 
 ### Easy
 
-In WebAdmin, you can edit screen app or content using markdown or pug - which won't let you pages become broken. It also can leverage  Custom Elements and use any framework. It allows you clone existing pages to write another post/page, upload images, custom write own layout in pug, etc. Any app that you can write or use in HTML, .js/.ts or css/SASS can leverage INTUITION.DEV. Since it is only CSS/.js/HTML there is almost no learning curve.  If you need to catch up, we recommend this book: ‘Design and Build Websites’ by Jon Duckett.
+In WebAdmin, you can edit screen app or content using markdown or pug - which won't let you pages become broken. It also can leverage  Custom Elements and use any framework. It allows you clone existing pages to write another post/page, upload images, custom write own layout in pug, etc. Any app that you can write or use in HTML, .js/.ts or css/SASS can leverage INTUITION.DEV. Since it is only CSS/.js/HTML there is almost no learning curve. 
+Our main language is Pug, if you have not seen Pug before, here is a quick intro:
+- [Pug intro](https://pug.mbake.org)
 
 
-# Documentation
+## Links
 
 - [Docs/Training](http://docs.mbake.org)
+- [Home Page](https://www.INTUITION.DEV)
+- [Message Board ](http://forum.mbake.org)
 - [Git Repo](http://git.mbake.org)
-- [Pug example](https://pug.mbake.org)
-- [INTUITION.DEV Home Page](https://www.INTUITION.DEV)
-
 
 ## Short Installation and Tutorial
 
@@ -96,6 +95,6 @@ or
 # Links
 
 - [Docs/Training](http://docs.mbake.org)
+- [Home Page](https://www.INTUITION.DEV)
+- [Message Board ](http://forum.mbake.org)
 - [Git Repo](http://git.mbake.org)
-- [Pug example](https://pug.mbake.org)
-- [INTUITION.DEV Home Page](https://www.INTUITION.DEV)
