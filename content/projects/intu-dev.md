@@ -14,15 +14,15 @@ description: INTUITION.DEV is the futuristic open source tool for pro developers
 
 # INTUITION.DEV
 
-#### 'INTUITION.DEV is the futuristic open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users.'
+#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 
 #### Please star our main project here:
 - https://github.com/intuition-dev/INTUITION
 
 ## INTUITION.DEV approach:
 
-In a future with increasing automation, citizen-developers have become more widespread. Nowadays almost everybody can pull out a form or a web app using low-code tools.
-Unlike other low-code tools, this one is aimed at professional developers and uses a standard language: Pug. We started first with a static code generator and then added a WebAdmin that lets you edit - and then kept adding features and refactoring. We hope to make open source low code approach popular with professional developers.
+In a future with increasing automation, citizen-developers have become more widespread. Nowadays almost anyone can pull out a form or a web app using low-code tools. Unlike other low-code tools, this one is aimed at professional developers and uses a standard language: Pug. We started first with a static code generator and then added a WebAdmin that lets you edit—and then kept adding features and refactoring. 
+
 
 # INTUITION.DEV pro development features:
 
@@ -39,11 +39,10 @@ Unlike other low-code tools, this one is aimed at professional developers and us
 
 ### Easy
 
-So we have open source low-code with static generation.
-A major piece is adding a 'WebAdmin' editor to INTUITION.DEV and your application. One a professional developer writes and sets up version one of the app - then the developer can
- enable end-user to maintain the app and possibly write the next version of the app. So as the business needs change, the web app is evergreen and always aligned to the business. 
+We have open source low-code with static generation with the ability to add a ‘WebAdmin’ editor to INTUITION.DEV and your application. Once a professional developer writes and sets up Version 1 of the app, end-users can be enabled to maintain the app and possibly write the next version of the app. As the business needs change, the resulting evergreen web app is always aligned to the business.
 
-You can write any and every kind of app, since we generate  HTML, javascript an css.  Our main language is Pug, if you have not seen Pug before, here is a quick intro to Pug:
+You can write any and every kind of app, since we generate HTML, javascript an css. Our main language is Pug, if you have not seen Pug before, here is a quick intro to Pug:
+
 - [Click for generic Pug example](http://pug.mbake.org)
 
 
