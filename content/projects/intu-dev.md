@@ -70,7 +70,7 @@ You can write any and every kind of app, since we generate HTML, javascript an c
 
 4. URL's
    `:9081/admin` - to add end-users
-   `:9081/editors` - to edit site
+   `:9081/edit` - to edit site
 
 5. You can edit the small app in WWW/ROOT
 
