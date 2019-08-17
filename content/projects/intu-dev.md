@@ -66,6 +66,7 @@ You can write any and every kind of app, since we generate HTML, javascript an c
 
 3. Setup configurations in the browser window `:9081/setup`
    Remember your admin email and password.
+   Once you login as admin: add a user
 
 4. URL's
    `:9081/admin` - to add end-users
