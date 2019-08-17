@@ -63,25 +63,21 @@ You can write any and every kind of app, since we generate HTML, javascript an c
     ```
     or you can use yarn instead of npm anytime.
 
-3. In Terminal run command to create a sample CRUD app: 
+3. Setup configurations in the browser window `:9081/setup`
+   Remember your admin email and password.
+
+4. URL's
+   `:9081/admin` - to add end-users
+   `:9081/editors` - to edit site
+
+5. You can edit the small app in WWW/ROOT
+
+6. For a more realistic app, in Terminal run command to create a sample CRUD app: 
     ```
     intu -c
     cd CRUD
     npm i
     ```
-
-4. Now you should follow the README.md file there for the full tutorial.
-or
-    ```
-    node index.js
-    ```
-
-5. Setup configurations in the browser window `:9081/setup`
-   Remember your admin email and password.
-
-6. URL's
-   `:9081/admin` - to add end-users
-   `:9081/editors` - to edit site
 
 ## Full train-the-trainer training incudes:
 - SEO
