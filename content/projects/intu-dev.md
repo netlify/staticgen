@@ -60,6 +60,7 @@ You can write any and every kind of app, since we generate HTML, javascript an c
 2. Then install the INTUITION.DEV tool:
     ```bash
     npm i -g intu
+    intu
     ```
     or you can use yarn instead of npm anytime.
 
