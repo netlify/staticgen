@@ -72,7 +72,7 @@ You can write any and every kind of app, since we generate HTML, javascript an c
    `:9081/admin` - to add end-users
    `:9081/edit` - to edit site
 
-5. You can edit the small app in WWW/ROOT
+5. You can edit the small app in ROOT, that you can see at `:9081/`
 
 6. For a more realistic app, in Terminal run command to create a sample CRUD app: 
     ```
