@@ -56,7 +56,7 @@ You can write any and every kind of app, since we generate HTML, javascript an c
 1. Before you run, create free [emailJs](https://www.emailjs.com) account: so that INTUITION.DEV your local accounts can be validated via email. Also create a email template, and note your emailJs `service_id`, `user_id`,  `template_id`, needed to send validation emails. Yes, user admin is built in.
 
 2. Then install the INTUITION.DEV tool:
-    ```bash
+    ```
     npm i -g intu
     intu
     ```
