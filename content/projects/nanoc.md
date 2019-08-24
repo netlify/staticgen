@@ -7,7 +7,11 @@ language:
 license:
   - MIT
 templates:
+  - ERB
   - eRuby
+  - Mustache
+  - Haml
+  - Slim
 description: Simple but very flexible static site generator
 ---
 
