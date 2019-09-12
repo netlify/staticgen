@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    container_name: jspreadsheets-app
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+      args:
+        - GITHUB_TOKEN=${GITHUB_TOKEN}
+        - GIST_ID=${GIST_ID}
+    image: jspreadsheets-app
+    ports:
+      - "8080:8080"
