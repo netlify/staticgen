@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /ag-grid.html
 
 Sitemap: https://jspreadsheets.com/sitemap.xml

@@ -1,22 +1,21 @@
 ---
 title: SlickGrid
-repo: mleibman/SlickGrid
-direct: https://github.com/mleibman/SlickGrid
-homepage: https://github.com/mleibman/SlickGrid
-examples: https://github.com/mleibman/SlickGrid/wiki/Examples
+repo: 6pac/SlickGrid
+homepage: https://slickgrid.net/
+examples: http://6pac.github.io/SlickGrid/examples/example4-model.html
 license: MIT
-bower: x-slickgrid
-npm: n/a
-technology:
-leading technology:
-author: Michael Leibman
-authorurl: https://www.linkedin.com/in/mleibman
-description: A lightning fast JavaScript grid/spreadsheet.
+author: Michael Leibman/Ben McIntyre
+authorurl: http://slickgrid.net/History.html
+description: SlickGrid is a fully open-source, JavaScript, client-side grid control, based on jQuery and jQueryUI and compatible with Bootstrap.
 ---
 
-SlickGrid is an advanced JavaScript grid/spreadsheet component which enables: Adaptive virtual scrolling (handle hundreds of thousands of rows with extreme responsiveness), Extremely fast rendering speed, “GlobalEditorLock” to manage concurrent edits in cases where multiple Views on a page can edit the same data and supports million of rows.
+SlickGrid is a fully open-source, JavaScript, client-side grid control, 
+based on jQuery and jQueryUI and compatible with Bootstrap.
+The grid is designed to take an external component as a datasource, 
+and that means SlickGrid should be compatible with a wide range of 
+modern data-centric frameworks.
 
-#### Features:
+#### Features Overview
 
 * Adaptive virtual scrolling (handle hundreds of thousands of rows with extreme responsiveness)
 * Extremely fast rendering speed
@@ -33,16 +32,19 @@ SlickGrid is an advanced JavaScript grid/spreadsheet component which enables: Ad
 * "GlobalEditorLock" to manage concurrent edits in cases where multiple Views on a page can edit the same data.
 * Support for millions of rows
 
-#### Preview:
+#### Preview
 
-##### Date cell type
-![Slickgrid date cell type](/images/libraries/slickgrid/slickgrid-date-cell-type.png "Slickgrid date cell type")
-
-##### Filter data
-![Slickgrid filter data](/images/libraries/slickgrid/slickgrid-filter-feature.png "Slickgrid filter data")
-
-##### Progress bar
-![Slickgrid progress bar](/images/libraries/slickgrid/slickgrid-progress-bar.png "Slickgrid progress bar")
-
-##### Sorting data
-![Slickgrid sorting data](/images/libraries/slickgrid/slickgrid-sorting-feature.png "Slickgrid sorting data")
+##### Column span
+![Slickgrid column span](/images/libraries/slickgrid/column-span.png "Slickgrid column-span")
+##### Custom rendering
+![Slickgrid custom rendering](/images/libraries/slickgrid/custom-rendering.png "Slickgrid custom rendering")
+##### Extended editor
+![Slickgrid extended editor](/images/libraries/slickgrid/extended-editor.png "Slickgrid extended editor")
+##### Aggregation by grouping
+![Slickgrid aggregation by grouping](/images/libraries/slickgrid/grouping-aggregation.png "Slickgrid aggregation by grouping")
+##### Multi-column sorting
+![Slickgrid multi-column sorting](/images/libraries/slickgrid/multi-column-sorting.png "Slickgrid multi-column sorting")
+##### Row selection with checkbox
+![Slickgrid row selection with checkbox](/images/libraries/slickgrid/row-selection-with-checkbox.png "Slickgrid row selection with checkbox")
+##### Tree grid
+![Slickgrid tree grid](/images/libraries/slickgrid/tree-grid.png "Slickgrid tree grid")

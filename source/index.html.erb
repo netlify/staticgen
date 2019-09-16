@@ -1,5 +1,5 @@
 ---
-title: JSpreadsheets
+title: jspreadsheets
 ---
 <%= partial "includes/navbar", :locals => {:controls => true} %>
 <div class="main">
@@ -23,14 +23,12 @@ title: JSpreadsheets
               <span class="stat"><%= project.forks %></span>
             </li>
             <li title="Open Issues">
-              <i class="fa fa-bug"></i>
+              <i class="fa fa-github"></i>
               <span class="stat"><%= project.issues %></span>
             </li>
           </ul>
           <span class="description">
-          <%= project.description.length > 90 ? project.description[0..90] << '...' : project.description %>
-          <br><br>
-          Last update: <%= project.last_commit ? project.last_commit.to_time.strftime('%b %e, %G') : 'N/A' %>
+          <%= project.description.length > 120 ? project.description[0..120] << '...' : project.description %>
           </span>
         </a>
       </li>

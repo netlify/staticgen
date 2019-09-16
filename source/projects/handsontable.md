@@ -2,23 +2,28 @@
 title: Handsontable
 repo: handsontable/handsontable
 homepage: https://handsontable.com
-twitter: handsontable
 examples: https://handsontable.com/examples
-angular: true
-vue: true
-react: true
-webcomponents: true
-license: Non-commercial
+license: Free/Commercial
 author: Handsoncode
-authorurl: http://handsoncode.net
-description: Handsontable is a JavaScript composite spreadsheet component for apps and websites.
+authorurl: https://handsoncode.net
+description: JavaScript data grid that looks and feels like a spreadsheet. Available for pure JavaScript, React, Vue, and Angular.
 ---
 
-Handsontable is a composite spreadsheet component for apps and websites. It is written in JavaScript and not constrained by any external framework. It can be easily modified or extended with custom plugins. It also binds to any source using the JSON format and handles large amounts of data. You can easily do all CRUD operations and provide end-users with an Excel-like experience.
+Handsontable is a minimalistic, Excel-like grid component for web apps. 
+It looks and feels like a spreadsheet. Handsontable is easy to implement, 
+flexible, and customizable. You can extend it with custom plugins 
+and edit the source code to adjust it to your product. Plus you get 
+access to a comprehensive API, useful tutorials, and both community and 
+commercial support. 
 
-Take a look at this basic [demo on JSFiddle](https://jsfiddle.net/9Luoerqh/ "Handsontable basic demo") for a better insight.
+Works with the most popular frameworks:
 
-#### Features:
+* [Data grid for React](https://handsontable.com/docs/react)
+* [Data grid for Vue](https://handsontable.com/docs/vue)
+* [Data grid for Angular](https://handsontable.com/docs/angular)
+
+
+#### Features Overview
 
 * Drag-down
 * Merge cells
@@ -45,19 +50,34 @@ Take a look at this basic [demo on JSFiddle](https://jsfiddle.net/9Luoerqh/ "Han
 * Context menu
 * Custom buttons
 * Comments
-* jQuery integration
-* gRaphaël charts integration
-* Chroma.js integration
-* Bootstrap integration
-* Backbone.js integration
 
-#### Preview:
+#### Preview
 
-##### Drag down and data validation
-![Handsontable drag down and data validation](/images/libraries/handsontable/handsontable-drag-down-and-data-validation.gif "Handsontable drag down and data validation")
-
-##### Inline editor and date picker
-![Handsontable inline editor and date picker](/images/libraries/handsontable/handsontable-inline-editor-and-date-picker-example.gif "Handsontable inline editor and date picker")
-
-##### Merging cells using the context menu
-![Handsontable merging cells using the context menu](/images/libraries/handsontable/handsontable-merge-cells-example.gif "Handsontable merging cells using the context menu")
+##### AutoFill - Fill data automatically
+![Handsontable AutoFill](/images/libraries/handsontable/autofill.png "Handsontable AutoFill")
+##### Cell editing
+![Handsontable cell editing](/images/libraries/handsontable/cell-editing.png "Handsontable cell editing")
+##### Collapsible columns
+![Handsontable collapsible columns](/images/libraries/handsontable/collapsible-columns.png "Handsontable collapsible columns")
+##### Conditional formatting
+![Handsontable conditional formatting](/images/libraries/handsontable/conditional-formatting.png "Handsontable conditional formatting")
+##### Context menu
+![Handsontable context menu](/images/libraries/handsontable/context-menu.png "Handsontable context menu")
+##### Date cell type
+![Handsontable date cell type](/images/libraries/handsontable/date-cell-type.png "Handsontable date cell type")
+##### Data filtering
+![Handsontable data filtering](/images/libraries/handsontable/filtering.png "Handsontable data filtering")
+##### Fixed/Frozen/Pinned columns and rows
+![Handsontable column freezing](/images/libraries/handsontable/fixed-columns-rows.png "Handsontable column freezing")
+##### Merged cells
+![Handsontable merged cells](/images/libraries/handsontable/merged-cells.png "Handsontable merged cells")
+##### Multi-column sorting
+![Handsontable multi-column sorting](/images/libraries/handsontable/multi-column-sorting.png "Handsontable multi-column sorting")
+##### Multiple cell selection
+![Handsontable multiple cell selection](/images/libraries/handsontable/multiple-cell-selection.png "Handsontable multiple cell selection")
+##### Multiple row selection
+![Handsontable multiple row selection](/images/libraries/handsontable/multiple-row-selection.png "Handsontable multiple row selection")
+##### Nested headers
+![Handsontable nested headers](/images/libraries/handsontable/nested-headers.png "Handsontable nested headers")
+##### Row reordering
+![Handsontable row reordering](/images/libraries/handsontable/row-reordering.png "Handsontable row reordering")

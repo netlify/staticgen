@@ -10,6 +10,7 @@
         <h2><%= current_page.title %></h2>
         <div class="links">
           <a href="<%= current_page.homepage %>" target="_blank" class="ellipsis"><i class="fa fa-home"></i> <%= current_page.homepage %></a>
+          <br>
           <a href="https://github.com/<%= current_page.repo %>" target="_blank" class="ellipsis"><i class="fa fa-github"></i> https://github.com/<%= current_page.repo %></a>
         </div>
 
@@ -31,7 +32,7 @@
                 <span class="stat"><%= current_page.forks %></span>
               </li>
               <li title="Open Issues">
-                <i class="fa fa-bug"></i>
+                <i class="fa fa-github"></i>
                 <span class="stat"><%= current_page.issues %></span>
               </li>
             </ul>
@@ -42,15 +43,9 @@
             <li>Author: <%= current_page.author %></li>
             <li>Last update: <%= current_page.last_commit ? current_page.last_commit.to_time.strftime('%b %e, %G') : 'N/A' %></li>
           </ul>
-          <ul>
-            <li>Angular: <% if current_page.angular == true %>Supported<% else %>Not supported<% end %></li>
-            <li>React: <% if current_page.react == true %>Supported<% else %>Not supported<% end %></li>
-            <li>Vue: <% if current_page.vue == true %>Supported<% else %>Not supported<% end %></li>
-            <li>Web Components: <% if current_page.webcomponents == true %>Supported<% else %>Not supported<% end %></li>
-          </ul>
           <div class="buttons">
-              <a href="https://github.com/<%= current_page.repo %>" target="_blank" class="btn purple">Explore on GitHub</a>
-              <a href="<%= current_page.examples %>" target="_blank" class="btn lightpurple">Live examples</a>
+              <a href="https://github.com/<%= current_page.repo %>" target="_blank" class="btn purple">View on GitHub</a>
+              <a href="<%= current_page.examples %>" target="_blank" class="btn lightpurple">Demo</a>
           </div>
         </div>
         <div class="charts box">

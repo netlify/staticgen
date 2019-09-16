@@ -1,17 +1,12 @@
 ---
 title: bs_grid
 repo: pontikis/bs_grid
-direct: https://github.com/pontikis/bs_grid
-homepage: http://www.pontikis.net/labs/bs_grid/demo
-examples: http://www.pontikis.net/labs/bs_grid/demo
+homepage: https://www.pontikis.net/labs/bs_grid/demo
+examples: https://www.pontikis.net/labs/bs_grid/demo
 license: MIT
-bower: n/a
-npm: n/a
-technology: jQuery, twitter bootstrap, bs_pagination, jiu_filter_rules, moment.js
-leading technology: jQury
 author: Christos Pontikis
-authorurl: http://www.pontikis.net/
-description: bs_grid is a jQuery Datagrid plugin, based on Twitter Bootstrap.
+authorurl: https://www.pontikis.net/
+description: bs_grid is a jQuery datagrid plugin, based on Twitter Bootstrap. Created for Bootstrap 3, but it is also compatible with Bootstrap 2.
 ---
 
 As a javascript control, it can be integrated with any server-side technology (e.g. PHP, Perl, ASP, JSP and more) and any Database.

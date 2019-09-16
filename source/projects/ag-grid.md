@@ -1,23 +1,19 @@
 ---
 title: ag-Grid
 repo: ag-grid/ag-grid
-direct: https://github.com/ag-grid/ag-grid
-homepage: http://www.ag-grid.com/
-examples: http://www.ag-grid.com/example.php
-license: MIT
-bower: ag-grid
-npm: ag-grid
-technology: Javascript, AngularJS, Web Component
-leading technology: Javascript
-author: Niall Crosby
-authorurl: https://www.linkedin.com/in/niallcrosby
-description: Framework AGnostic Grid. Very Fast. Feature Rich.
+homepage: https://www.ag-grid.com/
+examples: https://www.ag-grid.com/example.php
+license: MIT/Commercial
+author: ag-Grid Ltd.
+authorurl: https://www.ag-grid.com/about.php
+description: ag-Grid is a framework agnostic feature-rich datagrid. It works with all major JavaScript frameworks.
 ---
 
-Feature rich, high performance, no dependencies.
-'ag' stands for Agnostic - works with any framework.
+ag-Grid is a framework agnostic feature-rich datagrid. 
+This overview details all stand out features in ag-Grid 
+from Grouping, Pivoting, Pagination, Tree Data and many more.
 
-#### Features:
+#### Features Overview
 
 * Sorting
 * Filtering
@@ -34,16 +30,23 @@ Feature rich, high performance, no dependencies.
 * Grouping Headers
 * Header Rendering
 
-#### Preview:
+#### Preview
 
-##### Boolean values editor
-![ag-Grid boolean editor](/images/libraries/ag-grid/ag-grid-boolean-values-editor.png "ag-Grid boolean editor")
-
-##### Custom filter
-![ag-Grid custom filter](/images/libraries/ag-grid/ag-grid-column-filtering-example.png "ag-Grid custom filter")
-
-##### Different themes
-![ag-Grid different themes](/images/libraries/ag-grid/ag-grid-provided-blue-style-applied.png "ag-Grid different themes")
-
-##### Star rating editor
-![ag-Grid star rating editor](/images/libraries/ag-grid/ag-grid-rating-values-editor.png "ag-Grid star rating editor")
+##### Aligned grids
+![ag-Grid Aligned grids](/images/libraries/ag-grid/aligned-grids.png "ag-Grid Aligned grids")
+##### Cell editing
+![ag-Grid Cell editing](/images/libraries/ag-grid/cell-editing.png "ag-Grid Cell editing")
+##### Column spanning
+![ag-Grid Column spanning](/images/libraries/ag-grid/column-spanning.png "ag-Grid Column spanning")
+##### Custom cell rendering
+![ag-Grid Custom cell rendering](/images/libraries/ag-grid/custom-cell-rendering.png "ag-Grid Custom cell rendering")
+##### Data filtering
+![ag-Grid Data filtering](/images/libraries/ag-grid/filtering.png "ag-Grid Data filtering")
+##### Multi-column sorting
+![ag-Grid Multi-column sorting](/images/libraries/ag-grid/multi-column-sorting.png "ag-Grid Multi-column sorting")
+##### Column pinning
+![ag-Grid Column pinning](/images/libraries/ag-grid/pinning.png "ag-Grid Column pinning")
+##### Row selection with checkbox
+![ag-Grid Row selection with checkbox](/images/libraries/ag-grid/row-selection-with-checkbox.png "ag-Grid Row selection with checkbox")
+##### Theme Balham Dark
+![ag-Grid Theme Balham Dark](/images/libraries/ag-grid/themes-balham-dark.png "Theme Balham Dark")

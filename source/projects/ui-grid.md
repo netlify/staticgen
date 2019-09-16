@@ -1,22 +1,21 @@
 ---
 title: UI Grid
 repo: angular-ui/ui-grid
-direct: https://github.com/angular-ui/ui-grid
 homepage: http://ui-grid.info
-examples: http://ui-grid.info/docs/#/tutorial/101_intro
+examples: http://ui-grid.info/docs/#!/tutorial/Tutorial:%20402%20Grid%20Scrolling
 license: MIT
-bower: ng-grid
-npm: ui-grid
-technology: grunt-cli
-leading technology: grunt-cli
-author: AngularJSUI
+author: AngularUI
 authorurl: https://angular-ui.github.io/
-description: UI Grid - AngularJS Data Grid.
+description: UI Grid is a native AngularJS implementation of a data grid that performs well with large data sets.
 ---
 
-A data grid for AngularJS, part of the AngularUI.
+A data grid for AngularJS, part of the AngularUI suite.
 
-#### Features:
+* Native AngularJS implementation, no jQuery
+* Performs well with large data sets; even 10,000+ rows
+* Plugin architecture allows you to use only the features you need
+
+#### Features Overview
 
 * Hidden Grids
 * Multiple Grids per Page
@@ -79,17 +78,17 @@ A data grid for AngularJS, part of the AngularUI.
 
 #### Preview:
 
-##### Date cell type
-![UI Grid date cell type](/images/libraries/ui-grid/ui-grid-date-type-cell.png "UI Grid date cell type")
-
-##### Filter data
-![UI Grid filter data](/images/libraries/ui-grid/ui-grid-filering-feature.png "UI Grid filter data")
-
-##### Sorting data
-![UI Grid sorting data](/images/libraries/ui-grid/ui-grid-sorting-feature.png "UI Grid sorting data")
-
-##### Tree table
-![UI Grid tree table](/images/libraries/ui-grid/ui-grid-tree-table-structure.png "UI Grid tree table")
-
-##### Fixed footer
-![UI Grid fixed footer](/images/libraries/ui-grid/ui-grid-footer-feature.png "UI Grid fixed footer")
+##### Cell editing
+![UI Grid cell editing](/images/libraries/ui-grid/cell-editing.png "UI Grid cell editing")
+##### Grid in a modal window
+![UI Grid in a modal window](/images/libraries/ui-grid/grid-in-a-modal-window.png "UI Grid in a modal window")
+##### Aggregation by grouping
+![UI Grid aggregation by grouping](/images/libraries/ui-grid/grouping-aggregation.png "UI Grid aggregation by grouping")
+##### Multiple grids per page
+![UI Grid cell multiple grids per page](/images/libraries/ui-grid/multiple-grids-per-page.png "UI Grid cell multiple grids per page")
+##### Pagination
+![UI Grid pagination](/images/libraries/ui-grid/pagination.png "UI Grid pagination")
+##### Pinned left and right columns
+![UI Grid pinned left and right columns](/images/libraries/ui-grid/pinned-left-and-right-columns.png "UI Grid pinned left and right columns")
+##### Row selection with a checkbox
+![UI Grid row selection with a checkbox](/images/libraries/ui-grid/row-selection-with-a-checkbox.png "UI Grid row selection with a checkbox")

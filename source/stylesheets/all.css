@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
     color: #121019;
     margin: 0 0;
-    background-color: #f0f4fd;
+    background-color: #fff;
 }
 
 h1 {
@@ -43,7 +43,7 @@ small {
 }
 
 a, a:link, a:active, a:visited, a:hover {
-    color: #121019;
+    color: #5160b5;
     text-decoration: none;
 }
 
@@ -100,22 +100,19 @@ pre {
 }
 
 a.logo {
-  padding: 12px 20px 12px;
+  padding: 10px 28px;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   color: #fff;
   text-decoration: none;
   border: 2px solid #fff;
-  border-radius: 8px;
-  background-color: #331e69;
+  border-radius: 100px;
 }
 
 .hero {
     text-align: center;
-    padding: 40px 0 30px;
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #3c3488, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #3c3488, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 30px 0 20px;
+    background: #1e2227;
 }
 
 .hero h1 {
@@ -132,6 +129,7 @@ a.logo {
   height: 50px;
   line-height: 48px;
   z-index: 100;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   box-shadow: 0 2px 5px #eaedf9;
@@ -172,13 +170,18 @@ a.logo {
 .main {
     padding: 20px 0 0;
 }
-.main.subpage {
-    margin-top: 37px;
-}
 
 .sheet {
-    border: #eee;
-    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sheet-column {
+    flex-direction: column;
+}
+
+.sheet-column h2 {
+  margin-bottom: 0;
 }
 
 .sheet h1 {
@@ -199,12 +202,11 @@ a.logo {
 .sheet .links {
   margin-bottom: 25px;
   padding: 16px 0;
-  border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
 
 .sheet .ellipsis {
-  display: block;
+  display: inline-block;
 }
 
 .sheet p {
@@ -263,10 +265,6 @@ a.logo {
     box-shadow: 0 0 7px rgba(0, 0, 0, .2);
 }
 
-.sheet p a {
-  text-decoration: underline;
-}
-
 .projects {
     min-height: 900px;
 }
@@ -278,28 +276,24 @@ a.logo {
 }
 
 .card {
-  min-height: 310px;
+  min-height: 260px;
   background: #fff;
-  border-radius: 6px;
-  padding: 18px 18px 16px;
+  border-radius: 24px;
+  padding: 16px 24px;
   margin: 8px;
   display: block;
   text-decoration: none;
   transition: all .15s ease-in-out;
-  box-shadow: 0 4px 20px #e0e4f1;
+  box-shadow: 0 4px 14px #dbe0e6;
 }
 
-.card, .card:hover, .card:active, .card:visited {
+.card, .card:link, .card:hover, .card:active, .card:visited {
   text-decoration: none;
   color: #121019;
 }
 
 .card:hover {
-  box-shadow: 0 4px 20px #b7c2e4;
-}
-
-.project:first-child .card {
-  border: 2px solid #452e88;
+  box-shadow: 0 4px 20px #bbc4d0;
 }
 
 .card .title {
@@ -317,10 +311,8 @@ a.logo {
 }
 
 .stats {
-    margin-top: 20px;
     padding: 10px 0;
     overflow: hidden;
-    border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
 
@@ -362,7 +354,6 @@ a.logo {
 
 .left-side, .right-side {
   padding: 30px 40px;
-  float: left;
   font-size: 15px;
   background-color: #fff;
 }
@@ -461,11 +452,7 @@ a.logo {
     margin-top: 20px;
     font-size: 15px;
 }
-.static p a {
-    color: #ef2b43;
-}
 .footer {
-    background: #d2dff5;
     margin: 46px 0 0;
     padding: 6px 0 18px;
 }
@@ -613,9 +600,11 @@ a.logo {
 
 @media all and (max-width: 499px) {
   .hero h1 {
-    margin: 50px 0 0;
     padding: 0 20px;
-    font-size: 32px;
+    font-size: 26px;
+  }
+  .navbar {
+    padding: 0 20px;
   }
   .project {
       display: block;
@@ -630,14 +619,21 @@ a.logo {
   .logo-group .author-top {
     display: none;
    }
+  .sheet {
+
+  }
   .left-side, .right-side {
     width: 100%;
     float: none;
+    margin: 0;
   }
   .subpage h1 {
     margin: 0 0 20px;
     text-align: center;
     font-size: 32px;
+  }
+  .left-side h2 {
+    text-align: center;
   }
   .left-side .links {
     padding-top: 10px;
@@ -645,6 +641,13 @@ a.logo {
   }
   .left-side .links a {
     display: block;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
   }
   .left-side .links .separator {
     display: none;
@@ -658,6 +661,9 @@ a.logo {
 /* Responsiveness */
 
 @media all and (min-width: 500px) {
+    .navbar {
+      padding: 0 20px;
+    }
     .project {
         float: left;
         width: 48%;
