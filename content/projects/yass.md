@@ -5,7 +5,7 @@ homepage: https://yet-another-static-site-generator.github.io/
 language:
   - Ada
 license:
-  - GNU GPL v3.0
+  - GPL 3.0
 templates:
   - Ada
 description: A Fast and Extensible Static Site Generator.

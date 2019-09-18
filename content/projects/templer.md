@@ -5,8 +5,8 @@ homepage: http://steve.org.uk/Software/templer/
 language:
   - Perl
 license:
-  - GNU GPL v2.0
-  - GNU GPL v3.0
+  - GPL 2.0
+  - GPL 3.0
   - Artistic 2.0
 templates:
   - HTML::Template

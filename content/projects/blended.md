@@ -5,7 +5,7 @@ homepage: http://jmroper.com/blended/
 language:
   - Python
 license:
-  - GNU GPL v3.0
+  - GPL 3.0
 templates:
   - HTML
 description: The Most Versatile Static HTML Site Generator

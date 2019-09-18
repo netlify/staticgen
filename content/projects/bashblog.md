@@ -5,7 +5,7 @@ homepage: https://github.com/cfenollosa/bashblog
 language:
   - Bash
 license:
-  - GNU GPL v3.0
+  - GPL 3.0
 templates:
   - None
 description: A single Bash script to create blogs.

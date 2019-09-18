@@ -5,7 +5,7 @@ homepage: http://blog.getpelican.com/
 language:
   - Python
 license:
-  - AGPL v3.0
+  - AGPL 3.0
 templates:
   - Jinja2
 description: A static site generator, imports from Wordpress, multi-lang publishing.

@@ -5,7 +5,7 @@ homepage: https://github.com/dvwallin/bashblog-ng
 language:
   - Bash
 license:
-  - GNU GPL v3.0
+  - GPL 3.0
 templates:
   - None
 description: Bash script to create and manage blogs.

@@ -5,7 +5,7 @@ homepage: https://cuttlebelle.com
 language:
   - JavaScript
 license:
-  - GNU GPL v3.0
+  - GPL 3.0
 templates:
   - React
 description:  The react static site generator that separates editing and code concerns
