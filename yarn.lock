@@ -1354,7 +1354,7 @@ babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0, babel-runtime@^6.3.19, babel-runtime@^6.6.1:
+babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0, babel-runtime@^6.3.19:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -6731,11 +6731,11 @@ react-router@^4.2.0, react-router@^4.3.1:
     prop-types "^15.6.1"
     warning "^4.0.1"
 
-react-share@^2.0.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/react-share/-/react-share-2.4.0.tgz#e033316760cfe3265bf0cb031373a7564dbf92f5"
+react-share@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-share/-/react-share-3.0.1.tgz#be9dc3f80059c4fed33542472f4e7425bb3a76cb"
   dependencies:
-    babel-runtime "^6.6.1"
+    babel-runtime "^6.26.0"
     classnames "^2.2.5"
     jsonp "^0.2.1"
     prop-types "^15.5.8"
