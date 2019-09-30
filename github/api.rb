@@ -7,7 +7,6 @@ module Github
       :get => Net::HTTP::Get,
       :patch => Net::HTTP::Patch
     }
-    GIST_ID = "ded53bcee031f83e3638"
 
     class << self
       attr_accessor :bulk_update
@@ -37,7 +36,7 @@ module Github
         })
         cache["updated"] = false
       rescue => e
-        puts "Error updating archived statistics"
+        puts "Error updating archived statistics: #{e}"
       end
 
       def repo_data(repo)
@@ -103,7 +102,7 @@ module Github
       end
 
       def archive_uri
-        "https://api.github.com/gists/#{ENV["GIST_ID"] || GIST_ID}"
+        "https://api.github.com/gists/#{ENV["GIST_ID"]}"
       end
 
       def fetch_repo(repo)
