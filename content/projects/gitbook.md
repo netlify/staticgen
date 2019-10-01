@@ -5,7 +5,7 @@ homepage: https://www.gitbook.com/
 language:
   - JavaScript
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Jinja2
 description: 'A modern publishing toolchain. Simply taking you from ideas to finished, polished books.'

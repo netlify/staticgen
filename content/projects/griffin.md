@@ -5,7 +5,7 @@ homepage: http://github.com/pawandubey/griffin
 language:
   - Java
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Handlebars
 description: Blazing fast, simple, static site generator

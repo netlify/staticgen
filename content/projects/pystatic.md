@@ -5,7 +5,7 @@ homepage: https://github.com/Zedelghem/pystatic
 language:
   - Python
 license:
-  - GPL 3.0
+  - GPL-3.0-only
 templates:
   - HTML
 description: Dead simple, one-line, few options static website generator. Just write your stuff instead of learning generators.

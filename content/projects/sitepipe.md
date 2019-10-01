@@ -5,7 +5,7 @@ homepage: https://github.com/ChrisPenner/SitePipe
 language:
   - Haskell
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Mustache
 description: Yet another static site generator - non-opinionated, value-level. Less magic == easier to understand

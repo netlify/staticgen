@@ -5,7 +5,7 @@ homepage: http://www.silex.me
 language:
   - JavaScript
 license:
-  - GPL 3.0
+  - GPL-3.0-only
 templates:
   - HTML
 description: A drag and drop editor mixed with an online CSS editor

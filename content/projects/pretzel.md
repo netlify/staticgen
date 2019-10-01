@@ -5,7 +5,7 @@ homepage: http://code52.org/pretzel.html
 language:
   - .Net
 license:
-  - Microsoft
+  - MS-PL
 templates:
   - Liquid
 description: A site generation tool (and then some) for .NET platforms.

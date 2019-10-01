@@ -5,7 +5,7 @@ homepage: http://urubu.jandecaluwe.com
 language:
   - Python 
 license:
-  - AGPL 3.0 
+  - AGPL-3.0-or-later
 templates:
   - Jinja2 
 description: A micro CMS for static websites

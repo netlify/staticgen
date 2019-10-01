@@ -5,7 +5,7 @@ homepage: https://github.com/AlynxZhou/hikaru/
 language:
   - CoffeeScript
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Nunjucks
 description: A static site generator that generates routes based on directories naturally.

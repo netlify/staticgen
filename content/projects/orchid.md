@@ -6,7 +6,7 @@ language:
   - Java
   - Kotlin
 license:
-  - LGPL 3.0
+  - LGPL-3.0-only
 templates:
   - Pebble
 description: A beautiful and truly unique documentation engine and static site generator.

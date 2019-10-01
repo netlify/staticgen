@@ -6,7 +6,7 @@ homepage: https://antora.org
 language:
   - JavaScript
 license:
-  - MPL 2.0
+  - MPL-2.0
 templates:
   - Handlebars
 description: A multi-repository documentation site generator for tech writers who love writing in AsciiDoc.

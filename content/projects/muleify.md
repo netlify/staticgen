@@ -5,7 +5,7 @@ homepage: https://github.com/AlexanderElias/muleify
 language:
   - JavaScript
 license:
-  - Mozilla 2.0
+  - MPL-2.0
 templates:
   - Custom
 description: "A zero configuration static site generator and asset preprocessor compiler."

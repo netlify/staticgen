@@ -5,7 +5,7 @@ homepage: https://github.com/gar1t/lambdapad
 language:
   - Erlang
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Django
 description: Static site generator using Erlang. Yes, Erlang.

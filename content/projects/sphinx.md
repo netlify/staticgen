@@ -5,7 +5,7 @@ homepage: http://www.sphinx-doc.org/
 language:
   - Python
 license:
-  - BSD 2-Clause
+  - BSD-2-Clause
 templates:
   - Jinja2
 description: A tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl.

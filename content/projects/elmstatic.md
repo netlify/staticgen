@@ -5,7 +5,7 @@ homepage: https://korban.net/elm/elmstatic/
 language:
   - Elm
 license:
-  - GPL 3.0
+  - GPL-3.0-only
 templates:
   - Elm
 description: Write your layouts in Elm and your content in Markdown.

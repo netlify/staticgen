@@ -5,7 +5,7 @@ homepage: http://sysgears.com/grain
 language:
   - Groovy
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Groovy
 description: A generator for sites, blogs & documentation, supports

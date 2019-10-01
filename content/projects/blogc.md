@@ -5,7 +5,7 @@ homepage: https://blogc.rgm.io/
 language:
   - C
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Custom
 description: A blog compiler.

@@ -5,7 +5,7 @@ homepage: https://pythonhosted.org/Frozen-Flask/
 language:
   - Python
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Jinja2
 description: Frozen-Flask freezes a Flask application into a set of static files.

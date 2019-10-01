@@ -5,7 +5,7 @@ homepage: http://skf.jeannedhack.org/
 language:
   - Bash
 license:
-  - GPL 3.0
+  - GPL-3.0-only
 templates:
   - Custom
 description: Plugin-based static website generator inspired by Suckless Web Framework. 

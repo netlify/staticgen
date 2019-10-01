@@ -5,7 +5,7 @@ homepage: https://orison.alexlockhart.me
 language:
   - JavaScript
 license:
-  - GPL 3.0
+  - GPL-3.0-only
 templates:
   - lit-html
 description: Create pages, layouts, partials, and contextual data using lit-html

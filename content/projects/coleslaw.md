@@ -5,7 +5,7 @@ homepage: https://github.com/kingcons/coleslaw
 language:
   - Lisp
 license:
-  - BSD 2-Clause
+  - BSD-2-Clause
 templates:
   - Closure Templates
 description: Flexible Lisp Blogware.

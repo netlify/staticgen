@@ -5,7 +5,7 @@ homepage: https://github.com/gmr/landspout
 language:
   - Python
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Tornado
 description: A simple static site generation tool

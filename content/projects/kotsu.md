@@ -5,7 +5,7 @@ homepage: https://github.com/LotusTM/Kotsu
 language:
   - JavaScript
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Nunjucks
 description: An extremely simple, pluggable static site generator.

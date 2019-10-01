@@ -5,7 +5,7 @@ homepage: https://www.getlektor.com/
 language:
   - Python
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Jinja2
 description: A static content management system that can deploy to any webserver.
