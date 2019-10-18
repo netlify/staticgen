@@ -72,7 +72,7 @@ class Home extends React.Component {
 
   sort = (sortObj = {}, projects) => {
     const sorted = sortBy(projects, project => {
-      if (project[sortObj.field] instanceof String) {
+      if (typeof project[sortObj.field] === 'string') {
         return project[sortObj.field].toLowerCase()
       }
       return project[sortObj.field]
