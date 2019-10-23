@@ -5,7 +5,7 @@ homepage: https://github.com/wspringer/monkeyman
 language:
   - Scala
 license:
-  - GNU GPL v2.0
+  - GPL-2.0-only
 templates:
   - Haml
 description: "Simple static site generator for Scala and middleman lovers"

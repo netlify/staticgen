@@ -5,7 +5,7 @@ homepage: http://dacav.roundhousecode.com/pages/pft.html
 language:
   - Perl
 license:
-  - GNU GPL v3.0
+  - GPL-3.0-only
 templates:
   - TT3
 description: PFT is a Static, Unicode-ready, Hacker-friendly, Free-as-in-freedom, Privacy-preserving website generator written in Perl.

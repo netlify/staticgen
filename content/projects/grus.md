@@ -5,7 +5,7 @@ homepage: https://github.com/chipsenkbeil/grus
 language:
   - Scala
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - ScalaTags
 description: Static site generator written in Scala using ScalaTags for templates and Flexmark for markdown.

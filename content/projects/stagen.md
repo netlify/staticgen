@@ -5,7 +5,7 @@ homepage: https://github.com/wiztools/stagen
 language:
   - Java
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - StringTemplate
 description: StaGen is the static site generator behind WizTools.org

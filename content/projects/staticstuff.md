@@ -5,7 +5,7 @@ homepage: https://github.com/javimosch/arfr
 language:
   - JavaScript
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Handlebars
 description: Generates simple static web content blazing fast using handlebars templates.

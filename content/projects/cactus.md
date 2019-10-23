@@ -5,7 +5,7 @@ homepage: https://github.com/koenbok/Cactus/
 language:
   - Python
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Django
 description: Static site generator for designers.

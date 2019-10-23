@@ -5,7 +5,7 @@ homepage: https://www.madoko.net
 language:
   - JavaScript
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - HTML
 description: A fast processor for high quality academic and technical articles from Markdown and LaTeX.

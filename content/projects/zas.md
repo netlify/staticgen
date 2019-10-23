@@ -5,7 +5,7 @@ homepage: http://github.com/imdario/zas
 language:
   - Go
 license:
-  - AGPL v3.0
+  - AGPL-3.0-or-later
 templates:
   - Go
 description: Most zen static website generator in Golang.

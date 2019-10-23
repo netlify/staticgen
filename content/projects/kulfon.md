@@ -5,7 +5,7 @@ homepage: https://kulfon.org
 language:
   - JavaScript
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Nunjucks
   - Org Mode

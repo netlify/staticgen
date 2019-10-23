@@ -5,7 +5,7 @@ homepage: http://www.mkdocs.org/
 language:
   - Python
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Jinja2
 description: Project documentation with Markdown.

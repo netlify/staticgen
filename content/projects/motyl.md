@@ -5,7 +5,7 @@ homepage: https://github.com/fcambus/motyl
 language:
   - Ruby
 license:
-  - BSD 2-Clause
+  - BSD-2-Clause
 templates:
   - Mustache
 description: Opinionated blog-aware static site generator written in Ruby.

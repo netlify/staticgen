@@ -6,7 +6,7 @@ language:
   - M4
   - Make
 license:
-  - BSD 2-Clause
+  - BSD-2-Clause
 description: Web Page With Make and M4
 ---
 With wpwmm4 can create web pages with simply 'make' and 'm4'.

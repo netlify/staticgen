@@ -5,7 +5,7 @@ homepage: https://github.com/jgm/yst
 language:
   - Haskell
 license:
-  - GNU GPL v2.0
+  - GPL-2.0-only
 templates:
   - StringTemplate
 description: Static websites from YAML and string templates

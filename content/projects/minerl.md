@@ -5,7 +5,7 @@ homepage: https://github.com/neevek/minerl
 language:
   - Perl
 license:
-  - Artistic 2.0
+  - Artistic-2.0
 templates:
   - HTML::Template
 description: Minerl is a blog-aware static site generator written in Perl.

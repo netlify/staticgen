@@ -5,7 +5,7 @@ homepage: https://github.com/jellehermsen/HasClunk
 language:
   - Haskell
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - HTML
 description: Simple dependency light blog generator

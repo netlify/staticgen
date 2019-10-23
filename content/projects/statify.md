@@ -5,7 +5,7 @@ language:
   - Python
 homepage: https://github.com/NBens/Statify
 license:
-  - BSD 2-Clause
+  - BSD-2-Clause
 templates:
   - Jinja2
 description: Simple, lightweight, one file static site generator, Powered by Python 3 & Jninja2.
