@@ -8,7 +8,9 @@ license:
   - MIT
 templates:
   - Liquid
-description: A Static Site Generator for an optimised website performance
+  - Markdown
+  - Nunjucks
+description: A fast Static Site Generator that generates optimised, performant websites.
 ---
 
 lego is a static site generator built with the goal of producing an optimised website.
