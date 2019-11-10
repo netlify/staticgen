@@ -10,7 +10,7 @@ const JamstackConfBanner = ({ className }) => (
   <div className={className}>
     <p>
       Learn more about the JAMstack at{' '}
-      <a href="https://jamstackconf.com/sf">JAMstack Conf</a> in San Francisco — 16-18 October, 2019
+      <a href="https://jamstackconf.com/sf">JAMstack Conf</a> videos are up!
     </p>
   </div>
 )
