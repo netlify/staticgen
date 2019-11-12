@@ -1,42 +1,52 @@
 {
-  "name": "staticgen",
-  "version": "2.0.0",
-  "license": "MIT",
-  "scripts": {
-    "start": "react-static start",
-    "stage": "react-static build --staging",
-    "build": "react-static build"
-  },
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@octokit/rest": "^14.0.9",
-    "date-fns": "^1.29.0",
-    "dotenv": "^5.0.0",
-    "gitlab": "^5.0.1",
-    "gray-matter": "^3.1.1",
-    "js-yaml": "^3.11.0",
-    "marked": "^0.7.0",
-    "node-fetch": "^2.2.0",
-    "prismjs": "^1.14.0",
-    "react": "^16.0.0",
-    "react-component-octicons": "^1.5.0",
-    "react-dom": "^16.0.0",
-    "react-entypo": "^1.3.0",
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "gatsby": "^2.17.11",
+    "gatsby-image": "^2.2.31",
+    "gatsby-plugin-emotion": "^4.1.14",
+    "gatsby-plugin-manifest": "^2.2.27",
+    "gatsby-plugin-offline": "^3.0.19",
+    "gatsby-plugin-react-helmet": "^3.1.14",
+    "gatsby-plugin-sharp": "^2.2.37",
+    "gatsby-remark-prismjs": "^3.3.22",
+    "gatsby-source-filesystem": "^2.1.36",
+    "gatsby-transformer-remark": "^2.6.33",
+    "gatsby-transformer-sharp": "^2.3.3",
+    "prismjs": "^1.17.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-github-corner": "^2.3.0",
-    "react-router": "^4.2.0",
-    "react-share": "^2.0.0",
-    "react-static": "^5.1.8",
-    "slug": "^1.1.0",
-    "styled-components": "^3",
-    "title-case": "^2.1.1",
-    "twitter-followers-count": "^1.0.0"
+    "react-helmet": "^5.2.1",
+    "react-share": "^3.0.1",
+    "typeface-roboto": "^0.0.75"
   },
   "devDependencies": {
-    "babel-plugin-import-glob": "^2.0.0",
-    "babel-plugin-inline-import": "^2.0.6",
-    "babel-plugin-module-resolver": "^3.1.0",
-    "babel-plugin-styled-components": "^1.10.6",
-    "eslint-config-react-tools": "1.x.x",
-    "tiny-fns": "^1.0.3"
+    "prettier": "^1.19.1"
   },
-  "private": true
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
 }
