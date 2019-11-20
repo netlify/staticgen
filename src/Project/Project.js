@@ -2,12 +2,9 @@ import React from 'react'
 import { SiteData, RouteData, Head } from 'react-static'
 import styled from 'styled-components'
 import { EntypoHome, EntypoTwitter, EntypoGithub } from 'react-entypo'
-import Prism from 'prismjs/components/prism-core'
-import prismLoadLanguages from 'prismjs/components/index'
+import Prism from 'prismjs'
 import 'prismjs/themes/prism-tomorrow.css'
 import { Container } from 'Components'
-
-prismLoadLanguages(['json', 'bash', 'markdown', 'clojure', 'javascript', 'handlebars'])
 
 const EntypoIcon = styled(({ Icon, className }) =>
   <Icon className={className} />
