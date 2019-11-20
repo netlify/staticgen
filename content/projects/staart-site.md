@@ -1,4 +1,4 @@
---
+---
 title: Staart Site
 repo: staart/site
 homepage: https://staart.js.org/site
