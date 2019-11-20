@@ -1,4 +1,4 @@
---
+---
 title: Stacy
 repo: boylesoftware/stacy
 homepage: https://github.com/boylesoftware/stacy
