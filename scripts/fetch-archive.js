@@ -6,16 +6,22 @@ const fetch = require('node-fetch')
 const { differenceInMinutes } = require('date-fns')
 const { Gitlab } = require('gitlab')
 const twitterFollowersCount = require('twitter-followers-count')
+const throttleConcurrency = require('./throttle-concurrency')
 
 const config = {}
 
 let github, gitlab, getTwitterFollowers
 
 function githubInit(token) {
-  const githubRequest = (method, endpoint, params = {}) => {
+  const throttledAxios = throttleConcurrency(axios, 20, 30000)
+  const githubRequest = async (method, endpoint, params = {}, data) => {
     const url = `https://api.github.com/${endpoint}`
     const headers = { 'Authorization': `token ${token}` }
-    return axios({ url, method, params, headers })
+    try {
+      return throttledAxios({ url, method, params, headers, ...(data ? { data } : {}) })
+    } catch(err) {
+      console.error(err)
+    }
   }
 
   return ['get', 'post', 'patch'].reduce((obj, method) => {
@@ -36,14 +42,14 @@ function authenticate (tokens) {
 
 async function getProjectGitHubData (repo) {
   const { data } = await github.get(`repos/${repo}`)
-  const { stargazers_count, forks_count, open_issues_count, html_url } = data
-  return { stars: stargazers_count, forks: forks_count, issues: open_issues_count, repo: html_url }
+  const { stargazers_count, forks_count, open_issues_count } = data
+  return { s: stargazers_count, fk: forks_count, i: open_issues_count }
 }
 
 async function getProjectGitLabData (repo) {
-  const { id, star_count, forks_count, web_url } = await gitlab.Projects.show(repo)
+  const { id, star_count, forks_count } = await gitlab.Projects.show(repo)
   const open_issues_count = (await gitlab.Issues.all({ projectId: id, state: 'opened' })).length
-  return { stars: star_count, forks: forks_count, issues: open_issues_count, repo: web_url }
+  return { s: star_count, fk: forks_count, i: open_issues_count }
 }
 
 async function getAllProjectRepoData (repos) {
@@ -51,12 +57,11 @@ async function getAllProjectRepoData (repos) {
     github: getProjectGitHubData,
     gitlab: getProjectGitLabData,
   }
-  const data = await repos.reduce(async (accPromise, { repo, repohost = 'github' }) => {
-    const acc = await accPromise
+  const data = repos.map(async ({ repo, repohost = 'github' }, idx, arr) => {
     const repoData = await getRepoData[repohost](repo)
-    return [...acc, [repo, repoData]]
+    return [repo, repoData]
   }, [])
-  return fromPairs(data)
+  return fromPairs(await Promise.all(data))
 }
 
 async function getAllProjectData (projects) {
@@ -65,10 +70,10 @@ async function getAllProjectData (projects) {
   const twitterFollowers = twitterScreenNames.length && await getTwitterFollowers(twitterScreenNames)
   const repos = compact(map(projects, ({ repo, repohost }) => ({ repo, repohost })))
   const reposData = await getAllProjectRepoData(repos)
-  const data = projects.reduce((obj, { key, repo, twitter }) => {
-    const twitterData = twitter ? { followers: twitterFollowers[twitter] } : {}
+  const data = projects.reduce((obj, { slug, repo, twitter }) => {
+    const twitterData = twitter ? { f: twitterFollowers[twitter] } : {}
     const repoData = repo ? reposData[repo] : {}
-    return { ...obj, [key]: [{ timestamp, ...twitterData, ...repoData }] }
+    return { ...obj, [slug]: [{ t: timestamp, ...twitterData, ...repoData }] }
   }, {})
   return { timestamp, data }
 }
@@ -105,7 +110,7 @@ async function getArchive () {
 }
 
 function createGist (content) {
-  return github.post('gists', {
+  return github.post('gists', {}, {
     files: { [config.archiveFilename]: { content } },
     public: true,
     description: config.gistArchiveDescription,
@@ -113,7 +118,7 @@ function createGist (content) {
 }
 
 function editGist (content, id) {
-  return github.patch(`gists/${id}`, { files: { [config.archiveFilename]: { content } } })
+  return github.patch(`gists/${id}`, {}, { files: { [config.archiveFilename]: { content } } })
 }
 
 async function updateArchive ({ timestamp, data }, archive) {
@@ -123,6 +128,7 @@ async function updateArchive ({ timestamp, data }, archive) {
       data: mapValues(data, (projectData, name) => [...projectData, ...(archive.data[name] || [])]),
     }
     : { timestamp, data }
+
   const content = JSON.stringify(preppedData)
   if (archive) {
     await editGist(content, archive.id)
@@ -138,7 +144,19 @@ async function updateArchive ({ timestamp, data }, archive) {
  * a little early.
  */
 function archiveExpired (archive) {
-  return differenceInMinutes(Date.now(), archive.timestamp) > 1410
+  return differenceInMinutes(Date.now(), archive.timestamp) > 60
+}
+
+function expand(data) {
+  return mapValues(data, datum => {
+    return datum.map(({ t, s, fk, i, f }) => ({
+      timestamp: t,
+      stars: s,
+      forks: fk,
+      issues: i,
+      followers: f,
+    }))
+  })
 }
 
 module.exports = async function run(projects, {
@@ -153,7 +171,7 @@ module.exports = async function run(projects, {
 
   const localArchive = await getLocalArchive()
   if (localArchive && !archiveExpired(localArchive)) {
-    return localArchive.data
+    return expand(localArchive.data)
   }
 
   // This is synchronous.
@@ -162,11 +180,12 @@ module.exports = async function run(projects, {
   const archive = await getArchive()
   if (archive && !archiveExpired(archive)) {
     await updateLocalArchive(archive)
-    return archive.data
+    return expand(archive.data)
   }
 
   const projectData = await getAllProjectData(projects)
   const updatedArchive = await updateArchive(projectData, archive)
   await updateLocalArchive(updatedArchive)
-  return updatedArchive.data
+  console.log(updatedArchive)
+  return expand(updatedArchive.data)
 }

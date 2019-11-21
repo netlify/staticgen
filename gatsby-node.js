@@ -3,7 +3,8 @@ const fs = require('fs')
 const util = require('util')
 const path = require('path')
 const fetch = require('node-fetch')
-const { pickBy, map, find, mapValues } = require('lodash')
+const { pick, pickBy, map, find, mapValues, compact } = require('lodash')
+const { oneLine } = require('common-tags')
 const dateFns = require('date-fns')
 const matter = require('gray-matter')
 const readdir = util.promisify(fs.readdir)
@@ -41,15 +42,34 @@ function extractRelevantProjectData (data) {
   })
 }
 
-exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => {
-  const { createNode } = actions
-  const filenames = await readdir(`${__dirname}/content/projects`)
-  const mapFilenames = async filename => {
-    const file = await readFile(`${__dirname}/content/projects/${filename}`, 'utf8')
-    const { repo, repohost, twitter } = matter(file).data
-    return pickBy({ key: filename, repo, repohost, twitter }, v => v)
+function getStarterTemplateRepoUrl(repo, repoHost = 'github') {
+  if (!repo) {
+    return
   }
-  const projectsMeta = await Promise.all(filenames.map(mapFilenames))
+  switch (repoHost) {
+    case 'github': return `https://github.com/${repo}`
+    case 'gitlab': return `https://gitlab.com/${repo}`
+  }
+}
+
+exports.sourceNodes = async ({ graphql, actions, createNodeId, createContentDigest }) => {
+  const { createNode } = actions
+  const projectsPath = 'content/projects'
+  const filenames = await readdir(`${__dirname}/${projectsPath}`)
+  const mapFilenames = async filename => {
+    const file = await readFile(`${__dirname}/${projectsPath}/${filename}`, 'utf8')
+    const { repo, repohost, twitter } = matter(file).data
+    const slug = filename.slice(0, -3).toLowerCase()
+    if (!repo) {
+      console.error(oneLine`
+        No repo found in the frontmatter for ${projectsPath}/${filename}, skipping. The file or
+        frontmatter may be malformed.
+      `)
+      return
+    }
+    return pickBy({ slug, repo, repohost, twitter }, v => v)
+  }
+  const projectsMeta = compact(await Promise.all(filenames.map(mapFilenames)))
   const projectsDataRaw = await fetchArchive(projectsMeta, {
     githubToken: process.env.GITHUB_TOKEN,
     gitlabToken: process.env.GITLAB_TOKEN,
@@ -62,10 +82,11 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
     gistArchiveDescription: 'STATICGEN.COM DATA ARCHIVE',
   })
   const projectsData = extractRelevantProjectData(projectsDataRaw)
-  Object.entries(projectsData).forEach(([ key, projectData ]) => {
+  Object.entries(projectsData).forEach(([ slug, projectData ]) => {
     createNode({
       ...projectData,
-      id: createNodeId(`project-stats-${key}`),
+      slug,
+      id: createNodeId(`project-${slug}`),
       parent: null,
       children: [],
       internal: {
