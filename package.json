@@ -8,7 +8,7 @@
     "build": "react-static build"
   },
   "dependencies": {
-    "@octokit/rest": "^14.0.9",
+    "@octokit/rest": "^16.0.0",
     "date-fns": "^1.29.0",
     "dotenv": "^5.0.0",
     "gitlab": "^5.0.1",
