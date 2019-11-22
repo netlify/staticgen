@@ -63,18 +63,12 @@ const OpenSourceStats = styled.div`
 `
 
 const Card = ({
-  url, title, description, starterTemplateRepo, Stats, fields, fieldValues,
+  url, title, description, starterTemplateRepo, fields, fieldValues, slug
 }) => (
   <CardContainer>
-    <CardBodyLink to={url}>
+    <CardBodyLink to={`/${slug}`}>
       <Title small={title && title.length > 14}>{title}</Title>
-      <OpenSourceStats>
-        <Stats />
-      </OpenSourceStats>
       <Description>{description}</Description>
-      {fields.map(field =>
-        <DataPoint key={field.name} value={fieldValues[field.name]} field={field} />
-      )}
     </CardBodyLink>
     {starterTemplateRepo && <DeployButton repo={starterTemplateRepo} />}
   </CardContainer>

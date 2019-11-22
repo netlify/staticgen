@@ -186,6 +186,5 @@ module.exports = async function run(projects, {
   const projectData = await getAllProjectData(projects)
   const updatedArchive = await updateArchive(projectData, archive)
   await updateLocalArchive(updatedArchive)
-  console.log(updatedArchive)
   return expand(updatedArchive.data)
 }

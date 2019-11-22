@@ -36,8 +36,6 @@ const IndexPage = ({ data }) => {
     const stats = allProjectStats.nodes.find(({ slug }) => parent.name === slug)
     return { ...frontmatter, ...stats }
   })
-  console.log(projects.filter(project => !project.slug))
-  console.log(projects.slice(0,4))
   return (
     <Layout>
       <SEO title="Home"/>
