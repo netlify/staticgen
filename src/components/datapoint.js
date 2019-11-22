@@ -16,9 +16,9 @@ const DataPointTitle = styled.h6`
   margin-right: 4px;
 `
 
-const DataPoint = ({ field, value }) => (
+const DataPoint = ({ label, value }) => (
   <DataPointContainer>
-    <DataPointTitle>{field.label}:</DataPointTitle>
+    <DataPointTitle>{label}:</DataPointTitle>
     <p className="type">{Array.isArray(value) ? value.join(', ') : value}</p>
   </DataPointContainer>
 )

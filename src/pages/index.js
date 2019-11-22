@@ -32,7 +32,7 @@ const ProjectsList = styled.ul`
 
 const IndexPage = ({ data }) => {
   const { allProjectStats, allMarkdownRemark, site } = data
-  const projects = allMarkdownRemark.nodes.map(({ frontmatter, parent }) => {
+  const projects = allMarkdownRemark.nodes.slice(0, 30).map(({ frontmatter, parent }) => {
     const stats = allProjectStats.nodes.find(({ slug }) => parent.name === slug)
     return { ...frontmatter, ...stats }
   })
@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
           <li key={project.slug}>
             <ProjectCard fields={site.siteMetadata.fields} {...project} />
           </li>
-        ))}
+          ))}
       </ProjectsList>
     </Layout>
   )

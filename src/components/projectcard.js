@@ -1,8 +1,17 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
+import Octicon from 'react-component-octicons'
+import { EntypoTwitter } from 'react-entypo'
+import Stat from './stat'
 import DeployButton from './deploybutton'
 import DataPoint from './datapoint'
+
+const TwitterIcon = styled(EntypoTwitter)`
+  width: 16px !important;
+  height: 16px !important;
+`
+
 
 const CardContainer = styled.div`
   background: #fff;
@@ -52,7 +61,7 @@ const Description = styled.p`
   hyphens: auto;
 `
 
-const OpenSourceStats = styled.div`
+const StatsContainer = styled.div`
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   background: #fcfcfc;
@@ -62,16 +71,73 @@ const OpenSourceStats = styled.div`
   justify-content: center;
 `
 
-const Card = ({
-  url, title, description, starterTemplateRepo, fields, fieldValues, slug
-}) => (
-  <CardContainer>
-    <CardBodyLink to={`/${slug}`}>
-      <Title small={title && title.length > 14}>{title}</Title>
-      <Description>{description}</Description>
-    </CardBodyLink>
-    {starterTemplateRepo && <DeployButton repo={starterTemplateRepo} />}
-  </CardContainer>
-)
+const Card = props => {
+  const {
+    title,
+    description,
+    startertemplaterepo,
+    fields,
+    slug,
+    stars,
+    starsPrevious,
+    followers,
+    followersPrevious,
+    forks,
+    forksPrevious,
+    issues,
+    issuesPrevious,
+    dataAgeInDays,
+  } = props
+
+  return (
+    <CardContainer>
+      <CardBodyLink to={`/${slug}`}>
+        <Title small={title && title.length > 14}>{title}</Title>
+        <StatsContainer>
+          <Stat
+            key="stars"
+            Icon={() => <Octicon name="star" zoom="100%" />}
+            label="Repo stars"
+            value={stars}
+            change={stars - starsPrevious}
+            indicateColor
+            dataAgeInDays={dataAgeInDays}
+          />
+          <Stat
+            key="issues"
+            Icon={() => <Octicon name="issue-opened" zoom="100%" />}
+            label="Open issues"
+            value={issues}
+            change={issues - issuesPrevious}
+            dataAgeInDays={dataAgeInDays}
+          />
+          <Stat
+            key="forks"
+            Icon={() => <Octicon name="repo-forked" zoom="100%" />}
+            label="Repo forks"
+            value={forks}
+            change={forks - forksPrevious}
+            indicateColor
+            dataAgeInDays={dataAgeInDays}
+          />
+          <Stat
+            key="followers"
+            Icon={() => <TwitterIcon />}
+            label="Twitter followers"
+            value={followers}
+            change={followers - followersPrevious}
+            indicateColor
+            dataAgeInDays={dataAgeInDays}
+          />
+        </StatsContainer>
+        <Description>{description}</Description>
+        {fields.map(field =>
+          <DataPoint key={field.name} value={props[field.name]} label={field.label} />
+        )}
+      </CardBodyLink>
+      {startertemplaterepo && <DeployButton repo={startertemplaterepo} />}
+    </CardContainer>
+  )
+}
 
 export default Card
