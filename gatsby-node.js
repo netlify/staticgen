@@ -3,7 +3,7 @@ const fs = require('fs')
 const util = require('util')
 const path = require('path')
 const fetch = require('node-fetch')
-const { pick, pickBy, map, find, mapValues, compact } = require('lodash')
+const { pick, pickBy, map, find, mapValues, compact, uniq } = require('lodash')
 const { oneLine } = require('common-tags')
 const dateFns = require('date-fns')
 const matter = require('gray-matter')
@@ -11,34 +11,18 @@ const readdir = util.promisify(fs.readdir)
 const readFile = util.promisify(fs.readFile)
 const fetchArchive = require('./scripts/fetch-archive')
 
-function extractRelevantProjectData (data) {
-  return mapValues(data, project => {
-    const timestamps = map(project, 'timestamp')
-    const newestTimestamp = dateFns.max(timestamps).getTime()
-    const oldestTimestamp = dateFns.min(timestamps).getTime()
-    const dataAgeInDays = dateFns.differenceInDays(Date.now(), oldestTimestamp)
-    const {
-      followers, forks, stars, issues, repo
-    } = find(project, { timestamp: newestTimestamp }) || {}
-    const {
-      forks: forksPrevious,
-      stars: starsPrevious,
-      issues: issuesPrevious,
-      followers: followersPrevious,
-    } = find(project, { timestamp: oldestTimestamp }) || {}
-    const relevantData = {
-      followers,
-      forks,
-      stars,
-      issues,
-      forksPrevious,
-      starsPrevious,
-      issuesPrevious,
-      followersPrevious,
-      dataAgeInDays,
-    }
-    if (repo) relevantData.repo = repo
-    return relevantData
+function extractRelevantProjectData (data, configDays) {
+  const now = Date.now()
+  const timestamps = data.map(([timestamp]) => timestamp)
+  const oldestTimestamp = dateFns.min(timestamps).getTime()
+  const oldestDataAgeInDays = dateFns.differenceInDays(Date.now(), oldestTimestamp)
+  const requiredDays = [0, ...(configDays.filter(d => d < oldestDataAgeInDays)), oldestDataAgeInDays]
+  const timestampProxies = requiredDays.map(days => [days, dateFns.subDays(now, days).getTime()])
+  const requiredTimestamps = timestampProxies.map(([days, timestamp]) => {
+    return [days, dateFns.closestTo(timestamp, timestamps).getTime()]
+  })
+  return requiredTimestamps.map(([days, timestamp]) => {
+    return [days, data.find(([dataTimestamp]) => timestamp === dataTimestamp)[1]]
   })
 }
 
@@ -52,14 +36,15 @@ function getStarterTemplateRepoUrl(repo, repoHost = 'github') {
   }
 }
 
-exports.sourceNodes = async ({ graphql, actions, createNodeId, createContentDigest }) => {
+exports.sourceNodes = async ({ graphql, actions, createNodeId, createContentDigest, getNodesByType }) => {
+  const [{ siteMetadata }] = getNodesByType('Site')
   const { createNode } = actions
   const projectsPath = 'content/projects'
   const filenames = await readdir(`${__dirname}/${projectsPath}`)
   const mapFilenames = async filename => {
     const file = await readFile(`${__dirname}/${projectsPath}/${filename}`, 'utf8')
     const { repo, repohost, twitter } = matter(file).data
-    const slug = filename.slice(0, -3).toLowerCase()
+    const id = filename.slice(0, -3).toLowerCase()
     if (!repo) {
       console.error(oneLine`
         No repo found in the frontmatter for ${projectsPath}/${filename}, skipping. The file or
@@ -67,7 +52,7 @@ exports.sourceNodes = async ({ graphql, actions, createNodeId, createContentDige
       `)
       return
     }
-    return pickBy({ slug, repo, repohost, twitter }, v => v)
+    return pickBy({ id, repo, repohost, twitter }, v => v)
   }
   const projectsMeta = compact(await Promise.all(filenames.map(mapFilenames)))
   const projectsDataRaw = await fetchArchive(projectsMeta, {
@@ -81,17 +66,18 @@ exports.sourceNodes = async ({ graphql, actions, createNodeId, createContentDige
     localArchivePath: 'tmp/staticgen-archive.json',
     gistArchiveDescription: 'STATICGEN.COM DATA ARCHIVE',
   })
-  const projectsData = extractRelevantProjectData(projectsDataRaw)
-  Object.entries(projectsData).forEach(([ slug, projectData ]) => {
+  const days = compact(uniq(siteMetadata.sorts.map(({ days }) => days)))
+  const projectsData = extractRelevantProjectData(projectsDataRaw, days)
+  projectsData.forEach(([days, projects]) => {
+    const data = { days, projects }
     createNode({
-      ...projectData,
-      slug,
-      id: createNodeId(`project-${slug}`),
+      ...data,
+      id: createNodeId(`stats-${days}`),
       parent: null,
       children: [],
       internal: {
         type: 'ProjectStats',
-        contentDigest: createContentDigest(projectData),
+        contentDigest: createContentDigest(data),
       }
     })
   })

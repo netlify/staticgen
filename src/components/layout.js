@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/core"
+import styled from '@emotion/styled'
 import Hero from "./hero"
 import Nav from "./nav"
 import NavLink, { NavAnchor } from './navlink'
@@ -30,6 +31,12 @@ const globalStyles = css`
     color: #444;
     background: #fbfbfb;
   }
+`
+
+const Container = styled.div`
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px;
 `
 
 const Layout = ({ children }) => {
@@ -62,7 +69,9 @@ const Layout = ({ children }) => {
           Need a Static CMS?
         </NavAnchor>
       </Nav>
-      {children}
+      <Container>
+        {children}
+      </Container>
     </>
   )
 }

@@ -1,6 +1,6 @@
 ---
 title: mdBook
-repo: rust-lang-nursery/mdBook
+repo: rust-lang/mdBook
 homepage: https://github.com/rust-lang-nursery/mdBook
 language:
   - Rust

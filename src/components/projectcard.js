@@ -78,15 +78,19 @@ const Card = props => {
     startertemplaterepo,
     fields,
     slug,
-    stars,
-    starsPrevious,
-    followers,
-    followersPrevious,
-    forks,
-    forksPrevious,
-    issues,
-    issuesPrevious,
-    dataAgeInDays,
+    stats: {
+      stars,
+      issues,
+      forks,
+      followers,
+    } = {},
+    previousStats: {
+      stars: starsPrevious,
+      issues: issuesPrevious,
+      forks: forksPrevious,
+      followers: followersPrevious,
+    } = {},
+    previousStatsAgeInDays,
   } = props
 
   return (
@@ -99,35 +103,35 @@ const Card = props => {
             Icon={() => <Octicon name="star" zoom="100%" />}
             label="Repo stars"
             value={stars}
-            change={stars - starsPrevious}
+            change={stars - starsPrevious || 0}
             indicateColor
-            dataAgeInDays={dataAgeInDays}
+            dataAgeInDays={previousStatsAgeInDays}
           />
           <Stat
             key="issues"
             Icon={() => <Octicon name="issue-opened" zoom="100%" />}
             label="Open issues"
             value={issues}
-            change={issues - issuesPrevious}
-            dataAgeInDays={dataAgeInDays}
+            change={issues - issuesPrevious || 0}
+            dataAgeInDays={previousStatsAgeInDays}
           />
           <Stat
             key="forks"
             Icon={() => <Octicon name="repo-forked" zoom="100%" />}
             label="Repo forks"
             value={forks}
-            change={forks - forksPrevious}
+            change={forks - forksPrevious || 0}
             indicateColor
-            dataAgeInDays={dataAgeInDays}
+            dataAgeInDays={previousStatsAgeInDays}
           />
           <Stat
             key="followers"
             Icon={() => <TwitterIcon />}
             label="Twitter followers"
             value={followers}
-            change={followers - followersPrevious}
+            change={followers - followersPrevious || 0}
             indicateColor
-            dataAgeInDays={dataAgeInDays}
+            dataAgeInDays={previousStatsAgeInDays}
           />
         </StatsContainer>
         <Description>{description}</Description>

@@ -1,9 +1,9 @@
 const path = require('path')
 const fs = require('fs-extra')
 const axios = require('axios')
-const { compact, map, find, fromPairs, mapValues, partial } = require('lodash')
+const { compact, map, find, fromPairs, mapValues, partial, reverse, sortBy } = require('lodash')
 const fetch = require('node-fetch')
-const { differenceInMinutes } = require('date-fns')
+const dateFns = require('date-fns')
 const { Gitlab } = require('gitlab')
 const twitterFollowersCount = require('twitter-followers-count')
 const throttleConcurrency = require('./throttle-concurrency')
@@ -29,7 +29,7 @@ function githubInit(token) {
   }, {})
 }
 
-function authenticate (tokens) {
+function init (tokens) {
   github = githubInit(tokens.githubToken)
   gitlab = new Gitlab({ personaltoken: tokens.gitlabToken })
   getTwitterFollowers = twitterFollowersCount({
@@ -57,25 +57,29 @@ async function getAllProjectRepoData (repos) {
     github: getProjectGitHubData,
     gitlab: getProjectGitLabData,
   }
+  let count = 0
+  const reportRepoReceived = repo => {
+    count++
+    console.log(`received ${count}/${repos.length} ${repo}`)
+  }
   const data = repos.map(async ({ repo, repohost = 'github' }, idx, arr) => {
     const repoData = await getRepoData[repohost](repo)
+    reportRepoReceived(repo)
     return [repo, repoData]
   }, [])
   return fromPairs(await Promise.all(data))
 }
 
 async function getAllProjectData (projects) {
-  const timestamp = Date.now()
   const twitterScreenNames = compact(map(projects, 'twitter'))
   const twitterFollowers = twitterScreenNames.length && await getTwitterFollowers(twitterScreenNames)
   const repos = compact(map(projects, ({ repo, repohost }) => ({ repo, repohost })))
   const reposData = await getAllProjectRepoData(repos)
-  const data = projects.reduce((obj, { slug, repo, twitter }) => {
+  return projects.map(({ id, repo, twitter }) => {
     const twitterData = twitter ? { f: twitterFollowers[twitter] } : {}
     const repoData = repo ? reposData[repo] : {}
-    return { ...obj, [slug]: [{ t: timestamp, ...twitterData, ...repoData }] }
-  }, {})
-  return { timestamp, data }
+    return { id, ...twitterData, ...repoData }
+  })
 }
 
 async function getLocalArchive () {
@@ -97,19 +101,20 @@ function getArchiveJson (archive) {
   return JSON.parse(archive.content)
 }
 
-async function getArchive () {
+async function getArchiveId() {
   const gists = await github.get('gists')
   const gistArchive = find(gists.data, { description: config.gistArchiveDescription })
-  if (!gistArchive) {
-    return
-  }
-  const gistArchiveContent = await github.get(`gists/${gistArchive.id}`)
-  const archive = gistArchiveContent.data.files[config.archiveFilename]
-  const archiveJson = await getArchiveJson(archive)
-  return { ...archiveJson, id: gistArchive.id }
+  return gistArchive && gistArchive.id
 }
 
-function createGist (content) {
+async function getArchive() {
+  const gistArchiveId = await getArchiveId()
+  const gistArchiveContent = await github.get(`gists/${gistArchiveId}`)
+  const archive = gistArchiveContent.data.files[config.archiveFilename]
+  return getArchiveJson(archive)
+}
+
+function createGist(content) {
   return github.post('gists', {}, {
     files: { [config.archiveFilename]: { content } },
     public: true,
@@ -117,25 +122,24 @@ function createGist (content) {
   })
 }
 
-function editGist (content, id) {
-  return github.patch(`gists/${id}`, {}, { files: { [config.archiveFilename]: { content } } })
+async function editGist(content) {
+  const gistArchiveId = await getArchiveId()
+  const files = { [config.archiveFilename]: { content } }
+  return github.patch(`gists/${gistArchiveId}`, {}, { files })
 }
 
-async function updateArchive ({ timestamp, data }, archive) {
-  const preppedData = archive
-    ? {
-      timestamp,
-      data: mapValues(data, (projectData, name) => [...projectData, ...(archive.data[name] || [])]),
-    }
-    : { timestamp, data }
-
-  const content = JSON.stringify(preppedData)
+async function updateArchive(data, archive) {
+  const updatedArchive = [[Date.now(), data], ...(archive || [])]
+  const truncatedArchive = updatedArchive.length <= 60
+    ? updatedArchive
+    : reverse(sortBy(updatedArchive, ([timestamp]) => timestamp)).slice(0, 60)
+  const content = JSON.stringify(truncatedArchive)
   if (archive) {
-    await editGist(content, archive.id)
+    await editGist(content)
   } else {
     await createGist(content)
   }
-  return preppedData
+  return truncatedArchive
 }
 
 /**
@@ -144,18 +148,21 @@ async function updateArchive ({ timestamp, data }, archive) {
  * a little early.
  */
 function archiveExpired (archive) {
-  return differenceInMinutes(Date.now(), archive.timestamp) > 60
+  const timestamps = archive.map(([timestamp]) => timestamp)
+  const newestTimestamp = dateFns.max(timestamps).getTime()
+  return dateFns.differenceInMinutes(Date.now(), newestTimestamp) > 1410
 }
 
 function expand(data) {
-  return mapValues(data, datum => {
-    return datum.map(({ t, s, fk, i, f }) => ({
-      timestamp: t,
+  return data.map(([timestamp, datum]) => {
+    const expanded = datum.map(({ id, s, fk, i, f }) => ({
+      id,
       stars: s,
       forks: fk,
       issues: i,
       followers: f,
     }))
+    return [timestamp, expanded]
   })
 }
 
@@ -171,20 +178,19 @@ module.exports = async function run(projects, {
 
   const localArchive = await getLocalArchive()
   if (localArchive && !archiveExpired(localArchive)) {
-    return expand(localArchive.data)
+    return expand(localArchive)
   }
 
-  // This is synchronous.
-  authenticate(tokens)
+  init(tokens)
 
   const archive = await getArchive()
   if (archive && !archiveExpired(archive)) {
     await updateLocalArchive(archive)
-    return expand(archive.data)
+    return expand(archive)
   }
 
   const projectData = await getAllProjectData(projects)
   const updatedArchive = await updateArchive(projectData, archive)
   await updateLocalArchive(updatedArchive)
-  return expand(updatedArchive.data)
+  return expand(updatedArchive)
 }

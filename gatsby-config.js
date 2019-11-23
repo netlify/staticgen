@@ -18,14 +18,19 @@ module.exports = {
     shareTextProjectStart: 'Check out ',
     shareTextProjectEnd: ', an open source static site generator on the staticgen.com leaderboard.',
     copyrightName: 'Netlify',
+    fallbackSortField: 'title',
     navLinks: [
       { url: 'https://jamstack.org', text: 'About JAMstack' },
       { url: 'https://headlesscms.org', text: 'Need a Static CMS?' },
     ],
     sorts: [
-      { field: "stars", label: "Repo stars", reverse: true },
-      { field: "followers", label: "Twitter followers", reverse: true },
-    { field: "title", label: "Title" },
+      { field: "stars", label: "Stars (7 days)", reverse: true, days: 7 },
+      { field: "stars", label: "Stars (30 days)", reverse: true, days: 30 },
+      { field: "stars", label: "Stars (total)", reverse: true },
+      { field: "followers", label: "Followers (7 days)", reverse: true, days: 7 },
+      { field: "followers", label: "Followers (30 days)", reverse: true, days: 30 },
+      { field: "followers", label: "Followers (total)", reverse: true },
+      { field: "title", label: "Title" },
     ],
     filters: [
       { field: "language", emptyLabel: "Any Language", multiple: true },
