@@ -3,7 +3,7 @@ const fs = require('fs')
 const util = require('util')
 const path = require('path')
 const fetch = require('node-fetch')
-const { pick, pickBy, map, find, mapValues, compact, uniq } = require('lodash')
+const { pick, pickBy, map, find, mapValues, compact, uniq, last } = require('lodash')
 const unified = require('unified')
 const markdownToRemark = require('remark-parse')
 const remarkToRehype = require('remark-rehype')
@@ -105,12 +105,9 @@ exports.sourceNodes = async ({ graphql, actions, createNodeId, createContentDige
   return
 }
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  const projectTemplate = path.resolve('src/templates/project.js')
-
-  const result = await graphql(`
-    query loadPagesQuery {
+async function getProjectData(graphql) {
+  const { data, errors } = await graphql(`
+    query loadProjectPagesQuery {
       allMarkdownRemark {
         nodes {
           html
@@ -127,6 +124,7 @@ exports.createPages = async ({ graphql, actions }) => {
           parent {
             ... on File {
               name
+              dir
             }
           }
         }
@@ -152,20 +150,78 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  if (result.errors) {
-    throw result.errors
+  if (errors) {
+    throw errors
   }
 
-  const { fields } = result.data.site.siteMetadata
-  const allStats = result.data.allProjectStats.nodes.find(({ days }) => days === 0).projects
-  const remarkData = result.data.allMarkdownRemark.nodes.forEach(({
+  const { fields } = data.site.siteMetadata
+  const allStats = data.allProjectStats.nodes.find(({ days }) => days === 0).projects
+  return data.allMarkdownRemark.nodes.map(({
     html: content,
     frontmatter,
     parent: {
       name: id,
+      dir,
     },
   }) => {
     const stats = allStats.find(({ id: projectId }) => id === projectId)
+    return {
+      id,
+      dir: last(dir.split('/')),
+      content,
+      fields,
+      frontmatter,
+      stats,
+    }
+  })
+}
+
+async function getPageData(graphql) {
+  const { data, errors } = await graphql(`
+    query loadPagesQuery {
+      allMarkdownRemark {
+        nodes {
+          html
+          frontmatter {
+            title
+          }
+          parent {
+            ... on File {
+              name
+              dir
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (errors) {
+    throw errors
+  }
+
+  return data.allMarkdownRemark.nodes.map(({
+    html: content,
+    frontmatter,
+    parent: {
+      name: id,
+      dir,
+    },
+  }) => ({
+    id,
+    dir: last(dir.split('/')),
+    content,
+    frontmatter,
+  }))
+}
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  const projects = (await getProjectData(graphql)).filter(({ dir }) => console.log(dir) || dir === 'projects')
+  const pages = (await getPageData(graphql)).filter(({ dir }) => console.log(dir) || dir === 'pages')
+  const projectTemplate = path.resolve('src/templates/project.js')
+  const pageTemplate = path.resolve('src/templates/page.js')
+  projects.forEach(({ id, content, fields, frontmatter, stats }) => {
     createPage({
       path: id,
       component: projectTemplate,
@@ -175,6 +231,16 @@ exports.createPages = async ({ graphql, actions }) => {
         ...frontmatter,
         ...stats,
 
+      },
+    })
+  })
+  pages.forEach(({ id, content, frontmatter }) => {
+    createPage({
+      path: id,
+      component: pageTemplate,
+      context: {
+        content,
+        ...frontmatter,
       },
     })
   })
