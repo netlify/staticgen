@@ -5,7 +5,7 @@ homepage: https://skua.netlify.com
 language:
   - Python
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Jinja2
 description: A configurable Pythonic static site generator.
