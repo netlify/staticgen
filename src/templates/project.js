@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-//import { EntypoHome, EntypoTwitter, EntypoGithub } from 'react-entypo'
-import Container from '../components/container'
+import { EntypoHome, EntypoTwitter, EntypoGithub } from 'react-entypo'
 import Layout from '../components/layout'
 
 const EntypoIcon = styled(({ Icon, className }) =>
@@ -54,62 +53,53 @@ const Content = styled.div`
   }
 `
 
-const Project = ({
-  pageContext: {
+const Project = ({ pageContext }) => {
+  const {
     title,
     repo,
+    repohost,
     homepage,
-    fieldValues,
     stars,
     followers,
     twitter,
     content,
     fields,
-  },
-}) => (
-  <Layout>
-    <Container>
+  } = pageContext
+
+  return (
+    <Layout>
       <h1>{title}</h1>
+      <div>
+        <DetailLink href={homepage}><EntypoIcon Icon={EntypoHome} /> {homepage}</DetailLink>
+        {twitter &&
+          <DetailLink href={`https://twitter.com/${twitter}`}>
+            <EntypoIcon Icon={EntypoTwitter} /> {twitter} ({followers})
+          </DetailLink>
+        }
+        {repo &&
+          <DetailLink href={`https://${repohost || 'github'}.com/${repo}`}>
+            <EntypoIcon Icon={EntypoGithub} /> {repo} ({stars})
+          </DetailLink>
+        }
+      </div>
+
+      <FieldsContainer>
+        {fields.map(({ name, label }) => {
+          const value = pageContext[name]
+          return (
+            <Field key={name}>
+              <span>{label}:</span>
+              <span>{Array.isArray(value) ? value.join(', ') : value}</span>
+            </Field>
+          )
+        })}
+      </FieldsContainer>
+
       <Content>
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </Content>
-    </Container>
-  </Layout>
-)
-  /*
-        <div>
-          <DetailLink href={homepage}><EntypoIcon Icon={EntypoHome} /> {homepage}</DetailLink>
-          {twitter &&
-            <DetailLink href={`https://twitter.com/${twitter}`}>
-              <EntypoIcon Icon={EntypoTwitter} /> {twitter} ({followers})
-            </DetailLink>
-          }
-          {repo &&
-            <DetailLink href={repo}>
-              <EntypoIcon Icon={EntypoGithub} /> {repo} ({stars})
-            </DetailLink>
-          }
-        </div>
-
-        <FieldsContainer>
-          {fields.map(({ name, label }) => {
-            const value = fieldValues[name]
-            return (
-              <Field key={name}>
-                <span>{label}:</span>
-                <span>{Array.isArray(value) ? value.join(', ') : value}</span>
-              </Field>
-            )
-          })}
-        </FieldsContainer>
-
-        <Content>
-          <div dangerouslySetInnerHTML={{ __html: content }} />
-        </Content>
-      </Container>
-    )} />
+    </Layout>
   )
 }
-*/
 
 export default Project

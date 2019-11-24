@@ -73,11 +73,11 @@ const StatsContainer = styled.div`
 
 const Card = props => {
   const {
+    id,
     title,
     description,
     startertemplaterepo,
     fields,
-    slug,
     stats: {
       stars,
       issues,
@@ -95,7 +95,7 @@ const Card = props => {
 
   return (
     <CardContainer>
-      <CardBodyLink to={`/${slug}`}>
+      <CardBodyLink to={`/${id}`}>
         <Title small={title && title.length > 14}>{title}</Title>
         <StatsContainer>
           <Stat

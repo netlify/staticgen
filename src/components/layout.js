@@ -14,7 +14,9 @@ import Hero from "./hero"
 import Nav from "./nav"
 import NavLink, { NavAnchor } from './navlink'
 import Banner from './banner'
+import Footer from './footer'
 import "typeface-roboto"
+import "typeface-roboto-slab"
 
 
 const globalStyles = css`
@@ -45,6 +47,13 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          copyrightName
+          copyrightYearStart
+        }
+      }
+      allSiteMetadataMarkdownRemark {
+        nodes {
+          html
         }
       }
     }
@@ -53,11 +62,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Global styles={globalStyles}/>
+      {/*
       <Banner>
         Learn more about the JAMstack at{' '}
         <a href="https://jamstackconf.com/sf">JAMstack Conf</a>{' '}
         in San Francisco — 16-18 October, 2019
       </Banner>
+      */}
       <Hero siteTitle={data.site.siteMetadata.title} />
       <Nav>
         <NavLink to="/about">About</NavLink>
@@ -72,6 +83,10 @@ const Layout = ({ children }) => {
       <Container>
         {children}
       </Container>
+      <Footer
+        footerHtml={data.allSiteMetadataMarkdownRemark.nodes[0].html}
+        {...data.site.siteMetadata}
+      />
     </>
   )
 }

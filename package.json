@@ -24,7 +24,8 @@
     "react-github-corner": "^2.3.0",
     "react-helmet": "^5.2.1",
     "react-share": "^3.0.1",
-    "typeface-roboto": "^0.0.75"
+    "typeface-roboto": "^0.0.75",
+    "typeface-roboto-slab": "^0.0.72"
   },
   "devDependencies": {
     "@mosch/gatsby-source-github": "^0.4.1",
@@ -38,7 +39,11 @@
     "klaw": "^3.0.0",
     "node-fetch": "^2.6.0",
     "prettier": "^1.19.1",
-    "twitter-followers-count": "^1.0.3"
+    "rehype-stringify": "^6.0.1",
+    "remark-parse": "^7.0.2",
+    "remark-rehype": "^5.0.0",
+    "twitter-followers-count": "^1.0.3",
+    "unified": "^8.4.2"
   },
   "keywords": [
     "gatsby"

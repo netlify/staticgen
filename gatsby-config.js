@@ -17,6 +17,8 @@ module.exports = {
     shareText: 'Check out StaticGen, a leaderboard of open source static site generators.',
     shareTextProjectStart: 'Check out ',
     shareTextProjectEnd: ', an open source static site generator on the staticgen.com leaderboard.',
+    footerMarkdown: 'StaticGen is hosted and maintained by [Netlify](https://www.netlify.com), the perfect way to deploy your JAMstack sites and apps.',
+    copyrightYearStart: 2014,
     copyrightName: 'Netlify',
     fallbackSortField: 'title',
     navLinks: [

@@ -4,6 +4,10 @@ const util = require('util')
 const path = require('path')
 const fetch = require('node-fetch')
 const { pick, pickBy, map, find, mapValues, compact, uniq } = require('lodash')
+const unified = require('unified')
+const markdownToRemark = require('remark-parse')
+const remarkToRehype = require('remark-rehype')
+const rehypeToHtml = require('rehype-stringify')
 const { oneLine } = require('common-tags')
 const dateFns = require('date-fns')
 const matter = require('gray-matter')
@@ -81,6 +85,23 @@ exports.sourceNodes = async ({ graphql, actions, createNodeId, createContentDige
       }
     })
   })
+
+  const { contents: html } = await unified()
+    .use(markdownToRemark)
+    .use(remarkToRehype)
+    .use(rehypeToHtml)
+    .process(siteMetadata.footerMarkdown)
+
+  createNode({
+    html,
+    id: createNodeId('footer-content'),
+    parent: null,
+    children: [],
+    internal: {
+      type: 'SiteMetadataMarkdownRemark',
+      contentDigest: createContentDigest({ html }),
+    }
+  })
   return
 }
 
@@ -91,26 +112,40 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
     query loadPagesQuery {
       allMarkdownRemark {
-        edges {
-          node {
-            html
-            frontmatter {
-              description
-              homepage
-              language
-              license
-              repo
-              repohost
-              startertemplaterepo
-              templates
-              title
-              twitter
+        nodes {
+          html
+          frontmatter {
+            homepage
+            language
+            license
+            repo
+            repohost
+            templates
+            title
+            twitter
+          }
+          parent {
+            ... on File {
+              name
             }
-            parent {
-              ... on File {
-                name
-              }
-            }
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          fields {
+            name
+            label
+          }
+        }
+      }
+      allProjectStats {
+        nodes {
+          days
+          projects {
+            id
+            followers
+            stars
           }
         }
       }
@@ -121,29 +156,25 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({
-    node: {
-      html: content,
-      frontmatter: {
-        title,
-        repo,
-        homepage,
-        twitter,
-      },
-      parent: {
-        name: filename,
-      },
-    }
+  const { fields } = result.data.site.siteMetadata
+  const allStats = result.data.allProjectStats.nodes.find(({ days }) => days === 0).projects
+  const remarkData = result.data.allMarkdownRemark.nodes.forEach(({
+    html: content,
+    frontmatter,
+    parent: {
+      name: id,
+    },
   }) => {
+    const stats = allStats.find(({ id: projectId }) => id === projectId)
     createPage({
-      path: filename,
+      path: id,
       component: projectTemplate,
       context: {
-        title,
-        repo,
-        homepage,
-        twitter,
         content,
+        fields,
+        ...frontmatter,
+        ...stats,
+
       },
     })
   })
