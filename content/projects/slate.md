@@ -5,7 +5,7 @@ homepage: https://slatedocs.github.io/slate/
 language:
   - Ruby
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Markdown
 description: Beautiful static documentation for your API
