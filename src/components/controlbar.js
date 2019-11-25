@@ -11,7 +11,7 @@ const DropdownRow = styled.div`
   }
 
   > div {
-    &:not(:first-child) {
+    &:not(:first-of-type) {
       margin-top: 18px;
 
       @media (min-width: 800px) {

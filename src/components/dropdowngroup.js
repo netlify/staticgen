@@ -13,12 +13,12 @@ const DropdownGroupLabel = styled.div`
 `
 
 const DropdownGroupMember = styled.div`
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-top: 10px;
   }
 
   @media (min-width: 600px) {
-    &:not(:first-child) {
+    &:not(:first-of-type) {
       margin-top: 0;
     }
 

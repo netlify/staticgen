@@ -1,18 +1,21 @@
 const { oneLine } = require('common-tags')
 
+const description = oneLine`
+  StaticGen is a leaderboard of the top open source static site generators. Promoting a static
+  approach to building websites.
+`
+
 module.exports = {
   siteMetadata: {
     url: 'https://staticgen.com.com',
     title: `StaticGen`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@netlify`,
+    image: 'images/staticgen.png',
     repo: 'https://github.com/netlify/staticgen',
     titleHome: 'StaticGen | Top Open Source Static Site Generators',
     subtitle: 'A List of Static Site Generators for JAMstack Sites',
-    description: oneLine`
-      StaticGen is a leaderboard of the top open source static site generators. Promoting a static
-      approach to building websites.
-    `,
+    description,
     socialPreviewImageFilename: 'staticgen.png',
     shareButtons: ['twitter', 'reddit'],
     shareText: 'Check out StaticGen, a leaderboard of open source static site generators.',
@@ -20,11 +23,11 @@ module.exports = {
     shareTextProjectEnd: ', an open source static site generator on the staticgen.com leaderboard.',
     footerMarkdown: 'StaticGen is hosted and maintained by [Netlify](https://www.netlify.com), the perfect way to deploy your JAMstack sites and apps.',
     copyrightName: 'Netlify',
-    fallbackSortField: 'title',
     navLinks: [
       { url: 'https://jamstack.org', text: 'About JAMstack' },
       { url: 'https://headlesscms.org', text: 'Need a Static CMS?' },
     ],
+    fallbackSortField: 'title',
     sorts: [
       { field: "stars", label: "Stars (7 days)", reverse: true, days: 7 },
       { field: "stars", label: "Stars (30 days)", reverse: true, days: 30 },

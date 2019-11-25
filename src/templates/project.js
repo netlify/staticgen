@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { EntypoHome, EntypoTwitter, EntypoGithub } from 'react-entypo'
 import Layout from '../components/layout'
+import SEO from "../components/seo"
 
 const EntypoIcon = styled(({ Icon, className }) =>
   <Icon className={className} />
@@ -37,11 +38,11 @@ const FieldsContainer = styled.div`
 
 const Field = styled.div`
   margin-right: 18px;
+`
 
-  span:first-child {
-    font-weight: 700;
-    margin-right: 8px;
-  }
+const FieldLabel = styled.span`
+  font-weight: 700;
+  margin-right: 8px;
 `
 
 const Content = styled.div`
@@ -70,6 +71,7 @@ const Project = ({ pageContext }) => {
 
   return (
     <Layout projectTitle={title} projectUrl={url} projectId={id}>
+      <SEO title={title}/>
       <h1>{title}</h1>
       <div>
         <DetailLink href={homepage}><EntypoIcon Icon={EntypoHome} /> {homepage}</DetailLink>
@@ -90,7 +92,7 @@ const Project = ({ pageContext }) => {
           const value = pageContext[name]
           return (
             <Field key={name}>
-              <span>{label}:</span>
+              <FieldLabel>{label}:</FieldLabel>
               <span>{Array.isArray(value) ? value.join(', ') : value}</span>
             </Field>
           )
