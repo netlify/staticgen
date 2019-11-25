@@ -12,12 +12,11 @@ const TwitterIcon = styled(EntypoTwitter)`
   height: 16px !important;
 `
 
-
 const CardContainer = styled.div`
   background: #fff;
   border: 1px solid #eee;
   border-radius: 8px;
-  color: #313D3E;
+  color: #313d3e;
   display: block;
   font-size: 14px;
   padding: 18px;
@@ -37,7 +36,10 @@ const CardBodyLink = styled(Link)`
   margin: -18px;
   padding: 18px;
 
-  &, &:link, &:active, &:hover {
+  &,
+  &:link,
+  &:active,
+  &:hover {
     color: #313d3e;
     text-decoration: none;
   }
@@ -51,8 +53,8 @@ const Title = styled.h4`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: ${props => props.small ? '24px' : '30px'};
-  padding: ${props => props.small ? '7px 18px 10px' : '0 18px 6px'};
+  font-size: ${props => (props.small ? '24px' : '30px')};
+  padding: ${props => (props.small ? '7px 18px 10px' : '0 18px 6px')};
 `
 
 const Description = styled.p`
@@ -78,19 +80,14 @@ const Card = props => {
     description,
     startertemplaterepo,
     fields,
-    stats: {
-      stars,
-      issues,
-      forks,
-      followers,
-    } = {},
+    stats: { stars, issues, forks, followers } = {},
     previousStats: {
       stars: starsPrevious,
       issues: issuesPrevious,
       forks: forksPrevious,
-      followers: followersPrevious,
+      followers: followersPrevious
     } = {},
-    previousStatsAgeInDays,
+    previousStatsAgeInDays
   } = props
 
   return (
@@ -135,9 +132,13 @@ const Card = props => {
           />
         </StatsContainer>
         <Description>{description}</Description>
-        {fields.map(field =>
-          <DataPoint key={field.name} value={props[field.name]} label={field.label} />
-        )}
+        {fields.map(field => (
+          <DataPoint
+            key={field.name}
+            value={props[field.name]}
+            label={field.label}
+          />
+        ))}
       </CardBodyLink>
       {startertemplaterepo && <DeployButton repo={startertemplaterepo} />}
     </CardContainer>

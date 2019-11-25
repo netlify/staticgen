@@ -11,10 +11,10 @@ as a `<name>.md` in the `content/projects` folder.
 
 Make sure to follow the following rules:
 
-*   **Static Site Generation:** No "flat-file CMSs" or similar tools. The program must be able to output a static website that can be hosted in places like Netlify, S3 or Github Pages.
-*   **Open Source:** The generator must have a public repository on Github that we can link to and pull in stats from.
-*   **Stick to the format:** Fill out all the same fields as the other static site generators in `content/projects`.
-*   **Short description:** Keep all the details for the body text, keep the description for the overview page short and sweet.
+- **Static Site Generation:** No "flat-file CMSs" or similar tools. The program must be able to output a static website that can be hosted in places like Netlify, S3 or Github Pages.
+- **Open Source:** The generator must have a public repository on Github that we can link to and pull in stats from.
+- **Stick to the format:** Fill out all the same fields as the other static site generators in `content/projects`.
+- **Short description:** Keep all the details for the body text, keep the description for the overview page short and sweet.
 
 ## Usage
 

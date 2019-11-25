@@ -18,4 +18,4 @@ Staart Site is a static site generator for helpdesk or documentation websites wr
 
 It has no configuration required (deploys Markdown files from your `content` folder), including "last modified in commit" links to GitHub. Also generates schema data for SEO, sitemaps, and Shields badges schema. It's incredibly lightweight, at just 1.2kb minzipped CSS for both light and dark themes.
 
-Staart Site is part of [Staart](https://staart.js.org), a set of starter templates written in TypeScript to build SaaS startups, including backend, PWA, and app starters.  
+Staart Site is part of [Staart](https://staart.js.org), a set of starter templates written in TypeScript to build SaaS startups, including backend, PWA, and app starters.

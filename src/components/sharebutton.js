@@ -4,17 +4,15 @@ import {
   TwitterShareButton,
   TwitterIcon,
   RedditShareButton,
-  RedditIcon,
+  RedditIcon
 } from 'react-share'
 
 const buttonConfigs = {
   twitter: { Button: TwitterShareButton, Icon: TwitterIcon, color: '#1da1f2' },
-  reddit: { Button: RedditShareButton, Icon: RedditIcon, color: '#ff4500' },
+  reddit: { Button: RedditShareButton, Icon: RedditIcon, color: '#ff4500' }
 }
 
-const Button = styled(({
-  type, url, text, projectTitle, className,
-}) => {
+const Button = styled(({ type, url, text, projectTitle, className }) => {
   const { Button, Icon } = buttonConfigs[type]
   return (
     <Button url={url} title={text} className={className}>

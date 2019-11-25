@@ -17,7 +17,7 @@ Written by [William Riley-Land](http://kun.io/wprl).
 
 ### About
 
- * Parse files with or without YAML headers
- * Apply template using engine(s) of your choice
- * Supports generators (for things like pagination and A/B testing)
- * Supports parsing Polymer/htmling templates
+- Parse files with or without YAML headers
+- Apply template using engine(s) of your choice
+- Supports generators (for things like pagination and A/B testing)
+- Supports parsing Polymer/htmling templates

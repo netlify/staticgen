@@ -18,5 +18,5 @@ Create a template, a bakefile and your markdown posts and you are ready to bake!
 
 To be as simple as:
 
-	vim post.markdown
-	bake
+    vim post.markdown
+    bake

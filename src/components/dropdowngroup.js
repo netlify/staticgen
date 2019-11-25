@@ -32,7 +32,9 @@ const DropdownGroup = ({ label, children }) => (
   <div>
     {label && <DropdownGroupLabel>{label}</DropdownGroupLabel>}
     <DropdownGroupMembersContainer>
-      {React.Children.map(children, child => <DropdownGroupMember>{child}</DropdownGroupMember>)}
+      {React.Children.map(children, child => (
+        <DropdownGroupMember>{child}</DropdownGroupMember>
+      ))}
     </DropdownGroupMembersContainer>
   </div>
 )

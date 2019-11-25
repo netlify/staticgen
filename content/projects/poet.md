@@ -8,7 +8,7 @@ license:
   - MIT
 templates:
   - Jade
-description: "A node.js blog engine."
+description: 'A node.js blog engine.'
 ---
 
 Poet has your code-blogging back. Renders markdown, jade, or any templated files as posts, tag it up with metadata that's passed into any view engine you want, instant pagination, tag and category views, and home in time for dinner.

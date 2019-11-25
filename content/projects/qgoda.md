@@ -12,16 +12,16 @@ description: A sophisticated, blog-aware static site generator with unprecedente
 startertemplaterepo: gflohr/qgoda-multilang
 ---
 
-Qgoda is a sophisticated static site generator following the Do-The-Right-Thing&trade; philosophy.  Micro-sites require zero-configuration, a blog is easily started with one of the sample themes, but you can always grow with your needs and create arbitrarily complex sites with Qgoda.
+Qgoda is a sophisticated static site generator following the Do-The-Right-Thing&trade; philosophy. Micro-sites require zero-configuration, a blog is easily started with one of the sample themes, but you can always grow with your needs and create arbitrarily complex sites with Qgoda.
 
 ## Multi-Language
 
 Qgoda offers multi-lingualism for free:
 
-* Template translation based on [GNU gettext](https://www.gnu.org/software/gettext/).
-* Built-in I18N-aware links and listings
-* File-based translation facilities, *or*
-* Complete website translation based on PO-files [see GNU gettext](https://www.gnu.org/software/gettext/)
+- Template translation based on [GNU gettext](https://www.gnu.org/software/gettext/).
+- Built-in I18N-aware links and listings
+- File-based translation facilities, _or_
+- Complete website translation based on PO-files [see GNU gettext](https://www.gnu.org/software/gettext/)
 
 ## Arbitrary Taxonomies
 
@@ -31,7 +31,7 @@ Tags, categories, languages, sections, ... it's up to you.
 
 You can extend Qgoda in Perl, Python, Ruby, Java, other languages may follow.
 
-Development web server or build system is completely up to you.  The Qgoda default themes are based on [Webpack](https://webpack.js.org/) but go with Makefiles, shell scripts, ant or Maven if [NodeJS](https://nodejs.org/) is not your comfort zone.
+Development web server or build system is completely up to you. The Qgoda default themes are based on [Webpack](https://webpack.js.org/) but go with Makefiles, shell scripts, ant or Maven if [NodeJS](https://nodejs.org/) is not your comfort zone.
 
 ## The Ideal Project Portal
 
@@ -45,9 +45,7 @@ It is pronounced "yagoda" and it means strawberry in Bulgarian and other Slavic 
 
 After [installing Qgoda](http://www.qgoda.net/en/docs/installation/) or getting the [Docker image](https://github.com/gflohr/qgoda#user-content-run-qgoda-in-docker-container) going, try one of the following inside an empty(!) directory of your choice:
 
-* `qgoda init gflohr/essential`: a complete blog without any styling
-* `qgoda init gflohr/default`: same as above but with development web server, webpack, ...
-* `qgoda init gflohr/multilang`: same as above but multi-lingual
-* `qgoda init gflohr/minimal`: if all of the above is just too much and you want to control everything yourself
-
-
+- `qgoda init gflohr/essential`: a complete blog without any styling
+- `qgoda init gflohr/default`: same as above but with development web server, webpack, ...
+- `qgoda init gflohr/multilang`: same as above but multi-lingual
+- `qgoda init gflohr/minimal`: if all of the above is just too much and you want to control everything yourself

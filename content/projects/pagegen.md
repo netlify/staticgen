@@ -11,7 +11,6 @@ templates:
 description: Manage sites and blogs, SEO friendly.
 ---
 
-
 Pagegen aims to provide a basic configurable foundation for a site. Basically add content and CSS styling and you should be good to go.
 
 Extensions are available via hooks for pre or post processing. Page content is either static reStructuredText or may be reStructuredText output from executable at generation time (any language).

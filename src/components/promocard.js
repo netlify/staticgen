@@ -5,7 +5,10 @@ const PromoCard = styled.div`
   padding: 0 18px;
 
   a {
-    &, &:link, &:active, &:hover {
+    &,
+    &:link,
+    &:active,
+    &:hover {
       color: #00c7b7;
       text-decoration: none;
     }

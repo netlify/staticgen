@@ -19,7 +19,6 @@ const BannerContainer = styled.div`
   a:visited {
     color: #00c7b7;
   }
-
 `
 
 const Banner = ({ children }) => (

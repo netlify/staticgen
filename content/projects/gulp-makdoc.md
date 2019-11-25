@@ -17,6 +17,6 @@ You can override any task and function as your mind.
 
 ### Why use Makdoc?
 
-* On Nodejs.
-* No YAML front matter.
-* On Gulp: Task engine help you free.
+- On Nodejs.
+- No YAML front matter.
+- On Gulp: Task engine help you free.

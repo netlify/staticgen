@@ -17,12 +17,12 @@ reasonably [fast](#speed).
 
 Features include:
 
- - No run-time dependencies, just a single binary - download it and run
- - Dependency tracking and re-rendering only changed pages
- - Markdown support
- - Flexible [filter system](#processors)
- - Simple [config syntax](#configuration)
- - HTTP server and watcher (instant rendering on changes)
+- No run-time dependencies, just a single binary - download it and run
+- Dependency tracking and re-rendering only changed pages
+- Markdown support
+- Flexible [filter system](#processors)
+- Simple [config syntax](#configuration)
+- HTTP server and watcher (instant rendering on changes)
 
 ### Quick Start
 

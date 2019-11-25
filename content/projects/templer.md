@@ -25,11 +25,10 @@ installed you can write your input pages in Markdown or Textile.
 
 Variables may be defined on a per-page or per-site basis, and may include:
 
-* The output of shell commands.
-* The output of various local files.
-* Loops refering to filenames.
-    * Allowing simple galleries to be made, for example.
+- The output of shell commands.
+- The output of various local files.
+- Loops refering to filenames.
+  - Allowing simple galleries to be made, for example.
 
 Finally you may define a layout on a per-page basis, allowing you to give
 different areas of your site an entirely different look and feel.
-

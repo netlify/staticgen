@@ -1,13 +1,13 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "@emotion/styled"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from '@emotion/styled'
 import GitHubCorner from 'react-github-corner'
-import ShareButton from "./ShareButton"
+import ShareButton from './ShareButton'
 
 const LogoText = styled.span`
   font-size: 76px;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 `
 
 const LogoLink = styled(Link)`
@@ -61,11 +61,18 @@ const Hero = ({ siteTitle, shareUrl, shareText }) => (
         <LogoText>{siteTitle}</LogoText>
       </LogoLink>
     </HeroHeading>
-    <HeroSubheading>A List of Static Site Generators for JAMstack Sites</HeroSubheading>
+    <HeroSubheading>
+      A List of Static Site Generators for JAMstack Sites
+    </HeroSubheading>
 
     <ShareButtonGroup>
       {['twitter', 'reddit'].map(type => (
-        <ShareButton key={type} type={type} shareText={shareText} shareUrl={shareUrl}/>
+        <ShareButton
+          key={type}
+          type={type}
+          shareText={shareText}
+          shareUrl={shareUrl}
+        />
       ))}
     </ShareButtonGroup>
 
@@ -79,11 +86,11 @@ const Hero = ({ siteTitle, shareUrl, shareText }) => (
 )
 
 Hero.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string
 }
 
 Hero.defaultProps = {
-  siteTitle: ``,
+  siteTitle: ``
 }
 
 export default Hero

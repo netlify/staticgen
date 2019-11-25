@@ -11,13 +11,13 @@ templates:
 description: Bash script to create and manage blogs.
 ---
 
-Bashblog-ng is based on bashblog. The reasons for forking an already great project 
+Bashblog-ng is based on bashblog. The reasons for forking an already great project
 was two;
 
-  1. bashblog had not been updated in almost 3 years
-  2. I wanted features that was not part of the original project
+1. bashblog had not been updated in almost 3 years
+2. I wanted features that was not part of the original project
 
-Out of these two reasons bashblog-ng was born. A drop-in replacement for bashblog 
+Out of these two reasons bashblog-ng was born. A drop-in replacement for bashblog
 with more features but still minimalstic.
 
 --

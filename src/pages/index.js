@@ -1,9 +1,9 @@
-import React, { useState, useMemo } from "react"
-import { graphql } from "gatsby"
+import React, { useState, useMemo } from 'react'
+import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import { sortBy, uniq, flatMap, isEmpty } from 'lodash'
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 import ControlBar from '../components/controlbar'
 import ProjectCard from '../components/projectcard'
 
@@ -35,7 +35,8 @@ const ProjectsList = styled.ul`
 function compare(a, b, reverse) {
   const type = typeof a
   if (type === 'number') return reverse ? b - a : a - b
-  if (type === 'string') return reverse ? b.localeCompare(a) : a.localeCompare(b)
+  if (type === 'string')
+    return reverse ? b.localeCompare(a) : a.localeCompare(b)
   return 0
 }
 
@@ -51,7 +52,7 @@ const IndexPage = ({ data }) => {
   const {
     allProjectStats: { nodes: allProjectStats },
     allMarkdownRemark: { nodes: allMarkdownRemark },
-    site: { siteMetadata: siteMeta },
+    site: { siteMetadata: siteMeta }
   } = data
   const [filter, setFilter] = useState({})
   const [sort, setSort] = useState(siteMeta.sorts[0])
@@ -63,38 +64,46 @@ const IndexPage = ({ data }) => {
   }, [allProjectStats])
 
   const handleFilterChange = (filterName, e) => {
-    setFilter({ ...filter, [filterName]: e.target.value})
+    setFilter({ ...filter, [filterName]: e.target.value })
   }
 
   const handleSortChange = e => {
     setSort(siteMeta.sorts[e.target.value])
   }
 
-  const allCurrentStats = useMemo(() => statsForDays(allProjectStats, 0), [allProjectStats])
+  const allCurrentStats = useMemo(() => statsForDays(allProjectStats, 0), [
+    allProjectStats
+  ])
   const allPreviousStats = useMemo(() => {
     return statsForDays(allProjectStats, sort.days || defaultPreviousDays)
   }, [allProjectStats, sort.days])
 
-  const projects = useMemo(() => allMarkdownRemark.map(({ frontmatter, parent }) => {
-    const id = parent.name
-    const stats = getProjectStats(allCurrentStats, id) || {}
-    const previousStats = getProjectStats(allPreviousStats, id) || {}
-    return {
-      ...frontmatter,
-      id,
-      stats,
-      previousStats,
-      previousStatsAgeInDays: sort.days || defaultPreviousDays,
-    }
-  }), [allMarkdownRemark, allCurrentStats, allPreviousStats, sort.days])
+  const projects = useMemo(
+    () =>
+      allMarkdownRemark.map(({ frontmatter, parent }) => {
+        const id = parent.name
+        const stats = getProjectStats(allCurrentStats, id) || {}
+        const previousStats = getProjectStats(allPreviousStats, id) || {}
+        return {
+          ...frontmatter,
+          id,
+          stats,
+          previousStats,
+          previousStatsAgeInDays: sort.days || defaultPreviousDays
+        }
+      }),
+    [allMarkdownRemark, allCurrentStats, allPreviousStats, sort.days]
+  )
 
   const filteredProjects = useMemo(() => {
     if (isEmpty(filter)) {
       return projects
     }
-    return projects.filter(project => Object.entries(filter).every(([field, value]) => {
-      return !value || project[field].includes(value)
-    }))
+    return projects.filter(project =>
+      Object.entries(filter).every(([field, value]) => {
+        return !value || project[field].includes(value)
+      })
+    )
   }, [projects, filter])
 
   const sortedProjects = useMemo(() => {
@@ -102,24 +111,35 @@ const IndexPage = ({ data }) => {
     return filteredProjects.sort((aObj, bObj) => {
       const aCurrent = aObj.stats[sort.field]
       const bCurrent = bObj.stats[sort.field]
-      const a = sort.days ? aCurrent - ((aObj.previousStats || {})[sort.field]) || 0 : aCurrent
-      const b = sort.days ? bCurrent - ((bObj.previousStats || {})[sort.field]) || 0 : bCurrent
+      const a = sort.days
+        ? aCurrent - (aObj.previousStats || {})[sort.field] || 0
+        : aCurrent
+      const b = sort.days
+        ? bCurrent - (bObj.previousStats || {})[sort.field] || 0
+        : bCurrent
       const types = ['number', 'string']
       if (a && !b) return -1
       if (!a && b) return 1
       if (a && b) return compare(a, b, sort.reverse)
-      return compare(aObj.stats[siteMeta.fallbackSortField], bObj.stats[siteMeta.fallbackSortField])
+      return compare(
+        aObj.stats[siteMeta.fallbackSortField],
+        bObj.stats[siteMeta.fallbackSortField]
+      )
     })
   }, [filteredProjects, sort])
 
-  const filters = useMemo(() => siteMeta.filters.map(filter => ({
-    ...filter,
-    values: sortBy(uniq(flatMap(projects, filter.field))),
-  })), [projects, siteMeta.filters])
+  const filters = useMemo(
+    () =>
+      siteMeta.filters.map(filter => ({
+        ...filter,
+        values: sortBy(uniq(flatMap(projects, filter.field)))
+      })),
+    [projects, siteMeta.filters]
+  )
 
   return (
     <Layout>
-      <SEO/>
+      <SEO />
       <ControlBar
         currentFilter={filter}
         currentSort={sort}

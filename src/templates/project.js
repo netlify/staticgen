@@ -2,11 +2,11 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { EntypoHome, EntypoTwitter, EntypoGithub } from 'react-entypo'
 import Layout from '../components/layout'
-import SEO from "../components/seo"
+import SEO from '../components/seo'
 
-const EntypoIcon = styled(({ Icon, className }) =>
+const EntypoIcon = styled(({ Icon, className }) => (
   <Icon className={className} />
-)`
+))`
   position: relative;
   top: 1px;
 `
@@ -16,11 +16,14 @@ const DetailLink = styled.a`
   white-space: nowrap;
   margin-right: 18px;
 
-  &, &:visited {
+  &,
+  &:visited {
     color: #666;
   }
 
-  &:link, &:active, &:hover {
+  &:link,
+  &:active,
+  &:hover {
     color: #222;
     text-decoration: none;
   }
@@ -47,7 +50,10 @@ const FieldLabel = styled.span`
 
 const Content = styled.div`
   a {
-    &, &:link, &:active, &:hover {
+    &,
+    &:link,
+    &:active,
+    &:hover {
       color: #00c7b7;
       text-decoration: none;
     }
@@ -66,25 +72,27 @@ const Project = ({ pageContext }) => {
     followers,
     twitter,
     content,
-    fields,
+    fields
   } = pageContext
 
   return (
     <Layout projectTitle={title} projectUrl={url} projectId={id}>
-      <SEO pageTitle={title}/>
+      <SEO pageTitle={title} />
       <h1>{title}</h1>
       <div>
-        <DetailLink href={homepage}><EntypoIcon Icon={EntypoHome} /> {homepage}</DetailLink>
-        {twitter &&
+        <DetailLink href={homepage}>
+          <EntypoIcon Icon={EntypoHome} /> {homepage}
+        </DetailLink>
+        {twitter && (
           <DetailLink href={`https://twitter.com/${twitter}`}>
             <EntypoIcon Icon={EntypoTwitter} /> {twitter} ({followers})
           </DetailLink>
-        }
-        {repo &&
+        )}
+        {repo && (
           <DetailLink href={`https://${repohost || 'github'}.com/${repo}`}>
             <EntypoIcon Icon={EntypoGithub} /> {repo} ({stars})
           </DetailLink>
-        }
+        )}
       </div>
 
       <FieldsContainer>

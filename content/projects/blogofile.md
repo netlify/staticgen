@@ -17,4 +17,3 @@ database and no special hosting environment. You customize a set of
 templates with Mako, create posts in a markup language of your choice
 and Blogofile renders your entire website as static HTML and Atom/RSS
 feeds which you can then upload to any old web server you like.
-

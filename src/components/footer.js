@@ -38,7 +38,9 @@ const Footer = ({ footerHtml, copyrightName }) => (
     <FooterContentContainer>
       <FooterContent dangerouslySetInnerHTML={{ __html: footerHtml }} />
     </FooterContentContainer>
-    <Copyright>© {copyrightName} {new Date().getFullYear()}</Copyright>
+    <Copyright>
+      © {copyrightName} {new Date().getFullYear()}
+    </Copyright>
   </FooterContainer>
 )
 

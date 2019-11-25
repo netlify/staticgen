@@ -19,6 +19,7 @@ IronBeard maintains your folder structure and copies static assets like images, 
 Adding a `beard.json` file to your project root allows for further configuration.
 
 ## Features
+
 - Support for recursive folder and file structures
 - Markdown Processor
 - Razor Processor
@@ -26,7 +27,7 @@ Adding a `beard.json` file to your project root allows for further configuration
 - Razor Layout Support (wraps other razor files and markdown markup)
 - Markdown metadata (YAML Frontmatter support in markdown)
 - Razor metadata (YAML Frontmatter support with Razor comments)
-- HTML Formatting to clean up file output. 
+- HTML Formatting to clean up file output.
 - URL correction (properly handles relative routes and root folder routing (index.html etc.))
 - Global configuration file
 - Rich CLI output

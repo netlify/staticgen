@@ -21,7 +21,10 @@ const DeployButton = styled(({ repo, className }) => (
   font-size: 17px;
   padding: 11px;
 
-  &, &:link, &:active, &:hover {
+  &,
+  &:link,
+  &:active,
+  &:hover {
     color: #313d3e;
     text-decoration: none;
   }

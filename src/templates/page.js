@@ -4,7 +4,10 @@ import Layout from '../components/layout'
 
 const Content = styled.div`
   a {
-    &, &:link, &:active, &:hover {
+    &,
+    &:link,
+    &:active,
+    &:hover {
       color: #00c7b7;
       text-decoration: none;
     }

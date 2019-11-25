@@ -9,10 +9,7 @@ license:
 templates:
   - HTML
 description: A fast processor for high quality academic and technical articles from Markdown and LaTeX.
-
----
-
-The main design goal of Madoko is to enable light-weight creation of
+---The main design goal of Madoko is to enable light-weight creation of
 high-quality scholarly and industrial documents for the web and print,
 while maintaining John Gruber's Markdown philosophy of simplicity and
 focus on plain text readability.
@@ -31,24 +28,23 @@ script: lib/myAweseomScriptsAndAnalytics.js
 [INCLUDE="HowWeDoIt.md"]
 
 [INCLUDE="WhatWeDo.md"]
-
 ```
 
 To learn more about Madoko, check out the [reference manual]. To use it, simply:
 
-+ Install with:
+- Install with:
 
 ```sh
 npm install madoko -g
-``` 
+```
 
-+ Translating a Markdown document to HTML is as simple as:
+- Translating a Markdown document to HTML is as simple as:
 
 ```sh
 madoko mydoc.mdk
 ```
 
-+ To also generate a PDF file, use:
+- To also generate a PDF file, use:
 
 ```sh
 madoko --pdf --odir=out mydoc

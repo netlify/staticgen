@@ -15,7 +15,7 @@ onessg (One Static Site Generator) is the Static Site Generator that does only o
 
 > The Javascript pendulum has swung from restrictive, monolithic frameworks to modular, boilerplate-hindered libraries.
 >
->-- [@ericclemmons](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.7xcwmnave)
+> -- [@ericclemmons](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.7xcwmnave)
 
 onessg changes that. We believe in the unix philosophy: do one thing and do it well.
 

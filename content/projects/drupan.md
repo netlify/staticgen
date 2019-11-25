@@ -16,14 +16,16 @@ Drupan is a static site generator which initially focused on blogs and is now ev
 The goal is to give developers and designers one tool they can rely on, that gets the job done and does not require hours of customization and plugins to generate a site.
 
 ### Notable Features
-* Jinja2 with custom filters to allow easily accessing, iterating and filtering all your different entities.
-* Sane plugin architecture allowing you to easily add missing functionality.
-* No enforced structure of meta data and content.
-* Active developed.
+
+- Jinja2 with custom filters to allow easily accessing, iterating and filtering all your different entities.
+- Sane plugin architecture allowing you to easily add missing functionality.
+- No enforced structure of meta data and content.
+- Active developed.
 
 ### Upcoming Features
+
 There is a 2.0 release in alpha testing which will bring the following features
 
-* S3 and CloudFront support
-* Better Jinja2 filters
-* Faster site generation
+- S3 and CloudFront support
+- Better Jinja2 filters
+- Faster site generation

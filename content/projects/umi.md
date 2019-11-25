@@ -24,7 +24,6 @@ description: Pluggable enterprise-level react application framework
 - 🌴 **Deep integration with [dva](https://dvajs.com/)**, including duck directory support, automatic loading of model, code splitting, etc
 - ⛄️ **Support MPA**，based on [umi-plugin-mpa](https://github.com/umijs/umi-plugin-mpa)
 
-
 ## Install
 
 Install tool
@@ -32,7 +31,6 @@ Install tool
 ```sh
 $ yarn global add umi # OR npm install -g umi
 ```
-
 
 ## Build
 
@@ -42,7 +40,6 @@ Create a page
 $ mkdir myapp && cd myapp
 $ umi generate page index
 ```
-
 
 ## Run
 
@@ -57,7 +54,6 @@ Build and deploy
 ```sh
 $ umi build
 ```
-
 
 ## Examples
 

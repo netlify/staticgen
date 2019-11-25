@@ -5,19 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import { Global, css } from "@emotion/core"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
+import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
-import Hero from "./hero"
-import Nav from "./nav"
+import Hero from './hero'
+import Nav from './nav'
 import NavLink, { NavAnchor } from './navlink'
 import Banner from './banner'
 import Footer from './footer'
-import "typeface-roboto"
-import "typeface-roboto-slab"
-
+import 'typeface-roboto'
+import 'typeface-roboto-slab'
 
 const globalStyles = css`
   * {
@@ -66,7 +65,7 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
     url: siteUrl,
     shareText: defaultShareText,
     shareTextProjectStart,
-    shareTextProjectEnd,
+    shareTextProjectEnd
   } = data.site.siteMetadata
   const shareUrl = projectId ? `${siteUrl}/${projectId}` : siteUrl
   const shareText = projectId
@@ -75,7 +74,7 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
 
   return (
     <>
-      <Global styles={globalStyles}/>
+      <Global styles={globalStyles} />
       {/*
       <Banner>
         Learn more about the JAMstack at{' '}
@@ -91,16 +90,22 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
       <Nav>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contribute">Contribute</NavLink>
-        <NavAnchor href="https://jamstack.org" target="_blank" rel="noopener noreferrer">
+        <NavAnchor
+          href="https://jamstack.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           About JAMstack
         </NavAnchor>
-        <NavAnchor href="https://headlesscms.org" target="_blank" rel="noopener noreferrer">
+        <NavAnchor
+          href="https://headlesscms.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Need a Static CMS?
         </NavAnchor>
       </Nav>
-      <Container>
-        {children}
-      </Container>
+      <Container>{children}</Container>
       <Footer
         footerHtml={data.allSiteMetadataMarkdownRemark.nodes[0].html}
         copyrightName={data.site.siteMetadata.copyrightName}
@@ -110,7 +115,7 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout

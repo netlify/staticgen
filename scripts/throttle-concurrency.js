@@ -6,7 +6,7 @@ async function access(pending, queue, resource, ...args) {
     const idx = pending.indexOf(promise)
     pending.splice([idx, 1, ...(queue[0] ? [queue.shift()()] : [])])
     return promise
-  } catch(err) {
+  } catch (err) {
     console.error(err)
     throw err
   }
@@ -28,10 +28,15 @@ function delay(boundAccess, queue, timeout, ...args) {
   })
 }
 
-module.exports = function throttleConcurrency(resource, limit, timeout = 10000) {
+module.exports = function throttleConcurrency(
+  resource,
+  limit,
+  timeout = 10000
+) {
   const pending = []
   const queue = []
   const boundAccess = access.bind(null, pending, queue, resource)
   const boundDelay = delay.bind(null, boundAccess, queue, timeout)
-  return (...args) => ((pending.length < limit) ? boundAccess : boundDelay)(...args)
+  return (...args) =>
+    (pending.length < limit ? boundAccess : boundDelay)(...args)
 }

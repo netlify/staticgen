@@ -18,65 +18,78 @@ module.exports = {
     description,
     socialPreviewImageFilename: 'staticgen.png',
     shareButtons: ['twitter', 'reddit'],
-    shareText: 'Check out StaticGen, a leaderboard of open source static site generators.',
+    shareText:
+      'Check out StaticGen, a leaderboard of open source static site generators.',
     shareTextProjectStart: 'Check out ',
-    shareTextProjectEnd: ', an open source static site generator on the staticgen.com leaderboard.',
-    footerMarkdown: 'StaticGen is hosted and maintained by [Netlify](https://www.netlify.com), the perfect way to deploy your JAMstack sites and apps.',
+    shareTextProjectEnd:
+      ', an open source static site generator on the staticgen.com leaderboard.',
+    footerMarkdown:
+      'StaticGen is hosted and maintained by [Netlify](https://www.netlify.com), the perfect way to deploy your JAMstack sites and apps.',
     copyrightName: 'Netlify',
     navLinks: [
       { url: 'https://jamstack.org', text: 'About JAMstack' },
-      { url: 'https://headlesscms.org', text: 'Need a Static CMS?' },
+      { url: 'https://headlesscms.org', text: 'Need a Static CMS?' }
     ],
     fallbackSortField: 'title',
     sorts: [
-      { field: "stars", label: "Stars (7 days)", reverse: true, days: 7 },
-      { field: "stars", label: "Stars (30 days)", reverse: true, days: 30 },
-      { field: "stars", label: "Stars (total)", reverse: true },
-      { field: "followers", label: "Followers (7 days)", reverse: true, days: 7 },
-      { field: "followers", label: "Followers (30 days)", reverse: true, days: 30 },
-      { field: "followers", label: "Followers (total)", reverse: true },
-      { field: "title", label: "Title" },
+      { field: 'stars', label: 'Stars (7 days)', reverse: true, days: 7 },
+      { field: 'stars', label: 'Stars (30 days)', reverse: true, days: 30 },
+      { field: 'stars', label: 'Stars (total)', reverse: true },
+      {
+        field: 'followers',
+        label: 'Followers (7 days)',
+        reverse: true,
+        days: 7
+      },
+      {
+        field: 'followers',
+        label: 'Followers (30 days)',
+        reverse: true,
+        days: 30
+      },
+      { field: 'followers', label: 'Followers (total)', reverse: true },
+      { field: 'title', label: 'Title' }
     ],
     filters: [
-      { field: "language", emptyLabel: "Any Language", multiple: true },
-      { field: "templates", emptyLabel: "Any Template", multiple: true },
-      { field: "license", emptyLabel: "Any License", multiple: true },
+      { field: 'language', emptyLabel: 'Any Language', multiple: true },
+      { field: 'templates', emptyLabel: 'Any Template', multiple: true },
+      { field: 'license', emptyLabel: 'Any License', multiple: true }
     ],
     fields: [
-      { name: "language", label: "Languages" },
-      { name: "templates", label: "Templates" },
-      { name: "license", label: "License" },
-    ],
+      { name: 'language', label: 'Languages' },
+      { name: 'templates', label: 'Templates' },
+      { name: 'license', label: 'License' }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-prismjs`],
-      },
+        plugins: [`gatsby-remark-prismjs`]
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: `${__dirname}/content/projects`,
-      },
+        path: `${__dirname}/content/projects`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/content/pages`,
-      },
+        path: `${__dirname}/content/pages`
+      }
     },
-    `gatsby-plugin-emotion`,
-  ],
+    `gatsby-plugin-emotion`
+  ]
 }

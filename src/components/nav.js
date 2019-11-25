@@ -18,9 +18,7 @@ const NavMenu = styled(Container)`
 
 const Nav = ({ children }) => (
   <NavBar>
-    <NavMenu>
-      {children}
-    </NavMenu>
+    <NavMenu>{children}</NavMenu>
   </NavBar>
 )
 

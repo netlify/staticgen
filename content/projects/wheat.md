@@ -8,7 +8,7 @@ license:
   - MIT
 templates:
   - Custom
-description: "A blog engine for coders written in node.JS"
+description: 'A blog engine for coders written in node.JS'
 ---
 
 Wheat is a blogging engine that reads a git repo full of markdown articles and presents them as a website.

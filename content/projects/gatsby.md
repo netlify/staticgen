@@ -17,9 +17,9 @@ Build blazing-fast, modern apps and websites with React
 
 ## Features
 
-* Fast no-reload page changes
-* Build sites with React.js components
-* Hot reload editing. Tweak pages, templates, and styles and see changes in real time.
+- Fast no-reload page changes
+- Build sites with React.js components
+- Hot reload editing. Tweak pages, templates, and styles and see changes in real time.
 
 ## Modern web tech without the headache
 

@@ -21,10 +21,10 @@ twitter: middlemanapp
 
 The last few years have seen an explosion in the amount and variety of tools developers can use to build web applications. Ruby on Rails selects a handful of these tools:
 
-* [Sass](http://sass-lang.com/) for DRY stylesheets
-* [CoffeeScript](http://coffeescript.org/) for safer and less verbose javascript
-* Multiple asset management solutions, including [Sprockets](https://github.com/sstephenson/sprockets)
-* [ERb](http://ruby-doc.org/stdlib-2.0.0/libdoc/erb/rdoc/ERB.html) & [Haml](http://haml.info/) for dynamic pages and simplified HTML syntax
+- [Sass](http://sass-lang.com/) for DRY stylesheets
+- [CoffeeScript](http://coffeescript.org/) for safer and less verbose javascript
+- Multiple asset management solutions, including [Sprockets](https://github.com/sstephenson/sprockets)
+- [ERb](http://ruby-doc.org/stdlib-2.0.0/libdoc/erb/rdoc/ERB.html) & [Haml](http://haml.info/) for dynamic pages and simplified HTML syntax
 
 **Middleman** gives the stand-alone developer access to all these tools and many, many more. Why would you use a stand-alone framework instead of Ruby on Rails?
 
