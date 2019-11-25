@@ -36,18 +36,18 @@ deploying, you must set the environment variables per the example below. If you 
 locally, you can set these in a `.env` file at the root of the repo.
 
 ```
-STATICGEN_GITHUB_TOKEN=examplekey123abc
-STATICGEN_TWITTER_CONSUMER_KEY=examplekey231abc
-STATICGEN_TWITTER_CONSUMER_SECRET=examplekey321abc
-STATICGEN_TWITTER_ACCESS_TOKEN_KEY=examplekey231abc
-STATICGEN_TWITTER_ACCESS_TOKEN_SECRET=examplekey321abc
+GITHUB_TOKEN=examplekey123abc
+TWITTER_CONSUMER_KEY=examplekey231abc
+TWITTER_CONSUMER_SECRET=examplekey321abc
+TWITTER_ACCESS_TOKEN_KEY=examplekey231abc
+TWITTER_ACCESS_TOKEN_SECRET=examplekey321abc
 ```
 
 GitHub, GitLab, and Twitter data is cached in the `.tmp` directory, and online in a Gist. If neither
 has data newer than 24 hours old, fresh data is fetched from GitHub, GitLab, and Twitter. Fetching
 caching occur automatically during the build.
 
-Then visit http://localhost:3000/ - React Static will automatically reload when changes occur.
+Then visit http://localhost:8000/ - Gatsby will automatically reload when changes occur.
 
 To test a production build locally, do:
 
@@ -62,18 +62,9 @@ To run a production build for deployment:
 npm run build
 ```
 
-## Configuration
-
-This repo uses a `site.yaml` file to provide high level configurability, with the eventual goal of
-deriving a generic boilerplate that can be used for generating an open source leaderboard without
-editing the site source.
-
-The currently supported keys for `site.yaml` are present in the file itself, documentation of
-available options will be provided when the generic boilerplate is published.
-
 ## Netlify
 
-staticgen.com is built and maintained by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps.
+StaticGen.com is built and maintained by [Netlify](https://www.netlify.com), a hosting and automation service for static websites and apps.
 
 ## License
 
