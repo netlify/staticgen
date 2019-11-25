@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from '@emotion/styled'
 import GitHubCorner from 'react-github-corner'
-import ShareButton from './ShareButton'
+import ShareButton from './sharebutton'
 
 const LogoText = styled.span`
   font-size: 76px;
