@@ -34,7 +34,7 @@
     "fs-extra": "^8.1.0",
     "gatsby-source-gitlab": "^1.0.2",
     "gatsby-source-twitter": "^3.0.0",
-    "gitlab": "^11.5.1",
+    "gitlab": "^12.0.0",
     "gray-matter": "^4.0.2",
     "klaw": "^3.0.0",
     "node-fetch": "^2.6.0",
