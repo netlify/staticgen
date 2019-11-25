@@ -22,7 +22,7 @@
     "react-dom": "^16.0.0",
     "react-entypo": "^1.3.0",
     "react-github-corner": "^2.3.0",
-    "react-router": "^4.2.0",
+    "react-router": "^5.0.0",
     "react-share": "^2.0.0",
     "react-static": "^5.1.8",
     "slug": "^1.1.0",
