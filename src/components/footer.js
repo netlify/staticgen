@@ -33,19 +33,13 @@ const Copyright = styled.div`
   margin-top: 48px;
 `
 
-const Footer = ({ footerHtml, copyrightName, copyrightYearStart }) => {
-  const currentYear = new Date().getFullYear()
-  const copyrightYear = copyrightYearStart === currentYear
-    ? currentYear
-    : `${copyrightYearStart} - ${currentYear}`
-  return (
-    <FooterContainer>
-      <FooterContentContainer>
-        <FooterContent dangerouslySetInnerHTML={{ __html: footerHtml }} />
-      </FooterContentContainer>
-      <Copyright>© {copyrightName} {copyrightYear}</Copyright>
-    </FooterContainer>
-  )
-}
+const Footer = ({ footerHtml, copyrightName }) => (
+  <FooterContainer>
+    <FooterContentContainer>
+      <FooterContent dangerouslySetInnerHTML={{ __html: footerHtml }} />
+    </FooterContentContainer>
+    <Copyright>© {copyrightName} {new Date().getFullYear()}</Copyright>
+  </FooterContainer>
+)
 
 export default Footer

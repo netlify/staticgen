@@ -41,14 +41,17 @@ const Container = styled.div`
   padding: 40px;
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
+          url
           title
           copyrightName
-          copyrightYearStart
+          shareText
+          shareTextProjectStart
+          shareTextProjectEnd
         }
       }
       allSiteMetadataMarkdownRemark {
@@ -58,6 +61,17 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  const {
+    url: siteUrl,
+    shareText: defaultShareText,
+    shareTextProjectStart,
+    shareTextProjectEnd,
+  } = data.site.siteMetadata
+  const shareUrl = projectId ? `${siteUrl}/${projectId}` : siteUrl
+  const shareText = projectId
+    ? `${shareTextProjectStart}${projectTitle}${shareTextProjectEnd}`
+    : defaultShareText
 
   return (
     <>
@@ -69,7 +83,11 @@ const Layout = ({ children }) => {
         in San Francisco — 16-18 October, 2019
       </Banner>
       */}
-      <Hero siteTitle={data.site.siteMetadata.title} />
+      <Hero
+        siteTitle={data.site.siteMetadata.title}
+        shareText={shareText}
+        shareUrl={shareUrl}
+      />
       <Nav>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contribute">Contribute</NavLink>
@@ -85,7 +103,7 @@ const Layout = ({ children }) => {
       </Container>
       <Footer
         footerHtml={data.allSiteMetadataMarkdownRemark.nodes[0].html}
-        {...data.site.siteMetadata}
+        copyrightName={data.site.siteMetadata.copyrightName}
       />
     </>
   )

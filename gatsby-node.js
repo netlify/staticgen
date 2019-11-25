@@ -226,6 +226,7 @@ exports.createPages = async ({ graphql, actions }) => {
       path: id,
       component: projectTemplate,
       context: {
+        id,
         content,
         fields,
         ...frontmatter,

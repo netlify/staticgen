@@ -54,7 +54,7 @@ const ShareButtonGroup = styled.div`
   }
 `
 
-const Hero = ({ siteTitle }) => (
+const Hero = ({ siteTitle, shareUrl, shareText }) => (
   <HeroContainer>
     <HeroHeading>
       <LogoLink to="/" title={siteTitle}>
@@ -65,7 +65,7 @@ const Hero = ({ siteTitle }) => (
 
     <ShareButtonGroup>
       {['twitter', 'reddit'].map(type => (
-        <ShareButton key={type} type={type} />
+        <ShareButton key={type} type={type} shareText={shareText} shareUrl={shareUrl}/>
       ))}
     </ShareButtonGroup>
 

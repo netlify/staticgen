@@ -2,6 +2,7 @@ const { oneLine } = require('common-tags')
 
 module.exports = {
   siteMetadata: {
+    url: 'https://staticgen.com.com',
     title: `StaticGen`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
@@ -18,7 +19,6 @@ module.exports = {
     shareTextProjectStart: 'Check out ',
     shareTextProjectEnd: ', an open source static site generator on the staticgen.com leaderboard.',
     footerMarkdown: 'StaticGen is hosted and maintained by [Netlify](https://www.netlify.com), the perfect way to deploy your JAMstack sites and apps.',
-    copyrightYearStart: 2014,
     copyrightName: 'Netlify',
     fallbackSortField: 'title',
     navLinks: [

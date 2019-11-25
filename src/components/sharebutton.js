@@ -13,7 +13,7 @@ const buttonConfigs = {
 }
 
 const Button = styled(({
-  type, url, text, className,
+  type, url, text, projectTitle, className,
 }) => {
   const { Button, Icon } = buttonConfigs[type]
   return (
@@ -32,8 +32,8 @@ const Button = styled(({
   }
 `
 
-const ShareButton = ({ type }) => (
-  <Button type={type} url="https://example.com" text="demo share text" />
+const ShareButton = ({ type, shareText, shareUrl }) => (
+  <Button type={type} url={shareUrl} text={shareText} />
 )
 
 export default ShareButton

@@ -55,6 +55,8 @@ const Content = styled.div`
 
 const Project = ({ pageContext }) => {
   const {
+    id,
+    url,
     title,
     repo,
     repohost,
@@ -67,7 +69,7 @@ const Project = ({ pageContext }) => {
   } = pageContext
 
   return (
-    <Layout>
+    <Layout projectTitle={title} projectUrl={url} projectId={id}>
       <h1>{title}</h1>
       <div>
         <DetailLink href={homepage}><EntypoIcon Icon={EntypoHome} /> {homepage}</DetailLink>
