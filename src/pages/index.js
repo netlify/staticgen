@@ -119,7 +119,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home"/>
+      <SEO/>
       <ControlBar
         currentFilter={filter}
         currentSort={sort}

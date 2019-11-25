@@ -71,7 +71,7 @@ const Project = ({ pageContext }) => {
 
   return (
     <Layout projectTitle={title} projectUrl={url} projectId={id}>
-      <SEO title={title}/>
+      <SEO pageTitle={title}/>
       <h1>{title}</h1>
       <div>
         <DetailLink href={homepage}><EntypoIcon Icon={EntypoHome} /> {homepage}</DetailLink>

@@ -217,8 +217,8 @@ async function getPageData(graphql) {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const projects = (await getProjectData(graphql)).filter(({ dir }) => console.log(dir) || dir === 'projects')
-  const pages = (await getPageData(graphql)).filter(({ dir }) => console.log(dir) || dir === 'pages')
+  const projects = (await getProjectData(graphql)).filter(({ dir }) => dir === 'projects')
+  const pages = (await getPageData(graphql)).filter(({ dir }) =>  dir === 'pages')
   const projectTemplate = path.resolve('src/templates/project.js')
   const pageTemplate = path.resolve('src/templates/page.js')
   projects.forEach(({ id, content, fields, frontmatter, stats }) => {

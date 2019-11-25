@@ -13,7 +13,7 @@ module.exports = {
     author: `@netlify`,
     image: 'images/staticgen.png',
     repo: 'https://github.com/netlify/staticgen',
-    titleHome: 'StaticGen | Top Open Source Static Site Generators',
+    homeTitle: 'StaticGen | Top Open Source Static Site Generators',
     subtitle: 'A List of Static Site Generators for JAMstack Sites',
     description,
     socialPreviewImageFilename: 'staticgen.png',
