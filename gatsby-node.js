@@ -210,7 +210,7 @@ async function getProjectData(graphql) {
         stats
       }
     }
-  )
+  ).filter(({ dir }) => dir === 'projects')
 }
 
 async function getPageData(graphql) {
