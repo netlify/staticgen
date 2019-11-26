@@ -81,18 +81,20 @@ const IndexPage = ({ data }) => {
   }, [allProjectStats, sort.days])
 
   const projects = useMemo(() => {
-    return allMarkdownRemark.map(({ frontmatter, parent }) => {
-      const id = parent.name
-      const stats = getProjectStats(allCurrentStats, id) || {}
-      const previousStats = getProjectStats(allPreviousStats, id) || {}
-      return {
-        ...frontmatter,
-        id,
-        stats,
-        previousStats,
-        previousStatsAgeInDays: sort.days || defaultPreviousDays
-      }
-    })
+    return allMarkdownRemark
+      .filter(({ parent: { dir } }) => dir.endsWith('projects'))
+      .map(({ frontmatter, parent }) => {
+        const id = parent.name
+        const stats = getProjectStats(allCurrentStats, id) || {}
+        const previousStats = getProjectStats(allPreviousStats, id) || {}
+        return {
+          ...frontmatter,
+          id,
+          stats,
+          previousStats,
+          previousStatsAgeInDays: sort.days || defaultPreviousDays
+        }
+      })
   }, [allMarkdownRemark, allCurrentStats, allPreviousStats, sort.days])
 
   const filteredProjects = useMemo(() => {
@@ -219,6 +221,7 @@ export const query = graphql`
         parent {
           ... on File {
             name
+            dir
           }
         }
       }
