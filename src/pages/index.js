@@ -98,9 +98,11 @@ const IndexPage = ({ data }) => {
     if (isEmpty(filter)) {
       return projects
     }
+    const currentFilters = Object.entries(filter).filter(([field, value]) => value)
     return projects.filter(project =>
-      Object.entries(filter).every(([field, value]) => {
-        return !value || project[field].includes(value)
+      currentFilters.every(([field, filterValue]) => {
+        const value = project[field]
+        return value && (Array.isArray(value) ? value.includes(filterValue) : value === filterValue)
       })
     )
   }, [projects, filter])
