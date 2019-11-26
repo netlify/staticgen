@@ -55,6 +55,7 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
       }
       allSiteMetadataMarkdownRemark {
         nodes {
+          name
           html
         }
       }
@@ -71,6 +72,9 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
   const shareText = projectId
     ? `${shareTextProjectStart}${projectTitle}${shareTextProjectEnd}`
     : defaultShareText
+  const footerHtml = data.allSiteMetadataMarkdownRemark.nodes.find(({ name }) => {
+    return name === 'footer'
+  }).html
 
   return (
     <>
@@ -106,10 +110,7 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
         </NavAnchor>
       </Nav>
       <Container>{children}</Container>
-      <Footer
-        footerHtml={data.allSiteMetadataMarkdownRemark.nodes[0].html}
-        copyrightName={data.site.siteMetadata.copyrightName}
-      />
+      <Footer footerHtml={footerHtml} copyrightName={data.site.siteMetadata.copyrightName}/>
     </>
   )
 }

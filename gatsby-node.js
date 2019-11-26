@@ -20,6 +20,7 @@ const rehypeToHtml = require('rehype-stringify')
 const { oneLine } = require('common-tags')
 const dateFns = require('date-fns')
 const matter = require('gray-matter')
+const decamelize = require('decamelize')
 const readdir = util.promisify(fs.readdir)
 const readFile = util.promisify(fs.readFile)
 const fetchArchive = require('./scripts/fetch-archive')
@@ -119,20 +120,27 @@ exports.sourceNodes = async ({
     })
   })
 
-  const { contents: html } = await unified()
-    .use(markdownToRemark)
-    .use(remarkToRehype)
-    .use(rehypeToHtml)
-    .process(siteMetadata.footerMarkdown)
+  Object.entries(siteMetadata).forEach(async ([key, value]) => {
+    if (key.endsWith('Markdown')) {
+      const { contents: html } = await unified()
+        .use(markdownToRemark)
+        .use(remarkToRehype)
+        .use(rehypeToHtml)
+        .process(value)
 
-  createNode({
-    html,
-    id: createNodeId('footer-content'),
-    parent: null,
-    children: [],
-    internal: {
-      type: 'SiteMetadataMarkdownRemark',
-      contentDigest: createContentDigest({ html })
+      const name = decamelize(key, '-').split('-').slice(0, -1).join('-')
+      const content = { name, html }
+
+      createNode({
+        ...content,
+        id: createNodeId(name),
+        parent: null,
+        children: [],
+        internal: {
+          type: 'SiteMetadataMarkdownRemark',
+          contentDigest: createContentDigest(content)
+        }
+      })
     }
   })
   return

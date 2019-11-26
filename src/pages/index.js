@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ControlBar from '../components/controlbar'
 import ProjectCard from '../components/projectcard'
+import PromoCard from '../components/promocard'
 
 const ProjectsList = styled.ul`
   display: grid;
@@ -52,6 +53,7 @@ const IndexPage = ({ data }) => {
   const {
     allProjectStats: { nodes: allProjectStats },
     allMarkdownRemark: { nodes: allMarkdownRemark },
+    allSiteMetadataMarkdownRemark: { nodes: allSiteMetadataMarkdownRemark },
     site: { siteMetadata: siteMeta }
   } = data
   const [filter, setFilter] = useState({})
@@ -78,22 +80,20 @@ const IndexPage = ({ data }) => {
     return statsForDays(allProjectStats, sort.days || defaultPreviousDays)
   }, [allProjectStats, sort.days])
 
-  const projects = useMemo(
-    () =>
-      allMarkdownRemark.map(({ frontmatter, parent }) => {
-        const id = parent.name
-        const stats = getProjectStats(allCurrentStats, id) || {}
-        const previousStats = getProjectStats(allPreviousStats, id) || {}
-        return {
-          ...frontmatter,
-          id,
-          stats,
-          previousStats,
-          previousStatsAgeInDays: sort.days || defaultPreviousDays
-        }
-      }),
-    [allMarkdownRemark, allCurrentStats, allPreviousStats, sort.days]
-  )
+  const projects = useMemo(() => {
+    return allMarkdownRemark.map(({ frontmatter, parent }) => {
+      const id = parent.name
+      const stats = getProjectStats(allCurrentStats, id) || {}
+      const previousStats = getProjectStats(allPreviousStats, id) || {}
+      return {
+        ...frontmatter,
+        id,
+        stats,
+        previousStats,
+        previousStatsAgeInDays: sort.days || defaultPreviousDays
+      }
+    })
+  }, [allMarkdownRemark, allCurrentStats, allPreviousStats, sort.days])
 
   const filteredProjects = useMemo(() => {
     if (isEmpty(filter)) {
@@ -128,14 +128,27 @@ const IndexPage = ({ data }) => {
     })
   }, [filteredProjects, sort])
 
-  const filters = useMemo(
-    () =>
-      siteMeta.filters.map(filter => ({
-        ...filter,
-        values: sortBy(uniq(flatMap(projects, filter.field)))
-      })),
-    [projects, siteMeta.filters]
-  )
+  const filters = useMemo(() => {
+    return siteMeta.filters.map(filter => ({
+      ...filter,
+      values: sortBy(uniq(flatMap(projects, filter.field)))
+    }))
+  }, [projects, siteMeta.filters])
+
+  const promoText = useMemo(() => {
+    return allSiteMetadataMarkdownRemark.find(({ name }) => name === 'promo').html
+  }, [allSiteMetadataMarkdownRemark])
+
+  const renderProjects = () => {
+    const list = sortedProjects.map(project => (
+      <li key={project.id}>
+        <ProjectCard fields={siteMeta.fields} {...project} />
+      </li>
+    ))
+    list.splice(3, 0, <PromoCard key="promo"dangerouslySetInnerHTML={{ __html: promoText }}/>)
+    return list
+  }
+
 
   return (
     <Layout>
@@ -149,11 +162,7 @@ const IndexPage = ({ data }) => {
         onChangeSort={handleSortChange}
       />
       <ProjectsList>
-        {sortedProjects.map(project => (
-          <li key={project.id}>
-            <ProjectCard fields={siteMeta.fields} {...project} />
-          </li>
-        ))}
+        {renderProjects()}
       </ProjectsList>
     </Layout>
   )
@@ -212,6 +221,12 @@ export const query = graphql`
             name
           }
         }
+      }
+    }
+    allSiteMetadataMarkdownRemark {
+      nodes {
+        name
+        html
       }
     }
   }

@@ -31,6 +31,7 @@
     "@mosch/gatsby-source-github": "^0.4.1",
     "common-tags": "^1.8.0",
     "date-fns": "^2.8.0",
+    "decamelize": "^3.2.0",
     "fs-extra": "^8.1.0",
     "gatsby-source-gitlab": "^1.0.2",
     "gatsby-source-twitter": "^3.0.0",

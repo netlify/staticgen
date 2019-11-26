@@ -1,4 +1,4 @@
-const { oneLine } = require('common-tags')
+const { oneLine, stripIndent } = require('common-tags')
 
 const description = oneLine`
   StaticGen is a leaderboard of the top open source static site generators. Promoting a static
@@ -9,7 +9,10 @@ module.exports = {
   siteMetadata: {
     url: 'https://staticgen.com.com',
     title: `StaticGen`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: oneLine`
+      Kick off your next, great Gatsby project with this default starter. This barebones starter
+      ships with the main Gatsby configuration files you might need.
+    `,
     author: `@netlify`,
     image: 'images/staticgen.png',
     repo: 'https://github.com/netlify/staticgen',
@@ -21,11 +24,21 @@ module.exports = {
     shareText:
       'Check out StaticGen, a leaderboard of open source static site generators.',
     shareTextProjectStart: 'Check out ',
-    shareTextProjectEnd:
-      ', an open source static site generator on the staticgen.com leaderboard.',
-    footerMarkdown:
-      'StaticGen is hosted and maintained by [Netlify](https://www.netlify.com), the perfect way to deploy your JAMstack sites and apps.',
+    shareTextProjectEnd: ', an open source static site generator on the staticgen.com leaderboard.',
+    footerMarkdown: oneLine`
+      StaticGen is hosted and maintained by [Netlify](https://www.netlify.com), the perfect way to
+      deploy your JAMstack sites and apps.
+    `,
     copyrightName: 'Netlify',
+    promoMarkdown: stripIndent`
+      ## Get started with one click!
+
+      For generators with the "Deploy to Netlify" button, you can deploy a new site from a template
+      with one click. Get HTTPS, continuous delivery, and bring a custom domain, free of charge.
+
+      Want your own Deploy to Netlify button? [Learn more
+      here](https://www.netlify.com/docs/deploy_button/).
+    `,
     navLinks: [
       { url: 'https://jamstack.org', text: 'About JAMstack' },
       { url: 'https://headlesscms.org', text: 'Need a Static CMS?' }
