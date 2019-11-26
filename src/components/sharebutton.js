@@ -1,15 +1,10 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {
-  TwitterShareButton,
-  TwitterIcon,
-  RedditShareButton,
-  RedditIcon
-} from 'react-share'
+import { TwitterShareButton, TwitterIcon, RedditShareButton, RedditIcon } from 'react-share'
 
 const buttonConfigs = {
   twitter: { Button: TwitterShareButton, Icon: TwitterIcon, color: '#1da1f2' },
-  reddit: { Button: RedditShareButton, Icon: RedditIcon, color: '#ff4500' }
+  reddit: { Button: RedditShareButton, Icon: RedditIcon, color: '#ff4500' },
 }
 
 const Button = styled(({ type, url, text, projectTitle, className }) => {

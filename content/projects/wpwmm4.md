@@ -27,7 +27,7 @@ Features:
 
 Nutshell:
 
-- convert items of ${TARGETS}: ${SRC_DIR}/_.m4 -> \${DEST_DIR}/_.html
+- convert items of ${TARGETS}: ${SRC*DIR}/*.m4 -> \${DEST*DIR}/*.html
 - create items of \${TARGETS_MANUAL}: use own programs, scripts
 - create items of ${VIRTUALS}: use templates from ${VIRT_DIR}
 - can call scripts from scripts/ directory and use their outputs

@@ -27,7 +27,7 @@ const ControlBar = ({
   filters,
   sorts,
   onChangeFilter,
-  onChangeSort
+  onChangeSort,
 }) => (
   <DropdownRow>
     <DropdownGroup label="Filter">

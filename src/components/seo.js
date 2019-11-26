@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 function SEO({ description, lang, meta, pageTitle }) {
   const {
-    site: { siteMetadata: site }
+    site: { siteMetadata: site },
   } = useStaticQuery(
     graphql`
       query {
@@ -28,46 +28,46 @@ function SEO({ description, lang, meta, pageTitle }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang
+        lang,
       }}
       title={title}
       meta={[
         {
           name: `description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           property: `og:title`,
-          content: title
+          content: title,
         },
         {
           property: `og:description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           property: `og:type`,
-          content: `website`
+          content: `website`,
         },
         {
           property: `og:image`,
-          content: site.image
+          content: site.image,
         },
         {
           name: `twitter:card`,
-          content: `summary`
+          content: `summary`,
         },
         {
           name: `twitter:creator`,
-          content: site.author
+          content: site.author,
         },
         {
           name: `twitter:title`,
-          content: site.title
+          content: site.title,
         },
         {
           name: `twitter:description`,
-          content: metaDescription
-        }
+          content: metaDescription,
+        },
       ].concat(meta)}
     />
   )
@@ -76,14 +76,14 @@ function SEO({ description, lang, meta, pageTitle }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``
+  description: ``,
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  pageTitle: PropTypes.string
+  pageTitle: PropTypes.string,
 }
 
 export default SEO

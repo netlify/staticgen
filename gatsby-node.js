@@ -3,16 +3,7 @@ const fs = require('fs')
 const util = require('util')
 const path = require('path')
 const fetch = require('node-fetch')
-const {
-  pick,
-  pickBy,
-  map,
-  find,
-  mapValues,
-  compact,
-  uniq,
-  last
-} = require('lodash')
+const { pick, pickBy, map, find, mapValues, compact, uniq, last } = require('lodash')
 const unified = require('unified')
 const markdownToRemark = require('remark-parse')
 const remarkToRehype = require('remark-rehype')
@@ -29,27 +20,14 @@ function extractRelevantProjectData(data, configDays) {
   const now = Date.now()
   const timestamps = data.map(([timestamp]) => timestamp)
   const oldestTimestamp = dateFns.min(timestamps).getTime()
-  const oldestDataAgeInDays = dateFns.differenceInDays(
-    Date.now(),
-    oldestTimestamp
-  )
-  const requiredDays = [
-    0,
-    ...configDays.filter(d => d < oldestDataAgeInDays),
-    oldestDataAgeInDays
-  ]
-  const timestampProxies = requiredDays.map(days => [
-    days,
-    dateFns.subDays(now, days).getTime()
-  ])
+  const oldestDataAgeInDays = dateFns.differenceInDays(Date.now(), oldestTimestamp)
+  const requiredDays = [0, ...configDays.filter(d => d < oldestDataAgeInDays), oldestDataAgeInDays]
+  const timestampProxies = requiredDays.map(days => [days, dateFns.subDays(now, days).getTime()])
   const requiredTimestamps = timestampProxies.map(([days, timestamp]) => {
     return [days, dateFns.closestTo(timestamp, timestamps).getTime()]
   })
   return requiredTimestamps.map(([days, timestamp]) => {
-    return [
-      days,
-      data.find(([dataTimestamp]) => timestamp === dataTimestamp)[1]
-    ]
+    return [days, data.find(([dataTimestamp]) => timestamp === dataTimestamp)[1]]
   })
 }
 
@@ -70,17 +48,14 @@ exports.sourceNodes = async ({
   actions,
   createNodeId,
   createContentDigest,
-  getNodesByType
+  getNodesByType,
 }) => {
   const [{ siteMetadata }] = getNodesByType('Site')
   const { createNode } = actions
   const projectsPath = 'content/projects'
   const filenames = await readdir(`${__dirname}/${projectsPath}`)
   const mapFilenames = async filename => {
-    const file = await readFile(
-      `${__dirname}/${projectsPath}/${filename}`,
-      'utf8'
-    )
+    const file = await readFile(`${__dirname}/${projectsPath}/${filename}`, 'utf8')
     const { repo, repohost, twitter } = matter(file).data
     const id = filename.slice(0, -3).toLowerCase()
     if (!repo) {
@@ -102,7 +77,7 @@ exports.sourceNodes = async ({
     twitterConsumerSecret: process.env.TWITTER_CONSUMER_SECRET,
     archiveFilename: 'staticgen-archive.json',
     localArchivePath: 'tmp/staticgen-archive.json',
-    gistArchiveDescription: 'STATICGEN.COM DATA ARCHIVE'
+    gistArchiveDescription: 'STATICGEN.COM DATA ARCHIVE',
   })
   const days = compact(uniq(siteMetadata.sorts.map(({ days }) => days)))
   const projectsData = extractRelevantProjectData(projectsDataRaw, days)
@@ -115,8 +90,8 @@ exports.sourceNodes = async ({
       children: [],
       internal: {
         type: 'ProjectStats',
-        contentDigest: createContentDigest(data)
-      }
+        contentDigest: createContentDigest(data),
+      },
     })
   })
 
@@ -128,7 +103,10 @@ exports.sourceNodes = async ({
         .use(rehypeToHtml)
         .process(value)
 
-      const name = decamelize(key, '-').split('-').slice(0, -1).join('-')
+      const name = decamelize(key, '-')
+        .split('-')
+        .slice(0, -1)
+        .join('-')
       const content = { name, html }
 
       createNode({
@@ -138,8 +116,8 @@ exports.sourceNodes = async ({
         children: [],
         internal: {
           type: 'SiteMetadataMarkdownRemark',
-          contentDigest: createContentDigest(content)
-        }
+          contentDigest: createContentDigest(content),
+        },
       })
     }
   })
@@ -196,8 +174,7 @@ async function getProjectData(graphql) {
   }
 
   const { fields } = data.site.siteMetadata
-  const allStats = data.allProjectStats.nodes.find(({ days }) => days === 0)
-    .projects
+  const allStats = data.allProjectStats.nodes.find(({ days }) => days === 0).projects
   return data.allMarkdownRemark.nodes.map(
     ({ html: content, frontmatter, parent: { name: id, dir } }) => {
       const stats = allStats.find(({ id: projectId }) => id === projectId)
@@ -207,7 +184,7 @@ async function getProjectData(graphql) {
         content,
         fields,
         frontmatter,
-        stats
+        stats,
       }
     }
   )
@@ -242,19 +219,15 @@ async function getPageData(graphql) {
       id,
       dir: last(dir.split('/')),
       content,
-      frontmatter
+      frontmatter,
     })
   )
 }
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const projects = (await getProjectData(graphql)).filter(
-    ({ dir }) => dir === 'projects'
-  )
-  const pages = (await getPageData(graphql)).filter(
-    ({ dir }) => dir === 'pages'
-  )
+  const projects = (await getProjectData(graphql)).filter(({ dir }) => dir === 'projects')
+  const pages = (await getPageData(graphql)).filter(({ dir }) => dir === 'pages')
   const projectTemplate = path.resolve('src/templates/project.js')
   const pageTemplate = path.resolve('src/templates/page.js')
   projects.forEach(({ id, content, fields, frontmatter, stats }) => {
@@ -266,8 +239,8 @@ exports.createPages = async ({ graphql, actions }) => {
         content,
         fields,
         ...frontmatter,
-        ...stats
-      }
+        ...stats,
+      },
     })
   })
   pages.forEach(({ id, content, frontmatter }) => {
@@ -276,8 +249,8 @@ exports.createPages = async ({ graphql, actions }) => {
       component: pageTemplate,
       context: {
         content,
-        ...frontmatter
-      }
+        ...frontmatter,
+      },
     })
   })
 }

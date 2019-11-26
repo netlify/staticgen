@@ -9,7 +9,9 @@ license:
 templates:
   - HTML
 description: A fast processor for high quality academic and technical articles from Markdown and LaTeX.
----The main design goal of Madoko is to enable light-weight creation of
+---
+
+The main design goal of Madoko is to enable light-weight creation of
 high-quality scholarly and industrial documents for the web and print,
 while maintaining John Gruber's Markdown philosophy of simplicity and
 focus on plain text readability.

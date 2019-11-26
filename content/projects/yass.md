@@ -9,7 +9,9 @@ license:
 templates:
   - Ada
 description: A Fast and Extensible Static Site Generator.
----Yass stands for Yet Another Static Site (Generator) from CommonMark files. Features:
+---
+
+Yass stands for Yet Another Static Site (Generator) from CommonMark files. Features:
 
 - Advanced Ada Web Server HTML templates
 - Full CommonMark support via libcmark

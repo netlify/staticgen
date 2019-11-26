@@ -3,10 +3,7 @@ import styled from '@emotion/styled'
 import netlifyLogo from '../images/netlify-logo.svg'
 
 const DeployButton = styled(({ repo, className }) => (
-  <a
-    className={className}
-    href={`https://app.netlify.com/start/deploy?repository=${repo}`}
-  >
+  <a className={className} href={`https://app.netlify.com/start/deploy?repository=${repo}`}>
     <img alt="" src={netlifyLogo} /> Deploy to Netlify
   </a>
 ))`

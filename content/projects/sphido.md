@@ -16,35 +16,34 @@ Sphido is pure **static site generator** written with speed, simplicity and flex
 
 ## Installation
 
-```bash 
+```bash
 $ npm i @sphido/core @sphido/frontmatter @sphido/marked @sphido/meta @sphido/nunjucks
 ```
 
 ## Usage
 
 ```javascript
-const globby = require('globby');
-const {getPages} = require('@sphido/core');
-const {save} = require('@sphido/nunjucks');
+const globby = require('globby')
+const { getPages } = require('@sphido/core')
+const { save } = require('@sphido/nunjucks')
 
-(async () => {
+;(async () => {
   // 1. get list of pages
   const pages = await getPages(
-    await globby('content/**/*.md'), ...[
+    await globby('content/**/*.md'),
+    ...[
       require('@sphido/frontmatter'),
       require('@sphido/marked'),
       require('@sphido/meta'),
-      {save},
-    ],
-  );
+      { save },
+    ]
+  )
 
   // 2. save them (with default template)
   for await (const page of pages) {
-    await page.save(
-      page.dir.replace('content', 'public')
-    );
+    await page.save(page.dir.replace('content', 'public'))
   }
-})();
+})()
 ```
 
 [See more examples](https://github.com/sphido/examples) on GitHub.

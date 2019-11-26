@@ -61,18 +61,11 @@ const Hero = ({ siteTitle, shareUrl, shareText }) => (
         <LogoText>{siteTitle}</LogoText>
       </LogoLink>
     </HeroHeading>
-    <HeroSubheading>
-      A List of Static Site Generators for JAMstack Sites
-    </HeroSubheading>
+    <HeroSubheading>A List of Static Site Generators for JAMstack Sites</HeroSubheading>
 
     <ShareButtonGroup>
       {['twitter', 'reddit'].map(type => (
-        <ShareButton
-          key={type}
-          type={type}
-          shareText={shareText}
-          shareUrl={shareUrl}
-        />
+        <ShareButton key={type} type={type} shareText={shareText} shareUrl={shareUrl} />
       ))}
     </ShareButtonGroup>
 
@@ -86,11 +79,11 @@ const Hero = ({ siteTitle, shareUrl, shareText }) => (
 )
 
 Hero.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
 }
 
 Hero.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 }
 
 export default Hero

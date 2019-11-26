@@ -1,16 +1,7 @@
 const path = require('path')
 const fs = require('fs-extra')
 const axios = require('axios')
-const {
-  compact,
-  map,
-  find,
-  fromPairs,
-  mapValues,
-  partial,
-  reverse,
-  sortBy
-} = require('lodash')
+const { compact, map, find, fromPairs, mapValues, partial, reverse, sortBy } = require('lodash')
 const fetch = require('node-fetch')
 const dateFns = require('date-fns')
 const { Gitlab } = require('gitlab')
@@ -32,7 +23,7 @@ function githubInit(token) {
         method,
         params,
         headers,
-        ...(data ? { data } : {})
+        ...(data ? { data } : {}),
       })
     } catch (err) {
       console.error(err)
@@ -51,7 +42,7 @@ function init(tokens) {
     consumer_key: tokens.twitterConsumerKey,
     consumer_secret: tokens.twitterConsumerSecret,
     access_token_key: tokens.twitterAccessTokenKey,
-    access_token_secret: tokens.twitterAccessTokenSecret
+    access_token_secret: tokens.twitterAccessTokenSecret,
   })
 }
 
@@ -63,16 +54,14 @@ async function getProjectGitHubData(repo) {
 
 async function getProjectGitLabData(repo) {
   const { id, star_count, forks_count } = await gitlab.Projects.show(repo)
-  const open_issues_count = (
-    await gitlab.Issues.all({ projectId: id, state: 'opened' })
-  ).length
+  const open_issues_count = (await gitlab.Issues.all({ projectId: id, state: 'opened' })).length
   return { s: star_count, fk: forks_count, i: open_issues_count }
 }
 
 async function getAllProjectRepoData(repos) {
   const getRepoData = {
     github: getProjectGitHubData,
-    gitlab: getProjectGitLabData
+    gitlab: getProjectGitLabData,
   }
   let count = 0
   const reportRepoReceived = repo => {
@@ -91,9 +80,7 @@ async function getAllProjectData(projects) {
   const twitterScreenNames = compact(map(projects, 'twitter'))
   const twitterFollowers =
     twitterScreenNames.length && (await getTwitterFollowers(twitterScreenNames))
-  const repos = compact(
-    map(projects, ({ repo, repohost }) => ({ repo, repohost }))
-  )
+  const repos = compact(map(projects, ({ repo, repohost }) => ({ repo, repohost })))
   const reposData = await getAllProjectRepoData(repos)
   return projects.map(({ id, repo, twitter }) => {
     const twitterData = twitter ? { f: twitterFollowers[twitter] } : {}
@@ -124,7 +111,7 @@ function getArchiveJson(archive) {
 async function getArchiveId() {
   const gists = await github.get('gists')
   const gistArchive = find(gists.data, {
-    description: config.gistArchiveDescription
+    description: config.gistArchiveDescription,
   })
   return gistArchive && gistArchive.id
 }
@@ -143,7 +130,7 @@ function createGist(content) {
     {
       files: { [config.archiveFilename]: { content } },
       public: true,
-      description: config.gistArchiveDescription
+      description: config.gistArchiveDescription,
     }
   )
 }
@@ -187,7 +174,7 @@ function expand(data) {
       stars: s,
       forks: fk,
       issues: i,
-      followers: f
+      followers: f,
     }))
     return [timestamp, expanded]
   })

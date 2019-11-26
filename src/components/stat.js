@@ -8,46 +8,38 @@ const OpenSourceStatIcon = styled.span`
 `
 
 const OpenSourceStatChange = styled.div`
-  color: ${props =>
-    (props.increased && '#31bb47') || (props.decreased && '#c91b1b')};
+  color: ${props => (props.increased && '#31bb47') || (props.decreased && '#c91b1b')};
   font-size: 14px;
 `
 
-const Stat = styled(
-  ({ Icon, value, change, indicateColor, label, dataAgeInDays, className }) => {
-    const disabled = typeof value !== 'number'
-    const changeValue = parseFloat(change, 10) > 0 ? `+${change}` : change
+const Stat = styled(({ Icon, value, change, indicateColor, label, dataAgeInDays, className }) => {
+  const disabled = typeof value !== 'number'
+  const changeValue = parseFloat(change, 10) > 0 ? `+${change}` : change
 
-    return (
-      <div
-        title={label}
-        className={`${className} ${disabled ? 'disabled' : ''}`}
-      >
-        <OpenSourceStatIcon>
-          <Icon />
-        </OpenSourceStatIcon>
-        {disabled ? (
-          <div>N/A</div>
-        ) : (
-          <div>
-            <strong>{value}</strong>
-            {dataAgeInDays >= 1 && (
-              <OpenSourceStatChange
-                title={`${label} in the last ${dataAgeInDays} day${
-                  dataAgeInDays === 1 ? '' : 's'
-                }`}
-                increased={indicateColor && change > 0}
-                decreased={indicateColor && change < 0}
-              >
-                {changeValue === 0 ? '--' : changeValue}
-              </OpenSourceStatChange>
-            )}
-          </div>
-        )}
-      </div>
-    )
-  }
-)`
+  return (
+    <div title={label} className={`${className} ${disabled ? 'disabled' : ''}`}>
+      <OpenSourceStatIcon>
+        <Icon />
+      </OpenSourceStatIcon>
+      {disabled ? (
+        <div>N/A</div>
+      ) : (
+        <div>
+          <strong>{value}</strong>
+          {dataAgeInDays >= 1 && (
+            <OpenSourceStatChange
+              title={`${label} in the last ${dataAgeInDays} day${dataAgeInDays === 1 ? '' : 's'}`}
+              increased={indicateColor && change > 0}
+              decreased={indicateColor && change < 0}
+            >
+              {changeValue === 0 ? '--' : changeValue}
+            </OpenSourceStatChange>
+          )}
+        </div>
+      )}
+    </div>
+  )
+})`
   font-size: 15px;
   text-align: center;
   color: #313d3e;

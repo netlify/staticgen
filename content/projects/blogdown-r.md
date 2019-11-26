@@ -27,7 +27,7 @@ install.packages('blogdown')
 remotes::install_github('rstudio/blogdown')
 ```
 
-You may create a new site via the function `blogdown::new_site()` under an _empty_ directory. It will create a skeleton site, download a Hugo theme from Github,  add some sample content, launch a web browser and you will see the new site. The sample blog post `hello-world.Rmd` should be opened automatically, and you can edit it. The website will be automatically rebuilt and the page will be refreshed after you save the file.
+You may create a new site via the function `blogdown::new_site()` under an _empty_ directory. It will create a skeleton site, download a Hugo theme from Github, add some sample content, launch a web browser and you will see the new site. The sample blog post `hello-world.Rmd` should be opened automatically, and you can edit it. The website will be automatically rebuilt and the page will be refreshed after you save the file.
 
 If you use RStudio, you can create a new RStudio project for your website from the menu `File -> New Project -> New Directory -> Website using blogdown`.
 
@@ -38,6 +38,5 @@ You may not be satisfied with the default site created from `new_site()`. There 
 1. Pick a Hugo theme that you like from http://themes.gohugo.io. All you need is its Github user and repository name, to be passed to the `theme` argument of `new_site()`.
 2. Add more content (pages or posts), or migrate your existing website.
 
-The full documentation is the **blogdown** book freely available at https://bookdown.org/yihui/blogdown/. You are expected to read at least the first chapter. 
+The full documentation is the **blogdown** book freely available at https://bookdown.org/yihui/blogdown/. You are expected to read at least the first chapter.
 You are welcome to send us feedback using [Github issues](https://github.com/rstudio/blogdown/issues) or ask questions on [StackOverflow](http://stackoverflow.com/questions/tagged/blogdown) with the `blogdown` tag.
-

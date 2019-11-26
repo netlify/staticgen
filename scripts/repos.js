@@ -20,22 +20,18 @@ async function getProjectGitHubData(repo) {
     stars: stargazers_count,
     forks: forks_count,
     issues: open_issues_count,
-    repo: html_url
+    repo: html_url,
   }
 }
 
 async function getProjectGitLabData(repo) {
-  const { id, star_count, forks_count, web_url } = await gitlab.Projects.show(
-    repo
-  )
-  const open_issues_count = (
-    await gitlab.Issues.all({ projectId: id, state: 'opened' })
-  ).length
+  const { id, star_count, forks_count, web_url } = await gitlab.Projects.show(repo)
+  const open_issues_count = (await gitlab.Issues.all({ projectId: id, state: 'opened' })).length
   return {
     stars: star_count,
     forks: forks_count,
     issues: open_issues_count,
-    repo: web_url
+    repo: web_url,
   }
 }
 
@@ -67,8 +63,7 @@ async function getAllProjectRepoData(repos) {
 
 export default function getAllProjectData(projects, { gitHubKey, gitLabKey }) {
   authenticate({ gitHubKey, gitLabKey })
-  const mapProjects = val =>
-    val.repo ? [val.repohost || 'github', val.repo].join(':') : undefined
+  const mapProjects = val => (val.repo ? [val.repohost || 'github', val.repo].join(':') : undefined)
   const repos = compact(map(projects, mapProjects))
   return getAllProjectRepoData(repos, { gitHubKey, gitLabKey })
 }
