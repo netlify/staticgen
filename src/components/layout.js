@@ -66,7 +66,7 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
     url: siteUrl,
     shareText: defaultShareText,
     shareTextProjectStart,
-    shareTextProjectEnd
+    shareTextProjectEnd,
   } = data.site.siteMetadata
   const shareUrl = projectId ? `${siteUrl}/${projectId}` : siteUrl
   const shareText = projectId
@@ -86,37 +86,25 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
         in San Francisco — 16-18 October, 2019
       </Banner>
       */}
-      <Hero
-        siteTitle={data.site.siteMetadata.title}
-        shareText={shareText}
-        shareUrl={shareUrl}
-      />
+      <Hero siteTitle={data.site.siteMetadata.title} shareText={shareText} shareUrl={shareUrl} />
       <Nav>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contribute">Contribute</NavLink>
-        <NavAnchor
-          href="https://jamstack.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <NavAnchor href="https://jamstack.org" target="_blank" rel="noopener noreferrer">
           About JAMstack
         </NavAnchor>
-        <NavAnchor
-          href="https://headlesscms.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <NavAnchor href="https://headlesscms.org" target="_blank" rel="noopener noreferrer">
           Need a Static CMS?
         </NavAnchor>
       </Nav>
       <Container>{children}</Container>
-      <Footer footerHtml={footerHtml} copyrightName={data.site.siteMetadata.copyrightName}/>
+      <Footer footerHtml={footerHtml} copyrightName={data.site.siteMetadata.copyrightName} />
     </>
   )
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout

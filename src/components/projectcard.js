@@ -85,9 +85,9 @@ const Card = props => {
       stars: starsPrevious,
       issues: issuesPrevious,
       forks: forksPrevious,
-      followers: followersPrevious
+      followers: followersPrevious,
     } = {},
-    previousStatsAgeInDays
+    previousStatsAgeInDays,
   } = props
 
   return (
@@ -133,11 +133,7 @@ const Card = props => {
         </StatsContainer>
         <Description>{description}</Description>
         {fields.map(field => (
-          <DataPoint
-            key={field.name}
-            value={props[field.name]}
-            label={field.label}
-          />
+          <DataPoint key={field.name} value={props[field.name]} label={field.label} />
         ))}
       </CardBodyLink>
       {startertemplaterepo && <DeployButton repo={startertemplaterepo} />}

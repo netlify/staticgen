@@ -107,10 +107,7 @@ const Dropdown = ({ emptyLabel, options, selection, onChange, field }) => (
     <DropdownSelect value={selection} onChange={onChange}>
       {emptyLabel && <DropdownOption value="">{emptyLabel}</DropdownOption>}
       {options.map(option => (
-        <DropdownOption
-          key={`${field ? `${field}_` : ''}${option.value}`}
-          value={option.value}
-        >
+        <DropdownOption key={`${field ? `${field}_` : ''}${option.value}`} value={option.value}>
           {option.label}
         </DropdownOption>
       ))}

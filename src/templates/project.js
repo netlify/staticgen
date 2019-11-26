@@ -4,9 +4,7 @@ import { EntypoHome, EntypoTwitter, EntypoGithub } from 'react-entypo'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const EntypoIcon = styled(({ Icon, className }) => (
-  <Icon className={className} />
-))`
+const EntypoIcon = styled(({ Icon, className }) => <Icon className={className} />)`
   position: relative;
   top: 1px;
 `
@@ -72,7 +70,7 @@ const Project = ({ pageContext }) => {
     followers,
     twitter,
     content,
-    fields
+    fields,
   } = pageContext
 
   return (

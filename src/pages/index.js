@@ -36,8 +36,7 @@ const ProjectsList = styled.ul`
 function compare(a, b, reverse) {
   const type = typeof a
   if (type === 'number') return reverse ? b - a : a - b
-  if (type === 'string')
-    return reverse ? b.localeCompare(a) : a.localeCompare(b)
+  if (type === 'string') return reverse ? b.localeCompare(a) : a.localeCompare(b)
   return 0
 }
 
@@ -54,7 +53,7 @@ const IndexPage = ({ data }) => {
     allProjectStats: { nodes: allProjectStats },
     allMarkdownRemark: { nodes: allMarkdownRemark },
     allSiteMetadataMarkdownRemark: { nodes: allSiteMetadataMarkdownRemark },
-    site: { siteMetadata: siteMeta }
+    site: { siteMetadata: siteMeta },
   } = data
   const [filter, setFilter] = useState({})
   const [sort, setSort] = useState(siteMeta.sorts[0])
@@ -73,9 +72,7 @@ const IndexPage = ({ data }) => {
     setSort(siteMeta.sorts[e.target.value])
   }
 
-  const allCurrentStats = useMemo(() => statsForDays(allProjectStats, 0), [
-    allProjectStats
-  ])
+  const allCurrentStats = useMemo(() => statsForDays(allProjectStats, 0), [allProjectStats])
   const allPreviousStats = useMemo(() => {
     return statsForDays(allProjectStats, sort.days || defaultPreviousDays)
   }, [allProjectStats, sort.days])
@@ -92,7 +89,7 @@ const IndexPage = ({ data }) => {
           id,
           stats,
           previousStats,
-          previousStatsAgeInDays: sort.days || defaultPreviousDays
+          previousStatsAgeInDays: sort.days || defaultPreviousDays,
         }
       })
   }, [allMarkdownRemark, allCurrentStats, allPreviousStats, sort.days])
@@ -113,27 +110,20 @@ const IndexPage = ({ data }) => {
     return filteredProjects.sort((aObj, bObj) => {
       const aCurrent = aObj.stats[sort.field]
       const bCurrent = bObj.stats[sort.field]
-      const a = sort.days
-        ? aCurrent - (aObj.previousStats || {})[sort.field] || 0
-        : aCurrent
-      const b = sort.days
-        ? bCurrent - (bObj.previousStats || {})[sort.field] || 0
-        : bCurrent
+      const a = sort.days ? aCurrent - (aObj.previousStats || {})[sort.field] || 0 : aCurrent
+      const b = sort.days ? bCurrent - (bObj.previousStats || {})[sort.field] || 0 : bCurrent
       const types = ['number', 'string']
       if (a && !b) return -1
       if (!a && b) return 1
       if (a && b) return compare(a, b, sort.reverse)
-      return compare(
-        aObj.stats[siteMeta.fallbackSortField],
-        bObj.stats[siteMeta.fallbackSortField]
-      )
+      return compare(aObj.stats[siteMeta.fallbackSortField], bObj.stats[siteMeta.fallbackSortField])
     })
   }, [filteredProjects, sort])
 
   const filters = useMemo(() => {
     return siteMeta.filters.map(filter => ({
       ...filter,
-      values: sortBy(uniq(flatMap(projects, filter.field)))
+      values: sortBy(uniq(flatMap(projects, filter.field))),
     }))
   }, [projects, siteMeta.filters])
 
@@ -147,10 +137,9 @@ const IndexPage = ({ data }) => {
         <ProjectCard fields={siteMeta.fields} {...project} />
       </li>
     ))
-    list.splice(3, 0, <PromoCard key="promo"dangerouslySetInnerHTML={{ __html: promoText }}/>)
+    list.splice(3, 0, <PromoCard key="promo" dangerouslySetInnerHTML={{ __html: promoText }} />)
     return list
   }
-
 
   return (
     <Layout>
@@ -163,9 +152,7 @@ const IndexPage = ({ data }) => {
         onChangeFilter={handleFilterChange}
         onChangeSort={handleSortChange}
       />
-      <ProjectsList>
-        {renderProjects()}
-      </ProjectsList>
+      <ProjectsList>{renderProjects()}</ProjectsList>
     </Layout>
   )
 }

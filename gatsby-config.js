@@ -21,8 +21,7 @@ module.exports = {
     description,
     socialPreviewImageFilename: 'staticgen.png',
     shareButtons: ['twitter', 'reddit'],
-    shareText:
-      'Check out StaticGen, a leaderboard of open source static site generators.',
+    shareText: 'Check out StaticGen, a leaderboard of open source static site generators.',
     shareTextProjectStart: 'Check out ',
     shareTextProjectEnd: ', an open source static site generator on the staticgen.com leaderboard.',
     footerMarkdown: oneLine`
@@ -41,7 +40,7 @@ module.exports = {
     `,
     navLinks: [
       { url: 'https://jamstack.org', text: 'About JAMstack' },
-      { url: 'https://headlesscms.org', text: 'Need a Static CMS?' }
+      { url: 'https://headlesscms.org', text: 'Need a Static CMS?' },
     ],
     fallbackSortField: 'title',
     sorts: [
@@ -52,57 +51,57 @@ module.exports = {
         field: 'followers',
         label: 'Followers (7 days)',
         reverse: true,
-        days: 7
+        days: 7,
       },
       {
         field: 'followers',
         label: 'Followers (30 days)',
         reverse: true,
-        days: 30
+        days: 30,
       },
       { field: 'followers', label: 'Followers (total)', reverse: true },
-      { field: 'title', label: 'Title' }
+      { field: 'title', label: 'Title' },
     ],
     filters: [
       { field: 'language', emptyLabel: 'Any Language', multiple: true },
       { field: 'templates', emptyLabel: 'Any Template', multiple: true },
-      { field: 'license', emptyLabel: 'Any License', multiple: true }
+      { field: 'license', emptyLabel: 'Any License', multiple: true },
     ],
     fields: [
       { name: 'language', label: 'Languages' },
       { name: 'templates', label: 'Templates' },
-      { name: 'license', label: 'License' }
-    ]
+      { name: 'license', label: 'License' },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-prismjs`]
-      }
+        plugins: [`gatsby-remark-prismjs`],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: `${__dirname}/content/projects`
-      }
+        path: `${__dirname}/content/projects`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/content/pages`
-      }
+        path: `${__dirname}/content/pages`,
+      },
     },
-    `gatsby-plugin-emotion`
-  ]
+    `gatsby-plugin-emotion`,
+  ],
 }
