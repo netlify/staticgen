@@ -1,7 +1,7 @@
 ---
 title: Pollen
 repo: mbutterick/pollen
-homepage:  http://pollenpub.com
+homepage: http://pollenpub.com
 language:
   - Racket
 license:
@@ -16,20 +16,19 @@ If not, you can move along.
 
 Pollen gives you access to a full programming language (Racket) with a text-based syntax that makes it easy to embed code within your documents.
 
-* [Quick tour](http://pkg-build.racket-lang.org/doc/pollen/quick-tour.html)
-* [Pollen as a text preprocessor (for CSS, etc.)](http://pkg-build.racket-lang.org/doc/pollen/first-tutorial.html)
-* [Pollen for Markdown authoring](http://pkg-build.racket-lang.org/doc/pollen/second-tutorial.html)
-* [Pollen for free-form markup authoring](http://pkg-build.racket-lang.org/doc/pollen/third-tutorial.html)
-* [Pollen for multiple-output publishing](http://pkg-build.racket-lang.org/doc/pollen/fourth-tutorial.html)
-* [Full docs](http://pkg-build.racket-lang.org/doc/pollen)
-
+- [Quick tour](http://pkg-build.racket-lang.org/doc/pollen/quick-tour.html)
+- [Pollen as a text preprocessor (for CSS, etc.)](http://pkg-build.racket-lang.org/doc/pollen/first-tutorial.html)
+- [Pollen for Markdown authoring](http://pkg-build.racket-lang.org/doc/pollen/second-tutorial.html)
+- [Pollen for free-form markup authoring](http://pkg-build.racket-lang.org/doc/pollen/third-tutorial.html)
+- [Pollen for multiple-output publishing](http://pkg-build.racket-lang.org/doc/pollen/fourth-tutorial.html)
+- [Full docs](http://pkg-build.racket-lang.org/doc/pollen)
 
 Using Racket 6.0+, install from the command line:
 
     raco pkg install pollen
-    
+
 And update like so:
 
     raco pkg update --update-deps pollen
-    
+
 Official mailing list: http://groups.google.com/forum/#!forum/pollenpub

@@ -1,5 +1,5 @@
 ---
-title: HasClunk 
+title: HasClunk
 repo: jellehermsen/HasClunk
 homepage: https://github.com/jellehermsen/HasClunk
 language:

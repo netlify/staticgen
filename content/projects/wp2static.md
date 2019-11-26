@@ -15,4 +15,3 @@ WordPress plugin to publish a static copy of your site to GitHub Pages, S3, Netl
 Formerly, "WP Static Site Generator"
 
 For all the reasons why to use it and the benefits of going static, visit [https://wp2static.com](https://wp2static.com). For documentation, there's a [site for that](https://docs.wp2static.com), too.
-

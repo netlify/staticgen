@@ -34,7 +34,7 @@ Dapper has three goals:
 2. **Flexible**. Content is written in
    [Markdown](http://search.cpan.org/~bobtfish/Text-MultiMarkdown/), and
    templates are written using the TT3 mini-language from
-   [Template::Alloy](http://search.cpan.org/~abw/Template-Toolkit/) for 
+   [Template::Alloy](http://search.cpan.org/~abw/Template-Toolkit/) for
    maximum flexibility.
 
 3. **Pragmatic**. The easy things are easy and the hard things are
@@ -55,13 +55,13 @@ Why static? Decent question. Here are some reasons:
    no real processing power for scripting is needed. For example, with a
    static website, it becomes possible to host the site on
    [Github Pages](https://pages.github.com/),
-   [BitBalloon](https://www.bitballoon.com/), or 
+   [BitBalloon](https://www.bitballoon.com/), or
    [Amazon S3](http://aws.amazon.com/s3/) for free or for very modest fees.
 
 3. **Secure**. It's much more secure to host a static website than a
-   dynamic one.  Content management systems that use scripting languages
+   dynamic one. Content management systems that use scripting languages
    such as Perl, Python, or Ruby, all are more susceptible to being hacked
-   than a static website is.  Simply stated, why use a dynamic content-
+   than a static website is. Simply stated, why use a dynamic content-
    management system if a static setup will do?
 
 4. **Portable**. With a static website, it's way easier to move the site
@@ -86,11 +86,10 @@ purpose.
 
 ### Features
 
-* Written in perl, available as a command line utility after installing.
-* Content is written in Markdown.
-* Layouts are developed using TT3 from the Template::Alloy templating engine.
-* Configuration files and attributes are encoded with YAML.
-* URL mappings, plugins, filters, built-in development webserver, etc.
+- Written in perl, available as a command line utility after installing.
+- Content is written in Markdown.
+- Layouts are developed using TT3 from the Template::Alloy templating engine.
+- Configuration files and attributes are encoded with YAML.
+- URL mappings, plugins, filters, built-in development webserver, etc.
 
 Find more infomration at [Vanilla Draft](http://vanilladraft.com/dapper/) or on [Github](https://github.com/markdbenson/dapper).
-

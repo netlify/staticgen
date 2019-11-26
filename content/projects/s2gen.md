@@ -19,11 +19,11 @@ Check out [the home page](http://appliedscala.com/s2gen/) for more information a
 
 **s2gen** currently supports:
 
-* Parsing content from Markdown files
-* Rendering HTML using Freemarker templates
-* Project skeleton generation
-* Monitoring for file changes
-* Adding `target="_blank"` to external links
-* Generating post URLs without html extensions
+- Parsing content from Markdown files
+- Rendering HTML using Freemarker templates
+- Project skeleton generation
+- Monitoring for file changes
+- Adding `target="_blank"` to external links
+- Generating post URLs without html extensions
 
 The latest version is available on GitHub [release page](https://github.com/denisftw/s2gen/releases/latest).

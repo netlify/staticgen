@@ -7,7 +7,7 @@ language:
 license:
   - MIT
 templates:
-  - Nunjucks  
+  - Nunjucks
 description: A rocket fast, lightweight, static site generator.
 twitter: ozzyczech
 ---
@@ -16,7 +16,7 @@ Sphido is pure **static site generator** written with speed, simplicity and flex
 
 ## Installation
 
-```bash 
+```bash
 $ npm i sphido
 ```
 
@@ -33,7 +33,7 @@ const Sphido = require('sphido');
     await globby('content/**/*.{md,html}'), ...Sphido.extenders //, custom extenders...
   );
   // 2. save them... with default HTML template
-  for await (const page of pages)    
+  for await (const page of pages)
     await page.save(page.dir.replace('content', 'public'));
   }
 })();
@@ -43,7 +43,7 @@ const Sphido = require('sphido');
 
 ## Supports
 
-* YAML front-matter
-* html/markdown source
-* custom extenders
-* Nunjucks templates
+- YAML front-matter
+- html/markdown source
+- custom extenders
+- Nunjucks templates

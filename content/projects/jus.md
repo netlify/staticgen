@@ -213,7 +213,7 @@ Here's how you use the string helpers:
 
 Delicious metadata is extracted from images and included in the [Handlebars context object](#context), which is accessible to every page.
 
-- Extracts [EXIF data](https://en.wikipedia.org/wiki/Exchangeable_image_file_format) from JPEGs, including [geolocation  data](https://en.wikipedia.org/wiki/Exchangeable_image_file_format#Geolocation).
+- Extracts [EXIF data](https://en.wikipedia.org/wiki/Exchangeable_image_file_format) from JPEGs, including [geolocation data](https://en.wikipedia.org/wiki/Exchangeable_image_file_format#Geolocation).
 - Extracts [dimensions](https://www.npmjs.com/package/image-size)
 - Extracts [color palettes](https://www.npmjs.com/package/get-image-colors)
 
@@ -314,7 +314,7 @@ Install the Surge CLI:
 
 ```sh
  npm i -g surge
- ```
+```
 
 Add the following to your package.json:
 

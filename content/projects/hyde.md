@@ -17,8 +17,8 @@ Hyde desires to fulfill the lofty goal of removing the pain points involved in c
 
 ### Spotlight
 
-* Support for powerful template languages like Jinja2 complemented with custom tags and filters.
-* Rich object model and overridable hierarchical metadata thats available for use in templates.
-* Configurable sorting, tagging and grouping support.
-* Extensible plugin architecture with text preprocessing and HTML postprocessing support for complex content transformations.
-* Instant preview using built-in webserver that regenerates content if needed.
+- Support for powerful template languages like Jinja2 complemented with custom tags and filters.
+- Rich object model and overridable hierarchical metadata thats available for use in templates.
+- Configurable sorting, tagging and grouping support.
+- Extensible plugin architecture with text preprocessing and HTML postprocessing support for complex content transformations.
+- Instant preview using built-in webserver that regenerates content if needed.

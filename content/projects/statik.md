@@ -22,4 +22,3 @@ very easy to pick up. Alternatively, you could opt for Mustache templating.
 
 Ultimately, it generates a set of flat HTML files that should be able to be
 served directly by your web server.
-

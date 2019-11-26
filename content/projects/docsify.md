@@ -9,10 +9,10 @@ license:
 templates:
   - Markdown
   - Vue
-description:  A magical documentation site generator.
+description: A magical documentation site generator.
 ---
 
-docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. 
+docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website.
 
 Simple and lightweight (~21kB gzipped)
 No statically built html files

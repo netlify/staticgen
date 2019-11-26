@@ -23,12 +23,12 @@ startertemplaterepo: hexojs/hexo-starter
 
 A fast, simple & powerful blog framework, powered by [Node.js](https://nodejs.org) and NPM.
 
-+ [Themes](https://hexo.io/themes)
-+ [Plugins](https://hexo.io/plugins)
-+ [Deploy to Netlify ⭐️](https://hexo.io/docs/deployment#Netlify)
-+ [Deploy anywhere](https://hexo.io/docs/deployment)
-+ [Docs](https://hexo.io/docs/)
-+ [Plugin API](https://hexo.io/api/)
+- [Themes](https://hexo.io/themes)
+- [Plugins](https://hexo.io/plugins)
+- [Deploy to Netlify ⭐️](https://hexo.io/docs/deployment#Netlify)
+- [Deploy anywhere](https://hexo.io/docs/deployment)
+- [Docs](https://hexo.io/docs/)
+- [Plugin API](https://hexo.io/api/)
 
 We want to solve issues **fast**! [Please contribute](https://github.com/hexojs/hexo/issues) by answering questions or providing peer review on PRs! Thank you 🤗
 

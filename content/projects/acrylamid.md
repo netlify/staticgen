@@ -9,15 +9,15 @@ license:
 templates:
   - Jinja
   - Mako
-description: Static blog or site generator 
+description: Static blog or site generator
 ---
 
 ### Why use acrylamid?
 
 1. it is really fast due incremental builds
-1.  support for Jinja2 and Mako templates
-1.  many Markdown extensions and custom reStructuredText directives
-1.  MathML, enhanced typography and hyphenation using soft-hyphens
+1. support for Jinja2 and Mako templates
+1. many Markdown extensions and custom reStructuredText directives
+1. MathML, enhanced typography and hyphenation using soft-hyphens
 
 Oh, and it can also generate a static blog with articles, static pages, tags, RSS/Atom feeds (also per tag), article listing and a sitemap.
 

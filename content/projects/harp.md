@@ -33,11 +33,11 @@ Pre-compilers are becoming extremely powerful and shipping front-ends as static 
 
 ### Supported Pre-Processors
 
-|                 | Language Superset                                                 | Whitespace Sensitive  
-| --------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------
-| **HTML**        | [EJS](http://embeddedjs.com/)                                     | [Jade](http://jade-lang.com/), [Markdown](http://daringfireball.net/projects/markdown/)
-| **CSS**         | [LESS](http://lesscss.org/), [Sass (SCSS)](http://sass-lang.com/) | [Stylus](http://learnboost.github.io/stylus/)
-| **JavaScript**  | (TBD)                                                             | [CoffeeScript](http://coffeescript.org/)
+|                | Language Superset                                                 | Whitespace Sensitive                                                                    |
+| -------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **HTML**       | [EJS](http://embeddedjs.com/)                                     | [Jade](http://jade-lang.com/), [Markdown](http://daringfireball.net/projects/markdown/) |
+| **CSS**        | [LESS](http://lesscss.org/), [Sass (SCSS)](http://sass-lang.com/) | [Stylus](http://learnboost.github.io/stylus/)                                           |
+| **JavaScript** | (TBD)                                                             | [CoffeeScript](http://coffeescript.org/)                                                |
 
 ### Resources
 

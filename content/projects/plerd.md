@@ -65,5 +65,3 @@ You can file bugs or feature requests &#8211; or propose software patches &#8211
 <h2 id="authorcontact">Author contact</h2>
 
 The Plerd project was created and is maintained by Jason McIntosh (<a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#x6a;&#x6d;&#x61;&#x63;&#64;&#106;&#109;&#x61;&#99;&#46;&#111;&#114;&#103;">&#106;&#109;&#x61;&#99;&#x40;&#106;&#x6d;&#97;&#x63;&#x2e;&#x6f;&#x72;&#x67;</a>), who always welcomes comments and feedback.
-
-

@@ -32,4 +32,3 @@ Support users on all versions of your project. Document versioning helps you kee
 ## Document Search
 
 Make it easy for your community to find what they need in your documentation. We proudly support Algolia documentation search.
-

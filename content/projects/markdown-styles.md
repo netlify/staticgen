@@ -11,7 +11,7 @@ templates:
 description: Markdown to static HTML generator and multiple CSS themes for Markdown
 ---
 
-Converts Markdown files to HTML, with over a dozen builtin themes. 
+Converts Markdown files to HTML, with over a dozen builtin themes.
 
 ## Features
 
