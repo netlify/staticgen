@@ -22,20 +22,20 @@ Docnado makes it easy to start and maintain a Markdown documentation project.
 
 Docnado renders an adapted Markdown to provide:
 
-* Embed images, video, YouTube links, external CSV tables, and PDFs.
-* Code highlighting.
-* File download blocks.
-* Lists, checklists, tables, and glossaries.
-* Document defined template selection.
-* Document meta-data.
-* Auto-generated navigation sidebar.
-* Built in command line options to find broken links and orphan images in your documentation.
+- Embed images, video, YouTube links, external CSV tables, and PDFs.
+- Code highlighting.
+- File download blocks.
+- Lists, checklists, tables, and glossaries.
+- Document defined template selection.
+- Document meta-data.
+- Auto-generated navigation sidebar.
+- Built in command line options to find broken links and orphan images in your documentation.
 
 ### Accessing Options
 
-* Output documents as insecure HTML on a localhost.
-* Output documents as PDF files via the HTML server.
-* Create a static set of HTML files that contain the documentation and related resources.
+- Output documents as insecure HTML on a localhost.
+- Output documents as PDF files via the HTML server.
+- Create a static set of HTML files that contain the documentation and related resources.
 
 ### Download
 
@@ -43,7 +43,7 @@ Make sure you have Python 3.6 installed.
 
 ```sh
 python3 -m pip install docnado --upgrade	# install it
-docnado										# run it 
+docnado										# run it
 ```
 
 ### Getting Started

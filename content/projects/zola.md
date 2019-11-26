@@ -15,9 +15,8 @@ Static site generator built using the modern Rust programming language.
 
 ### Features
 
-* Taxonomies: tags and categories
-* Sass compilation
-* Built-in support for themes
-* Code highlighting themes
-* Tera template engine, and built-in shortcodes
-
+- Taxonomies: tags and categories
+- Sass compilation
+- Built-in support for themes
+- Code highlighting themes
+- Tera template engine, and built-in shortcodes

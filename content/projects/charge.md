@@ -46,8 +46,8 @@ More practically, Gatsby is great if you’re building a large, complex website 
 
 If you’d like to see everything in practice, check out these sites using Charge.
 
-* [charge.js.org](https://github.com/brandonweiss/charge/tree/master/docs), the documentation for Charge.
-* [brandonweiss.me](https://github.com/brandonweiss/brandonweiss), a personal site.
+- [charge.js.org](https://github.com/brandonweiss/charge/tree/master/docs), the documentation for Charge.
+- [brandonweiss.me](https://github.com/brandonweiss/brandonweiss), a personal site.
 
 [jsx]: https://reactjs.org/docs/introducing-jsx.html
 [mdx]: https://github.com/mdx-js/mdx

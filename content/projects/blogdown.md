@@ -11,13 +11,12 @@ description: A back-end agnostic, zero compilation, markdown blogging platform
 ---
 
 ### [Download](https://github.com/thingdown/blogdown/releases/download/v0.1.9/blogdown.zip)
-### [Demo](https://thingdown.github.io/blogdown)
 
+### [Demo](https://thingdown.github.io/blogdown)
 
 ## Features
 
 ![BlogDown Features](https://drive.google.com/uc?export=view&id=151E88i6kqKLijZd0zSTKbDC20WoQoV4DAA)
-
 
 ## Installing
 

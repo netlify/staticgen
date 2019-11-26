@@ -10,6 +10,7 @@ templates:
   - Twig
 description: Couscous turn Markdown documentation into beautiful websites.
 ---
+
 ### Step 1
 
 Write your documentation in Markdown inside your repository, versioned with your code. Couscous will turn those Markdown files to HTML.

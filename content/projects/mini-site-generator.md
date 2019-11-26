@@ -16,16 +16,18 @@ MSG is used in the food industry as a flavor enhancer with an umami taste that i
 
 ## High level:
 
-____.page.js ->  ____.html
+\_**\_.page.js -> \_\_**.html
 
 ## Low level:
 
 ```js
 //Inside ___.page.js
-module.exports = function(){
-    return html`
-        <p>I'm honestly not kidding,<br />
-        It's just JavaScript!</p>
-    `
+module.exports = function() {
+  return html`
+    <p>
+      I'm honestly not kidding,<br />
+      It's just JavaScript!
+    </p>
+  `
 }
 ```

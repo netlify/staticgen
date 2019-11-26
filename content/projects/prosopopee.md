@@ -19,15 +19,15 @@ Make beautiful customizable pictures galleries that tell a story using a static 
 
 Prosopopee currently supports:
 
- * Lightweight
- * Thumbnails & multiple resolutions for fast previews (JPEG progressive)
- * Videos support
- * Mobile friendly
- * Caching for fast rendering
- * Multi level gallery
- * Support themes (default, material, light)
- * Password access (encrypt page)
- * Image lazy loading
- * Night Mode
- * Completely static output is easy to host anywhere
- * Hackable
+- Lightweight
+- Thumbnails & multiple resolutions for fast previews (JPEG progressive)
+- Videos support
+- Mobile friendly
+- Caching for fast rendering
+- Multi level gallery
+- Support themes (default, material, light)
+- Password access (encrypt page)
+- Image lazy loading
+- Night Mode
+- Completely static output is easy to host anywhere
+- Hackable

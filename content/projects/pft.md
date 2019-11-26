@@ -15,13 +15,13 @@ PFT It is yet another _Static_, _Unicode-ready_, _Hacker-friendly_,
 _Free-as-in-freedom_, _Privacy-preserving_ website generator written in
 Perl.
 
-`PFT` stands for *Plain F. Text*, where the meaning of *F.* is up to
-personal interpretation. Like *Fancy* or *Fantastic*.
+`PFT` stands for _Plain F. Text_, where the meaning of _F._ is up to
+personal interpretation. Like _Fancy_ or _Fantastic_.
 
 I started it from scratch because as I was not entirely satisfied with the
 similar products I tried, but also because I wanted to learn another
 language (Perl) with a side project. I got initially inspired by
-[Dapper][], which is similar in the spirit, but maybe a bit *too raw*,
+[Dapper][], which is similar in the spirit, but maybe a bit _too raw_,
 even for my needs.
 
 ## Unicode-ready
@@ -38,35 +38,35 @@ of the way.
 
 It is designed as a toolkit, and comes with a number of commands:
 
-* `pft init`: Initialize a PFT site in the current directory;
+- `pft init`: Initialize a PFT site in the current directory;
 
-* `pft edit`: Create a content text (e.g. page or blog entry);
+- `pft edit`: Create a content text (e.g. page or blog entry);
 
-* `pft make`: Build the website;
+- `pft make`: Build the website;
 
-* `pft pub`: Publish the website;
+- `pft pub`: Publish the website;
 
-* `pft clean`: Clear built tree;
+- `pft clean`: Clear built tree;
 
-* `pft grab`: Grab a file as attachment or picture;
+- `pft grab`: Grab a file as attachment or picture;
 
-* `pft ls`: List content and properties;
+- `pft ls`: List content and properties;
 
-* `pft show`: Show the compiled site in a web browser;
+- `pft show`: Show the compiled site in a web browser;
 
 The manual of each sub-command is available in form of Unix Manual page,
 and by invoking it with the `--help` flag.
 
 Content pages are simple locale-encoded [Markdown][] text-files wrapped
-with a [YAML][] header.  Everything is transformed into HTML thanks to the
-[Template::Alloy][Alloy] engine. 
+with a [YAML][] header. Everything is transformed into HTML thanks to the
+[Template::Alloy][alloy] engine.
 
 ## Free as in Freedom
 
-PFT is [Free as in Freedom][Free] and licensed as [GNU GPL v3][GPL3].
+PFT is [Free as in Freedom][free] and licensed as [GNU GPL v3][gpl3].
 Contributions and suggestions are welcome.
 
-PFT is also Free as in Free Beer. Which means you can *offer me a beer* if
+PFT is also Free as in Free Beer. Which means you can _offer me a beer_ if
 you feel like doing it.
 
 ## Privacy preserving:
@@ -81,7 +81,7 @@ really.)
 
 # Running PFT
 
-PFT is released as *CPAN* distribution named [App::PFT][]. If CPAN is
+PFT is released as _CPAN_ distribution named [App::PFT][]. If CPAN is
 installed on your system you can simply install PFT by running the
 following command:
 
@@ -111,16 +111,16 @@ PFT is currently composed by:
 Feel free to fork or to ping me with suggestion, proposals or pull
 requests.
 
-[App::PFT]: https://metacpan.org/release/App-PFT
-[Static]: https://www.staticgen.com/
-[Free]: https://en.wikipedia.org/wiki/Free_software_movement
-[GPL3]: https://www.gnu.org/licenses/gpl.html
-[Dapper]: https://www.staticgen.com/dapper
-[Alloy]: https://metacpan.org/pod/Template::Alloy
-[Markdown]: https://daringfireball.net/projects/markdown/
-[YAML]: http://yaml.org/
-[RSync]: https://rsync.samba.org/
-[SSH]: http://www.openssh.com/
-[CPAN]: http://cpan.org/
+[app::pft]: https://metacpan.org/release/App-PFT
+[static]: https://www.staticgen.com/
+[free]: https://en.wikipedia.org/wiki/Free_software_movement
+[gpl3]: https://www.gnu.org/licenses/gpl.html
+[dapper]: https://www.staticgen.com/dapper
+[alloy]: https://metacpan.org/pod/Template::Alloy
+[markdown]: https://daringfireball.net/projects/markdown/
+[yaml]: http://yaml.org/
+[rsync]: https://rsync.samba.org/
+[ssh]: http://www.openssh.com/
+[cpan]: http://cpan.org/
 [github_pft]: https://github.com/dacav/pft
 [github_app_pft]: https://github.com/dacav/app-pft

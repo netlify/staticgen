@@ -17,12 +17,12 @@ This project is designed to be a fully-functional, static site implementation of
 
 ## Features
 
-* Fast no-reload page changes
-* No web-development skills required to get up and running
-* Uses Markdown to author content
-* RSS implementation
-* Automatic image resizing
-* Built on Ember and uses ember-cli, the best frontend cli on the market right now!
+- Fast no-reload page changes
+- No web-development skills required to get up and running
+- Uses Markdown to author content
+- RSS implementation
+- Automatic image resizing
+- Built on Ember and uses ember-cli, the best frontend cli on the market right now!
 
 ## Templates
 

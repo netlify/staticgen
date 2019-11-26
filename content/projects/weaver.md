@@ -34,4 +34,3 @@ Once you are done, `bundle exec weaver build` to generate your website's code in
 ## Philosophy
 
 Weaver tries to make writing rich static websites as easy and predictably possible by using a DSL. Images are stored in a special images folder because images are quite special, freeing you from constantly copy pasting the directory structure. Generating code should be as painless as possible, and even making forms should be easy. The weaver documentation is written in weaver itself.
-

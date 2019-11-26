@@ -24,7 +24,6 @@ Feel free to play around - in this instance, your changes will not be recorded.
 
 Other examples include a [presentation theme](https://github.com/jldec/pub-sample-deck), a [flexbox design](https://github.com/jldec/pub-theme-brief), and a [blog](http://blog.pubblz.com/).
 
-
 ### installation
 
 running **pub-server** locally requires node.js.
@@ -34,7 +33,6 @@ npm install -g pub-server
 ```
 
 OSX and Linux are working, Windows support is coming - PRs welcome.
-
 
 ### usage
 

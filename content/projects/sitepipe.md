@@ -14,7 +14,7 @@ description: Yet another static site generator - non-opinionated, value-level. L
 It's a simple to understand static site generator for making blogs, personal
 websites, etc.
 
-Instead of dealing with complex contexts SitePipe works with *values*. Values
+Instead of dealing with complex contexts SitePipe works with _values_. Values
 are loaded from files and can be rendered into html. What happens to the values
 in-between is up to you!
 

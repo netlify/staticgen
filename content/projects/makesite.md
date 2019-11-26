@@ -21,8 +21,8 @@ produce some desired effect.
 
 With [makesite.py][repo]:
 
-  - The [code][code] is the documentation.
-  - The [code][code] is the configuration.
+- The [code][code] is the documentation.
+- The [code][code] is the configuration.
 
 Everything is laid out as plain and simple Python code for you to read
 and enhance. It is less than 120 lines of code (excluding comments,

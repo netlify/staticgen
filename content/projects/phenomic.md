@@ -8,13 +8,13 @@ license:
   - MIT
 templates:
   - React
-description:  A modern static website generator to create dynamic website using React components.
+description: A modern static website generator to create dynamic website using React components.
 startertemplaterepo: capriosa/phenomic-cms
 twitter: Phenomic_app
 ---
 
 > Modern static website generator for creating dynamic websites using React
-components.
+> components.
 
 ## Easy to use
 
@@ -32,7 +32,7 @@ _Phenomic_ will help you generate and deploy a website in a heartbeat.
 
 React is used to generate pages for both client and server; it's called ~~Isomorphic~~ [Universal rendering](https://medium.com/@mjackson/universal-javascript-4761051b7ae9).
 
-A pre-rendered, *static* version of your website is generated first; then when
+A pre-rendered, _static_ version of your website is generated first; then when
 a user browses your website, **they can get the same UX as an app by grabbing
 the minimal amount of data for each new page**
 (a single file that only contains your page data).

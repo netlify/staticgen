@@ -9,22 +9,26 @@ license:
   - BSD-2-Clause
 description: Web Page With Make and M4
 ---
+
 With wpwmm4 can create web pages with simply 'make' and 'm4'.
 
 Requirements:
+
 - make (BSD's make, use bmake package of your distro)
 - m4 (compatible with BSD's m4 and GNU's m4 too)
 - some knowledge about HTML and programming
 
 Features:
+
 - incremental build (with make)
 - automatically generated pages (similar webpage with different content)
 - layouts
 - expandable, programmable via m4 or can insert output of any program
 
 Nutshell:
-- convert items of ${TARGETS}: ${SRC_DIR}/*.m4 -> ${DEST_DIR}/*.html
-- create items of ${TARGETS_MANUAL}: use own programs, scripts
+
+- convert items of ${TARGETS}: ${SRC_DIR}/_.m4 -> \${DEST_DIR}/_.html
+- create items of \${TARGETS_MANUAL}: use own programs, scripts
 - create items of ${VIRTUALS}: use templates from ${VIRT_DIR}
 - can call scripts from scripts/ directory and use their outputs
 

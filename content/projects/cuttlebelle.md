@@ -8,7 +8,7 @@ license:
   - GPL-3.0-only
 templates:
   - React
-description:  The react static site generator that separates editing and code concerns
+description: The react static site generator that separates editing and code concerns
 startertemplaterepo: cuttlebelle/website
 ---
 

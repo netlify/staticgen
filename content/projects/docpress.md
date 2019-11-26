@@ -15,6 +15,7 @@ Docpress generates websites from your project's basic documentation; that is, at
 It also supports multiple Markdown pages in `docs/`. Checkout our [Homepage](http://docpress.github.io) for a quick example.
 
 ## Examples
+
 Check out the [Docpress Showcase](https://github.com/docpress/docpress/blob/master/docs/showcase.md) to see how Docpress helped developers build great-looking websites.
 
 ## Usage
@@ -39,14 +40,11 @@ $ docpress serve
   Running
 ```
 
-Screenshot
------------
+## Screenshot
 
 ![Screenshot](https://i.imgur.com/eSXOeVw.png)
 
-
-Support
--------
+## Support
 
 - [Documentation](http://docpress.github.io/)
 - [Gitter chat](https://gitter.im/docpress/Lobby)
@@ -54,8 +52,7 @@ Support
 Let's build our first Docpress site.
 [Quickstart guide →](http://docpress.github.io/getting-started/quickstart.html)
 
-Thanks
-------
+## Thanks
 
 **docpress** © 2015+, Rico Sta. Cruz. Released under the [MIT] License.<br>
 Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]).
@@ -64,5 +61,5 @@ Authored and maintained by Rico Sta. Cruz with help from contributors ([list][co
 > GitHub [@rstacruz](https://github.com/rstacruz) &nbsp;&middot;&nbsp;
 > Twitter [@rstacruz](https://twitter.com/rstacruz)
 
-[MIT]: http://mit-license.org/
+[mit]: http://mit-license.org/
 [contributors]: http://github.com/rstacruz/docpress/contributors

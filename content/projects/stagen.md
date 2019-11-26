@@ -15,9 +15,9 @@ StaGen is the static site generator behind [WizTools.org](http://www.wiztools.or
 
 StaGen is written in Java 8, and supports:
 
-* [Markdown](https://daringfireball.net/projects/markdown/) for content.
-* [StringTemplate 4](http://www.stringtemplate.org/) for templating.
-* [JSON](http://www.json.org/) for storing configuration.
+- [Markdown](https://daringfireball.net/projects/markdown/) for content.
+- [StringTemplate 4](http://www.stringtemplate.org/) for templating.
+- [JSON](http://www.json.org/) for storing configuration.
 
 Read the [tutorial](https://github.com/wiztools/stagen/wiki/Tutorial).
 

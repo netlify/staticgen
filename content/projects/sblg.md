@@ -11,7 +11,7 @@ templates:
 description: simple off-line blog utility
 ---
 
-sblg is a blog tool for UNIX users. 
+sblg is a blog tool for UNIX users.
 It uses [libexpat](http://expat.sourceforge.net/) to merge content and
 templates, both usually in HTML, into formatted HTML articles or Atom
 feeds.

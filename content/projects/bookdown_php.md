@@ -16,4 +16,3 @@ Bookdown generates [DocBook](http://docbook.org)-like HTML output using [Markdow
 Bookdown is especially well-suited for publishing project documentation to GitHub Pages.
 
 Read more about it at <http://bookdown.io>.
-
