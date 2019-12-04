@@ -28,7 +28,7 @@ const globalStyles = css`
     margin: 0;
     font-family: 'Roboto', 'sans-serif';
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #444;
     background: #fbfbfb;
   }
