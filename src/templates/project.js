@@ -29,6 +29,7 @@ const DetailLink = styled.a`
 
 const FieldsContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
 
   .title {
