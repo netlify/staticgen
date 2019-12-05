@@ -1,7 +1,7 @@
 ---
 title: mdBook
 repo: rust-lang/mdBook
-homepage: https://github.com/rust-lang-nursery/mdBook
+homepage: https://github.com/rust-lang/mdBook
 language:
   - Rust
 license:
