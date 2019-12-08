@@ -21,14 +21,14 @@ as input for another, and you can specify their execution order explicitly. You 
 or sections.
 
 For example, this snippet will insert the content of `includes/menu.html` inside `<div id="menu">` in every page that has that element,
-except `404.html`:
+except `404.html` and `splash.html`:
 
 ```
 [widgets.navigation-menu]
   widget = "include"
   file = "includes/menu.html"
   selector = "div#menu"
-  exclude_page = "404.html"
+  exclude_page = ["404.html", "splash.html"]
 ```
 
 You can also tell it to extract content from elements, again using CSS selectors, and use it to create a site index or a blog.
