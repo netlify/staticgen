@@ -1,38 +1,49 @@
 ---
 title: soupault
 repo: dmbaturin/soupault
-homepage: https://baturin.org/projects/soupault
+homepage: https://soupault.neocities.org
 language:
   - OCaml
 license:
   - MIT
 templates:
   - HTML
-description: Website generator based on HTML rewriting instead of template processing.
+description: Website generator based on HTML rewriting instead of template processing. Single binary, extensible with Lua plugins.
 ---
 
-Soupault is a static website generator based on HTML rewriting rather than template processing.
-Like DOM manipulation, but without a browser.
-Any page can be a soupault theme, there are no templates and no front matter.
-Instead you can tell it where to insert things or what to extract using CSS3 selectors.
+Soupault is a static website generator and HTML processor based on element tree rewriting,
+similar to DOM manipulation, but without a browser. Instead of using a template processsor,
+it parses your HTML and transforms it.
 
-You can tell it to do things like:
+You can tell it where to insert content using CSS3 selectors. The workflow is defined in a single configuration file
+in the TOML format, `soupault.conf`. HTML transformation "widgets" form a pipeline where output of one widget can be used
+as input for another, and you can specify their execution order explicitly. You can also limit widgets to specific pages
+or sections.
 
-- Include page content in `<div id="content">`
-- Use the first `<h1>` for the page title
-- Insert output of `date -R` in `<time id="generated-on">`
+For example, this snippet will insert the content of `includes/menu.html` inside `<div id="menu">` in every page that has that element,
+except `404.html`:
+
+```
+[widgets.navigation-menu]
+  widget = "include"
+  file = "includes/menu.html"
+  selector = "div#menu"
+  exclude_page = "404.html"
+```
+
+You can also tell it to extract content from elements, again using CSS selectors, and use it to create a site index or a blog.
+Extracted data can be rendered using built-in Mustache templates, or exported to JSON and fed to an external script.
+
+The generator part (assembling a page from its body and an empty page template) is optional, you can use it as a post-processor
+for existing pages.
 
 What else it can do:
 
-- Create clean URLs for pages.
+- Create clean URLs for pages, or preserve the file paths and names exactly.
 - Generate tables of contents, footnotes, and breadcrumbs.
 - Insert a file, program output, or an HTML snippet into any element identified by a CSS selector.
-- Use any preprocessors for pages in formats other than HTML.
-- Extract metadata from pages using CSS selectors, export to JSON, and feed it to external scripts.
+- Automatically call preprocessors for pages in formats other than HTML.
 
-Soupault is friendly to existing websites: directory structure is configurable,
-clean URLs are optional, and it can preserve your site structure down to file extensions.
-The only file of its own is a TOML config `soupault.conf` in the project directory,
-the rest is yours.
+Built-in functionality can be extended with Lua plugins that have full access to the element tree.
 
-Precompiled executables are available for Linux and Windows.
+Soupault is a native, self-contained executable. Precompiled binaries are available for Linux, Windows, and macOS.
