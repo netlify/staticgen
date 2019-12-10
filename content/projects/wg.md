@@ -13,7 +13,7 @@ description: Basic static website generator
 
 - wg is a static website generator.
 
-- wg is written in python.
+- wg is written in Python.
 
 - wg uses the Spectre.css.
 
