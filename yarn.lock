@@ -5149,9 +5149,9 @@ github-slugger@^1.1.1:
     emoji-regex ">=6.0.0 <=6.1.1"
 
 gitlab@^12.0.0:
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/gitlab/-/gitlab-12.0.1.tgz#4515343e36a056f9cdb88c76a67cecb0a6d706ea"
-  integrity sha512-SKL/8qzo7pE+1jwpJ8J/4PwPEz0R7lhFpsyAG1rBFSOUrFbuU8PcWyaSVAIjZlQUsEUttHcZrMrl7T9AeynTVQ==
+  version "12.1.1"
+  resolved "https://registry.yarnpkg.com/gitlab/-/gitlab-12.1.1.tgz#396f9a0023198395d4a56ecfc7947cff9bf8bac1"
+  integrity sha512-BGXSFSSPIQtUKDEHPzs7te01K14rKjv8v6vT6uZfssUyg/Qrv+OXrIvSQR5WZ13FaK3C+KDmvP5dS2MSZS73Hg==
   dependencies:
     chalk "^3.0.0"
     form-data "^3.0.0"
