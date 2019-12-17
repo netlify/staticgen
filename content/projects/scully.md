@@ -9,6 +9,7 @@ license:
 templates:
   - Angular
 description: Scully is a static site generator for Angular projects looking to embrace the JAMStack.
+twitter: ScullyIO
 ---
 
 The best way to build the fastest Angular apps. Scully is a static site generator for Angular projects looking to embrace the JAMStack.
