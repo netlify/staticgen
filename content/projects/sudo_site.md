@@ -1,5 +1,5 @@
 ---
-title: sudo_ssg
+title: sudo_site
 repo: sharadcodes/sudo_site
 homepage: https://github.com/sharadcodes/sudo_site
 language:
