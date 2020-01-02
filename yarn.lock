@@ -5226,10 +5226,10 @@ github-slugger@^1.2.1:
   dependencies:
     emoji-regex ">=6.0.0 <=6.1.1"
 
-gitlab@^12.0.0:
-  version "12.1.2"
-  resolved "https://registry.yarnpkg.com/gitlab/-/gitlab-12.1.2.tgz#15cac0e7e1ab71127fe5855924c25b54dd9b9fff"
-  integrity sha512-o4volfokY42GckjU8mc7ZlNY8wW8jUK2HSJd2jXRT1TOI97v+OE6e54KAMtVqf3SiqCXHKmUkRuyyOxUqOGT/w==
+gitlab@^14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/gitlab/-/gitlab-14.0.0.tgz#18ae59420767b4dbfb928983db0611db32602271"
+  integrity sha512-+CUlcawGfg+kCe78CjEr8vHUemQxoM+IY0IM0U48D6F8RmFzK6LPwwUdfEJqtL76RHJdgr6J/DSqzOQU2Gtavw==
   dependencies:
     chalk "^3.0.0"
     form-data "^3.0.0"
