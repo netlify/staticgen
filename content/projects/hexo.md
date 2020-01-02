@@ -25,8 +25,8 @@ A fast, simple & powerful blog framework, powered by [Node.js](https://nodejs.or
 
 - [Themes](https://hexo.io/themes)
 - [Plugins](https://hexo.io/plugins)
-- [Deploy to Netlify ⭐️](https://hexo.io/docs/deployment#Netlify)
-- [Deploy anywhere](https://hexo.io/docs/deployment)
+- [Deploy to Netlify ⭐️](https://hexo.io/docs/one-command-deployment#Netlify)
+- [Deploy anywhere](https://hexo.io/docs/one-command-deployment)
 - [Docs](https://hexo.io/docs/)
 - [Plugin API](https://hexo.io/api/)
 
