@@ -25,7 +25,7 @@
     "react-helmet": "^5.2.1",
     "react-share": "^3.0.1",
     "typeface-roboto": "^0.0.75",
-    "typeface-roboto-slab": "^0.0.72"
+    "typeface-roboto-slab": "^1.0.0"
   },
   "devDependencies": {
     "@mosch/gatsby-source-github": "^0.4.1",
