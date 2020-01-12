@@ -9,7 +9,7 @@ license:
 templates:
   - HTML
   - Jinja2  
-description: The most simplest and lightweight static site and blog generator for c++ enthusiasts.
+description: The world's smallest and lightweight static site and blog generator for Python lovers.
 ---
 
 # my_py_site
