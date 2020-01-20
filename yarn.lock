@@ -4996,9 +4996,9 @@ gatsby-source-gitlab@^1.0.2:
     gitlab "^4.5.1"
 
 gatsby-source-twitter@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-twitter/-/gatsby-source-twitter-3.0.0.tgz#b804acd3f0ba584a682851aa5cb71838cceee948"
-  integrity sha512-zhuAWH8XLOCUG72YdOkqqQq4U0rB15gojotXpzdZHJJYzCMtD9G0r37zJ2XA+Tk68+XDlnz6fuV6/Pd3piVv8A==
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-twitter/-/gatsby-source-twitter-3.2.1.tgz#84564945fc0ffe33492c8f07d47b0b8fe554cdb4"
+  integrity sha512-N/AyCUGxZj5VKoXqVHxs+grHj012gdTVeLit8mheScnIlCg8fDt7ViFIFXIOO7msqS4VA17Q1xC6Ii8mSaHK2w==
   dependencies:
     twitter "^1.7.1"
 
