@@ -5274,9 +5274,9 @@ github-slugger@^1.2.1:
     emoji-regex ">=6.0.0 <=6.1.1"
 
 gitlab@^14.0.0:
-  version "14.1.1"
-  resolved "https://registry.yarnpkg.com/gitlab/-/gitlab-14.1.1.tgz#db6ca13139d87992e736cdfdb4dfc6303ae29545"
-  integrity sha512-fA/G/ZTl0nmR/ntk/U5KK1uGqwdoisw0s/j2N09FA5/vR48JYvbBTNGyHBRTPbiozLf2yWCAU1NFA/6P0sYSFQ==
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/gitlab/-/gitlab-14.2.0.tgz#522732e3e4c3286c80205ad20c16a46d9b5be102"
+  integrity sha512-jYnTtmcaY5KHSQFJWkiFdcWETrA9w9T75rFZ3zc25YuaX2gMybMVMprbUk5bSgQy/SuoPAp7qjhNtIKQf46wGg==
   dependencies:
     chalk "^3.0.0"
     form-data "^3.0.0"
@@ -6966,9 +6966,9 @@ ky-universal@^0.3.0:
     node-fetch "^2.6.0"
 
 ky@^0.16.0:
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/ky/-/ky-0.16.1.tgz#1b7e14b1a964525b270fca5faf3bbf9e47ac8c8a"
-  integrity sha512-olhyGihJ8XOxP8dhdXXDFu1FfowsmkQznI33KNTl4Woa3T/UDBEV/FR8Y8Pe1cJ3ofVnlflcXRUE8a3Phwr3Og==
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/ky/-/ky-0.16.2.tgz#e3652262ab659b27780dd025d1524e40572034a8"
+  integrity sha512-4/Xcb0hqeueNX9sa+G2jREiam9yb+I2Y3p3J42lIeitAenHXUZwpyejEgeQcQsaGl+hbuA0s7c3u+nlcIYFtog==
 
 last-call-webpack-plugin@^3.0.0:
   version "3.0.0"
@@ -9286,9 +9286,9 @@ query-string@^5.0.1:
     strict-uri-encode "^1.0.0"
 
 query-string@^6.9.0:
-  version "6.9.0"
-  resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.9.0.tgz#1c3b727c370cf00f177c99f328fda2108f8fa3dd"
-  integrity sha512-KG4bhCFYapExLsUHrFt+kQVEegF2agm4cpF/VNc6pZVthIfCc/GK8t8VyNIE3nyXG9DK3Tf2EGkxjR6/uRdYsA==
+  version "6.10.1"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.10.1.tgz#30b3505f6fca741d5ae541964d1b3ae9dc2a0de8"
+  integrity sha512-SHTUV6gDlgMXg/AQUuLpTiBtW/etZ9JT6k6RCtCyqADquApLX0Aq5oK/s5UeTUAWBG50IExjIr587GqfXRfM4A==
   dependencies:
     decode-uri-component "^0.2.0"
     split-on-first "^1.0.0"
