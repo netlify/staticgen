@@ -31,7 +31,7 @@ function extractRelevantProjectData(data, configDays) {
   })
 }
 
-function getStarterTemplateRepoUrl(repo, repoHost = 'github') {
+export function getStarterTemplateRepoUrl(repo, repoHost = 'github') {
   if (!repo) {
     return
   }

@@ -6,6 +6,7 @@ import { EntypoTwitter } from 'react-entypo'
 import Stat from './stat'
 import DeployButton from './deploybutton'
 import DataPoint from './datapoint'
+import { getStarterTemplateRepoUrl } from "../../gatsby-node.js";
 
 const TwitterIcon = styled(EntypoTwitter)`
   width: 16px !important;
@@ -141,18 +142,6 @@ const Card = props => {
       )}
     </CardContainer>
   )
-}
-
-function getStarterTemplateRepoUrl(repo, repoHost = 'github') {
-  if (!repo) {
-    return
-  }
-  switch (repoHost) {
-    case 'github':
-      return `https://github.com/${repo}`
-    case 'gitlab':
-      return `https://gitlab.com/${repo}`
-  }
 }
 
 export default Card
