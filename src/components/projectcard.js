@@ -14,6 +14,7 @@ const TwitterIcon = styled(EntypoTwitter)`
 
 const CardContainer = styled.div`
   background: #fff;
+  
   border: 1px solid #eee;
   border-radius: 8px;
   color: #313d3e;
