@@ -45,6 +45,18 @@ const CardBodyLink = styled(Link)`
   }
 `
 
+function getStarterTemplateRepoUrl(repo, repoHost = 'github') {
+  if (!repo) {
+    return
+  }
+  switch (repoHost) {
+    case 'github':
+      return `https://github.com/${repo}`
+    case 'gitlab':
+      return `https://gitlab.com/${repo}`
+  }
+}
+
 const Title = styled.h4`
   margin: 0 -18px 0px;
   font-weight: normal;
@@ -136,7 +148,9 @@ const Card = props => {
           <DataPoint key={field.name} value={props[field.name]} label={field.label} />
         ))}
       </CardBodyLink>
-      {startertemplaterepo && <DeployButton repo={startertemplaterepo} />}
+      {startertemplaterepo && (
+        <DeployButton repo={getStarterTemplateRepoUrl(startertemplaterepo)} />
+      )}
     </CardContainer>
   )
 }

@@ -31,18 +31,6 @@ function extractRelevantProjectData(data, configDays) {
   })
 }
 
-function getStarterTemplateRepoUrl(repo, repoHost = 'github') {
-  if (!repo) {
-    return
-  }
-  switch (repoHost) {
-    case 'github':
-      return `https://github.com/${repo}`
-    case 'gitlab':
-      return `https://gitlab.com/${repo}`
-  }
-}
-
 exports.sourceNodes = async ({
   graphql,
   actions,
