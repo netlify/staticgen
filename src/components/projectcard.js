@@ -136,9 +136,23 @@ const Card = props => {
           <DataPoint key={field.name} value={props[field.name]} label={field.label} />
         ))}
       </CardBodyLink>
-      {startertemplaterepo && <DeployButton repo={startertemplaterepo} />}
+      {startertemplaterepo && (
+        <DeployButton repo={getStarterTemplateRepoUrl(startertemplaterepo)} />
+      )}
     </CardContainer>
   )
+}
+
+function getStarterTemplateRepoUrl(repo, repoHost = 'github') {
+  if (!repo) {
+    return
+  }
+  switch (repoHost) {
+    case 'github':
+      return `https://github.com/${repo}`
+    case 'gitlab':
+      return `https://gitlab.com/${repo}`
+  }
 }
 
 export default Card
