@@ -113,7 +113,12 @@ async function getArchiveId() {
   const gistArchive = find(gists.data, {
     description: config.gistArchiveDescription,
   })
-  return gistArchive && gistArchive.id
+  if (gistArchive) {
+    return gistArchive.id
+  }
+  console.log('No gist archive found. Creating new gist.')
+  await createGist()
+  return getArchiveId()
 }
 
 async function getArchive() {
@@ -128,7 +133,7 @@ function createGist(content) {
     'gists',
     {},
     {
-      files: { [config.archiveFilename]: { content } },
+      files: { [config.archiveFilename]: { content: '[]' } },
       public: true,
       description: config.gistArchiveDescription,
     }
@@ -143,16 +148,14 @@ async function editGist(content) {
 
 async function updateArchive(data, archive) {
   const updatedArchive = [[Date.now(), data], ...(archive || [])]
+
+  // truncate to 60 days of data
   const truncatedArchive =
     updatedArchive.length <= 60
       ? updatedArchive
       : reverse(sortBy(updatedArchive, ([timestamp]) => timestamp)).slice(0, 60)
   const content = JSON.stringify(truncatedArchive)
-  if (archive) {
-    await editGist(content)
-  } else {
-    await createGist(content)
-  }
+  await editGist(content)
   return truncatedArchive
 }
 
@@ -162,6 +165,9 @@ async function updateArchive(data, archive) {
  * a little early.
  */
 function archiveExpired(archive) {
+  if (!archive.length) {
+    return true
+  }
   const timestamps = archive.map(([timestamp]) => timestamp)
   const newestTimestamp = dateFns.max(timestamps).getTime()
   return dateFns.differenceInMinutes(Date.now(), newestTimestamp) > 1410

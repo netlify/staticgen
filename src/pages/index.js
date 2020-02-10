@@ -41,10 +41,11 @@ function compare(a, b, reverse) {
 }
 
 function statsForDays(allStats, targetDays) {
-  return allStats.find(({ days }) => targetDays === days).projects
+  const { projects } = allStats.find(({ days }) => targetDays === days) || {}
+  return projects
 }
 
-function getProjectStats(allStats, id) {
+function getProjectStats(allStats = [], id) {
   return allStats.find(({ id: projectId }) => id === projectId)
 }
 
