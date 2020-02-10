@@ -37,6 +37,7 @@ locally, you can set these in a `.env` file at the root of the repo.
 
 ```
 GITHUB_TOKEN=examplekey123abc
+GITLAB_TOKEN-examplekey123abc
 TWITTER_CONSUMER_KEY=examplekey231abc
 TWITTER_CONSUMER_SECRET=examplekey321abc
 TWITTER_ACCESS_TOKEN_KEY=examplekey231abc
