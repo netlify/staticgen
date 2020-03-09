@@ -3,7 +3,7 @@ title: Slate
 repo: slatedocs/slate
 homepage: https://slatedocs.github.io/slate/
 language:
-  - Ruby
+  - JavaScript
 license:
   - Apache-2.0
 templates:
