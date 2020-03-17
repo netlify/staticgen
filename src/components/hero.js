@@ -24,6 +24,7 @@ const HeroContainer = styled.div`
   background: linear-gradient(45deg, #4d9abf, #00c7b7);
   text-align: center;
   padding: 29px 0;
+  position: relative;
 `
 
 const HeroHeading = styled.h1`
