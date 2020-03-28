@@ -9,7 +9,7 @@ license:
 templates:
   - Twig
 description: Your content driven static site generator.
-startertemplaterepo: Cecilapp/starter-blog
+startertemplaterepo: Cecilapp/the-butler
 twitter: Cecil_Static
 ---
 
