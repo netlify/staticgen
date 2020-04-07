@@ -1,7 +1,7 @@
 ---
 title: Orchid
 repo: JavaEden/Orchid
-homepage: https://orchid.netlify.com
+homepage: https://orchid.run
 language:
   - Java
   - Kotlin
