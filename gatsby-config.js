@@ -26,7 +26,7 @@ module.exports = {
     shareTextProjectEnd: ', an open source static site generator on the staticgen.com leaderboard.',
     footerMarkdown: oneLine`
       StaticGen is hosted and maintained by [Netlify](https://www.netlify.com), the perfect way to
-      deploy your Jamstack sites and apps.
+      deploy your [Jamstack sites and apps](https://www.netlify.com/jamstack).
     `,
     copyrightName: 'Netlify',
     promoMarkdown: stripIndent`
