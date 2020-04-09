@@ -13,8 +13,8 @@ description: INTUITION.DEV is the futuristic open source tool for pro developers
 
 # INTUITION.DEV :
 
-In a future with increasing automation, citizen-developers have become more widespread. Nowadays almost anyone can pull out a form or a web app using low-code tools. Unlike other low-code tools, this one is aimed at professional developers and uses a standard language: Pug. We started first with a static code generator that leverage JAMstack, w/ Pug. And then added a WebAdmin that lets you edit—and then keep adding features. 
-[Medium Article](https://medium.com/@uptimevic/how-software-developers-can-survive-the-coming-tech-crash-796dd8dc5a7e) 
+In a future with increasing automation, citizen-developers have become more widespread. Nowadays almost anyone can pull out a form or a web app using low-code tools. Unlike other low-code tools, this one is aimed at professional developers and uses a standard language: Pug. We started first with a static code generator that leverage Jamstack, w/ Pug. And then added a WebAdmin that lets you edit—and then keep adding features.
+[Medium Article](https://medium.com/@uptimevic/how-software-developers-can-survive-the-coming-tech-crash-796dd8dc5a7e)
 
 ### INTUITION.DEV pro development features:
 

@@ -17,7 +17,7 @@ module.exports = {
     image: 'https://staticgen.com/images/staticgen.png',
     repo: 'https://github.com/netlify/staticgen',
     homeTitle: 'StaticGen | Top Open Source Static Site Generators',
-    subtitle: 'A List of Static Site Generators for JAMstack Sites',
+    subtitle: 'A List of Static Site Generators for Jamstack Sites',
     description,
     socialPreviewImageFilename: 'staticgen.png',
     shareButtons: ['twitter', 'reddit'],
@@ -26,7 +26,7 @@ module.exports = {
     shareTextProjectEnd: ', an open source static site generator on the staticgen.com leaderboard.',
     footerMarkdown: oneLine`
       StaticGen is hosted and maintained by [Netlify](https://www.netlify.com), the perfect way to
-      deploy your JAMstack sites and apps.
+      deploy your Jamstack sites and apps.
     `,
     copyrightName: 'Netlify',
     promoMarkdown: stripIndent`
@@ -39,7 +39,7 @@ module.exports = {
       here](https://www.netlify.com/docs/deploy_button/).
     `,
     navLinks: [
-      { url: 'https://jamstack.org', text: 'About JAMstack' },
+      { url: 'https://jamstack.org', text: 'About Jamstack' },
       { url: 'https://headlesscms.org', text: 'Need a Static CMS?' },
     ],
     fallbackSortField: 'title',

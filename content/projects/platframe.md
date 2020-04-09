@@ -14,7 +14,7 @@ startertemplaterepo: platframe/platframe
 twitter: platframe
 ---
 
-Whether it's bespoke development, building a JAMstack app, or making it your blog's static site generator, _Platframe_ grounds your next project with a resilient foundation.
+Whether it's bespoke development, building a Jamstack app, or making it your blog's static site generator, _Platframe_ grounds your next project with a resilient foundation.
 
 ## Setup
 
