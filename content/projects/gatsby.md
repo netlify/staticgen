@@ -35,7 +35,7 @@ Gatsby.js is Internet Scale. Forget complicated deploys with databases and serve
 
 ## Future-proof your website
 
-Don't build a website with last decade's tech. The future of the web is mobile, JavaScript and APIs—the JAMstack. Every website is a web app and every web app is a website. Gatsby.js is the universal JavaScript framework you’ve been waiting for.
+Don't build a website with last decade's tech. The future of the web is mobile, JavaScript and APIs—the Jamstack. Every website is a web app and every web app is a website. Gatsby.js is the universal JavaScript framework you’ve been waiting for.
 
 ## Static Progressive Web Apps
 

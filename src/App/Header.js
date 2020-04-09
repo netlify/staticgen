@@ -9,8 +9,8 @@ import NavLink, { NavAnchor } from './NavLink'
 const JamstackConfBanner = ({ className }) => (
   <div className={className}>
     <p>
-      Learn more about the JAMstack at{' '}
-      <a href="https://jamstackconf.com/sf">JAMstack Conf</a> in San Francisco — 16-18 October, 2019
+      Learn more about the Jamstack at{' '}
+      <a href="https://jamstackconf.com/sf">Jamstack Conf</a> in San Francisco — 16-18 October, 2019
     </p>
   </div>
 )
