@@ -1,7 +1,7 @@
 {
   "name": "staticgen",
   "private": true,
-  "description": "StaticGen.com, a list of static site generators for JAMstack sites.",
+  "description": "StaticGen.com, a list of static site generators for Jamstack sites.",
   "version": "3.0.0",
   "author": "@Netlify",
   "dependencies": {

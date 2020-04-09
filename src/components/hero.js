@@ -62,7 +62,7 @@ const Hero = ({ siteTitle, shareUrl, shareText }) => (
         <LogoText>{siteTitle}</LogoText>
       </LogoLink>
     </HeroHeading>
-    <HeroSubheading>A List of Static Site Generators for JAMstack Sites</HeroSubheading>
+    <HeroSubheading>A List of Static Site Generators for Jamstack Sites</HeroSubheading>
 
     <ShareButtonGroup>
       {['twitter', 'reddit'].map(type => (

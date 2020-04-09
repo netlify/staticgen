@@ -39,7 +39,7 @@ Gridsome automatically optimises your frontend to load and perform blazing fast.
 
 ## Build future ready websites
 
-The future of the web is JavaScript, API's, and Markup - the JAMstack. Gridsome uses the power of blazing-fast static site generator, JavaScript and APIs to create stunning dynamic web experiences.
+The future of the web is JavaScript, API's, and Markup - the Jamstack. Gridsome uses the power of blazing-fast static site generator, JavaScript and APIs to create stunning dynamic web experiences.
 
 ## Ready for global domination
 
