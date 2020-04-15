@@ -1,21 +1,22 @@
 ---
 title: Scully
 repo: scullyio/scully
-homepage: https://github.com/scullyio/scully
+homepage: https://scully.io
 language:
   - JavaScript
+  - TypeScript
 license:
   - MIT
 templates:
   - Angular
-description: Scully is a static site generator for Angular projects looking to embrace the JAMStack.
+description: Scully is a static site generator for Angular projects looking to embrace the Jamstack.
 twitter: ScullyIO
 ---
 
 The best way to build the fastest Angular apps. Scully is a static site generator for Angular projects looking to embrace the JAMStack.
 
-- [Getting Started](https://github.com/scullyio/scully/blob/master/docs/getting-started.md)
-- [Full Documentation](https://github.com/scullyio/scully/blob/master/docs/scully.md)
+- [Getting Started](https://scully.io/docs/getting-started)
+- [Full Documentation](https://scully.io/docs/scully)
 - [Live Demo](https://www.youtube.com/watch?v=Sh37rIUL-d4) (_from Dec 16, 2019_)
 
 # What is Scully?
