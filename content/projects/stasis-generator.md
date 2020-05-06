@@ -3,7 +3,7 @@ title: Stasis
 repo: Gioni06/stasis-generator
 homepage: https://getstasis.com/
 language:
-  - Typescript
+  - TypeScript
 license:
   - MIT
 templates:
