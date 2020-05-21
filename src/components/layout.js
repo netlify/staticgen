@@ -81,7 +81,7 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
       <Global styles={globalStyles} />
 
       <Banner>
-        Share your Jamstack technology decisions and experiences. <a href="https://www.surveymonkey.com/r/DH9KZZT" target="_blank" rel="noopener noreferrer">Take&nbsp;the&nbsp;survey&nbsp;by&nbsp;April&nbsp;19</a>
+        Join the first Virtual Jamstack Conf on May 27-28. <a href="https://jamstackconf.com/virtual/" target="_blank" rel="noopener noreferrer">Registration&nbsp;is&nbsp;Free!</a>
       </Banner>
 
       <Hero siteTitle={data.site.siteMetadata.title} shareText={shareText} shareUrl={shareUrl} />
