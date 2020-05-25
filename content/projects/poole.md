@@ -5,7 +5,7 @@ homepage: https://bitbucket.org/obensonne/poole/
 language:
   - Python
 license:
-  - GNU GPL v3.0
+  - GPL-3.0-only
 templates:
   - HTML
 description: A simple Markdown static site generator.

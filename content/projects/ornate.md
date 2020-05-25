@@ -5,13 +5,13 @@ homepage: https://szeiger.github.io/ornate-doc/
 language:
   - Scala
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Markdown
 description: Ornate is a tool for building multi-page HTML sites from Markdown sources.
 ---
 
-*Ornate* is a tool for building multi-page HTML sites from Markdown sources. The design goals are:
+_Ornate_ is a tool for building multi-page HTML sites from Markdown sources. The design goals are:
 
 - Runs on the JVM; No installation required: Resolve the versioned dependencies in your build process for reproducible documentation builds with no external dependencies.
 - Based on CommonMark, a standardized version of Markdown.

@@ -5,16 +5,16 @@ homepage: http://skf.jeannedhack.org/
 language:
   - Bash
 license:
-  - GNU GPL v3.0
+  - GPL-3.0-only
 templates:
   - Custom
-description: Plugin-based static website generator inspired by Suckless Web Framework. 
+description: Plugin-based static website generator inspired by Suckless Web Framework.
 ---
 
 ## Goal
 
-StatiKiss Framework concentrates on performance and simplicity. 
-Plugins can be created very easily. 
+StatiKiss Framework concentrates on performance and simplicity.
+Plugins can be created very easily.
 
-The three themes (Default, Redish and Split) are responsive and 
-try to be as small as possible. 
+The three themes (Default, Redish and Split) are responsive and
+try to be as small as possible.

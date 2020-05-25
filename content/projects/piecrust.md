@@ -5,14 +5,14 @@ homepage: http://bolt80.com/piecrust
 language:
   - Python
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Jinja
 description: PieCrust is a static website generator and flat-file CMS
 ---
 
 PieCrust is a static website generator and flat-file CMS. No complex setup,
-databases, or administrative panels  its all text files. Simple, beautiful,
+databases, or administrative panels its all text files. Simple, beautiful,
 and yummy.
 
 PieCrust makes creating and maintaining a website as easy as pie:

@@ -5,7 +5,7 @@ homepage: https://kulfon.org
 language:
   - JavaScript
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - Nunjucks
   - Org Mode
@@ -14,7 +14,7 @@ description: Kulfon is a static site generator written in JavaScript and inspire
 twitter: kulfonjs
 ---
 
-Kulfon /kuːl fəʊn/ is a static site generator for the rest of us. It combines data sources with templates to tranform them into HTML pages at once. 
+Kulfon /kuːl fəʊn/ is a static site generator for the rest of us. It combines data sources with templates to tranform them into HTML pages at once.
 
 ### Features
 
@@ -40,7 +40,7 @@ convince you to try **Kulfon**
 |          | Language Superset | Whitespace Sensitive                          |
 | -------- | ----------------- | --------------------------------------------- |
 | **HTML** | [Nunjucks][1]     | [Markdown][15]                                |
-| **CSS**  | [Sass (SCSS)][2]   | [Stylus](http://learnboost.github.io/stylus/) |
+| **CSS**  | [Sass (SCSS)][2]  | [Stylus](http://learnboost.github.io/stylus/) |
 
 ### Resources
 

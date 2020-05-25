@@ -28,10 +28,10 @@ composer require fw/last-bundle
 Thats it! No configuration needed, just dump your Symfony application to ./dist
 
 ```sh
-bin/console last:dump 
+bin/console last:dump
 ```
 
 ## More advanced applications
 
-Last can also handle more advanced applications with dynamic routes and more 
+Last can also handle more advanced applications with dynamic routes and more
 complex stuff. Please see the [Github Repo](https://github.com/franzwilding/last) repo for more information.

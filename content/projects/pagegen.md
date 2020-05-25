@@ -5,12 +5,11 @@ homepage: http://pagegen.phnd.net
 language:
   - Python
 license:
-  - GNU GPL v3.0
+  - GPL-3.0-only
 templates:
   - Pagegen
 description: Manage sites and blogs, SEO friendly.
 ---
-
 
 Pagegen aims to provide a basic configurable foundation for a site. Basically add content and CSS styling and you should be good to go.
 

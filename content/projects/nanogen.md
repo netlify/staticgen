@@ -16,8 +16,8 @@ Minimalist static site generator written in Node.js.
 
 ## Features
 
-* EJS, Markdown (with front matter) and HTML templates
-* Multiple layouts
-* Reusable partials
-* Store settings in JSON files
-* "init" command to create a new site
+- EJS, Markdown (with front matter) and HTML templates
+- Multiple layouts
+- Reusable partials
+- Store settings in JSON files
+- "init" command to create a new site

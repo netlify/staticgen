@@ -5,7 +5,7 @@ homepage: http://github.com/imdario/zas
 language:
   - Go
 license:
-  - AGPL v3.0
+  - AGPL-3.0-or-later
 templates:
   - Go
 description: Most zen static website generator in Golang.
@@ -29,7 +29,7 @@ Yes, it is another NIH but... I think Zas is a different kind of beast. I admit 
 2. Markdown only. And HTML, if you want.
 3. Just a loop. Zas just loops over all .md and .html files in current directory (and subdirectories), ignoring all any other file (including dot-files).
 4. Your imagination as limit. Zas has a simple extension mechanism based in subcommands. Do you really need to handle a blog with Zas? Install/create a new extension and do it!
-5. Unobstrutive structure, no '_' files. More in [Usage](#usage) section.
+5. Unobstrutive structure, no '\_' files. More in [Usage](#usage) section.
 
 ## Usage
 
@@ -49,7 +49,7 @@ Yes. Enough. Your delightful site is on .zas/deploy. Enjoy.
 
 What is happening here? Well, "generate" subcommand is called by default. This subcommand accepts the following flags:
 
-* -verbose: print ALL the things!
-* -full: generates all the input files. By default, zas has an incremental mode which keeps source and deploy directories in sync.
+- -verbose: print ALL the things!
+- -full: generates all the input files. By default, zas has an incremental mode which keeps source and deploy directories in sync.
 
 More at [Zas repository](https://github.com/imdario/zas/blob/master/README.md).

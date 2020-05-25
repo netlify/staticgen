@@ -22,4 +22,3 @@ format. Likewise, Haunt has no opinion about how authors structure
 their sites. Though it comes with support for building simple blogs or
 Atom feeds, authors should feel empowered to tweak, replace, or create
 builders to do things that aren't provided out-of-the-box.
-

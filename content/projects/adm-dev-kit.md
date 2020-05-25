@@ -12,14 +12,17 @@ description: ADM-DEV-KIT is static web server and build tool built with plugins 
 ---
 
 ## Features
+
 **Main features are:**
+
 - component driven development;
 - not a SPA (single page application);
 - no extra configuration required, works out of box;
-- js and css per page, no global files for entire project; 
+- js and css per page, no global files for entire project;
 - server and build environment.
 
 **Development features:**
+
 - server;
 - basic routes;
 - pug as template engine, markdown also supported;
@@ -31,6 +34,7 @@ description: ADM-DEV-KIT is static web server and build tool built with plugins 
 - linters for js and css, there is also pre-commit hook for linting.
 
 **Build features:**
-- automated gulp tasks, no need to configure. gulp tasks help to make project production ready; 
+
+- automated gulp tasks, no need to configure. gulp tasks help to make project production ready;
 - lint tasks
 - every project’s page has it’s own html, js and css files.

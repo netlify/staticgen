@@ -5,9 +5,9 @@ homepage: http://steve.org.uk/Software/templer/
 language:
   - Perl
 license:
-  - GNU GPL v2.0
-  - GNU GPL v3.0
-  - Artistic 2.0
+  - GPL-2.0-only
+  - GPL-3.0-only
+  - Artistic-2.0
 templates:
   - HTML::Template
 description: Templer is a modular extensible static-site-generator written in perl.
@@ -25,11 +25,10 @@ installed you can write your input pages in Markdown or Textile.
 
 Variables may be defined on a per-page or per-site basis, and may include:
 
-* The output of shell commands.
-* The output of various local files.
-* Loops refering to filenames.
-    * Allowing simple galleries to be made, for example.
+- The output of shell commands.
+- The output of various local files.
+- Loops refering to filenames.
+  - Allowing simple galleries to be made, for example.
 
 Finally you may define a layout on a per-page basis, allowing you to give
 different areas of your site an entirely different look and feel.
-

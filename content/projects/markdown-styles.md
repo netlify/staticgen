@@ -5,13 +5,13 @@ homepage: https://github.com/mixu/markdown-styles
 language:
   - JavaScript
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Handlebars
 description: Markdown to static HTML generator and multiple CSS themes for Markdown
 ---
 
-Converts Markdown files to HTML, with over a dozen builtin themes. 
+Converts Markdown files to HTML, with over a dozen builtin themes.
 
 ## Features
 

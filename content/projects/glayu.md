@@ -17,6 +17,6 @@ What makes Glayu different from other static site generators is the way it struc
 
 ### Features
 
-* Partial site generation.
-* Well organized source folder.
-* Fast, thanks to Elixir and the Erlang VM.
+- Partial site generation.
+- Well organized source folder.
+- Fast, thanks to Elixir and the Erlang VM.

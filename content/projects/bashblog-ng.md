@@ -5,12 +5,17 @@ homepage: https://github.com/dvwallin/bashblog-ng
 language:
   - Bash
 license:
+<<<<<<< HEAD
   - GNU GPL v3.0
+=======
+  - GPL-3.0-only
+>>>>>>> 8de2c86b118b2b8f64adadf56577ad1341ee9fd1
 templates:
   - None
 description: Bash script to create and manage blogs.
 ---
 
+<<<<<<< HEAD
 Bashblog-ng is based on bashblog. The reasons for forking an already great project 
 was two;
 
@@ -18,6 +23,15 @@ was two;
   2. I wanted features that was not part of the original project
 
 Out of these two reasons bashblog-ng was born. A drop-in replacement for bashblog 
+=======
+Bashblog-ng is based on bashblog. The reasons for forking an already great project
+was two;
+
+1. bashblog had not been updated in almost 3 years
+2. I wanted features that was not part of the original project
+
+Out of these two reasons bashblog-ng was born. A drop-in replacement for bashblog
+>>>>>>> 8de2c86b118b2b8f64adadf56577ad1341ee9fd1
 with more features but still minimalstic.
 
 --

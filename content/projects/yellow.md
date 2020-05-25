@@ -7,11 +7,12 @@ twitter: datenstromse
 language:
   - PHP
 license:
-  - GNU GPL v2.0
+  - GPL-2.0-only
 templates:
   - PHP
 description: Datenstrom Yellow is for people who make websites.
 ---
+
 Datenstrom Yellow is for people who make websites.
 
 1. [Download Datenstrom Yellow and unzip it](https://github.com/datenstrom/yellow/archive/master.zip).

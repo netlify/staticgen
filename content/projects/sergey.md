@@ -18,10 +18,10 @@ If you’ve ever had to make a change to every header on a totally static websit
 
 ### Features
 
-* Partials
-* Named slots
-* Default slots
-* Fallback slot content
-* Markdown (optional)
-* Static files
-* Dev server
+- Partials
+- Named slots
+- Default slots
+- Fallback slot content
+- Markdown (optional)
+- Static files
+- Dev server

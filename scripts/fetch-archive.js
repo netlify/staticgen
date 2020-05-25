@@ -1,148 +1,162 @@
-import path from 'path'
-import fs from 'fs-extra'
-import { compact, map, find, fromPairs, mapValues } from 'lodash'
-import fetch from 'node-fetch'
-import { differenceInMinutes } from 'date-fns'
-import Octokit from '@octokit/rest'
-import { Gitlab } from 'gitlab'
-import twitterFollowersCount from 'twitter-followers-count'
+const path = require('path')
+const fs = require('fs-extra')
+const axios = require('axios')
+const { compact, map, find, fromPairs, mapValues, partial, reverse, sortBy } = require('lodash')
+const fetch = require('node-fetch')
+const dateFns = require('date-fns')
+const { Gitlab } = require('gitlab')
+const twitterFollowersCount = require('twitter-followers-count')
+const throttleConcurrency = require('./throttle-concurrency')
 
-require('dotenv').config()
+const config = {}
 
-const GITHUB_TOKEN = process.env.STATICGEN_GITHUB_TOKEN
-const GITLAB_TOKEN = process.env.STATICGEN_GITLAB_TOKEN
-const TWITTER_CONSUMER_KEY = process.env.STATICGEN_TWITTER_CONSUMER_KEY
-const TWITTER_CONSUMER_SECRET = process.env.STATICGEN_TWITTER_CONSUMER_SECRET
-const TWITTER_ACCESS_TOKEN_KEY = process.env.STATICGEN_TWITTER_ACCESS_TOKEN_KEY
-const TWITTER_ACCESS_TOKEN_SECRET = process.env.STATICGEN_TWITTER_ACCESS_TOKEN_SECRET
-const ARCHIVE_FILENAME = 'staticgen-archive.json'
-const LOCAL_ARCHIVE_PATH = `tmp/${ARCHIVE_FILENAME}`
-const GIST_ARCHIVE_DESCRIPTION = 'STATICGEN.COM DATA ARCHIVE'
+let github, gitlab, getTwitterFollowers
 
-let octokit
-let gitlab
-let getTwitterFollowers
+function githubInit(token) {
+  const throttledAxios = throttleConcurrency(axios, 20, 30000)
+  const githubRequest = async (method, endpoint, params = {}, data) => {
+    const url = `https://api.github.com/${endpoint}`
+    const headers = { Authorization: `token ${token}` }
+    try {
+      return throttledAxios({
+        url,
+        method,
+        params,
+        headers,
+        ...(data ? { data } : {}),
+      })
+    } catch (err) {
+      console.error(err)
+    }
+  }
 
-function authenticate () {
-  octokit = Octokit()
-  octokit.authenticate({ type: 'token', token: GITHUB_TOKEN })
-  gitlab = new Gitlab({ personaltoken: GITLAB_TOKEN })
+  return ['get', 'post', 'patch'].reduce((obj, method) => {
+    return { ...obj, [method]: partial(githubRequest, method) }
+  }, {})
+}
+
+function init(tokens) {
+  github = githubInit(tokens.githubToken)
+  gitlab = new Gitlab({ personaltoken: tokens.gitlabToken })
   getTwitterFollowers = twitterFollowersCount({
-    consumer_key: TWITTER_CONSUMER_KEY,
-    consumer_secret: TWITTER_CONSUMER_SECRET,
-    access_token_key: TWITTER_ACCESS_TOKEN_KEY,
-    access_token_secret: TWITTER_ACCESS_TOKEN_SECRET,
+    consumer_key: tokens.twitterConsumerKey,
+    consumer_secret: tokens.twitterConsumerSecret,
+    access_token_key: tokens.twitterAccessTokenKey,
+    access_token_secret: tokens.twitterAccessTokenSecret,
   })
 }
 
-async function getProjectGitHubData (repo) {
-  const [owner, repoName] = repo.split('/')
-  const { data } = await octokit.repos.get({ owner, repo: repoName })
-  const { stargazers_count, forks_count, open_issues_count, html_url } = data
-  return { stars: stargazers_count, forks: forks_count, issues: open_issues_count, repo: html_url }
+async function getProjectGitHubData(repo) {
+  const { data } = await github.get(`repos/${repo}`)
+  const { stargazers_count, forks_count, open_issues_count } = data
+  return { s: stargazers_count, fk: forks_count, i: open_issues_count }
 }
 
-async function getProjectGitLabData (repo) {
-  const { id, star_count, forks_count, web_url } = await gitlab.Projects.show(repo)
+async function getProjectGitLabData(repo) {
+  const { id, star_count, forks_count } = await gitlab.Projects.show(repo)
   const open_issues_count = (await gitlab.Issues.all({ projectId: id, state: 'opened' })).length
-  return { stars: star_count, forks: forks_count, issues: open_issues_count, repo: web_url }
+  return { s: star_count, fk: forks_count, i: open_issues_count }
 }
 
-async function getAllProjectRepoData (repos) {
-  const data = []
-  // eslint-disable-next-line no-restricted-syntax
-  for (const repoWithHost of repos) {
-    const [repoHost, repo] = repoWithHost.split(':')
-    // eslint-disable-next-line no-await-in-loop
-    await new Promise(res => setTimeout(res, 100))
-    try {
-      if (repoHost === 'gitlab') {
-        // eslint-disable-next-line no-await-in-loop
-        const repoData = await getProjectGitLabData(repo)
-        data.push([repoWithHost, repoData])
-      } else {
-        // eslint-disable-next-line no-await-in-loop
-        const repoData = await getProjectGitHubData(repo)
-        data.push([repoWithHost, repoData])
-      }
-    } catch (err) {
-      console.error(`Could not load repository "${repo}" from ${repoHost}. Please make sure it still exists.`)
-    }
+async function getAllProjectRepoData(repos) {
+  const getRepoData = {
+    github: getProjectGitHubData,
+    gitlab: getProjectGitLabData,
   }
-  return fromPairs(data)
+  let count = 0
+  const reportRepoReceived = repo => {
+    count++
+    console.log(`received ${count}/${repos.length} ${repo}`)
+  }
+  const data = repos.map(async ({ repo, repohost = 'github' }, idx, arr) => {
+    const repoData = await getRepoData[repohost](repo)
+    reportRepoReceived(repo)
+    return [repo, repoData]
+  }, [])
+  return fromPairs(await Promise.all(data))
 }
 
-async function getAllProjectData (projects) {
-  const timestamp = Date.now()
+async function getAllProjectData(projects) {
   const twitterScreenNames = compact(map(projects, 'twitter'))
-  const twitterFollowers = twitterScreenNames.length && await getTwitterFollowers(twitterScreenNames)
-  const repos = compact(map(projects, val => val.repo ? [val.repohost || 'github', val.repo].join(':') : undefined))
+  const twitterFollowers =
+    twitterScreenNames.length && (await getTwitterFollowers(twitterScreenNames))
+  const repos = compact(map(projects, ({ repo, repohost }) => ({ repo, repohost })))
   const reposData = await getAllProjectRepoData(repos)
-  const data = projects.reduce((obj, { key, repo, repohost, twitter }) => {
-    const twitterData = twitter ? { followers: twitterFollowers[twitter] } : {}
-    const repoData = repo ? { ...(reposData[[repohost || 'github', repo].join(':')]) } : {}
-    return { ...obj, [key]: [{ timestamp, ...twitterData, ...repoData }] }
-  }, {})
-  return { timestamp, data }
+  return projects.map(({ id, repo, twitter }) => {
+    const twitterData = twitter ? { f: twitterFollowers[twitter] } : {}
+    const repoData = repo ? reposData[repo] : {}
+    return { id, ...twitterData, ...repoData }
+  })
 }
 
-async function getLocalArchive () {
+async function getLocalArchive() {
   try {
-    return await fs.readJson(path.join(process.cwd(), LOCAL_ARCHIVE_PATH))
+    return await fs.readJson(path.join(process.cwd(), config.localArchivePath))
   } catch (e) {
     console.log('Local archive not found, fetching new data.')
   }
 }
 
-function updateLocalArchive (data) {
-  return fs.outputJson(path.join(process.cwd(), LOCAL_ARCHIVE_PATH), data)
+function updateLocalArchive(data) {
+  return fs.outputJson(path.join(process.cwd(), config.localArchivePath), data)
 }
 
-function getArchiveJson (archive) {
+function getArchiveJson(archive) {
   if (archive.truncated) {
     return fetch(archive.raw_url).then(resp => resp.json())
   }
   return JSON.parse(archive.content)
 }
 
-async function getArchive () {
-  const gists = await octokit.gists.getAll({ per_page: 100 })
-  const gistArchive = find(gists.data, { description: GIST_ARCHIVE_DESCRIPTION })
-  if (!gistArchive) {
-    return
-  }
-  const gistArchiveContent = await octokit.gists.get({ id: gistArchive.id })
-  const archive = gistArchiveContent.data.files[ARCHIVE_FILENAME]
-  const archiveJson = await getArchiveJson(archive)
-  return { ...archiveJson, id: gistArchive.id }
-}
-
-function createGist (content) {
-  return octokit.gists.create({
-    files: { [ARCHIVE_FILENAME]: { content } },
-    public: true,
-    description: GIST_ARCHIVE_DESCRIPTION,
+async function getArchiveId() {
+  const gists = await github.get('gists')
+  const gistArchive = find(gists.data, {
+    description: config.gistArchiveDescription,
   })
-}
-
-function editGist (content, id) {
-  return octokit.gists.edit({ id, files: { [ARCHIVE_FILENAME]: { content } } })
-}
-
-async function updateArchive ({ timestamp, data }, archive) {
-  const preppedData = archive
-    ? {
-      timestamp,
-      data: mapValues(data, (projectData, name) => [...projectData, ...(archive.data[name] || [])]),
-    }
-    : { timestamp, data }
-  const content = JSON.stringify(preppedData)
-  if (archive) {
-    await editGist(content, archive.id)
-  } else {
-    await createGist(content)
+  if (gistArchive) {
+    return gistArchive.id
   }
-  return preppedData
+  console.log('No gist archive found. Creating new gist.')
+  await createGist()
+  return getArchiveId()
+}
+
+async function getArchive() {
+  const gistArchiveId = await getArchiveId()
+  const gistArchiveContent = await github.get(`gists/${gistArchiveId}`)
+  const archive = gistArchiveContent.data.files[config.archiveFilename]
+  return getArchiveJson(archive)
+}
+
+function createGist(content) {
+  return github.post(
+    'gists',
+    {},
+    {
+      files: { [config.archiveFilename]: { content: '[]' } },
+      public: true,
+      description: config.gistArchiveDescription,
+    }
+  )
+}
+
+async function editGist(content) {
+  const gistArchiveId = await getArchiveId()
+  const files = { [config.archiveFilename]: { content } }
+  return github.patch(`gists/${gistArchiveId}`, {}, { files })
+}
+
+async function updateArchive(data, archive) {
+  const updatedArchive = [[Date.now(), data], ...(archive || [])]
+
+  // truncate to 60 days of data
+  const truncatedArchive =
+    updatedArchive.length <= 60
+      ? updatedArchive
+      : reverse(sortBy(updatedArchive, ([timestamp]) => timestamp)).slice(0, 60)
+  const content = JSON.stringify(truncatedArchive)
+  await editGist(content)
+  return truncatedArchive
 }
 
 /**
@@ -150,29 +164,51 @@ async function updateArchive ({ timestamp, data }, archive) {
  * minutes short of 24 hours, just in case a daily refresh webhook gets called
  * a little early.
  */
-function archiveExpired (archive) {
-  return differenceInMinutes(Date.now(), archive.timestamp) > 1410
+function archiveExpired(archive) {
+  if (!archive.length) {
+    return true
+  }
+  const timestamps = archive.map(([timestamp]) => timestamp)
+  const newestTimestamp = dateFns.max(timestamps).getTime()
+  return dateFns.differenceInMinutes(Date.now(), newestTimestamp) > 1410
 }
 
-async function run (projects) {
+function expand(data) {
+  return data.map(([timestamp, datum]) => {
+    const expanded = datum.map(({ id, s, fk, i, f }) => ({
+      id,
+      stars: s,
+      forks: fk,
+      issues: i,
+      followers: f,
+    }))
+    return [timestamp, expanded]
+  })
+}
+
+module.exports = async function run(
+  projects,
+  { archiveFilename, localArchivePath, gistArchiveDescription, ...tokens }
+) {
+  config.archiveFilename = archiveFilename
+  config.localArchivePath = localArchivePath
+  config.gistArchiveDescription = gistArchiveDescription
+
   const localArchive = await getLocalArchive()
   if (localArchive && !archiveExpired(localArchive)) {
-    return localArchive.data
+    return expand(localArchive)
   }
 
-  // This is synchronous.
-  authenticate()
+  init(tokens)
 
   const archive = await getArchive()
   if (archive && !archiveExpired(archive)) {
     await updateLocalArchive(archive)
-    return archive.data
+    return expand(archive)
   }
 
   const projectData = await getAllProjectData(projects)
   const updatedArchive = await updateArchive(projectData, archive)
   await updateLocalArchive(updatedArchive)
-  return updatedArchive.data
+  return expand(updatedArchive)
 }
-
-export default run

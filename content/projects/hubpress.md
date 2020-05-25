@@ -13,7 +13,7 @@ startertemplaterepo: HubPress/hubpress.io
 twitter: HubPressIO
 ---
 
-HubPress is a static site generator written in JavaScript, powered by Vue.js, Asciidoctor and GitHub 
+HubPress is a static site generator written in JavaScript, powered by Vue.js, Asciidoctor and GitHub
 
 ### It's free
 
@@ -29,11 +29,12 @@ We integrated Disqus, all you need to start conversations with your readers is a
 
 ### Get analytics
 
-Learn more about your readers with Google Analytics, you just have to set your tracking id in the HubPress' configuration. 
+Learn more about your readers with Google Analytics, you just have to set your tracking id in the HubPress' configuration.
 
 ### Videos
 
 #### Demo - Take a closer look in more detail (YouTube)
+
 [![Demo - Take a closer look in more detail](https://img.youtube.com/vi/7gP3i4tHlRM/0.jpg)](http://www.youtube.com/watch?v=7gP3i4tHlRM)
 
 #### How To Create A Free Blog With HubPress And Netlify (YouTube)

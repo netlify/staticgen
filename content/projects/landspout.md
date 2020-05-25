@@ -5,11 +5,12 @@ homepage: https://github.com/gmr/landspout
 language:
   - Python
 license:
-  - BSD 3-Clause
+  - BSD-3-Clause
 templates:
   - Tornado
 description: A simple static site generation tool
 ---
+
 Landspout is a static website generation tool, using [Tornado Templates](http://www.tornadoweb.org/en/stable/). Create your template structure, and your content, and point landspout at it.
 
 Landspout has three operational modes:

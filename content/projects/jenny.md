@@ -26,4 +26,3 @@ Settings can be peristed in an rc file or overridden on run
 time through command arguments.
 
 The default theme is small and light, and the template nimble.
-

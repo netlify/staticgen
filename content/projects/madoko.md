@@ -5,11 +5,10 @@ homepage: https://www.madoko.net
 language:
   - JavaScript
 license:
-  - Apache 2.0
+  - Apache-2.0
 templates:
   - HTML
 description: A fast processor for high quality academic and technical articles from Markdown and LaTeX.
-
 ---
 
 The main design goal of Madoko is to enable light-weight creation of
@@ -31,24 +30,23 @@ script: lib/myAweseomScriptsAndAnalytics.js
 [INCLUDE="HowWeDoIt.md"]
 
 [INCLUDE="WhatWeDo.md"]
-
 ```
 
 To learn more about Madoko, check out the [reference manual]. To use it, simply:
 
-+ Install with:
+- Install with:
 
 ```sh
 npm install madoko -g
-``` 
+```
 
-+ Translating a Markdown document to HTML is as simple as:
+- Translating a Markdown document to HTML is as simple as:
 
 ```sh
 madoko mydoc.mdk
 ```
 
-+ To also generate a PDF file, use:
+- To also generate a PDF file, use:
 
 ```sh
 madoko --pdf --odir=out mydoc

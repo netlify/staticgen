@@ -17,9 +17,9 @@ Build blazing-fast, modern apps and websites with React
 
 ## Features
 
-* Fast no-reload page changes
-* Build sites with React.js components
-* Hot reload editing. Tweak pages, templates, and styles and see changes in real time.
+- Fast no-reload page changes
+- Build sites with React.js components
+- Hot reload editing. Tweak pages, templates, and styles and see changes in real time.
 
 ## Modern web tech without the headache
 
@@ -35,7 +35,7 @@ Gatsby.js is Internet Scale. Forget complicated deploys with databases and serve
 
 ## Future-proof your website
 
-Don't build a website with last decade's tech. The future of the web is mobile, JavaScript and APIs—the JAMstack. Every website is a web app and every web app is a website. Gatsby.js is the universal JavaScript framework you’ve been waiting for.
+Don't build a website with last decade's tech. The future of the web is mobile, JavaScript and APIs—the Jamstack. Every website is a web app and every web app is a website. Gatsby.js is the universal JavaScript framework you’ve been waiting for.
 
 ## Static Progressive Web Apps
 

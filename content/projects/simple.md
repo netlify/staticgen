@@ -10,6 +10,7 @@ templates:
   - Markdown
 description: Simple is a pure static static blog generator.
 ---
+
 #Simple
 
 Simple is a static blog generator with a single static page. You can write you blog online, and it will generate static html files at your repo named `username.github.io` which is supported by [github pages](https://pages.github.com)
@@ -36,20 +37,20 @@ With Simple and github pages you can easily create your static blog. Here is wha
 
 ![simple](https://isnowfy.github.io/img/Simple.png)
 
-* You can use your own blog name, just modify the `main.json` file, and change `name="username"`.
+- You can use your own blog name, just modify the `main.json` file, and change `name="username"`.
 
-* You can use disqus comment system, just modify the `main.json` file, and change `disqus_shortname=""` to `disqus_shortname="your_shortname"`.
+- You can use disqus comment system, just modify the `main.json` file, and change `disqus_shortname=""` to `disqus_shortname="your_shortname"`.
 
-* You can use your own custom domain, just modify the `CNAME` file.(see [also](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages))
+- You can use your own custom domain, just modify the `CNAME` file.(see [also](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages))
 
 ##Features
 
-* Simple, no backend need
-* Static blog
-* Markdown editor
-* Code highlight support
-* Tex formula support
-* Responsive html
+- Simple, no backend need
+- Static blog
+- Markdown editor
+- Code highlight support
+- Tex formula support
+- Responsive html
 
 ##Custom
 

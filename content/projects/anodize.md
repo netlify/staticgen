@@ -3,9 +3,9 @@ title: Anodize
 repo: sidmani/anodize
 homepage: https://github.com/sidmani/anodize
 language:
-- JavaScript
+  - JavaScript
 license:
-- GNU AGPL v3.0
+  - AGPL-3.0-only
 templates:
   - Liquid
 description: Generate modern pages from minimal source files.

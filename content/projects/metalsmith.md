@@ -21,9 +21,9 @@ In Metalsmith, all of the logic is handled by plugins. You simply chain them tog
 
 Metalsmith works in three simple steps:
 
-  1. Read all the files in a source directory.
-  2. Invoke a series of plugins that manipulate the files.
-  3. Write the results to a destination directory!
+1. Read all the files in a source directory.
+2. Invoke a series of plugins that manipulate the files.
+3. Write the results to a destination directory!
 
 Each plugin is invoked with the contents of the source directory, and each file can contain YAML front-matter that will be attached as metadata, so a simple file like...
 
@@ -34,7 +34,7 @@ Each plugin is invoked with the contents of the source directory, and each file 
 
     An informative article.
 
-  ...would be parsed into...
+...would be parsed into...
 
 ```js
 {
