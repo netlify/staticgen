@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, pageTitle }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    ><script async={true} type="text/javascript" src="https://static.edgeme.sh/client.js" onload="window.edgemesh = new Edgemesh()"></script></Helmet>
   )
 }
 
