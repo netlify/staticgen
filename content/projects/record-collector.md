@@ -9,7 +9,7 @@ license:
 templates:
   - Razor
 description: An ASP.NET Core MVC 3.1 static site toolkit.
-twitter: johankronberg
+twitter: rcssgdotnet
 ---
 
 This project is heavily inspired by Hugo and tries to be somewhat compatible with the same content structure and support parsing of TOML, YAML and JSON front matter.
