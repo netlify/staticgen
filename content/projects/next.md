@@ -1,6 +1,6 @@
 ---
 title: Next.js
-repo: zeit/next.js
+repo: vercel/next.js
 homepage: https://nextjs.org
 language:
   - JavaScript
@@ -43,4 +43,4 @@ After that, the file-system is the main API. Every `.js` file becomes a route th
 ## Example
 
 Creating a website only takes a minute.
-[Examples](https://github.com/zeit/next.js/tree/canary/examples)
+[Examples](https://github.com/vercel/next.js/tree/canary/examples)
