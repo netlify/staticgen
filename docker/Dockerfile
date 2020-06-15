@@ -13,7 +13,7 @@ ENV TZ=Europe/Warsaw
 
 RUN echo $TZ | tee /etc/timezone \
     && dpkg-reconfigure --frontend noninteractive tzdata \
-    && npm install -g -q pm2
+    && npm install -g -q pm2@3
 
 COPY . .
 
