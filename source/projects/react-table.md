@@ -15,17 +15,6 @@ description: ⚛️ Hooks for building fast and extendable tables and datagrids 
 
 Hooks for building **lightweight, fast and extendable datagrids** for React
 
-[![#TanStack](https://img.shields.io/twitter/url?color=%2308a0e9&label=%23TanStack&style=social&url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Fbutton_hashtag%3DTanStack)](https://twitter.com/intent/tweet?button_hashtag=TanStack)
-
-[![Travis CI](https://travis-ci.org/tannerlinsley/react-table.svg?branch=master)](https://travis-ci.org/tannerlinsley/react-table)
-[![Bundlephobia](https://badgen.net/bundlephobia/minzip/react-table@next)](https://bundlephobia.com/result?p=react-table@next)
-[![NPM Package](https://img.shields.io/npm/dm/react-table.svg)](https://npmjs.com/package/react-table)
-[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/react-table)
-[![GitHub Stars](https://img.shields.io/github/stars/tannerlinsley/react-table.svg?style=social&label=Star)](https://github.com/tannerlinsley/react-table)
-[![Twitter Followers](https://img.shields.io/twitter/follow/tannerlinsley.svg?style=social&label=Follow)](https://twitter.com/tannerlinsley)
-
-Enjoy this library? Try them all! [React Query](https://github.com/tannerlinsley/react-query), [React Form](https://github.com/tannerlinsley/react-form), [React Charts](https://github.com/tannerlinsley/react-charts)
-
 ## Features
 
 - Lightweight (5kb - 12kb+ depending on features used and tree-shaking)
@@ -45,11 +34,11 @@ Enjoy this library? Try them all! [React Query](https://github.com/tannerlinsley
 
 ## Documentation
 
-- [Installation](./docs/installation.md) - Walk through how to install React Table
-- [Concepts](./docs/concepts.md) - Read how React Table works and how you can use it better
-- [Examples](./docs/examples.md) - Experience and learn from some examples and guides of how to use React Table and implement common patterns
-- [API](./docs/api/README.md) - Get to know React Table's API
-- [FAQ](./docs/faq.md) - Learn how to use React Table for specific challenges and tasks
-- [Previous Versions](#previous-versions)
-- [Contributing](./CONTRIBUTING.md) - Become familiar with how to contribute back to React Table
-- [Code of Conduct](./CODE_OF_CONDUCT.md) - Be a good React Table citizen by following these repository rules
+- [Installation](https://github.com/tannerlinsley/react-table/blob/master/docs/installation.md) - Walk through how to install React Table
+- [Concepts](https://github.com/tannerlinsley/react-table/blob/master/docs/concepts.md) - Read how React Table works and how you can use it better
+- [Examples](https://github.com/tannerlinsley/react-table/blob/master/docs/examples.md) - Experience and learn from some examples and guides of how to use React Table and implement common patterns
+- [API](https://github.com/tannerlinsley/react-table/blob/master/docs/api/README.md) - Get to know React Table's API
+- [FAQ](https://github.com/tannerlinsley/react-table/blob/master/docs/faq.md) - Learn how to use React Table for specific challenges and tasks
+- [Previous Versions](https://github.com/tannerlinsley/react-table#previous-versions)
+- [Contributing](https://github.com/tannerlinsley/react-table/blob/master/CONTRIBUTING.md) - Become familiar with how to contribute back to React Table
+- [Code of Conduct](https://github.com/tannerlinsley/react-table/blob/master/CODE_OF_CONDUCT.md) - Be a good React Table citizen by following these repository rules
