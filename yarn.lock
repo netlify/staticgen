@@ -11960,10 +11960,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-roboto-slab@^0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-roboto-slab/-/typeface-roboto-slab-0.0.72.tgz#8316b370a7b80af4aab339c957a467ca84b38aa1"
-  integrity sha512-KaRFzz42wh7qMWsAZGt1Yih3H6zf+cyUjn6T+LWnMdxLm+fmsznnP/CX9rwIq2vLhlkUuCrVxfLO8OlgSauzgw==
+typeface-roboto-slab@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/typeface-roboto-slab/-/typeface-roboto-slab-1.1.4.tgz#4b35c91d287acd93a598cc7db4e00b8b703c32e4"
+  integrity sha512-/v4k/tcXDxOus6f6tZGtHlh9IB2vDXC2bkeaZ6X6+OZlEA0rHLnoCju+SQjDJc8aIOKSEJETVP2Ia9kTumKAKQ==
 
 typeface-roboto@^0.0.75:
   version "0.0.75"
