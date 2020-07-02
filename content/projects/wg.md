@@ -1,6 +1,6 @@
 ---
 title: wg
-repos: abelgraham/wg
+repo: abelgraham/wg
 homepage: https://wg.abelgraham.xyz/
 language:
   - Python
