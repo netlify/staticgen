@@ -1,7 +1,7 @@
 ---
 title: Stog
 repo: zoggy/stog
-homepage: http://zoggy.github.io/stog/
+homepage: https://www.good-eris.net/stog/
 language:
   - OCaml
 license:
