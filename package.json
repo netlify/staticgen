@@ -32,7 +32,7 @@
     "common-tags": "^1.8.0",
     "date-fns": "^2.8.0",
     "decamelize": "^4.0.0",
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "gatsby-source-gitlab": "^1.0.2",
     "gatsby-source-twitter": "^3.0.0",
     "gitlab": "^14.0.0",
