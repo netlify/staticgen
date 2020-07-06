@@ -11,7 +11,7 @@ const Button = styled(({ type, url, text, projectTitle, className }) => {
   const { Button, Icon } = buttonConfigs[type]
   return (
     <Button url={url} title={text} className={className}>
-      <Icon size={40} round iconBgStyle={{ fill: '#313d3e' }} />
+      <Icon size={40} round bgStyle={{ fill: '#313d3e' }} />
     </Button>
   )
 })`
