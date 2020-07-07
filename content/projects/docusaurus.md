@@ -1,14 +1,15 @@
 ---
 title: Docusaurus
-repo: facebook/Docusaurus
-homepage: https://docusaurus.io
+repo: facebook/docusaurus
+homepage: https://v2.docusaurus.io
 language:
   - JavaScript
 license:
   - MIT
 templates:
+  - React
   - Markdown
-description: 'Easy to Maintain Open Source Documentation Websites'
+description: 'Build optimized websites quickly, focus on your content'
 startertemplaterepo: anishkny/docusaurus-base
 twitter: docusaurus
 ---
