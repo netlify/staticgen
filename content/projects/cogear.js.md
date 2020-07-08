@@ -3,7 +3,7 @@ title: Cogear.JS
 repo: codemotion/cogear.js
 homepage: https://cogearjs.org
 language:
-  - Node.JS
+  - JavaScript
 license:
   - MIT
 templates:
