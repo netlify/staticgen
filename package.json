@@ -39,7 +39,7 @@
     "gray-matter": "^4.0.2",
     "klaw": "^3.0.0",
     "node-fetch": "^2.6.0",
-    "prettier": "^2.0.0",
+    "prettier": "^2.0.5",
     "rehype-stringify": "^8.0.0",
     "remark-parse": "^8.0.0",
     "remark-rehype": "^7.0.0",
