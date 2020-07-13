@@ -22,7 +22,7 @@
     "react-dom": "^16.11.0",
     "react-entypo": "^1.3.0",
     "react-github-corner": "^2.3.0",
-    "react-helmet": "^6.0.0",
+    "react-helmet": "^6.1.0",
     "react-share": "^4.0.0",
     "typeface-roboto": "^0.0.75",
     "typeface-roboto-slab": "^1.0.0"
