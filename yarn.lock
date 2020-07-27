@@ -5319,7 +5319,7 @@ gatsby-plugin-emotion@^4.3.9:
     "@babel/runtime" "^7.10.3"
     "@emotion/babel-preset-css-prop" "^10.0.27"
 
-gatsby-plugin-offline@^3.2.21:
+gatsby-plugin-offline@^3.2.16:
   version "3.2.21"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.21.tgz#c308c7eb571b98effbb134a706c7af49711fc637"
   integrity sha512-MvkWmieiXIlm70xawJgIQFUnGlMUWhrRk6jGoVCiiZ8xrViiluZONttCm/tiDdiZTFOwvOPN7RQj/zB+50grMg==
@@ -5448,7 +5448,7 @@ gatsby-remark-prismjs@^3.5.9:
     parse-numeric-range "^0.0.2"
     unist-util-visit "^1.4.1"
 
-gatsby-source-filesystem@^2.3.23:
+gatsby-source-filesystem@^2.3.18:
   version "2.3.23"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.23.tgz#c97f37383febfd6ecb549307a2841f20e4e16122"
   integrity sha512-OkSefJZscSlf7tjJQIMHpzsf3evDcqf4T1iunMEwL1Qj1iZVD/6UbRIf1kJLt5SS8tGtvsqDNyaQ8Al7rsuJ1g==
@@ -5501,7 +5501,7 @@ gatsby-telemetry@^1.3.23:
     node-fetch "2.6.0"
     uuid "3.4.0"
 
-gatsby-transformer-remark@^2.8.27:
+gatsby-transformer-remark@^2.8.23:
   version "2.8.27"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.8.27.tgz#e58e597232cbd993a6841f14e23c5e914eb159ce"
   integrity sha512-pbXz5gglYOmpFP0sxGgzkiu05UiUhlACdJ4M15vEGHe+MFuz8kD58qJSLi0QJX0ba5Ri50uNXgw7SXh2r7msEA==
@@ -5528,7 +5528,7 @@ gatsby-transformer-remark@^2.8.27:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.4.1"
 
-gatsby@^2.24.11:
+gatsby@^2.23.21:
   version "2.24.11"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.11.tgz#5c74f2ea2fbd4ebc75900953752e850016437479"
   integrity sha512-rmkFGJaFVPrVoyUXvYoex9+a7w501y6vyaesVpsJZdBBgtMnWFEIGvJ9uDLPLVPoOXFtTNzN9MmDNGI+0r85lw==
@@ -10450,20 +10450,20 @@ replace-ext@1.0.0:
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
   integrity sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
 
-request-promise-core@1.1.3, request-promise-core@^1.1.2:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/request-promise-core/-/request-promise-core-1.1.3.tgz#e9a3c081b51380dfea677336061fea879a829ee9"
-  integrity sha512-QIs2+ArIGQVp5ZYbWD5ZLCY29D5CfWizP8eWnm8FoGD1TX61veauETVQbrV60662V0oFBkrDOuaBI8XgtuyYAQ==
+request-promise-core@1.1.4, request-promise-core@^1.1.2:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/request-promise-core/-/request-promise-core-1.1.4.tgz#3eedd4223208d419867b78ce815167d10593a22f"
+  integrity sha512-TTbAfBBRdWD7aNNOoVOBH4pN/KigV6LyapYNNlAPA8JwbovRti1E88m3sYAwsLi5ryhPKsE9APwnjFTgdUjTpw==
   dependencies:
-    lodash "^4.17.15"
+    lodash "^4.17.19"
 
 request-promise@^4.2.4:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/request-promise/-/request-promise-4.2.5.tgz#186222c59ae512f3497dfe4d75a9c8461bd0053c"
-  integrity sha512-ZgnepCykFdmpq86fKGwqntyTiUrHycALuGggpyCZwMvGaZWgxW6yagT0FHkgo5LzYvOaCNvxYwWYIjevSH1EDg==
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/request-promise/-/request-promise-4.2.6.tgz#7e7e5b9578630e6f598e3813c0f8eb342a27f0a2"
+  integrity sha512-HCHI3DJJUakkOr8fNoCc73E5nU5bqITjOYFMDrKHYOXWXrgD/SBaC7LjwuPymUprRyuF06UK7hd/lMHkmUXglQ==
   dependencies:
     bluebird "^3.5.0"
-    request-promise-core "1.1.3"
+    request-promise-core "1.1.4"
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
