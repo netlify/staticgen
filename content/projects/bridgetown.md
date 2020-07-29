@@ -8,6 +8,9 @@ license:
   - MIT
 templates:
   - Liquid
+  - ERB
+  - Haml
+  - Slim
 description: A Webpack-aware, Ruby-powered static site generator for the modern Jamstack era.
 twitter: bridgetownrb
 ---
