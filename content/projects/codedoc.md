@@ -3,7 +3,7 @@ title: Codedoc
 repo: CONNECT-platform/codedoc
 homepage: https://codedoc.cc
 language:
-  - Typescript
+  - TypeScript
 license:
   - MIT
 templates:
