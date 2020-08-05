@@ -33,7 +33,7 @@ $  npm install keystone-ssg
 ```
 Great, you're installed!
 ## Development server
-Start the Keystone development server, and then go to http://localhost:8080 to see the example website.
+Start the Keystone development server, and then go to `http://localhost:8080` to see the example website.
 ```
 $ npm run dev
 ```
