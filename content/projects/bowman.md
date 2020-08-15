@@ -11,7 +11,7 @@ templates:
 description: A simple static site generator with an integrated toolchain for efficient development and delivery.
 ---
 
-Bowman is a simple static site generator powered by Node.js, Webpack, and Browsersync. Bowman comes with pre-configured scripts to bundle assets, generate markup, and hot-reload pages using the J.E.N. technology core (JSON - data, EJS - templating, Node.js - markup generation).
+Bowman is a simple static site generator powered by Node.js, Webpack, and Browsersync. Bowman comes with pre-configured scripts to bundle assets, generate markup, and hot-reload pages. Pages are generated using the J.E.N. technology core (JSON - data, EJS - templating, Node.js - markup generation).
 
 ## Features
 
