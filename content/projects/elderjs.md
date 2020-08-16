@@ -3,7 +3,7 @@ title: Elder.js
 repo: elderjs/elderjs
 homepage: https://elderguide.com/tech/elderjs/
 language:
-  - Javascript
+  - JavaScript
 license:
   - MIT License
 templates:
