@@ -11,7 +11,8 @@ templates:
 description: POSIX compliant, sh(1) static site generator
 ---
 
-simple, fast, extensible static site generator
+fast, extensible, simple static site generator
+
 
 ## Simple
 
@@ -75,6 +76,6 @@ compiled portable binaries.
 
  [`mkws(1)`](https://mkws.sh) is POSIX compliant and highly portable.
 
-* The only non portable component is [OpenBSD](https://openbsd.org/)
+\* The only non portable component is [OpenBSD](https://openbsd.org/)
 [`stat(1)`](https://man.openbsd.org/stat.1) which comes bundled
 in the download archive statically compiled.
