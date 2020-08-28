@@ -71,4 +71,4 @@ Currently, I am the only one who can be credited for this, But, I was inspired b
 
 ## License
 
-This project is licensed under MIT License, See [LICENSE](/LICENSE) for more information
+This project is licensed under MIT License, See [https://github.com/theabbie/Generic-Static-Site-Generator/blob/master/LICENSE](/LICENSE) for more information
