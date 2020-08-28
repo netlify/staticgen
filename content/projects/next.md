@@ -38,7 +38,7 @@ Add a build script
 
 ## Run
 
-After that, the file-system is the main API. Every `.js` file becomes a route that gets automatically processed and rendered.
+After that, the file-system is the main API. Every `.js` file within the automatically created `pages` directory becomes a route that gets automatically processed and rendered.
 
 ## Example
 
