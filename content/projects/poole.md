@@ -1,7 +1,6 @@
 ---
 title: Poole
-repo: obensonne/poole
-homepage: https://bitbucket.org/obensonne/poole/
+homepage: https://hg.sr.ht/~obensonne/poole
 language:
   - Python
 license:
