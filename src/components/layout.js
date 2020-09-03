@@ -81,7 +81,7 @@ const Layout = ({ projectTitle, projectUrl, projectId, children }) => {
       <Global styles={globalStyles} />
 
       <Banner>
-        Join us at the first Headless Commerce Summit, Sept 3rd. <a href="https://headlesscommercesummit.com/" target="_blank" rel="noopener noreferrer">Learn&nbsp;more</a>
+        Join us at Jamstack Conf Virtual, October 6-7. <a href="https://ti.to/netlify/jamstack_virtual_oct?_ga=2.138410352.1952280820.1599156493-511366017.1596045979" target="_blank" rel="noopener noreferrer">Register&nbsp;now!</a>
       </Banner>
 
       <Hero siteTitle={data.site.siteMetadata.title} shareText={shareText} shareUrl={shareUrl} />
