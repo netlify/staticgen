@@ -23,7 +23,7 @@ startertemplaterepo: hexojs/hexo-starter
 
 A fast, simple & powerful blog framework, powered by [Node.js](https://nodejs.org) and [NPM](https://www.npmjs.com/).
 
-- [Hexo Office website](https://hexo.io/)
+- [Hexo Official website](https://hexo.io/)
 - [Themes](https://hexo.io/themes)
 - [Plugins](https://hexo.io/plugins)
 - [Deploy to Netlify ⭐️](https://hexo.io/docs/one-command-deployment#Netlify)
