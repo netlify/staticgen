@@ -1,4 +1,9 @@
-# staticgen.com
+## :warning: We have moved staticgen.com to jamstack.org/generators
+You can still contribute at https://github.com/jamstack/jamstack.org/ or join us on Slack at http://jamstack.slack.com/
+
+---
+
+## staticgen.com
 
 [staticgen.com](http://staticgen.com), a leaderboard of top open-source static site generators.
 
